@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 735 | Scripts: 170 | Modules: 0 | Tags: 0
+-- Instances: 756 | Scripts: 175 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.AgarWareGui
@@ -1763,7 +1763,6 @@ G2L["a1"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.VisualPage.VisualLeftSide.ESPGroup.ESPMaxDistRow.ESPMaxDistChanger
 G2L["a2"] = Instance.new("TextBox", G2L["9e"]);
-G2L["a2"]["CursorPosition"] = -1;
 G2L["a2"]["Name"] = [[ESPMaxDistChanger]];
 G2L["a2"]["PlaceholderColor3"] = Color3.fromRGB(0, 124, 255);
 G2L["a2"]["TextWrapped"] = true;
@@ -2363,6 +2362,7 @@ G2L["d9"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMainPage
 G2L["da"] = Instance.new("ScrollingFrame", G2L["15"]);
+G2L["da"]["Visible"] = false;
 G2L["da"]["Active"] = true;
 G2L["da"]["BorderSizePixel"] = 0;
 G2L["da"]["Name"] = [[TCOMainPage]];
@@ -2588,7 +2588,7 @@ G2L["ee"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["ee"]["BackgroundTransparency"] = 1;
 G2L["ee"]["Size"] = UDim2.new(0, 88, 0, 20);
 G2L["ee"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ee"]["Text"] = [[Auto Pickup Items]];
+G2L["ee"]["Text"] = [[Auto Grab Items]];
 G2L["ee"]["Name"] = [[APickupText]];
 G2L["ee"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
 
@@ -6261,7 +6261,7 @@ G2L["238"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 G2L["239"] = Instance.new("Frame", G2L["237"]);
 G2L["239"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
 G2L["239"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["239"]["Size"] = UDim2.new(0, 170, 0, 144);
+G2L["239"]["Size"] = UDim2.new(0, 170, 0, 162);
 G2L["239"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
 G2L["239"]["Name"] = [[MiscGroup]];
 G2L["239"]["LayoutOrder"] = 2;
@@ -6580,202 +6580,202 @@ G2L["255"]["Name"] = [[AutoEnliText]];
 G2L["255"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup
-G2L["256"] = Instance.new("Frame", G2L["237"]);
-G2L["256"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
-G2L["256"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["256"]["Size"] = UDim2.new(0, 170, 0, 120);
-G2L["256"]["Position"] = UDim2.new(0, 0, 0.41944, 0);
-G2L["256"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["256"]["Name"] = [[BoomboxGroup]];
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.MiscGroup.ChatFixRow
+G2L["256"] = Instance.new("Frame", G2L["239"]);
+G2L["256"]["BorderSizePixel"] = 0;
+G2L["256"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["256"]["Size"] = UDim2.new(0, 169, 0, 20);
+G2L["256"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
+G2L["256"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["256"]["Name"] = [[ChatFixRow]];
 G2L["256"]["LayoutOrder"] = 2;
+G2L["256"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.MiscGroup.ChatFixRow.ChatFixScript
+G2L["257"] = Instance.new("LocalScript", G2L["256"]);
+G2L["257"]["Name"] = [[ChatFixScript]];
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.MiscGroup.ChatFixRow.ChatFixTickBox
+G2L["258"] = Instance.new("TextButton", G2L["256"]);
+G2L["258"]["TextSize"] = 14;
+G2L["258"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["258"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["258"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["258"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["258"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["258"]["Text"] = [[]];
+G2L["258"]["Name"] = [[ChatFixTickBox]];
+G2L["258"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.MiscGroup.ChatFixRow.ChatFixText
+G2L["259"] = Instance.new("TextLabel", G2L["256"]);
+G2L["259"]["BorderSizePixel"] = 0;
+G2L["259"]["TextSize"] = 14;
+G2L["259"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["259"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["259"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["259"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["259"]["BackgroundTransparency"] = 1;
+G2L["259"]["Size"] = UDim2.new(0, 88, 0, 20);
+G2L["259"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["259"]["Text"] = [[Chat Fix (NEW)]];
+G2L["259"]["Name"] = [[ChatFixText]];
+G2L["259"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup
+G2L["25a"] = Instance.new("Frame", G2L["237"]);
+G2L["25a"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["25a"]["BorderMode"] = Enum.BorderMode.Middle;
+G2L["25a"]["Size"] = UDim2.new(0, 170, 0, 120);
+G2L["25a"]["Position"] = UDim2.new(0, 0, 0.41944, 0);
+G2L["25a"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["25a"]["Name"] = [[BoomboxGroup]];
+G2L["25a"]["LayoutOrder"] = 2;
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomboxScript
-G2L["257"] = Instance.new("LocalScript", G2L["256"]);
-G2L["257"]["Name"] = [[BoomboxScript]];
+G2L["25b"] = Instance.new("LocalScript", G2L["25a"]);
+G2L["25b"]["Name"] = [[BoomboxScript]];
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomboxTooltip
-G2L["258"] = Instance.new("LocalScript", G2L["256"]);
-G2L["258"]["Name"] = [[BoomboxTooltip]];
+G2L["25c"] = Instance.new("LocalScript", G2L["25a"]);
+G2L["25c"]["Name"] = [[BoomboxTooltip]];
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.UIListLayout
-G2L["259"] = Instance.new("UIListLayout", G2L["256"]);
-G2L["259"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["25d"] = Instance.new("UIListLayout", G2L["25a"]);
+G2L["25d"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomboxAccentColor
-G2L["25a"] = Instance.new("Frame", G2L["256"]);
-G2L["25a"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["25a"]["AutomaticSize"] = Enum.AutomaticSize.X;
-G2L["25a"]["Size"] = UDim2.new(0, 169, 0, 2);
-G2L["25a"]["Position"] = UDim2.new(0.00294, 0, 0.00658, 0);
-G2L["25a"]["BorderColor3"] = Color3.fromRGB(0, 92, 189);
-G2L["25a"]["Name"] = [[BoomboxAccentColor]];
+G2L["25e"] = Instance.new("Frame", G2L["25a"]);
+G2L["25e"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["25e"]["AutomaticSize"] = Enum.AutomaticSize.X;
+G2L["25e"]["Size"] = UDim2.new(0, 169, 0, 2);
+G2L["25e"]["Position"] = UDim2.new(0.00294, 0, 0.00658, 0);
+G2L["25e"]["BorderColor3"] = Color3.fromRGB(0, 92, 189);
+G2L["25e"]["Name"] = [[BoomboxAccentColor]];
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomboxTitle
-G2L["25b"] = Instance.new("TextLabel", G2L["256"]);
-G2L["25b"]["TextWrapped"] = true;
-G2L["25b"]["BorderSizePixel"] = 0;
-G2L["25b"]["TextSize"] = 14;
-G2L["25b"]["TextScaled"] = true;
-G2L["25b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["25b"]["TextColor3"] = Color3.fromRGB(190, 190, 190);
-G2L["25b"]["BackgroundTransparency"] = 0.95;
-G2L["25b"]["Size"] = UDim2.new(0, 169, 0, 15);
-G2L["25b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25b"]["Text"] = [[Boombox]];
-G2L["25b"]["LayoutOrder"] = 1;
-G2L["25b"]["Name"] = [[BoomboxTitle]];
-G2L["25b"]["Position"] = UDim2.new(0.00294, 0, 0.03289, 0);
+G2L["25f"] = Instance.new("TextLabel", G2L["25a"]);
+G2L["25f"]["TextWrapped"] = true;
+G2L["25f"]["BorderSizePixel"] = 0;
+G2L["25f"]["TextSize"] = 14;
+G2L["25f"]["TextScaled"] = true;
+G2L["25f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25f"]["TextColor3"] = Color3.fromRGB(190, 190, 190);
+G2L["25f"]["BackgroundTransparency"] = 0.95;
+G2L["25f"]["Size"] = UDim2.new(0, 169, 0, 15);
+G2L["25f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25f"]["Text"] = [[Boombox]];
+G2L["25f"]["LayoutOrder"] = 1;
+G2L["25f"]["Name"] = [[BoomboxTitle]];
+G2L["25f"]["Position"] = UDim2.new(0.00294, 0, 0.03289, 0);
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomboxTitle.BoomboxMinimize
-G2L["25c"] = Instance.new("TextButton", G2L["25b"]);
-G2L["25c"]["BorderSizePixel"] = 0;
-G2L["25c"]["TextSize"] = 14;
-G2L["25c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["25c"]["BackgroundTransparency"] = 1;
-G2L["25c"]["Size"] = UDim2.new(0, 20, 0, 15);
-G2L["25c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25c"]["Text"] = [[-]];
-G2L["25c"]["Name"] = [[BoomboxMinimize]];
-G2L["25c"]["Position"] = UDim2.new(0.88166, 0, 0, 0);
+G2L["260"] = Instance.new("TextButton", G2L["25f"]);
+G2L["260"]["BorderSizePixel"] = 0;
+G2L["260"]["TextSize"] = 14;
+G2L["260"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["260"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["260"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["260"]["BackgroundTransparency"] = 1;
+G2L["260"]["Size"] = UDim2.new(0, 20, 0, 15);
+G2L["260"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["260"]["Text"] = [[-]];
+G2L["260"]["Name"] = [[BoomboxMinimize]];
+G2L["260"]["Position"] = UDim2.new(0.88166, 0, 0, 0);
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomVolRow
-G2L["25d"] = Instance.new("Frame", G2L["256"]);
-G2L["25d"]["BorderSizePixel"] = 0;
-G2L["25d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25d"]["Size"] = UDim2.new(0, 169, 0, 20);
-G2L["25d"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
-G2L["25d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25d"]["Name"] = [[BoomVolRow]];
-G2L["25d"]["LayoutOrder"] = 2;
-G2L["25d"]["BackgroundTransparency"] = 1;
+G2L["261"] = Instance.new("Frame", G2L["25a"]);
+G2L["261"]["BorderSizePixel"] = 0;
+G2L["261"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["261"]["Size"] = UDim2.new(0, 169, 0, 20);
+G2L["261"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
+G2L["261"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["261"]["Name"] = [[BoomVolRow]];
+G2L["261"]["LayoutOrder"] = 2;
+G2L["261"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomVolRow.BoomVolScript
-G2L["25e"] = Instance.new("LocalScript", G2L["25d"]);
-G2L["25e"]["Name"] = [[BoomVolScript]];
+G2L["262"] = Instance.new("LocalScript", G2L["261"]);
+G2L["262"]["Name"] = [[BoomVolScript]];
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomVolRow.BoomVolTickBox
-G2L["25f"] = Instance.new("TextButton", G2L["25d"]);
-G2L["25f"]["TextSize"] = 14;
-G2L["25f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["25f"]["Size"] = UDim2.new(0, 16, 0, 16);
-G2L["25f"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["25f"]["Text"] = [[]];
-G2L["25f"]["Name"] = [[BoomVolTickBox]];
-G2L["25f"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
+G2L["263"] = Instance.new("TextButton", G2L["261"]);
+G2L["263"]["TextSize"] = 14;
+G2L["263"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["263"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["263"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["263"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["263"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["263"]["Text"] = [[]];
+G2L["263"]["Name"] = [[BoomVolTickBox]];
+G2L["263"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomVolRow.BoomVolText
-G2L["260"] = Instance.new("TextLabel", G2L["25d"]);
-G2L["260"]["BorderSizePixel"] = 0;
-G2L["260"]["TextSize"] = 14;
-G2L["260"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["260"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["260"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["260"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["260"]["BackgroundTransparency"] = 1;
-G2L["260"]["Size"] = UDim2.new(0, 88, 0, 20);
-G2L["260"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["260"]["Text"] = [[Volume]];
-G2L["260"]["Name"] = [[BoomVolText]];
-G2L["260"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
+G2L["264"] = Instance.new("TextLabel", G2L["261"]);
+G2L["264"]["BorderSizePixel"] = 0;
+G2L["264"]["TextSize"] = 14;
+G2L["264"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["264"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["264"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["264"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["264"]["BackgroundTransparency"] = 1;
+G2L["264"]["Size"] = UDim2.new(0, 88, 0, 20);
+G2L["264"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["264"]["Text"] = [[Volume]];
+G2L["264"]["Name"] = [[BoomVolText]];
+G2L["264"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomVolRow.BoomVolChanger
-G2L["261"] = Instance.new("TextBox", G2L["25d"]);
-G2L["261"]["Name"] = [[BoomVolChanger]];
-G2L["261"]["PlaceholderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["261"]["TextWrapped"] = true;
-G2L["261"]["TextSize"] = 14;
-G2L["261"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["261"]["TextScaled"] = true;
-G2L["261"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["261"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["261"]["PlaceholderText"] = [[(100)]];
-G2L["261"]["Size"] = UDim2.new(0, 46, 0, 16);
-G2L["261"]["Position"] = UDim2.new(0.69822, 0, 0.16, 0);
-G2L["261"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["261"]["Text"] = [[]];
+G2L["265"] = Instance.new("TextBox", G2L["261"]);
+G2L["265"]["Name"] = [[BoomVolChanger]];
+G2L["265"]["PlaceholderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["265"]["TextWrapped"] = true;
+G2L["265"]["TextSize"] = 14;
+G2L["265"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["265"]["TextScaled"] = true;
+G2L["265"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["265"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["265"]["PlaceholderText"] = [[(100)]];
+G2L["265"]["Size"] = UDim2.new(0, 46, 0, 16);
+G2L["265"]["Position"] = UDim2.new(0.69822, 0, 0.16, 0);
+G2L["265"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["265"]["Text"] = [[]];
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.MuteTacoRow
-G2L["262"] = Instance.new("Frame", G2L["256"]);
-G2L["262"]["BorderSizePixel"] = 0;
-G2L["262"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["262"]["Size"] = UDim2.new(0, 169, 0, 20);
-G2L["262"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
-G2L["262"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["262"]["Name"] = [[MuteTacoRow]];
-G2L["262"]["LayoutOrder"] = 2;
-G2L["262"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.MuteTacoRow.MuteTacoScript
-G2L["263"] = Instance.new("LocalScript", G2L["262"]);
-G2L["263"]["Name"] = [[MuteTacoScript]];
-
-
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.MuteTacoRow.MuteTacoTickBox
-G2L["264"] = Instance.new("TextButton", G2L["262"]);
-G2L["264"]["TextSize"] = 14;
-G2L["264"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["264"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["264"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["264"]["Size"] = UDim2.new(0, 16, 0, 16);
-G2L["264"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["264"]["Text"] = [[]];
-G2L["264"]["Name"] = [[MuteTacoTickBox]];
-G2L["264"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
-
-
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.MuteTacoRow.MuteTacoText
-G2L["265"] = Instance.new("TextLabel", G2L["262"]);
-G2L["265"]["BorderSizePixel"] = 0;
-G2L["265"]["TextSize"] = 14;
-G2L["265"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["265"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["265"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["265"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["265"]["BackgroundTransparency"] = 1;
-G2L["265"]["Size"] = UDim2.new(0, 88, 0, 20);
-G2L["265"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["265"]["Text"] = [[Mute Taco Song]];
-G2L["265"]["Name"] = [[MuteTacoText]];
-G2L["265"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
-
-
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.ClickBoomRow
-G2L["266"] = Instance.new("Frame", G2L["256"]);
+G2L["266"] = Instance.new("Frame", G2L["25a"]);
 G2L["266"]["BorderSizePixel"] = 0;
 G2L["266"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["266"]["Size"] = UDim2.new(0, 169, 0, 20);
 G2L["266"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
 G2L["266"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["266"]["Name"] = [[ClickBoomRow]];
+G2L["266"]["Name"] = [[MuteTacoRow]];
 G2L["266"]["LayoutOrder"] = 2;
 G2L["266"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.ClickBoomRow.ClickBoomScript
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.MuteTacoRow.MuteTacoScript
 G2L["267"] = Instance.new("LocalScript", G2L["266"]);
-G2L["267"]["Name"] = [[ClickBoomScript]];
+G2L["267"]["Name"] = [[MuteTacoScript]];
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.ClickBoomRow.ClickBoomTickBox
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.MuteTacoRow.MuteTacoTickBox
 G2L["268"] = Instance.new("TextButton", G2L["266"]);
 G2L["268"]["TextSize"] = 14;
 G2L["268"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
@@ -6784,11 +6784,11 @@ G2L["268"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json
 G2L["268"]["Size"] = UDim2.new(0, 16, 0, 16);
 G2L["268"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
 G2L["268"]["Text"] = [[]];
-G2L["268"]["Name"] = [[ClickBoomTickBox]];
+G2L["268"]["Name"] = [[MuteTacoTickBox]];
 G2L["268"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.ClickBoomRow.ClickBoomText
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.MuteTacoRow.MuteTacoText
 G2L["269"] = Instance.new("TextLabel", G2L["266"]);
 G2L["269"]["BorderSizePixel"] = 0;
 G2L["269"]["TextSize"] = 14;
@@ -6799,287 +6799,286 @@ G2L["269"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["269"]["BackgroundTransparency"] = 1;
 G2L["269"]["Size"] = UDim2.new(0, 88, 0, 20);
 G2L["269"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["269"]["Text"] = [[Click to Log]];
-G2L["269"]["Name"] = [[ClickBoomText]];
+G2L["269"]["Text"] = [[Mute Taco Song]];
+G2L["269"]["Name"] = [[MuteTacoText]];
 G2L["269"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.AutoPlayRow
-G2L["26a"] = Instance.new("Frame", G2L["256"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.ClickBoomRow
+G2L["26a"] = Instance.new("Frame", G2L["25a"]);
 G2L["26a"]["BorderSizePixel"] = 0;
 G2L["26a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["26a"]["Size"] = UDim2.new(0, 169, 0, 20);
 G2L["26a"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
 G2L["26a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26a"]["Name"] = [[AutoPlayRow]];
-G2L["26a"]["LayoutOrder"] = 3;
+G2L["26a"]["Name"] = [[ClickBoomRow]];
+G2L["26a"]["LayoutOrder"] = 2;
 G2L["26a"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.AutoPlayRow.AutoPlayScript
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.ClickBoomRow.ClickBoomScript
 G2L["26b"] = Instance.new("LocalScript", G2L["26a"]);
-G2L["26b"]["Name"] = [[AutoPlayScript]];
+G2L["26b"]["Name"] = [[ClickBoomScript]];
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.AutoPlayRow.AutoPlayChanger
-G2L["26c"] = Instance.new("TextBox", G2L["26a"]);
-G2L["26c"]["Name"] = [[AutoPlayChanger]];
-G2L["26c"]["PlaceholderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["26c"]["TextWrapped"] = true;
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.ClickBoomRow.ClickBoomTickBox
+G2L["26c"] = Instance.new("TextButton", G2L["26a"]);
 G2L["26c"]["TextSize"] = 14;
-G2L["26c"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["26c"]["TextScaled"] = true;
+G2L["26c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["26c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["26c"]["PlaceholderText"] = [[(142376088)]];
-G2L["26c"]["Size"] = UDim2.new(0, 134, 0, 16);
-G2L["26c"]["Position"] = UDim2.new(0.17751, 0, 0.16, 0);
+G2L["26c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["26c"]["Size"] = UDim2.new(0, 16, 0, 16);
 G2L["26c"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
 G2L["26c"]["Text"] = [[]];
+G2L["26c"]["Name"] = [[ClickBoomTickBox]];
+G2L["26c"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.AutoPlayRow.AutoPlayTickBox
-G2L["26d"] = Instance.new("TextButton", G2L["26a"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.ClickBoomRow.ClickBoomText
+G2L["26d"] = Instance.new("TextLabel", G2L["26a"]);
+G2L["26d"]["BorderSizePixel"] = 0;
 G2L["26d"]["TextSize"] = 14;
-G2L["26d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["26d"]["Size"] = UDim2.new(0, 16, 0, 16);
-G2L["26d"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["26d"]["Text"] = [[]];
-G2L["26d"]["Name"] = [[AutoPlayTickBox]];
-G2L["26d"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
+G2L["26d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["26d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["26d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26d"]["BackgroundTransparency"] = 1;
+G2L["26d"]["Size"] = UDim2.new(0, 88, 0, 20);
+G2L["26d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26d"]["Text"] = [[Click to Log]];
+G2L["26d"]["Name"] = [[ClickBoomText]];
+G2L["26d"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.DisableBoomboxRow
-G2L["26e"] = Instance.new("Frame", G2L["256"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.AutoPlayRow
+G2L["26e"] = Instance.new("Frame", G2L["25a"]);
 G2L["26e"]["BorderSizePixel"] = 0;
 G2L["26e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["26e"]["Size"] = UDim2.new(0, 169, 0, 20);
 G2L["26e"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
 G2L["26e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26e"]["Name"] = [[DisableBoomboxRow]];
-G2L["26e"]["LayoutOrder"] = 2;
+G2L["26e"]["Name"] = [[AutoPlayRow]];
+G2L["26e"]["LayoutOrder"] = 3;
 G2L["26e"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.DisableBoomboxRow.DisableBoomboxScript
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.AutoPlayRow.AutoPlayScript
 G2L["26f"] = Instance.new("LocalScript", G2L["26e"]);
-G2L["26f"]["Name"] = [[DisableBoomboxScript]];
+G2L["26f"]["Name"] = [[AutoPlayScript]];
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.DisableBoomboxRow.DisableBoomboxTickBox
-G2L["270"] = Instance.new("TextButton", G2L["26e"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.AutoPlayRow.AutoPlayChanger
+G2L["270"] = Instance.new("TextBox", G2L["26e"]);
+G2L["270"]["Name"] = [[AutoPlayChanger]];
+G2L["270"]["PlaceholderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["270"]["TextWrapped"] = true;
 G2L["270"]["TextSize"] = 14;
-G2L["270"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["270"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["270"]["TextScaled"] = true;
 G2L["270"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["270"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["270"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["270"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["270"]["PlaceholderText"] = [[(142376088)]];
+G2L["270"]["Size"] = UDim2.new(0, 134, 0, 16);
+G2L["270"]["Position"] = UDim2.new(0.17751, 0, 0.16, 0);
 G2L["270"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
 G2L["270"]["Text"] = [[]];
-G2L["270"]["Name"] = [[DisableBoomboxTickBox]];
-G2L["270"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.DisableBoomboxRow.DisableBoomboxText
-G2L["271"] = Instance.new("TextLabel", G2L["26e"]);
-G2L["271"]["BorderSizePixel"] = 0;
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.AutoPlayRow.AutoPlayTickBox
+G2L["271"] = Instance.new("TextButton", G2L["26e"]);
 G2L["271"]["TextSize"] = 14;
-G2L["271"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["271"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["271"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["271"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["271"]["BackgroundTransparency"] = 1;
-G2L["271"]["Size"] = UDim2.new(0, 88, 0, 20);
-G2L["271"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["271"]["Text"] = [[Disable Boombox UI]];
-G2L["271"]["Name"] = [[DisableBoomboxText]];
-G2L["271"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
+G2L["271"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["271"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["271"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["271"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["271"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["271"]["Text"] = [[]];
+G2L["271"]["Name"] = [[AutoPlayTickBox]];
+G2L["271"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide
-G2L["272"] = Instance.new("Frame", G2L["236"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.DisableBoomboxRow
+G2L["272"] = Instance.new("Frame", G2L["25a"]);
 G2L["272"]["BorderSizePixel"] = 0;
-G2L["272"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 18);
-G2L["272"]["Size"] = UDim2.new(0, 170, 0, 360);
-G2L["272"]["Position"] = UDim2.new(0.51003, 0, 0.00439, 0);
+G2L["272"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["272"]["Size"] = UDim2.new(0, 169, 0, 20);
+G2L["272"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
 G2L["272"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["272"]["Name"] = [[TCOMiscRightSide]];
+G2L["272"]["Name"] = [[DisableBoomboxRow]];
+G2L["272"]["LayoutOrder"] = 2;
 G2L["272"]["BackgroundTransparency"] = 1;
 
 
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.DisableBoomboxRow.DisableBoomboxScript
+G2L["273"] = Instance.new("LocalScript", G2L["272"]);
+G2L["273"]["Name"] = [[DisableBoomboxScript]];
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.DisableBoomboxRow.DisableBoomboxTickBox
+G2L["274"] = Instance.new("TextButton", G2L["272"]);
+G2L["274"]["TextSize"] = 14;
+G2L["274"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["274"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["274"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["274"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["274"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["274"]["Text"] = [[]];
+G2L["274"]["Name"] = [[DisableBoomboxTickBox]];
+G2L["274"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.DisableBoomboxRow.DisableBoomboxText
+G2L["275"] = Instance.new("TextLabel", G2L["272"]);
+G2L["275"]["BorderSizePixel"] = 0;
+G2L["275"]["TextSize"] = 14;
+G2L["275"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["275"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["275"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["275"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["275"]["BackgroundTransparency"] = 1;
+G2L["275"]["Size"] = UDim2.new(0, 88, 0, 20);
+G2L["275"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["275"]["Text"] = [[Disable Boombox UI]];
+G2L["275"]["Name"] = [[DisableBoomboxText]];
+G2L["275"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide
+G2L["276"] = Instance.new("Frame", G2L["236"]);
+G2L["276"]["BorderSizePixel"] = 0;
+G2L["276"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 18);
+G2L["276"]["Size"] = UDim2.new(0, 170, 0, 360);
+G2L["276"]["Position"] = UDim2.new(0.51003, 0, 0.00439, 0);
+G2L["276"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["276"]["Name"] = [[TCOMiscRightSide]];
+G2L["276"]["BackgroundTransparency"] = 1;
+
+
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.UIListLayout
-G2L["273"] = Instance.new("UIListLayout", G2L["272"]);
-G2L["273"]["Padding"] = UDim.new(0, 7);
-G2L["273"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["277"] = Instance.new("UIListLayout", G2L["276"]);
+G2L["277"]["Padding"] = UDim.new(0, 7);
+G2L["277"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup
-G2L["274"] = Instance.new("Frame", G2L["272"]);
-G2L["274"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
-G2L["274"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["274"]["Size"] = UDim2.new(0, 170, 0, 144);
-G2L["274"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["274"]["Name"] = [[AlertGroup]];
-G2L["274"]["LayoutOrder"] = 2;
+G2L["278"] = Instance.new("Frame", G2L["276"]);
+G2L["278"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["278"]["BorderMode"] = Enum.BorderMode.Middle;
+G2L["278"]["Size"] = UDim2.new(0, 170, 0, 144);
+G2L["278"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["278"]["Name"] = [[AlertGroup]];
+G2L["278"]["LayoutOrder"] = 2;
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.AlertScript
-G2L["275"] = Instance.new("LocalScript", G2L["274"]);
-G2L["275"]["Name"] = [[AlertScript]];
+G2L["279"] = Instance.new("LocalScript", G2L["278"]);
+G2L["279"]["Name"] = [[AlertScript]];
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.UIListLayout
-G2L["276"] = Instance.new("UIListLayout", G2L["274"]);
-G2L["276"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["27a"] = Instance.new("UIListLayout", G2L["278"]);
+G2L["27a"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.AlertAccentColor
-G2L["277"] = Instance.new("Frame", G2L["274"]);
-G2L["277"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["277"]["AutomaticSize"] = Enum.AutomaticSize.X;
-G2L["277"]["Size"] = UDim2.new(0, 169, 0, 2);
-G2L["277"]["Position"] = UDim2.new(0.00294, 0, 0.00658, 0);
-G2L["277"]["BorderColor3"] = Color3.fromRGB(0, 92, 189);
-G2L["277"]["Name"] = [[AlertAccentColor]];
+G2L["27b"] = Instance.new("Frame", G2L["278"]);
+G2L["27b"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["27b"]["AutomaticSize"] = Enum.AutomaticSize.X;
+G2L["27b"]["Size"] = UDim2.new(0, 169, 0, 2);
+G2L["27b"]["Position"] = UDim2.new(0.00294, 0, 0.00658, 0);
+G2L["27b"]["BorderColor3"] = Color3.fromRGB(0, 92, 189);
+G2L["27b"]["Name"] = [[AlertAccentColor]];
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.AlertTitle
-G2L["278"] = Instance.new("TextLabel", G2L["274"]);
-G2L["278"]["TextWrapped"] = true;
-G2L["278"]["BorderSizePixel"] = 0;
-G2L["278"]["TextSize"] = 14;
-G2L["278"]["TextScaled"] = true;
-G2L["278"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["278"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["278"]["TextColor3"] = Color3.fromRGB(190, 190, 190);
-G2L["278"]["BackgroundTransparency"] = 0.95;
-G2L["278"]["Size"] = UDim2.new(0, 169, 0, 15);
-G2L["278"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["278"]["Text"] = [[Chat Alerts]];
-G2L["278"]["LayoutOrder"] = 1;
-G2L["278"]["Name"] = [[AlertTitle]];
-G2L["278"]["Position"] = UDim2.new(0.00294, 0, 0.03289, 0);
+G2L["27c"] = Instance.new("TextLabel", G2L["278"]);
+G2L["27c"]["TextWrapped"] = true;
+G2L["27c"]["BorderSizePixel"] = 0;
+G2L["27c"]["TextSize"] = 14;
+G2L["27c"]["TextScaled"] = true;
+G2L["27c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27c"]["TextColor3"] = Color3.fromRGB(190, 190, 190);
+G2L["27c"]["BackgroundTransparency"] = 0.95;
+G2L["27c"]["Size"] = UDim2.new(0, 169, 0, 15);
+G2L["27c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27c"]["Text"] = [[Chat Alerts]];
+G2L["27c"]["LayoutOrder"] = 1;
+G2L["27c"]["Name"] = [[AlertTitle]];
+G2L["27c"]["Position"] = UDim2.new(0.00294, 0, 0.03289, 0);
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.AlertTitle.AlertMinimize
-G2L["279"] = Instance.new("TextButton", G2L["278"]);
-G2L["279"]["BorderSizePixel"] = 0;
-G2L["279"]["TextSize"] = 14;
-G2L["279"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["279"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["279"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["279"]["BackgroundTransparency"] = 1;
-G2L["279"]["Size"] = UDim2.new(0, 20, 0, 15);
-G2L["279"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["279"]["Text"] = [[-]];
-G2L["279"]["Name"] = [[AlertMinimize]];
-G2L["279"]["Position"] = UDim2.new(0.88166, 0, 0, 0);
+G2L["27d"] = Instance.new("TextButton", G2L["27c"]);
+G2L["27d"]["BorderSizePixel"] = 0;
+G2L["27d"]["TextSize"] = 14;
+G2L["27d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27d"]["BackgroundTransparency"] = 1;
+G2L["27d"]["Size"] = UDim2.new(0, 20, 0, 15);
+G2L["27d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27d"]["Text"] = [[-]];
+G2L["27d"]["Name"] = [[AlertMinimize]];
+G2L["27d"]["Position"] = UDim2.new(0.88166, 0, 0, 0);
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.DonateSpyRow
-G2L["27a"] = Instance.new("Frame", G2L["274"]);
-G2L["27a"]["BorderSizePixel"] = 0;
-G2L["27a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27a"]["Size"] = UDim2.new(0, 169, 0, 20);
-G2L["27a"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
-G2L["27a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27a"]["Name"] = [[DonateSpyRow]];
-G2L["27a"]["LayoutOrder"] = 6;
-G2L["27a"]["BackgroundTransparency"] = 1;
+G2L["27e"] = Instance.new("Frame", G2L["278"]);
+G2L["27e"]["BorderSizePixel"] = 0;
+G2L["27e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27e"]["Size"] = UDim2.new(0, 169, 0, 20);
+G2L["27e"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
+G2L["27e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27e"]["Name"] = [[DonateSpyRow]];
+G2L["27e"]["LayoutOrder"] = 6;
+G2L["27e"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.DonateSpyRow.DonateSpyTickBox
-G2L["27b"] = Instance.new("TextButton", G2L["27a"]);
-G2L["27b"]["TextSize"] = 14;
-G2L["27b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27b"]["ZIndex"] = 5;
-G2L["27b"]["Size"] = UDim2.new(0, 16, 0, 16);
-G2L["27b"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["27b"]["Text"] = [[]];
-G2L["27b"]["Name"] = [[DonateSpyTickBox]];
-G2L["27b"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
+G2L["27f"] = Instance.new("TextButton", G2L["27e"]);
+G2L["27f"]["TextSize"] = 14;
+G2L["27f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27f"]["ZIndex"] = 5;
+G2L["27f"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["27f"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["27f"]["Text"] = [[]];
+G2L["27f"]["Name"] = [[DonateSpyTickBox]];
+G2L["27f"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.DonateSpyRow.DonateSpyText
-G2L["27c"] = Instance.new("TextLabel", G2L["27a"]);
-G2L["27c"]["BorderSizePixel"] = 0;
-G2L["27c"]["TextSize"] = 14;
-G2L["27c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["27c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27c"]["BackgroundTransparency"] = 1;
-G2L["27c"]["Size"] = UDim2.new(0, 88, 0, 20);
-G2L["27c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27c"]["Text"] = [[Alert Donations]];
-G2L["27c"]["Name"] = [[DonateSpyText]];
-G2L["27c"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
+G2L["280"] = Instance.new("TextLabel", G2L["27e"]);
+G2L["280"]["BorderSizePixel"] = 0;
+G2L["280"]["TextSize"] = 14;
+G2L["280"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["280"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["280"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["280"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["280"]["BackgroundTransparency"] = 1;
+G2L["280"]["Size"] = UDim2.new(0, 88, 0, 20);
+G2L["280"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["280"]["Text"] = [[Alert Donations]];
+G2L["280"]["Name"] = [[DonateSpyText]];
+G2L["280"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.MutedSpyRow
-G2L["27d"] = Instance.new("Frame", G2L["274"]);
-G2L["27d"]["BorderSizePixel"] = 0;
-G2L["27d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27d"]["Size"] = UDim2.new(0, 169, 0, 20);
-G2L["27d"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
-G2L["27d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27d"]["Name"] = [[MutedSpyRow]];
-G2L["27d"]["LayoutOrder"] = 6;
-G2L["27d"]["BackgroundTransparency"] = 1;
+G2L["281"] = Instance.new("Frame", G2L["278"]);
+G2L["281"]["BorderSizePixel"] = 0;
+G2L["281"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["281"]["Size"] = UDim2.new(0, 169, 0, 20);
+G2L["281"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
+G2L["281"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["281"]["Name"] = [[MutedSpyRow]];
+G2L["281"]["LayoutOrder"] = 6;
+G2L["281"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.MutedSpyRow.MutedSpyTickBox
-G2L["27e"] = Instance.new("TextButton", G2L["27d"]);
-G2L["27e"]["TextSize"] = 14;
-G2L["27e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27e"]["ZIndex"] = 5;
-G2L["27e"]["Size"] = UDim2.new(0, 16, 0, 16);
-G2L["27e"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["27e"]["Text"] = [[]];
-G2L["27e"]["Name"] = [[MutedSpyTickBox]];
-G2L["27e"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
-
-
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.MutedSpyRow.MutedSpyText
-G2L["27f"] = Instance.new("TextLabel", G2L["27d"]);
-G2L["27f"]["BorderSizePixel"] = 0;
-G2L["27f"]["TextSize"] = 14;
-G2L["27f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["27f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27f"]["BackgroundTransparency"] = 1;
-G2L["27f"]["Size"] = UDim2.new(0, 88, 0, 20);
-G2L["27f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27f"]["Text"] = [[Alert Muted Msgs]];
-G2L["27f"]["Name"] = [[MutedSpyText]];
-G2L["27f"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
-
-
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.EnlightenLogRow
-G2L["280"] = Instance.new("Frame", G2L["274"]);
-G2L["280"]["BorderSizePixel"] = 0;
-G2L["280"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["280"]["Size"] = UDim2.new(0, 169, 0, 20);
-G2L["280"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
-G2L["280"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["280"]["Name"] = [[EnlightenLogRow]];
-G2L["280"]["LayoutOrder"] = 7;
-G2L["280"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.EnlightenLogRow.EnlightenLogScript
-G2L["281"] = Instance.new("LocalScript", G2L["280"]);
-G2L["281"]["Name"] = [[EnlightenLogScript]];
-
-
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.EnlightenLogRow.EnlightenLogTickBox
-G2L["282"] = Instance.new("TextButton", G2L["280"]);
+G2L["282"] = Instance.new("TextButton", G2L["281"]);
 G2L["282"]["TextSize"] = 14;
 G2L["282"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["282"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
@@ -7088,12 +7087,12 @@ G2L["282"]["ZIndex"] = 5;
 G2L["282"]["Size"] = UDim2.new(0, 16, 0, 16);
 G2L["282"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
 G2L["282"]["Text"] = [[]];
-G2L["282"]["Name"] = [[EnlightenLogTickBox]];
+G2L["282"]["Name"] = [[MutedSpyTickBox]];
 G2L["282"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.EnlightenLogRow.EnlightenLogText
-G2L["283"] = Instance.new("TextLabel", G2L["280"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.MutedSpyRow.MutedSpyText
+G2L["283"] = Instance.new("TextLabel", G2L["281"]);
 G2L["283"]["BorderSizePixel"] = 0;
 G2L["283"]["TextSize"] = 14;
 G2L["283"]["TextXAlignment"] = Enum.TextXAlignment.Left;
@@ -7103,72 +7102,72 @@ G2L["283"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["283"]["BackgroundTransparency"] = 1;
 G2L["283"]["Size"] = UDim2.new(0, 88, 0, 20);
 G2L["283"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["283"]["Text"] = [[Alert Enlighteners]];
-G2L["283"]["Name"] = [[EnlightenLogText]];
+G2L["283"]["Text"] = [[Alert Muted Msgs]];
+G2L["283"]["Name"] = [[MutedSpyText]];
 G2L["283"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.ArkSpyRow
-G2L["284"] = Instance.new("Frame", G2L["274"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.EnlightenLogRow
+G2L["284"] = Instance.new("Frame", G2L["278"]);
 G2L["284"]["BorderSizePixel"] = 0;
 G2L["284"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["284"]["Size"] = UDim2.new(0, 169, 0, 20);
 G2L["284"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
 G2L["284"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["284"]["Name"] = [[ArkSpyRow]];
-G2L["284"]["LayoutOrder"] = 6;
+G2L["284"]["Name"] = [[EnlightenLogRow]];
+G2L["284"]["LayoutOrder"] = 7;
 G2L["284"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.ArkSpyRow.ArkSpyTickBox
-G2L["285"] = Instance.new("TextButton", G2L["284"]);
-G2L["285"]["TextSize"] = 14;
-G2L["285"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["285"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["285"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["285"]["ZIndex"] = 5;
-G2L["285"]["Size"] = UDim2.new(0, 16, 0, 16);
-G2L["285"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["285"]["Text"] = [[]];
-G2L["285"]["Name"] = [[ArkSpyTickBox]];
-G2L["285"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.EnlightenLogRow.EnlightenLogScript
+G2L["285"] = Instance.new("LocalScript", G2L["284"]);
+G2L["285"]["Name"] = [[EnlightenLogScript]];
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.ArkSpyRow.ArkSpyText
-G2L["286"] = Instance.new("TextLabel", G2L["284"]);
-G2L["286"]["BorderSizePixel"] = 0;
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.EnlightenLogRow.EnlightenLogTickBox
+G2L["286"] = Instance.new("TextButton", G2L["284"]);
 G2L["286"]["TextSize"] = 14;
-G2L["286"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["286"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["286"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["286"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["286"]["BackgroundTransparency"] = 1;
-G2L["286"]["Size"] = UDim2.new(0, 88, 0, 20);
-G2L["286"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["286"]["Text"] = [[Alert Hidden Cmds]];
-G2L["286"]["Name"] = [[ArkSpyText]];
-G2L["286"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
+G2L["286"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["286"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["286"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["286"]["ZIndex"] = 5;
+G2L["286"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["286"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["286"]["Text"] = [[]];
+G2L["286"]["Name"] = [[EnlightenLogTickBox]];
+G2L["286"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.BkitDeleteRow
-G2L["287"] = Instance.new("Frame", G2L["274"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.EnlightenLogRow.EnlightenLogText
+G2L["287"] = Instance.new("TextLabel", G2L["284"]);
 G2L["287"]["BorderSizePixel"] = 0;
+G2L["287"]["TextSize"] = 14;
+G2L["287"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["287"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["287"]["Size"] = UDim2.new(0, 169, 0, 20);
-G2L["287"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
-G2L["287"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["287"]["Name"] = [[BkitDeleteRow]];
-G2L["287"]["LayoutOrder"] = 7;
+G2L["287"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["287"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["287"]["BackgroundTransparency"] = 1;
+G2L["287"]["Size"] = UDim2.new(0, 88, 0, 20);
+G2L["287"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["287"]["Text"] = [[Alert Enlighteners]];
+G2L["287"]["Name"] = [[EnlightenLogText]];
+G2L["287"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.BkitDeleteRow.BkitDeleteScript
-G2L["288"] = Instance.new("LocalScript", G2L["287"]);
-G2L["288"]["Name"] = [[BkitDeleteScript]];
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.ArkSpyRow
+G2L["288"] = Instance.new("Frame", G2L["278"]);
+G2L["288"]["BorderSizePixel"] = 0;
+G2L["288"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["288"]["Size"] = UDim2.new(0, 169, 0, 20);
+G2L["288"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
+G2L["288"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["288"]["Name"] = [[ArkSpyRow]];
+G2L["288"]["LayoutOrder"] = 6;
+G2L["288"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.BkitDeleteRow.BkitDeleteTickBox
-G2L["289"] = Instance.new("TextButton", G2L["287"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.ArkSpyRow.ArkSpyTickBox
+G2L["289"] = Instance.new("TextButton", G2L["288"]);
 G2L["289"]["TextSize"] = 14;
 G2L["289"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["289"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
@@ -7177,12 +7176,12 @@ G2L["289"]["ZIndex"] = 5;
 G2L["289"]["Size"] = UDim2.new(0, 16, 0, 16);
 G2L["289"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
 G2L["289"]["Text"] = [[]];
-G2L["289"]["Name"] = [[BkitDeleteTickBox]];
+G2L["289"]["Name"] = [[ArkSpyTickBox]];
 G2L["289"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.BkitDeleteRow.BkitDeleteText
-G2L["28a"] = Instance.new("TextLabel", G2L["287"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.ArkSpyRow.ArkSpyText
+G2L["28a"] = Instance.new("TextLabel", G2L["288"]);
 G2L["28a"]["BorderSizePixel"] = 0;
 G2L["28a"]["TextSize"] = 14;
 G2L["28a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
@@ -7192,42 +7191,43 @@ G2L["28a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["28a"]["BackgroundTransparency"] = 1;
 G2L["28a"]["Size"] = UDim2.new(0, 88, 0, 20);
 G2L["28a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28a"]["Text"] = [[Alert Bkit Disabler]];
-G2L["28a"]["Name"] = [[BkitDeleteText]];
+G2L["28a"]["Text"] = [[Alert Hidden Cmds]];
+G2L["28a"]["Name"] = [[ArkSpyText]];
 G2L["28a"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.RepPaintsRow
-G2L["28b"] = Instance.new("Frame", G2L["274"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.BkitDeleteRow
+G2L["28b"] = Instance.new("Frame", G2L["278"]);
 G2L["28b"]["BorderSizePixel"] = 0;
 G2L["28b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["28b"]["Size"] = UDim2.new(0, 169, 0, 20);
 G2L["28b"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
 G2L["28b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28b"]["Name"] = [[RepPaintsRow]];
-G2L["28b"]["LayoutOrder"] = 8;
+G2L["28b"]["Name"] = [[BkitDeleteRow]];
+G2L["28b"]["LayoutOrder"] = 7;
 G2L["28b"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.RepPaintsRow.RepPaintsScript
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.BkitDeleteRow.BkitDeleteScript
 G2L["28c"] = Instance.new("LocalScript", G2L["28b"]);
-G2L["28c"]["Name"] = [[RepPaintsScript]];
+G2L["28c"]["Name"] = [[BkitDeleteScript]];
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.RepPaintsRow.RepPaintsTickBox
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.BkitDeleteRow.BkitDeleteTickBox
 G2L["28d"] = Instance.new("TextButton", G2L["28b"]);
 G2L["28d"]["TextSize"] = 14;
 G2L["28d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["28d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["28d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28d"]["ZIndex"] = 5;
 G2L["28d"]["Size"] = UDim2.new(0, 16, 0, 16);
 G2L["28d"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
 G2L["28d"]["Text"] = [[]];
-G2L["28d"]["Name"] = [[RepPaintsTickBox]];
+G2L["28d"]["Name"] = [[BkitDeleteTickBox]];
 G2L["28d"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.RepPaintsRow.RepPaintsText
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.BkitDeleteRow.BkitDeleteText
 G2L["28e"] = Instance.new("TextLabel", G2L["28b"]);
 G2L["28e"]["BorderSizePixel"] = 0;
 G2L["28e"]["TextSize"] = 14;
@@ -7238,97 +7238,95 @@ G2L["28e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["28e"]["BackgroundTransparency"] = 1;
 G2L["28e"]["Size"] = UDim2.new(0, 88, 0, 20);
 G2L["28e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28e"]["Text"] = [[Alert Rep Changes]];
-G2L["28e"]["Name"] = [[RepPaintsText]];
+G2L["28e"]["Text"] = [[Alert Bkit Disabler]];
+G2L["28e"]["Name"] = [[BkitDeleteText]];
 G2L["28e"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.OPENCONSOLE
-G2L["28f"] = Instance.new("TextButton", G2L["15"]);
-G2L["28f"]["TextWrapped"] = true;
-G2L["28f"]["TextSize"] = 12;
-G2L["28f"]["TextScaled"] = true;
-G2L["28f"]["TextColor3"] = Color3.fromRGB(125, 125, 125);
-G2L["28f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["28f"]["Size"] = UDim2.new(0, 60, 0, 25);
-G2L["28f"]["LayoutOrder"] = 5;
-G2L["28f"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["28f"]["Text"] = [[OPEN CONSOLE]];
-G2L["28f"]["Name"] = [[OPENCONSOLE]];
-G2L["28f"]["Position"] = UDim2.new(-0.186, 0, 0.906, 0);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.RepPaintsRow
+G2L["28f"] = Instance.new("Frame", G2L["278"]);
+G2L["28f"]["BorderSizePixel"] = 0;
+G2L["28f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28f"]["Size"] = UDim2.new(0, 169, 0, 20);
+G2L["28f"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
+G2L["28f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28f"]["Name"] = [[RepPaintsRow]];
+G2L["28f"]["LayoutOrder"] = 8;
+G2L["28f"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.OPENCONSOLE.LocalScript
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.RepPaintsRow.RepPaintsScript
 G2L["290"] = Instance.new("LocalScript", G2L["28f"]);
+G2L["290"]["Name"] = [[RepPaintsScript]];
 
 
-
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage
-G2L["291"] = Instance.new("ScrollingFrame", G2L["15"]);
-G2L["291"]["Visible"] = false;
-G2L["291"]["Active"] = true;
-G2L["291"]["BorderSizePixel"] = 0;
-G2L["291"]["CanvasSize"] = UDim2.new(0, 0, 1.1, 0);
-G2L["291"]["Name"] = [[MenuPage]];
-G2L["291"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
-G2L["291"]["Size"] = UDim2.new(0, 349, 0, 250);
-G2L["291"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["291"]["Position"] = UDim2.new(0.02329, 0, 0.03008, 0);
-G2L["291"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["291"]["ScrollBarThickness"] = 0;
-G2L["291"]["BackgroundTransparency"] = 1;
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.RepPaintsRow.RepPaintsTickBox
+G2L["291"] = Instance.new("TextButton", G2L["28f"]);
+G2L["291"]["TextSize"] = 14;
+G2L["291"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["291"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["291"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["291"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["291"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["291"]["Text"] = [[]];
+G2L["291"]["Name"] = [[RepPaintsTickBox]];
+G2L["291"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide
-G2L["292"] = Instance.new("Frame", G2L["291"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.RepPaintsRow.RepPaintsText
+G2L["292"] = Instance.new("TextLabel", G2L["28f"]);
 G2L["292"]["BorderSizePixel"] = 0;
-G2L["292"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 18);
-G2L["292"]["Size"] = UDim2.new(0, 170, 0, 360);
-G2L["292"]["Position"] = UDim2.new(0, 0, 0.00439, 0);
-G2L["292"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["292"]["Name"] = [[MenuLeftSide]];
+G2L["292"]["TextSize"] = 14;
+G2L["292"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["292"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["292"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["292"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["292"]["BackgroundTransparency"] = 1;
+G2L["292"]["Size"] = UDim2.new(0, 88, 0, 20);
+G2L["292"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["292"]["Text"] = [[Alert Rep Changes]];
+G2L["292"]["Name"] = [[RepPaintsText]];
+G2L["292"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.UIListLayout
-G2L["293"] = Instance.new("UIListLayout", G2L["292"]);
-G2L["293"]["Padding"] = UDim.new(0, 7);
-G2L["293"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup
+G2L["293"] = Instance.new("Frame", G2L["276"]);
+G2L["293"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["293"]["BorderMode"] = Enum.BorderMode.Middle;
+G2L["293"]["Size"] = UDim2.new(0, 170, 0, 62);
+G2L["293"]["Position"] = UDim2.new(0, 0, 0.41944, 0);
+G2L["293"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["293"]["Name"] = [[PlayerAlertGroup]];
+G2L["293"]["LayoutOrder"] = 2;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup
-G2L["294"] = Instance.new("Frame", G2L["292"]);
-G2L["294"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
-G2L["294"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["294"]["Size"] = UDim2.new(0, 170, 0, 82);
-G2L["294"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["294"]["Name"] = [[ServerGroup]];
-G2L["294"]["LayoutOrder"] = 2;
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.PlayerAlertTooltip
+G2L["294"] = Instance.new("LocalScript", G2L["293"]);
+G2L["294"]["Name"] = [[PlayerAlertTooltip]];
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerScript
-G2L["295"] = Instance.new("LocalScript", G2L["294"]);
-G2L["295"]["Name"] = [[ServerScript]];
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.PlayerAlertScript
+G2L["295"] = Instance.new("LocalScript", G2L["293"]);
+G2L["295"]["Name"] = [[PlayerAlertScript]];
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.UIListLayout
-G2L["296"] = Instance.new("UIListLayout", G2L["294"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.UIListLayout
+G2L["296"] = Instance.new("UIListLayout", G2L["293"]);
 G2L["296"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerAccentColor
-G2L["297"] = Instance.new("Frame", G2L["294"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.PlayerAlertAccentColor
+G2L["297"] = Instance.new("Frame", G2L["293"]);
 G2L["297"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
 G2L["297"]["AutomaticSize"] = Enum.AutomaticSize.X;
 G2L["297"]["Size"] = UDim2.new(0, 169, 0, 2);
 G2L["297"]["Position"] = UDim2.new(0.00294, 0, 0.00658, 0);
 G2L["297"]["BorderColor3"] = Color3.fromRGB(0, 92, 189);
-G2L["297"]["Name"] = [[ServerAccentColor]];
+G2L["297"]["Name"] = [[PlayerAlertAccentColor]];
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerTitle
-G2L["298"] = Instance.new("TextLabel", G2L["294"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.PlayerAlertTitle
+G2L["298"] = Instance.new("TextLabel", G2L["293"]);
 G2L["298"]["TextWrapped"] = true;
 G2L["298"]["BorderSizePixel"] = 0;
 G2L["298"]["TextSize"] = 14;
@@ -7339,13 +7337,13 @@ G2L["298"]["TextColor3"] = Color3.fromRGB(190, 190, 190);
 G2L["298"]["BackgroundTransparency"] = 0.95;
 G2L["298"]["Size"] = UDim2.new(0, 169, 0, 15);
 G2L["298"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["298"]["Text"] = [[Server Info (NEW)]];
+G2L["298"]["Text"] = [[Player Alerts (NEW)]];
 G2L["298"]["LayoutOrder"] = 1;
-G2L["298"]["Name"] = [[ServerTitle]];
+G2L["298"]["Name"] = [[PlayerAlertTitle]];
 G2L["298"]["Position"] = UDim2.new(0.00294, 0, 0.03289, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerTitle.ServerMinimize
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.PlayerAlertTitle.PlayerAlertMinimize
 G2L["299"] = Instance.new("TextButton", G2L["298"]);
 G2L["299"]["BorderSizePixel"] = 0;
 G2L["299"]["TextSize"] = 14;
@@ -7356,686 +7354,926 @@ G2L["299"]["BackgroundTransparency"] = 1;
 G2L["299"]["Size"] = UDim2.new(0, 20, 0, 15);
 G2L["299"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["299"]["Text"] = [[-]];
-G2L["299"]["Name"] = [[ServerMinimize]];
+G2L["299"]["Name"] = [[PlayerAlertMinimize]];
 G2L["299"]["Position"] = UDim2.new(0.88166, 0, 0, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerInfoFrame
-G2L["29a"] = Instance.new("Frame", G2L["294"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.WelcomeRow
+G2L["29a"] = Instance.new("Frame", G2L["293"]);
 G2L["29a"]["BorderSizePixel"] = 0;
 G2L["29a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["29a"]["Size"] = UDim2.new(0, 169, 0, 20);
 G2L["29a"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
 G2L["29a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29a"]["Name"] = [[ServerInfoFrame]];
+G2L["29a"]["Name"] = [[WelcomeRow]];
 G2L["29a"]["LayoutOrder"] = 2;
 G2L["29a"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerInfoFrame.ServerInfoText
-G2L["29b"] = Instance.new("TextLabel", G2L["29a"]);
-G2L["29b"]["TextWrapped"] = true;
-G2L["29b"]["BorderSizePixel"] = 0;
-G2L["29b"]["TextSize"] = 14;
-G2L["29b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["29b"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["29b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["29b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29b"]["BackgroundTransparency"] = 1;
-G2L["29b"]["RichText"] = true;
-G2L["29b"]["Size"] = UDim2.new(0, 159, 0, 64);
-G2L["29b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29b"]["Text"] = [[👥 Players: 0/0
-🌐 Region: N/A
-⌛ Uptime: 0h 0m 0s
-📶 Latency: 0ms]];
-G2L["29b"]["Name"] = [[ServerInfoText]];
-G2L["29b"]["Position"] = UDim2.new(0.02367, 0, 0, 0);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.WelcomeRow.WelcomeScript
+G2L["29b"] = Instance.new("LocalScript", G2L["29a"]);
+G2L["29b"]["Name"] = [[WelcomeScript]];
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerInfoFrame.ServerInfoText.ServerInfoScript
-G2L["29c"] = Instance.new("LocalScript", G2L["29b"]);
-G2L["29c"]["Name"] = [[ServerInfoScript]];
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.WelcomeRow.WelcomeTickBox
+G2L["29c"] = Instance.new("TextButton", G2L["29a"]);
+G2L["29c"]["TextSize"] = 14;
+G2L["29c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["29c"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["29c"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["29c"]["Text"] = [[]];
+G2L["29c"]["Name"] = [[WelcomeTickBox]];
+G2L["29c"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide
-G2L["29d"] = Instance.new("Frame", G2L["291"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.WelcomeRow.WelcomeText
+G2L["29d"] = Instance.new("TextLabel", G2L["29a"]);
 G2L["29d"]["BorderSizePixel"] = 0;
-G2L["29d"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 18);
-G2L["29d"]["Size"] = UDim2.new(0, 170, 0, 360);
-G2L["29d"]["Position"] = UDim2.new(0.51003, 0, 0.00439, 0);
-G2L["29d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29d"]["Name"] = [[MenuRightSide]];
+G2L["29d"]["TextSize"] = 14;
+G2L["29d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["29d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["29d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["29d"]["BackgroundTransparency"] = 1;
+G2L["29d"]["Size"] = UDim2.new(0, 88, 0, 20);
+G2L["29d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29d"]["Text"] = [[Welcome Messages]];
+G2L["29d"]["Name"] = [[WelcomeText]];
+G2L["29d"]["Position"] = UDim2.new(0.17751, 0, 0, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UIListLayout
-G2L["29e"] = Instance.new("UIListLayout", G2L["29d"]);
-G2L["29e"]["Padding"] = UDim.new(0, 7);
-G2L["29e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.WelcomeMSGRow
+G2L["29e"] = Instance.new("Frame", G2L["293"]);
+G2L["29e"]["BorderSizePixel"] = 0;
+G2L["29e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29e"]["Size"] = UDim2.new(0, 169, 0, 20);
+G2L["29e"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
+G2L["29e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29e"]["Name"] = [[WelcomeMSGRow]];
+G2L["29e"]["LayoutOrder"] = 3;
+G2L["29e"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup
-G2L["29f"] = Instance.new("Frame", G2L["29d"]);
-G2L["29f"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
-G2L["29f"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["29f"]["Size"] = UDim2.new(0, 170, 0, 131);
-G2L["29f"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["29f"]["Name"] = [[UpLogsGroup]];
-G2L["29f"]["LayoutOrder"] = 2;
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.WelcomeMSGRow.WelcomeMSGScript
+G2L["29f"] = Instance.new("LocalScript", G2L["29e"]);
+G2L["29f"]["Name"] = [[WelcomeMSGScript]];
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.UpLogsScript
-G2L["2a0"] = Instance.new("LocalScript", G2L["29f"]);
-G2L["2a0"]["Name"] = [[UpLogsScript]];
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.WelcomeMSGRow.WelcomeMSGChanger
+G2L["2a0"] = Instance.new("TextBox", G2L["29e"]);
+G2L["2a0"]["Name"] = [[WelcomeMSGChanger]];
+G2L["2a0"]["PlaceholderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2a0"]["TextWrapped"] = true;
+G2L["2a0"]["TextSize"] = 14;
+G2L["2a0"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2a0"]["TextScaled"] = true;
+G2L["2a0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a0"]["ClearTextOnFocus"] = false;
+G2L["2a0"]["Size"] = UDim2.new(0, 134, 0, 16);
+G2L["2a0"]["Position"] = UDim2.new(0.17751, 0, 0.16, 0);
+G2L["2a0"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["2a0"]["Text"] = [[]];
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.UIListLayout
-G2L["2a1"] = Instance.new("UIListLayout", G2L["29f"]);
-G2L["2a1"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.WelcomeMSGRow.WelcomeMSGHelp
+G2L["2a1"] = Instance.new("TextButton", G2L["29e"]);
+G2L["2a1"]["TextSize"] = 14;
+G2L["2a1"]["TextColor3"] = Color3.fromRGB(96, 96, 96);
+G2L["2a1"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["2a1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2a1"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["2a1"]["BorderColor3"] = Color3.fromRGB(82, 82, 82);
+G2L["2a1"]["Text"] = [[?]];
+G2L["2a1"]["Name"] = [[WelcomeMSGHelp]];
+G2L["2a1"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.UpLogsAccentColor
-G2L["2a2"] = Instance.new("Frame", G2L["29f"]);
-G2L["2a2"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2a2"]["AutomaticSize"] = Enum.AutomaticSize.X;
-G2L["2a2"]["Size"] = UDim2.new(0, 169, 0, 2);
-G2L["2a2"]["Position"] = UDim2.new(0.00294, 0, 0.00658, 0);
-G2L["2a2"]["BorderColor3"] = Color3.fromRGB(0, 92, 189);
-G2L["2a2"]["Name"] = [[UpLogsAccentColor]];
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.OPENCONSOLE
+G2L["2a2"] = Instance.new("TextButton", G2L["15"]);
+G2L["2a2"]["TextWrapped"] = true;
+G2L["2a2"]["TextSize"] = 12;
+G2L["2a2"]["TextScaled"] = true;
+G2L["2a2"]["TextColor3"] = Color3.fromRGB(125, 125, 125);
+G2L["2a2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a2"]["Size"] = UDim2.new(0, 60, 0, 25);
+G2L["2a2"]["LayoutOrder"] = 5;
+G2L["2a2"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["2a2"]["Text"] = [[OPEN CONSOLE]];
+G2L["2a2"]["Name"] = [[OPENCONSOLE]];
+G2L["2a2"]["Position"] = UDim2.new(-0.186, 0, 0.906, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.UpLogsTitle
-G2L["2a3"] = Instance.new("TextLabel", G2L["29f"]);
-G2L["2a3"]["TextWrapped"] = true;
-G2L["2a3"]["BorderSizePixel"] = 0;
-G2L["2a3"]["TextSize"] = 14;
-G2L["2a3"]["TextScaled"] = true;
-G2L["2a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2a3"]["TextColor3"] = Color3.fromRGB(190, 190, 190);
-G2L["2a3"]["BackgroundTransparency"] = 0.95;
-G2L["2a3"]["Size"] = UDim2.new(0, 169, 0, 15);
-G2L["2a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a3"]["Text"] = [[Change Log (NEW)]];
-G2L["2a3"]["LayoutOrder"] = 1;
-G2L["2a3"]["Name"] = [[UpLogsTitle]];
-G2L["2a3"]["Position"] = UDim2.new(0.00294, 0, 0.03289, 0);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.OPENCONSOLE.LocalScript
+G2L["2a3"] = Instance.new("LocalScript", G2L["2a2"]);
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.UpLogsTitle.UpLogsMinimize
-G2L["2a4"] = Instance.new("TextButton", G2L["2a3"]);
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage
+G2L["2a4"] = Instance.new("ScrollingFrame", G2L["15"]);
+G2L["2a4"]["Active"] = true;
 G2L["2a4"]["BorderSizePixel"] = 0;
-G2L["2a4"]["TextSize"] = 14;
-G2L["2a4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2a4"]["BackgroundTransparency"] = 1;
-G2L["2a4"]["Size"] = UDim2.new(0, 20, 0, 15);
+G2L["2a4"]["CanvasSize"] = UDim2.new(0, 0, 1.1, 0);
+G2L["2a4"]["Name"] = [[MenuPage]];
+G2L["2a4"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["2a4"]["Size"] = UDim2.new(0, 349, 0, 250);
+G2L["2a4"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a4"]["Position"] = UDim2.new(0.02329, 0, 0.03008, 0);
 G2L["2a4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a4"]["Text"] = [[-]];
-G2L["2a4"]["Name"] = [[UpLogsMinimize]];
-G2L["2a4"]["Position"] = UDim2.new(0.88166, 0, 0, 0);
+G2L["2a4"]["ScrollBarThickness"] = 0;
+G2L["2a4"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.ScrollingRow
-G2L["2a5"] = Instance.new("Frame", G2L["29f"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide
+G2L["2a5"] = Instance.new("Frame", G2L["2a4"]);
 G2L["2a5"]["BorderSizePixel"] = 0;
-G2L["2a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a5"]["Size"] = UDim2.new(0, 169, 0, 91);
-G2L["2a5"]["Position"] = UDim2.new(0.00294, 0, 0.15217, 0);
+G2L["2a5"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 18);
+G2L["2a5"]["Size"] = UDim2.new(0, 170, 0, 360);
+G2L["2a5"]["Position"] = UDim2.new(0, 0, 0.00439, 0);
 G2L["2a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a5"]["Name"] = [[ScrollingRow]];
-G2L["2a5"]["LayoutOrder"] = 2;
+G2L["2a5"]["Name"] = [[MenuLeftSide]];
 G2L["2a5"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.ScrollingRow.ScrollingFrame
-G2L["2a6"] = Instance.new("ScrollingFrame", G2L["2a5"]);
-G2L["2a6"]["Active"] = true;
-G2L["2a6"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
-G2L["2a6"]["Size"] = UDim2.new(0, 152, 0, 103);
-G2L["2a6"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a6"]["Position"] = UDim2.new(0.05325, 0, 0.03516, 0);
-G2L["2a6"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["2a6"]["ScrollBarThickness"] = 0;
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.UIListLayout
+G2L["2a6"] = Instance.new("UIListLayout", G2L["2a5"]);
+G2L["2a6"]["Padding"] = UDim.new(0, 7);
+G2L["2a6"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.ScrollingRow.ScrollingFrame.V2.8
-G2L["2a7"] = Instance.new("Frame", G2L["2a6"]);
-G2L["2a7"]["BorderSizePixel"] = 0;
-G2L["2a7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a7"]["Size"] = UDim2.new(0, 152, 0, 76);
-G2L["2a7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a7"]["Name"] = [[V2.8]];
-G2L["2a7"]["LayoutOrder"] = 1000;
-G2L["2a7"]["BackgroundTransparency"] = 1;
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup
+G2L["2a7"] = Instance.new("Frame", G2L["2a5"]);
+G2L["2a7"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["2a7"]["BorderMode"] = Enum.BorderMode.Middle;
+G2L["2a7"]["Size"] = UDim2.new(0, 170, 0, 82);
+G2L["2a7"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["2a7"]["Name"] = [[ServerGroup]];
+G2L["2a7"]["LayoutOrder"] = 2;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.ScrollingRow.ScrollingFrame.V2.8.V2.8
-G2L["2a8"] = Instance.new("TextLabel", G2L["2a7"]);
-G2L["2a8"]["TextWrapped"] = true;
-G2L["2a8"]["BorderSizePixel"] = 0;
-G2L["2a8"]["TextSize"] = 12;
-G2L["2a8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["2a8"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["2a8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2a8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a8"]["BackgroundTransparency"] = 1;
-G2L["2a8"]["RichText"] = true;
-G2L["2a8"]["Size"] = UDim2.new(0, 133, 0, 76);
-G2L["2a8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a8"]["Text"] = [[===== v2.7 > v2.8<br />New Features - New menu page and server status. New Tools setection (TCO).<br />Bug Fixes: Stronger auto grab (TCO).<br />=====]];
-G2L["2a8"]["Name"] = [[V2.8]];
-G2L["2a8"]["Position"] = UDim2.new(0.04605, 0, 0, 0);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerScript
+G2L["2a8"] = Instance.new("LocalScript", G2L["2a7"]);
+G2L["2a8"]["Name"] = [[ServerScript]];
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.ScrollingRow.ScrollingFrame.UIListLayout
-G2L["2a9"] = Instance.new("UIListLayout", G2L["2a6"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.UIListLayout
+G2L["2a9"] = Instance.new("UIListLayout", G2L["2a7"]);
 G2L["2a9"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.AgarWareGui.MainFrame.TopBar
-G2L["2aa"] = Instance.new("Frame", G2L["8"]);
-G2L["2aa"]["BorderSizePixel"] = 0;
-G2L["2aa"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
-G2L["2aa"]["Size"] = UDim2.new(0, 442, 0, 25);
-G2L["2aa"]["Position"] = UDim2.new(-0, 0, 0, 0);
-G2L["2aa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2aa"]["Name"] = [[TopBar]];
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerAccentColor
+G2L["2aa"] = Instance.new("Frame", G2L["2a7"]);
+G2L["2aa"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2aa"]["AutomaticSize"] = Enum.AutomaticSize.X;
+G2L["2aa"]["Size"] = UDim2.new(0, 169, 0, 2);
+G2L["2aa"]["Position"] = UDim2.new(0.00294, 0, 0.00658, 0);
+G2L["2aa"]["BorderColor3"] = Color3.fromRGB(0, 92, 189);
+G2L["2aa"]["Name"] = [[ServerAccentColor]];
 
 
--- StarterGui.AgarWareGui.MainFrame.TopBar.MinimizeDragScript
-G2L["2ab"] = Instance.new("LocalScript", G2L["2aa"]);
-G2L["2ab"]["Name"] = [[MinimizeDragScript]];
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerTitle
+G2L["2ab"] = Instance.new("TextLabel", G2L["2a7"]);
+G2L["2ab"]["TextWrapped"] = true;
+G2L["2ab"]["BorderSizePixel"] = 0;
+G2L["2ab"]["TextSize"] = 14;
+G2L["2ab"]["TextScaled"] = true;
+G2L["2ab"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ab"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ab"]["TextColor3"] = Color3.fromRGB(190, 190, 190);
+G2L["2ab"]["BackgroundTransparency"] = 0.95;
+G2L["2ab"]["Size"] = UDim2.new(0, 169, 0, 15);
+G2L["2ab"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ab"]["Text"] = [[Server Info (NEW)]];
+G2L["2ab"]["LayoutOrder"] = 1;
+G2L["2ab"]["Name"] = [[ServerTitle]];
+G2L["2ab"]["Position"] = UDim2.new(0.00294, 0, 0.03289, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.TopBar.TITLEScript
-G2L["2ac"] = Instance.new("LocalScript", G2L["2aa"]);
-G2L["2ac"]["Name"] = [[TITLEScript]];
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerTitle.ServerMinimize
+G2L["2ac"] = Instance.new("TextButton", G2L["2ab"]);
+G2L["2ac"]["BorderSizePixel"] = 0;
+G2L["2ac"]["TextSize"] = 14;
+G2L["2ac"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ac"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ac"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ac"]["BackgroundTransparency"] = 1;
+G2L["2ac"]["Size"] = UDim2.new(0, 20, 0, 15);
+G2L["2ac"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ac"]["Text"] = [[-]];
+G2L["2ac"]["Name"] = [[ServerMinimize]];
+G2L["2ac"]["Position"] = UDim2.new(0.88166, 0, 0, 0);
 
 
--- StarterGui.AgarWareGui.MainFrame.TopBar.MinimizeGUI
-G2L["2ad"] = Instance.new("TextButton", G2L["2aa"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerInfoFrame
+G2L["2ad"] = Instance.new("Frame", G2L["2a7"]);
 G2L["2ad"]["BorderSizePixel"] = 0;
-G2L["2ad"]["TextSize"] = 14;
-G2L["2ad"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2ad"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2ad"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2ad"]["BackgroundTransparency"] = 1;
-G2L["2ad"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["2ad"]["Size"] = UDim2.new(0, 169, 0, 20);
+G2L["2ad"]["Position"] = UDim2.new(0.00294, 0, 0.175, 0);
 G2L["2ad"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2ad"]["Text"] = [[-]];
-G2L["2ad"]["Name"] = [[MinimizeGUI]];
-G2L["2ad"]["Position"] = UDim2.new(0.99919, -25, 0, 0);
+G2L["2ad"]["Name"] = [[ServerInfoFrame]];
+G2L["2ad"]["LayoutOrder"] = 2;
+G2L["2ad"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.MainFrame.TopBar.TITLE
-G2L["2ae"] = Instance.new("TextLabel", G2L["2aa"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerInfoFrame.ServerInfoText
+G2L["2ae"] = Instance.new("TextLabel", G2L["2ad"]);
+G2L["2ae"]["TextWrapped"] = true;
 G2L["2ae"]["BorderSizePixel"] = 0;
-G2L["2ae"]["TextSize"] = 12;
+G2L["2ae"]["TextSize"] = 14;
 G2L["2ae"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2ae"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["2ae"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2ae"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["2ae"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2ae"]["BackgroundTransparency"] = 1;
 G2L["2ae"]["RichText"] = true;
-G2L["2ae"]["Size"] = UDim2.new(0, 200, 0, 25);
+G2L["2ae"]["Size"] = UDim2.new(0, 159, 0, 64);
 G2L["2ae"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2ae"]["Text"] = [[AGAR WARE | 60 fps | players: 1]];
-G2L["2ae"]["Name"] = [[TITLE]];
-G2L["2ae"]["Position"] = UDim2.new(0.00679, 0, 0, 0);
+G2L["2ae"]["Text"] = [[👥 Players: 0/0
+🌐 Region: N/A
+⌛ Uptime: 0h 0m 0s
+📶 Latency: 0ms]];
+G2L["2ae"]["Name"] = [[ServerInfoText]];
+G2L["2ae"]["Position"] = UDim2.new(0.02367, 0, 0, 0);
 
 
--- StarterGui.AgarWareGui.KeybindFrame
-G2L["2af"] = Instance.new("Frame", G2L["1"]);
-G2L["2af"]["ZIndex"] = 999999999;
-G2L["2af"]["BorderSizePixel"] = 0;
-G2L["2af"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
-G2L["2af"]["Size"] = UDim2.new(0, 80, 0, 88);
-G2L["2af"]["Position"] = UDim2.new(0.70017, 0, 0.01856, 0);
-G2L["2af"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2af"]["Name"] = [[KeybindFrame]];
-G2L["2af"]["BackgroundTransparency"] = 0.9;
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerInfoFrame.ServerInfoText.ServerInfoScript
+G2L["2af"] = Instance.new("LocalScript", G2L["2ae"]);
+G2L["2af"]["Name"] = [[ServerInfoScript]];
 
 
--- StarterGui.AgarWareGui.KeybindFrame.KeybindHideScript
-G2L["2b0"] = Instance.new("LocalScript", G2L["2af"]);
-G2L["2b0"]["Name"] = [[KeybindHideScript]];
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide
+G2L["2b0"] = Instance.new("Frame", G2L["2a4"]);
+G2L["2b0"]["BorderSizePixel"] = 0;
+G2L["2b0"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 18);
+G2L["2b0"]["Size"] = UDim2.new(0, 170, 0, 360);
+G2L["2b0"]["Position"] = UDim2.new(0.51003, 0, 0.00439, 0);
+G2L["2b0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b0"]["Name"] = [[MenuRightSide]];
+G2L["2b0"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.KeybindFrame.KeybindLockScript
-G2L["2b1"] = Instance.new("LocalScript", G2L["2af"]);
-G2L["2b1"]["Name"] = [[KeybindLockScript]];
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UIListLayout
+G2L["2b1"] = Instance.new("UIListLayout", G2L["2b0"]);
+G2L["2b1"]["Padding"] = UDim.new(0, 7);
+G2L["2b1"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.AgarWareGui.KeybindFrame.KeybindDragScript
-G2L["2b2"] = Instance.new("LocalScript", G2L["2af"]);
-G2L["2b2"]["Name"] = [[KeybindDragScript]];
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup
+G2L["2b2"] = Instance.new("Frame", G2L["2b0"]);
+G2L["2b2"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["2b2"]["BorderMode"] = Enum.BorderMode.Middle;
+G2L["2b2"]["Size"] = UDim2.new(0, 170, 0, 131);
+G2L["2b2"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["2b2"]["Name"] = [[UpLogsGroup]];
+G2L["2b2"]["LayoutOrder"] = 2;
 
 
--- StarterGui.AgarWareGui.KeybindFrame.HideGUI
-G2L["2b3"] = Instance.new("TextButton", G2L["2af"]);
-G2L["2b3"]["TextSize"] = 14;
-G2L["2b3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b3"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
-G2L["2b3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2b3"]["Size"] = UDim2.new(0, 80, 0, 25);
-G2L["2b3"]["LayoutOrder"] = 1;
-G2L["2b3"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2b3"]["Text"] = [[Hide GUI]];
-G2L["2b3"]["Name"] = [[HideGUI]];
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.UpLogsScript
+G2L["2b3"] = Instance.new("LocalScript", G2L["2b2"]);
+G2L["2b3"]["Name"] = [[UpLogsScript]];
 
 
--- StarterGui.AgarWareGui.KeybindFrame.UIListLayout
-G2L["2b4"] = Instance.new("UIListLayout", G2L["2af"]);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.UIListLayout
+G2L["2b4"] = Instance.new("UIListLayout", G2L["2b2"]);
 G2L["2b4"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.UpLogsAccentColor
+G2L["2b5"] = Instance.new("Frame", G2L["2b2"]);
+G2L["2b5"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2b5"]["AutomaticSize"] = Enum.AutomaticSize.X;
+G2L["2b5"]["Size"] = UDim2.new(0, 169, 0, 2);
+G2L["2b5"]["Position"] = UDim2.new(0.00294, 0, 0.00658, 0);
+G2L["2b5"]["BorderColor3"] = Color3.fromRGB(0, 92, 189);
+G2L["2b5"]["Name"] = [[UpLogsAccentColor]];
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.UpLogsTitle
+G2L["2b6"] = Instance.new("TextLabel", G2L["2b2"]);
+G2L["2b6"]["TextWrapped"] = true;
+G2L["2b6"]["BorderSizePixel"] = 0;
+G2L["2b6"]["TextSize"] = 14;
+G2L["2b6"]["TextScaled"] = true;
+G2L["2b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b6"]["TextColor3"] = Color3.fromRGB(190, 190, 190);
+G2L["2b6"]["BackgroundTransparency"] = 0.95;
+G2L["2b6"]["Size"] = UDim2.new(0, 169, 0, 15);
+G2L["2b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b6"]["Text"] = [[Change Log (NEW)]];
+G2L["2b6"]["LayoutOrder"] = 1;
+G2L["2b6"]["Name"] = [[UpLogsTitle]];
+G2L["2b6"]["Position"] = UDim2.new(0.00294, 0, 0.03289, 0);
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.UpLogsTitle.UpLogsMinimize
+G2L["2b7"] = Instance.new("TextButton", G2L["2b6"]);
+G2L["2b7"]["BorderSizePixel"] = 0;
+G2L["2b7"]["TextSize"] = 14;
+G2L["2b7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b7"]["BackgroundTransparency"] = 1;
+G2L["2b7"]["Size"] = UDim2.new(0, 20, 0, 15);
+G2L["2b7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b7"]["Text"] = [[-]];
+G2L["2b7"]["Name"] = [[UpLogsMinimize]];
+G2L["2b7"]["Position"] = UDim2.new(0.88166, 0, 0, 0);
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.ScrollingRow
+G2L["2b8"] = Instance.new("Frame", G2L["2b2"]);
+G2L["2b8"]["BorderSizePixel"] = 0;
+G2L["2b8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b8"]["Size"] = UDim2.new(0, 169, 0, 91);
+G2L["2b8"]["Position"] = UDim2.new(0.00294, 0, 0.15217, 0);
+G2L["2b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b8"]["Name"] = [[ScrollingRow]];
+G2L["2b8"]["LayoutOrder"] = 2;
+G2L["2b8"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.ScrollingRow.ScrollingFrame
+G2L["2b9"] = Instance.new("ScrollingFrame", G2L["2b8"]);
+G2L["2b9"]["Active"] = true;
+G2L["2b9"]["CanvasSize"] = UDim2.new(0, 0, 3, 0);
+G2L["2b9"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["2b9"]["Size"] = UDim2.new(0, 152, 0, 103);
+G2L["2b9"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b9"]["Position"] = UDim2.new(0.05325, 0, 0.03516, 0);
+G2L["2b9"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["2b9"]["ScrollBarThickness"] = 0;
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.ScrollingRow.ScrollingFrame.V2.8
+G2L["2ba"] = Instance.new("Frame", G2L["2b9"]);
+G2L["2ba"]["BorderSizePixel"] = 0;
+G2L["2ba"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ba"]["Size"] = UDim2.new(0, 152, 0, 103);
+G2L["2ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ba"]["Name"] = [[V2.8]];
+G2L["2ba"]["LayoutOrder"] = 1000;
+G2L["2ba"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.ScrollingRow.ScrollingFrame.V2.8.V2.8
+G2L["2bb"] = Instance.new("TextLabel", G2L["2ba"]);
+G2L["2bb"]["TextWrapped"] = true;
+G2L["2bb"]["BorderSizePixel"] = 0;
+G2L["2bb"]["TextSize"] = 12;
+G2L["2bb"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2bb"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["2bb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2bb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2bb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2bb"]["BackgroundTransparency"] = 1;
+G2L["2bb"]["RichText"] = true;
+G2L["2bb"]["Size"] = UDim2.new(0, 133, 0, 76);
+G2L["2bb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2bb"]["Text"] = [[===== v2.7 > v2.8<br />New Features - New menu page and server status. New Tools setection (TCO).<br />Bug Fixes: Stronger auto grab (TCO).<br />=====]];
+G2L["2bb"]["Name"] = [[V2.8]];
+G2L["2bb"]["Position"] = UDim2.new(0.04605, 0, 0, 0);
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.ScrollingRow.ScrollingFrame.UIListLayout
+G2L["2bc"] = Instance.new("UIListLayout", G2L["2b9"]);
+G2L["2bc"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.ScrollingRow.ScrollingFrame.V2.8.1
+G2L["2bd"] = Instance.new("Frame", G2L["2b9"]);
+G2L["2bd"]["BorderSizePixel"] = 0;
+G2L["2bd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2bd"]["Size"] = UDim2.new(0, 152, 0, 54);
+G2L["2bd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2bd"]["Name"] = [[V2.8.1]];
+G2L["2bd"]["LayoutOrder"] = 999;
+G2L["2bd"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.ScrollingRow.ScrollingFrame.V2.8.1.V2.8.1
+G2L["2be"] = Instance.new("TextLabel", G2L["2bd"]);
+G2L["2be"]["TextWrapped"] = true;
+G2L["2be"]["BorderSizePixel"] = 0;
+G2L["2be"]["TextSize"] = 12;
+G2L["2be"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2be"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["2be"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2be"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2be"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2be"]["BackgroundTransparency"] = 1;
+G2L["2be"]["RichText"] = true;
+G2L["2be"]["Size"] = UDim2.new(0, 133, 0, 76);
+G2L["2be"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2be"]["Text"] = [[===== v2.8 > v2.8.1<br />New Features - New welcome/joins alerts in TCO>Misc.]];
+G2L["2be"]["Name"] = [[V2.8.1]];
+G2L["2be"]["Position"] = UDim2.new(0.04605, 0, 0, 0);
+
+
+-- StarterGui.AgarWareGui.MainFrame.TopBar
+G2L["2bf"] = Instance.new("Frame", G2L["8"]);
+G2L["2bf"]["BorderSizePixel"] = 0;
+G2L["2bf"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
+G2L["2bf"]["Size"] = UDim2.new(0, 442, 0, 25);
+G2L["2bf"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["2bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2bf"]["Name"] = [[TopBar]];
+
+
+-- StarterGui.AgarWareGui.MainFrame.TopBar.MinimizeDragScript
+G2L["2c0"] = Instance.new("LocalScript", G2L["2bf"]);
+G2L["2c0"]["Name"] = [[MinimizeDragScript]];
+
+
+-- StarterGui.AgarWareGui.MainFrame.TopBar.TITLEScript
+G2L["2c1"] = Instance.new("LocalScript", G2L["2bf"]);
+G2L["2c1"]["Name"] = [[TITLEScript]];
+
+
+-- StarterGui.AgarWareGui.MainFrame.TopBar.MinimizeGUI
+G2L["2c2"] = Instance.new("TextButton", G2L["2bf"]);
+G2L["2c2"]["BorderSizePixel"] = 0;
+G2L["2c2"]["TextSize"] = 14;
+G2L["2c2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c2"]["BackgroundTransparency"] = 1;
+G2L["2c2"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["2c2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c2"]["Text"] = [[-]];
+G2L["2c2"]["Name"] = [[MinimizeGUI]];
+G2L["2c2"]["Position"] = UDim2.new(0.99919, -25, 0, 0);
+
+
+-- StarterGui.AgarWareGui.MainFrame.TopBar.TITLE
+G2L["2c3"] = Instance.new("TextLabel", G2L["2bf"]);
+G2L["2c3"]["BorderSizePixel"] = 0;
+G2L["2c3"]["TextSize"] = 12;
+G2L["2c3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2c3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c3"]["BackgroundTransparency"] = 1;
+G2L["2c3"]["RichText"] = true;
+G2L["2c3"]["Size"] = UDim2.new(0, 200, 0, 25);
+G2L["2c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c3"]["Text"] = [[AGAR WARE | 60 fps | players: 1]];
+G2L["2c3"]["Name"] = [[TITLE]];
+G2L["2c3"]["Position"] = UDim2.new(0.00679, 0, 0, 0);
+
+
+-- StarterGui.AgarWareGui.KeybindFrame
+G2L["2c4"] = Instance.new("Frame", G2L["1"]);
+G2L["2c4"]["ZIndex"] = 999999999;
+G2L["2c4"]["BorderSizePixel"] = 0;
+G2L["2c4"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["2c4"]["Size"] = UDim2.new(0, 80, 0, 88);
+G2L["2c4"]["Position"] = UDim2.new(0.70017, 0, 0.01856, 0);
+G2L["2c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c4"]["Name"] = [[KeybindFrame]];
+G2L["2c4"]["BackgroundTransparency"] = 0.9;
+
+
+-- StarterGui.AgarWareGui.KeybindFrame.KeybindHideScript
+G2L["2c5"] = Instance.new("LocalScript", G2L["2c4"]);
+G2L["2c5"]["Name"] = [[KeybindHideScript]];
+
+
+-- StarterGui.AgarWareGui.KeybindFrame.KeybindLockScript
+G2L["2c6"] = Instance.new("LocalScript", G2L["2c4"]);
+G2L["2c6"]["Name"] = [[KeybindLockScript]];
+
+
+-- StarterGui.AgarWareGui.KeybindFrame.KeybindDragScript
+G2L["2c7"] = Instance.new("LocalScript", G2L["2c4"]);
+G2L["2c7"]["Name"] = [[KeybindDragScript]];
+
+
+-- StarterGui.AgarWareGui.KeybindFrame.HideGUI
+G2L["2c8"] = Instance.new("TextButton", G2L["2c4"]);
+G2L["2c8"]["TextSize"] = 14;
+G2L["2c8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c8"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
+G2L["2c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c8"]["Size"] = UDim2.new(0, 80, 0, 25);
+G2L["2c8"]["LayoutOrder"] = 1;
+G2L["2c8"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2c8"]["Text"] = [[Hide GUI]];
+G2L["2c8"]["Name"] = [[HideGUI]];
+
+
+-- StarterGui.AgarWareGui.KeybindFrame.UIListLayout
+G2L["2c9"] = Instance.new("UIListLayout", G2L["2c4"]);
+G2L["2c9"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
 -- StarterGui.AgarWareGui.KeybindFrame.LockGUI
-G2L["2b5"] = Instance.new("TextButton", G2L["2af"]);
-G2L["2b5"]["TextSize"] = 14;
-G2L["2b5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b5"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
-G2L["2b5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2b5"]["Size"] = UDim2.new(0, 80, 0, 25);
-G2L["2b5"]["LayoutOrder"] = 2;
-G2L["2b5"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2b5"]["Text"] = [[Lock GUI]];
-G2L["2b5"]["Name"] = [[LockGUI]];
-G2L["2b5"]["Position"] = UDim2.new(0, 0, 0.28409, 0);
+G2L["2ca"] = Instance.new("TextButton", G2L["2c4"]);
+G2L["2ca"]["TextSize"] = 14;
+G2L["2ca"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ca"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
+G2L["2ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ca"]["Size"] = UDim2.new(0, 80, 0, 25);
+G2L["2ca"]["LayoutOrder"] = 2;
+G2L["2ca"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2ca"]["Text"] = [[Lock GUI]];
+G2L["2ca"]["Name"] = [[LockGUI]];
+G2L["2ca"]["Position"] = UDim2.new(0, 0, 0.28409, 0);
 
 
 -- StarterGui.AgarWareGui.KeybindFrame.VersionNumber
-G2L["2b6"] = Instance.new("TextButton", G2L["2af"]);
-G2L["2b6"]["TextWrapped"] = true;
-G2L["2b6"]["TextSize"] = 14;
-G2L["2b6"]["TextScaled"] = true;
-G2L["2b6"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2b6"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
-G2L["2b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2b6"]["Size"] = UDim2.new(0, 80, 0, 15);
-G2L["2b6"]["LayoutOrder"] = 30;
-G2L["2b6"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2b6"]["Text"] = [[v2.8]];
-G2L["2b6"]["Name"] = [[VersionNumber]];
-G2L["2b6"]["Position"] = UDim2.new(0, 0, 1.25, 0);
+G2L["2cb"] = Instance.new("TextButton", G2L["2c4"]);
+G2L["2cb"]["TextWrapped"] = true;
+G2L["2cb"]["TextSize"] = 14;
+G2L["2cb"]["TextScaled"] = true;
+G2L["2cb"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2cb"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
+G2L["2cb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2cb"]["Size"] = UDim2.new(0, 80, 0, 15);
+G2L["2cb"]["LayoutOrder"] = 30;
+G2L["2cb"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2cb"]["Text"] = [[v2.8.1]];
+G2L["2cb"]["Name"] = [[VersionNumber]];
+G2L["2cb"]["Position"] = UDim2.new(0, 0, 1.25, 0);
 
 
 -- StarterGui.AgarWareGui.KeybindFrame.DragGUI
-G2L["2b7"] = Instance.new("TextButton", G2L["2af"]);
-G2L["2b7"]["TextSize"] = 14;
-G2L["2b7"]["TextColor3"] = Color3.fromRGB(154, 154, 154);
-G2L["2b7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2b7"]["Size"] = UDim2.new(0, 80, 0, 25);
-G2L["2b7"]["LayoutOrder"] = 3;
-G2L["2b7"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2b7"]["Text"] = [[DRAG]];
-G2L["2b7"]["Name"] = [[DragGUI]];
+G2L["2cc"] = Instance.new("TextButton", G2L["2c4"]);
+G2L["2cc"]["TextSize"] = 14;
+G2L["2cc"]["TextColor3"] = Color3.fromRGB(154, 154, 154);
+G2L["2cc"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2cc"]["Size"] = UDim2.new(0, 80, 0, 25);
+G2L["2cc"]["LayoutOrder"] = 3;
+G2L["2cc"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2cc"]["Text"] = [[DRAG]];
+G2L["2cc"]["Name"] = [[DragGUI]];
 
 
 -- StarterGui.AgarWareGui.ConfirmGriefFrame
-G2L["2b8"] = Instance.new("Frame", G2L["1"]);
-G2L["2b8"]["Visible"] = false;
-G2L["2b8"]["ZIndex"] = 999999999;
-G2L["2b8"]["BorderSizePixel"] = 0;
-G2L["2b8"]["BackgroundColor3"] = Color3.fromRGB(0, 84, 173);
-G2L["2b8"]["Size"] = UDim2.new(0, 135, 0, 161);
-G2L["2b8"]["Position"] = UDim2.new(0.66486, 0, 0.2513, 0);
-G2L["2b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b8"]["Name"] = [[ConfirmGriefFrame]];
+G2L["2cd"] = Instance.new("Frame", G2L["1"]);
+G2L["2cd"]["Visible"] = false;
+G2L["2cd"]["ZIndex"] = 999999999;
+G2L["2cd"]["BorderSizePixel"] = 0;
+G2L["2cd"]["BackgroundColor3"] = Color3.fromRGB(0, 84, 173);
+G2L["2cd"]["Size"] = UDim2.new(0, 135, 0, 161);
+G2L["2cd"]["Position"] = UDim2.new(0.66486, 0, 0.2513, 0);
+G2L["2cd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2cd"]["Name"] = [[ConfirmGriefFrame]];
 
 
 -- StarterGui.AgarWareGui.ConfirmGriefFrame.UIListLayout
-G2L["2b9"] = Instance.new("UIListLayout", G2L["2b8"]);
-G2L["2b9"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["2ce"] = Instance.new("UIListLayout", G2L["2cd"]);
+G2L["2ce"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.AgarWareGui.ConfirmGriefFrame.FlingConfirm
-G2L["2ba"] = Instance.new("TextButton", G2L["2b8"]);
-G2L["2ba"]["TextSize"] = 16;
-G2L["2ba"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2ba"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
-G2L["2ba"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2ba"]["Size"] = UDim2.new(0, 135, 0, 47);
-G2L["2ba"]["LayoutOrder"] = 3;
-G2L["2ba"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2ba"]["Text"] = [[FLING PLAYER]];
-G2L["2ba"]["Name"] = [[FlingConfirm]];
+G2L["2cf"] = Instance.new("TextButton", G2L["2cd"]);
+G2L["2cf"]["TextSize"] = 16;
+G2L["2cf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2cf"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
+G2L["2cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2cf"]["Size"] = UDim2.new(0, 135, 0, 47);
+G2L["2cf"]["LayoutOrder"] = 3;
+G2L["2cf"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2cf"]["Text"] = [[FLING PLAYER]];
+G2L["2cf"]["Name"] = [[FlingConfirm]];
 
 
 -- StarterGui.AgarWareGui.ConfirmGriefFrame.AlertConfirm
-G2L["2bb"] = Instance.new("TextButton", G2L["2b8"]);
-G2L["2bb"]["TextWrapped"] = true;
-G2L["2bb"]["TextSize"] = 16;
-G2L["2bb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2bb"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
-G2L["2bb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2bb"]["Size"] = UDim2.new(0, 135, 0, 47);
-G2L["2bb"]["LayoutOrder"] = 3;
-G2L["2bb"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2bb"]["Text"] = [[ALERT IN CHAT]];
-G2L["2bb"]["Name"] = [[AlertConfirm]];
-G2L["2bb"]["Position"] = UDim2.new(0, 0, 0.58065, 0);
+G2L["2d0"] = Instance.new("TextButton", G2L["2cd"]);
+G2L["2d0"]["TextWrapped"] = true;
+G2L["2d0"]["TextSize"] = 16;
+G2L["2d0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d0"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
+G2L["2d0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d0"]["Size"] = UDim2.new(0, 135, 0, 47);
+G2L["2d0"]["LayoutOrder"] = 3;
+G2L["2d0"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2d0"]["Text"] = [[ALERT IN CHAT]];
+G2L["2d0"]["Name"] = [[AlertConfirm]];
+G2L["2d0"]["Position"] = UDim2.new(0, 0, 0.58065, 0);
 
 
 -- StarterGui.AgarWareGui.ConfirmGriefFrame.ConfirmTimer
-G2L["2bc"] = Instance.new("TextLabel", G2L["2b8"]);
-G2L["2bc"]["TextWrapped"] = true;
-G2L["2bc"]["TextSize"] = 14;
-G2L["2bc"]["TextScaled"] = true;
-G2L["2bc"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2bc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2bc"]["TextColor3"] = Color3.fromRGB(0, 45, 86);
-G2L["2bc"]["Size"] = UDim2.new(0, 135, 0, 14);
-G2L["2bc"]["BorderColor3"] = Color3.fromRGB(0, 67, 132);
-G2L["2bc"]["Text"] = [[(20.0)]];
-G2L["2bc"]["LayoutOrder"] = 10;
-G2L["2bc"]["Name"] = [[ConfirmTimer]];
-G2L["2bc"]["Position"] = UDim2.new(0, 0, 0.0452, 0);
+G2L["2d1"] = Instance.new("TextLabel", G2L["2cd"]);
+G2L["2d1"]["TextWrapped"] = true;
+G2L["2d1"]["TextSize"] = 14;
+G2L["2d1"]["TextScaled"] = true;
+G2L["2d1"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2d1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d1"]["TextColor3"] = Color3.fromRGB(0, 45, 86);
+G2L["2d1"]["Size"] = UDim2.new(0, 135, 0, 14);
+G2L["2d1"]["BorderColor3"] = Color3.fromRGB(0, 67, 132);
+G2L["2d1"]["Text"] = [[(20.0)]];
+G2L["2d1"]["LayoutOrder"] = 10;
+G2L["2d1"]["Name"] = [[ConfirmTimer]];
+G2L["2d1"]["Position"] = UDim2.new(0, 0, 0.0452, 0);
 
 
 -- StarterGui.AgarWareGui.ConfirmGriefFrame.FalseAlertConfirm
-G2L["2bd"] = Instance.new("TextButton", G2L["2b8"]);
-G2L["2bd"]["TextWrapped"] = true;
-G2L["2bd"]["TextSize"] = 20;
-G2L["2bd"]["TextScaled"] = true;
-G2L["2bd"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
-G2L["2bd"]["BackgroundColor3"] = Color3.fromRGB(58, 0, 0);
-G2L["2bd"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2bd"]["Size"] = UDim2.new(0, 135, 0, 23);
-G2L["2bd"]["LayoutOrder"] = 5;
-G2L["2bd"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2bd"]["Text"] = [[FALSE ALERT & CANCEL]];
-G2L["2bd"]["Name"] = [[FalseAlertConfirm]];
-G2L["2bd"]["Position"] = UDim2.new(0, 0, 0.97191, 0);
+G2L["2d2"] = Instance.new("TextButton", G2L["2cd"]);
+G2L["2d2"]["TextWrapped"] = true;
+G2L["2d2"]["TextSize"] = 20;
+G2L["2d2"]["TextScaled"] = true;
+G2L["2d2"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["2d2"]["BackgroundColor3"] = Color3.fromRGB(58, 0, 0);
+G2L["2d2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d2"]["Size"] = UDim2.new(0, 135, 0, 23);
+G2L["2d2"]["LayoutOrder"] = 5;
+G2L["2d2"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2d2"]["Text"] = [[FALSE ALERT & CANCEL]];
+G2L["2d2"]["Name"] = [[FalseAlertConfirm]];
+G2L["2d2"]["Position"] = UDim2.new(0, 0, 0.97191, 0);
 
 
 -- StarterGui.AgarWareGui.ConfirmGriefFrame.CancelConfirm
-G2L["2be"] = Instance.new("TextButton", G2L["2b8"]);
-G2L["2be"]["TextWrapped"] = true;
-G2L["2be"]["TextSize"] = 16;
-G2L["2be"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
-G2L["2be"]["BackgroundColor3"] = Color3.fromRGB(58, 0, 0);
-G2L["2be"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2be"]["Size"] = UDim2.new(0, 135, 0, 47);
-G2L["2be"]["LayoutOrder"] = 4;
-G2L["2be"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2be"]["Text"] = [[EXIT]];
-G2L["2be"]["Name"] = [[CancelConfirm]];
-G2L["2be"]["Position"] = UDim2.new(0, 0, 0.90062, 0);
+G2L["2d3"] = Instance.new("TextButton", G2L["2cd"]);
+G2L["2d3"]["TextWrapped"] = true;
+G2L["2d3"]["TextSize"] = 16;
+G2L["2d3"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["2d3"]["BackgroundColor3"] = Color3.fromRGB(58, 0, 0);
+G2L["2d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d3"]["Size"] = UDim2.new(0, 135, 0, 47);
+G2L["2d3"]["LayoutOrder"] = 4;
+G2L["2d3"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2d3"]["Text"] = [[EXIT]];
+G2L["2d3"]["Name"] = [[CancelConfirm]];
+G2L["2d3"]["Position"] = UDim2.new(0, 0, 0.90062, 0);
 
 
 -- StarterGui.AgarWareGui.ConfirmGriefFrame.GriefTargetLabel
-G2L["2bf"] = Instance.new("TextLabel", G2L["2b8"]);
-G2L["2bf"]["TextWrapped"] = true;
-G2L["2bf"]["TextSize"] = 14;
-G2L["2bf"]["TextScaled"] = true;
-G2L["2bf"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2bf"]["TextColor3"] = Color3.fromRGB(0, 45, 86);
-G2L["2bf"]["Size"] = UDim2.new(0, 135, 0, 28);
-G2L["2bf"]["BorderColor3"] = Color3.fromRGB(0, 67, 132);
-G2L["2bf"]["Text"] = [[POSSIBLE GRIEF: Username]];
-G2L["2bf"]["Name"] = [[GriefTargetLabel]];
+G2L["2d4"] = Instance.new("TextLabel", G2L["2cd"]);
+G2L["2d4"]["TextWrapped"] = true;
+G2L["2d4"]["TextSize"] = 14;
+G2L["2d4"]["TextScaled"] = true;
+G2L["2d4"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2d4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d4"]["TextColor3"] = Color3.fromRGB(0, 45, 86);
+G2L["2d4"]["Size"] = UDim2.new(0, 135, 0, 28);
+G2L["2d4"]["BorderColor3"] = Color3.fromRGB(0, 67, 132);
+G2L["2d4"]["Text"] = [[POSSIBLE GRIEF: Username]];
+G2L["2d4"]["Name"] = [[GriefTargetLabel]];
 
 
 -- StarterGui.AgarWareGui.ConfirmGriefFrame.PauseConfirm
-G2L["2c0"] = Instance.new("TextButton", G2L["2b8"]);
-G2L["2c0"]["TextWrapped"] = true;
-G2L["2c0"]["TextSize"] = 16;
-G2L["2c0"]["TextColor3"] = Color3.fromRGB(0, 45, 86);
-G2L["2c0"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2c0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2c0"]["Size"] = UDim2.new(0, 135, 0, 24);
-G2L["2c0"]["LayoutOrder"] = 9;
-G2L["2c0"]["BorderColor3"] = Color3.fromRGB(0, 67, 132);
-G2L["2c0"]["Text"] = [[PAUSE TIMER]];
-G2L["2c0"]["Name"] = [[PauseConfirm]];
-G2L["2c0"]["Position"] = UDim2.new(0, 0, 0.75776, 0);
+G2L["2d5"] = Instance.new("TextButton", G2L["2cd"]);
+G2L["2d5"]["TextWrapped"] = true;
+G2L["2d5"]["TextSize"] = 16;
+G2L["2d5"]["TextColor3"] = Color3.fromRGB(0, 45, 86);
+G2L["2d5"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2d5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d5"]["Size"] = UDim2.new(0, 135, 0, 24);
+G2L["2d5"]["LayoutOrder"] = 9;
+G2L["2d5"]["BorderColor3"] = Color3.fromRGB(0, 67, 132);
+G2L["2d5"]["Text"] = [[PAUSE TIMER]];
+G2L["2d5"]["Name"] = [[PauseConfirm]];
+G2L["2d5"]["Position"] = UDim2.new(0, 0, 0.75776, 0);
 
 
 -- StarterGui.AgarWareGui.Webhook
-G2L["2c1"] = Instance.new("Folder", G2L["1"]);
-G2L["2c1"]["Name"] = [[Webhook]];
+G2L["2d6"] = Instance.new("Folder", G2L["1"]);
+G2L["2d6"]["Name"] = [[Webhook]];
 
 
 -- StarterGui.AgarWareGui.Webhook.IngameLog
-G2L["2c2"] = Instance.new("LocalScript", G2L["2c1"]);
-G2L["2c2"]["Name"] = [[IngameLog]];
+G2L["2d7"] = Instance.new("LocalScript", G2L["2d6"]);
+G2L["2d7"]["Name"] = [[IngameLog]];
 
 
 -- StarterGui.AgarWareGui.Webhook.PealzLog
-G2L["2c3"] = Instance.new("LocalScript", G2L["2c1"]);
-G2L["2c3"]["Name"] = [[PealzLog]];
+G2L["2d8"] = Instance.new("LocalScript", G2L["2d6"]);
+G2L["2d8"]["Name"] = [[PealzLog]];
 
 
 -- StarterGui.AgarWareGui.Webhook.LagMachine
-G2L["2c4"] = Instance.new("LocalScript", G2L["2c1"]);
-G2L["2c4"]["Name"] = [[LagMachine]];
+G2L["2d9"] = Instance.new("LocalScript", G2L["2d6"]);
+G2L["2d9"]["Name"] = [[LagMachine]];
 
 
 -- StarterGui.AgarWareGui.Webhook.TCOLog
-G2L["2c5"] = Instance.new("LocalScript", G2L["2c1"]);
-G2L["2c5"]["Name"] = [[TCOLog]];
+G2L["2da"] = Instance.new("LocalScript", G2L["2d6"]);
+G2L["2da"]["Name"] = [[TCOLog]];
 
 
 -- StarterGui.AgarWareGui.Webhook.UniLog
-G2L["2c6"] = Instance.new("LocalScript", G2L["2c1"]);
-G2L["2c6"]["Name"] = [[UniLog]];
+G2L["2db"] = Instance.new("LocalScript", G2L["2d6"]);
+G2L["2db"]["Name"] = [[UniLog]];
 
 
 -- StarterGui.AgarWareGui.Webhook.ChatLogs
-G2L["2c7"] = Instance.new("LocalScript", G2L["2c1"]);
-G2L["2c7"]["Name"] = [[ChatLogs]];
+G2L["2dc"] = Instance.new("LocalScript", G2L["2d6"]);
+G2L["2dc"]["Name"] = [[ChatLogs]];
 
 
 -- StarterGui.AgarWareGui.Webhook.GlobalChatLogs
-G2L["2c8"] = Instance.new("LocalScript", G2L["2c1"]);
-G2L["2c8"]["Name"] = [[GlobalChatLogs]];
+G2L["2dd"] = Instance.new("LocalScript", G2L["2d6"]);
+G2L["2dd"]["Name"] = [[GlobalChatLogs]];
 
 
 -- StarterGui.AgarWareGui.Webhook.ChatLogsHIDDEN
-G2L["2c9"] = Instance.new("LocalScript", G2L["2c1"]);
-G2L["2c9"]["Name"] = [[ChatLogsHIDDEN]];
+G2L["2de"] = Instance.new("LocalScript", G2L["2d6"]);
+G2L["2de"]["Name"] = [[ChatLogsHIDDEN]];
 
 
 -- StarterGui.AgarWareGui.Webhook.GlobalChatLogsHIDDEN
-G2L["2ca"] = Instance.new("LocalScript", G2L["2c1"]);
-G2L["2ca"]["Name"] = [[GlobalChatLogsHIDDEN]];
+G2L["2df"] = Instance.new("LocalScript", G2L["2d6"]);
+G2L["2df"]["Name"] = [[GlobalChatLogsHIDDEN]];
 
 
 -- StarterGui.AgarWareGui.Webhook.UserChatLogs
-G2L["2cb"] = Instance.new("LocalScript", G2L["2c1"]);
-G2L["2cb"]["Name"] = [[UserChatLogs]];
+G2L["2e0"] = Instance.new("LocalScript", G2L["2d6"]);
+G2L["2e0"]["Name"] = [[UserChatLogs]];
 
 
 -- StarterGui.AgarWareGui.ColorPicker
-G2L["2cc"] = Instance.new("Frame", G2L["1"]);
-G2L["2cc"]["Visible"] = false;
-G2L["2cc"]["ZIndex"] = 999999999;
-G2L["2cc"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
-G2L["2cc"]["Size"] = UDim2.new(0, 215, 0, 291);
-G2L["2cc"]["Position"] = UDim2.new(0.48922, 0, 0.35649, 0);
-G2L["2cc"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2cc"]["Name"] = [[ColorPicker]];
+G2L["2e1"] = Instance.new("Frame", G2L["1"]);
+G2L["2e1"]["Visible"] = false;
+G2L["2e1"]["ZIndex"] = 999999999;
+G2L["2e1"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
+G2L["2e1"]["Size"] = UDim2.new(0, 215, 0, 291);
+G2L["2e1"]["Position"] = UDim2.new(0.48922, 0, 0.35649, 0);
+G2L["2e1"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2e1"]["Name"] = [[ColorPicker]];
 
 
 -- StarterGui.AgarWareGui.ColorPicker.DragColorPicker
-G2L["2cd"] = Instance.new("LocalScript", G2L["2cc"]);
-G2L["2cd"]["Name"] = [[DragColorPicker]];
+G2L["2e2"] = Instance.new("LocalScript", G2L["2e1"]);
+G2L["2e2"]["Name"] = [[DragColorPicker]];
 
 
 -- StarterGui.AgarWareGui.ColorPicker.ColorPickerScript
-G2L["2ce"] = Instance.new("LocalScript", G2L["2cc"]);
-G2L["2ce"]["Name"] = [[ColorPickerScript]];
+G2L["2e3"] = Instance.new("LocalScript", G2L["2e1"]);
+G2L["2e3"]["Name"] = [[ColorPickerScript]];
 
 
 -- StarterGui.AgarWareGui.ColorPicker.ColorPickerTitle
-G2L["2cf"] = Instance.new("TextLabel", G2L["2cc"]);
-G2L["2cf"]["BorderSizePixel"] = 0;
-G2L["2cf"]["TextSize"] = 14;
-G2L["2cf"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["2cf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2cf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2cf"]["BackgroundTransparency"] = 1;
-G2L["2cf"]["Size"] = UDim2.new(0, 200, 0, 23);
-G2L["2cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2cf"]["Text"] = [[Color Picker]];
-G2L["2cf"]["Name"] = [[ColorPickerTitle]];
-G2L["2cf"]["Position"] = UDim2.new(0.03241, 0, 0, 0);
+G2L["2e4"] = Instance.new("TextLabel", G2L["2e1"]);
+G2L["2e4"]["BorderSizePixel"] = 0;
+G2L["2e4"]["TextSize"] = 14;
+G2L["2e4"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2e4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e4"]["BackgroundTransparency"] = 1;
+G2L["2e4"]["Size"] = UDim2.new(0, 200, 0, 23);
+G2L["2e4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e4"]["Text"] = [[Color Picker]];
+G2L["2e4"]["Name"] = [[ColorPickerTitle]];
+G2L["2e4"]["Position"] = UDim2.new(0.03241, 0, 0, 0);
 
 
 -- StarterGui.AgarWareGui.ColorPicker.CloseColorPicker
-G2L["2d0"] = Instance.new("TextButton", G2L["2cc"]);
-G2L["2d0"]["BorderSizePixel"] = 0;
-G2L["2d0"]["TextSize"] = 14;
-G2L["2d0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d0"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d0"]["BackgroundTransparency"] = 1;
-G2L["2d0"]["Size"] = UDim2.new(0, 25, 0, 25);
-G2L["2d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d0"]["Text"] = [[x]];
-G2L["2d0"]["Name"] = [[CloseColorPicker]];
-G2L["2d0"]["Position"] = UDim2.new(0.88189, 0, -0.00065, 0);
+G2L["2e5"] = Instance.new("TextButton", G2L["2e1"]);
+G2L["2e5"]["BorderSizePixel"] = 0;
+G2L["2e5"]["TextSize"] = 14;
+G2L["2e5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e5"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e5"]["BackgroundTransparency"] = 1;
+G2L["2e5"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["2e5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e5"]["Text"] = [[x]];
+G2L["2e5"]["Name"] = [[CloseColorPicker]];
+G2L["2e5"]["Position"] = UDim2.new(0.88189, 0, -0.00065, 0);
 
 
 -- StarterGui.AgarWareGui.ColorPicker.HueSlider
-G2L["2d1"] = Instance.new("Frame", G2L["2cc"]);
-G2L["2d1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d1"]["Size"] = UDim2.new(0, 200, 0, 25);
-G2L["2d1"]["Position"] = UDim2.new(0.03781, 0, 0.76607, 0);
-G2L["2d1"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["2d1"]["Name"] = [[HueSlider]];
+G2L["2e6"] = Instance.new("Frame", G2L["2e1"]);
+G2L["2e6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e6"]["Size"] = UDim2.new(0, 200, 0, 25);
+G2L["2e6"]["Position"] = UDim2.new(0.03781, 0, 0.76607, 0);
+G2L["2e6"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["2e6"]["Name"] = [[HueSlider]];
 
 
 -- StarterGui.AgarWareGui.ColorPicker.SaturationValueCanvas
-G2L["2d2"] = Instance.new("Frame", G2L["2cc"]);
-G2L["2d2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d2"]["Size"] = UDim2.new(0, 200, 0, 200);
-G2L["2d2"]["Position"] = UDim2.new(0.03781, 0, 0.07878, 0);
-G2L["2d2"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["2d2"]["Name"] = [[SaturationValueCanvas]];
+G2L["2e7"] = Instance.new("Frame", G2L["2e1"]);
+G2L["2e7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e7"]["Size"] = UDim2.new(0, 200, 0, 200);
+G2L["2e7"]["Position"] = UDim2.new(0.03781, 0, 0.07878, 0);
+G2L["2e7"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["2e7"]["Name"] = [[SaturationValueCanvas]];
 
 
 -- StarterGui.AgarWareGui.ColorPicker.ColorSelect
-G2L["2d3"] = Instance.new("TextButton", G2L["2cc"]);
-G2L["2d3"]["TextSize"] = 14;
-G2L["2d3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d3"]["Size"] = UDim2.new(0, 134, 0, 25);
-G2L["2d3"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["2d3"]["Text"] = [[Select Color]];
-G2L["2d3"]["Name"] = [[ColorSelect]];
-G2L["2d3"]["Position"] = UDim2.new(0.34479, 0, 0.88097, 0);
+G2L["2e8"] = Instance.new("TextButton", G2L["2e1"]);
+G2L["2e8"]["TextSize"] = 14;
+G2L["2e8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e8"]["Size"] = UDim2.new(0, 134, 0, 25);
+G2L["2e8"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["2e8"]["Text"] = [[Select Color]];
+G2L["2e8"]["Name"] = [[ColorSelect]];
+G2L["2e8"]["Position"] = UDim2.new(0.34479, 0, 0.88097, 0);
 
 
 -- StarterGui.AgarWareGui.ColorPicker.HEX
-G2L["2d4"] = Instance.new("TextBox", G2L["2cc"]);
-G2L["2d4"]["Name"] = [[HEX]];
-G2L["2d4"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
-G2L["2d4"]["TextSize"] = 14;
-G2L["2d4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d4"]["PlaceholderText"] = [[#ffffff]];
-G2L["2d4"]["Size"] = UDim2.new(0, 68, 0, 25);
-G2L["2d4"]["Position"] = UDim2.new(0.02851, 0, 0.88097, 0);
-G2L["2d4"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["2d4"]["Text"] = [[]];
+G2L["2e9"] = Instance.new("TextBox", G2L["2e1"]);
+G2L["2e9"]["Name"] = [[HEX]];
+G2L["2e9"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
+G2L["2e9"]["TextSize"] = 14;
+G2L["2e9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e9"]["PlaceholderText"] = [[#ffffff]];
+G2L["2e9"]["Size"] = UDim2.new(0, 68, 0, 25);
+G2L["2e9"]["Position"] = UDim2.new(0.02851, 0, 0.88097, 0);
+G2L["2e9"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["2e9"]["Text"] = [[]];
 
 
 -- StarterGui.AgarWareGui.ColorPicker.HEX.HEXScript
-G2L["2d5"] = Instance.new("LocalScript", G2L["2d4"]);
-G2L["2d5"]["Name"] = [[HEXScript]];
+G2L["2ea"] = Instance.new("LocalScript", G2L["2e9"]);
+G2L["2ea"]["Name"] = [[HEXScript]];
 
 
 -- StarterGui.AgarWareGui.LoadedMainFrame
-G2L["2d6"] = Instance.new("Frame", G2L["1"]);
-G2L["2d6"]["ZIndex"] = 999999999;
-G2L["2d6"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
-G2L["2d6"]["Size"] = UDim2.new(0, 300, 0, 100);
-G2L["2d6"]["Position"] = UDim2.new(0.53471, 0, 0.36219, 0);
-G2L["2d6"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2d6"]["Name"] = [[LoadedMainFrame]];
+G2L["2eb"] = Instance.new("Frame", G2L["1"]);
+G2L["2eb"]["ZIndex"] = 999999999;
+G2L["2eb"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
+G2L["2eb"]["Size"] = UDim2.new(0, 300, 0, 100);
+G2L["2eb"]["Position"] = UDim2.new(0.53471, 0, 0.36219, 0);
+G2L["2eb"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2eb"]["Name"] = [[LoadedMainFrame]];
 
 
 -- StarterGui.AgarWareGui.LoadedMainFrame.LoadedScript
-G2L["2d7"] = Instance.new("LocalScript", G2L["2d6"]);
-G2L["2d7"]["Name"] = [[LoadedScript]];
+G2L["2ec"] = Instance.new("LocalScript", G2L["2eb"]);
+G2L["2ec"]["Name"] = [[LoadedScript]];
 
 
 -- StarterGui.AgarWareGui.LoadedMainFrame.LoadedFrame
-G2L["2d8"] = Instance.new("Frame", G2L["2d6"]);
-G2L["2d8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d8"]["Size"] = UDim2.new(0, 284, 0, 84);
-G2L["2d8"]["Position"] = UDim2.new(0.02667, 0, 0.08, 0);
-G2L["2d8"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["2d8"]["Name"] = [[LoadedFrame]];
+G2L["2ed"] = Instance.new("Frame", G2L["2eb"]);
+G2L["2ed"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ed"]["Size"] = UDim2.new(0, 284, 0, 84);
+G2L["2ed"]["Position"] = UDim2.new(0.02667, 0, 0.08, 0);
+G2L["2ed"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["2ed"]["Name"] = [[LoadedFrame]];
 
 
 -- StarterGui.AgarWareGui.LoadedMainFrame.LoadedFrame.AGARWARELOADED
-G2L["2d9"] = Instance.new("TextLabel", G2L["2d8"]);
-G2L["2d9"]["TextWrapped"] = true;
-G2L["2d9"]["BorderSizePixel"] = 0;
-G2L["2d9"]["TextSize"] = 30;
-G2L["2d9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d9"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2d9"]["BackgroundTransparency"] = 1;
-G2L["2d9"]["Size"] = UDim2.new(0, 284, 0, 61);
-G2L["2d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d9"]["Text"] = [[LOADED]];
-G2L["2d9"]["Name"] = [[AGARWARELOADED]];
+G2L["2ee"] = Instance.new("TextLabel", G2L["2ed"]);
+G2L["2ee"]["TextWrapped"] = true;
+G2L["2ee"]["BorderSizePixel"] = 0;
+G2L["2ee"]["TextSize"] = 30;
+G2L["2ee"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ee"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ee"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2ee"]["BackgroundTransparency"] = 1;
+G2L["2ee"]["Size"] = UDim2.new(0, 284, 0, 61);
+G2L["2ee"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ee"]["Text"] = [[LOADED]];
+G2L["2ee"]["Name"] = [[AGARWARELOADED]];
 
 
 -- StarterGui.AgarWareGui.LoadedMainFrame.LoadedFrame.GameNameLoaded
-G2L["2da"] = Instance.new("TextLabel", G2L["2d8"]);
-G2L["2da"]["TextWrapped"] = true;
-G2L["2da"]["BorderSizePixel"] = 0;
-G2L["2da"]["TextSize"] = 16;
-G2L["2da"]["TextTransparency"] = 0.4;
-G2L["2da"]["TextScaled"] = true;
-G2L["2da"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2da"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2da"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2da"]["BackgroundTransparency"] = 1;
-G2L["2da"]["Size"] = UDim2.new(0, 284, 0, 21);
-G2L["2da"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2da"]["Text"] = [[by agarv :)]];
-G2L["2da"]["Name"] = [[GameNameLoaded]];
-G2L["2da"]["Position"] = UDim2.new(0, 0, 0.65476, 0);
+G2L["2ef"] = Instance.new("TextLabel", G2L["2ed"]);
+G2L["2ef"]["TextWrapped"] = true;
+G2L["2ef"]["BorderSizePixel"] = 0;
+G2L["2ef"]["TextSize"] = 16;
+G2L["2ef"]["TextTransparency"] = 0.4;
+G2L["2ef"]["TextScaled"] = true;
+G2L["2ef"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ef"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ef"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ef"]["BackgroundTransparency"] = 1;
+G2L["2ef"]["Size"] = UDim2.new(0, 284, 0, 21);
+G2L["2ef"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ef"]["Text"] = [[by agarv :)]];
+G2L["2ef"]["Name"] = [[GameNameLoaded]];
+G2L["2ef"]["Position"] = UDim2.new(0, 0, 0.65476, 0);
 
 
 -- StarterGui.AgarWareGui.WebhookLogging
-G2L["2db"] = Instance.new("Folder", G2L["1"]);
-G2L["2db"]["Name"] = [[WebhookLogging]];
+G2L["2f0"] = Instance.new("Folder", G2L["1"]);
+G2L["2f0"]["Name"] = [[WebhookLogging]];
 
 
 -- StarterGui.AgarWareGui.WebhookLogging.OnlineUsers
-G2L["2dc"] = Instance.new("LocalScript", G2L["2db"]);
-G2L["2dc"]["Name"] = [[OnlineUsers]];
+G2L["2f1"] = Instance.new("LocalScript", G2L["2f0"]);
+G2L["2f1"]["Name"] = [[OnlineUsers]];
 
 
 -- StarterGui.AgarWareGui.WebhookLogging.AgarChat
-G2L["2dd"] = Instance.new("LocalScript", G2L["2db"]);
-G2L["2dd"]["Name"] = [[AgarChat]];
+G2L["2f2"] = Instance.new("LocalScript", G2L["2f0"]);
+G2L["2f2"]["Name"] = [[AgarChat]];
 
 
 -- StarterGui.AgarWareGui.Storage
-G2L["2de"] = Instance.new("Folder", G2L["1"]);
-G2L["2de"]["Name"] = [[Storage]];
+G2L["2f3"] = Instance.new("Folder", G2L["1"]);
+G2L["2f3"]["Name"] = [[Storage]];
 
 
 -- StarterGui.AgarWareGui.Storage.ResetCharacter
-G2L["2df"] = Instance.new("LocalScript", G2L["2de"]);
-G2L["2df"]["Name"] = [[ResetCharacter]];
+G2L["2f4"] = Instance.new("LocalScript", G2L["2f3"]);
+G2L["2f4"]["Name"] = [[ResetCharacter]];
 
 
 -- StarterGui.AgarWareGui.MoveToCorGui
@@ -28150,9 +28388,120 @@ local script = G2L["253"];
 	end)
 end;
 task.spawn(C_253);
--- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomboxScript
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.MiscGroup.ChatFixRow.ChatFixScript
 local function C_257()
 local script = G2L["257"];
+	local ChatFixRow = script.Parent
+	local MiscGroup = ChatFixRow.Parent
+	local MiscAccentColor = MiscGroup:WaitForChild("MiscAccentColor")
+	local ChatFixTickBox = ChatFixRow:WaitForChild("ChatFixTickBox")
+	
+	--------------------------------------------------
+	-- CHAT FIX FUNCTION
+	--------------------------------------------------
+	local isEnabled = false
+	
+	function say(text, channel)
+		coroutine.wrap(function()
+			if isEnabled then
+				-- Chat fix ON: force ; prefix and RBXGeneral
+				if string.sub(text, 1, 1) ~= ";" then
+					text = ";" .. text
+				end
+				game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(text)
+			else
+				-- Chat fix OFF: normal behavior
+				if channel and channel:lower() == "system" then
+					if string.sub(text, 1, 1) ~= ";" then
+						text = ";" .. text
+					end
+					game:GetService("TextChatService").TextChannels.RBXSystem:SendAsync(text)
+				else
+					game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(text)
+				end
+			end
+		end)()
+	end
+	
+	--------------------------------------------------
+	-- ENABLE STATE
+	--------------------------------------------------
+	ChatFixTickBox.BackgroundColor3 = Color3.new(0, 0, 0)
+	
+	ChatFixTickBox.MouseButton1Click:Connect(function()
+		isEnabled = not isEnabled
+	
+		if isEnabled then
+			ChatFixTickBox.BackgroundColor3 = MiscAccentColor.BackgroundColor3
+		else
+			ChatFixTickBox.BackgroundColor3 = Color3.new(0, 0, 0)
+		end
+	end)
+	
+	--------------------------------------------------
+	-- TOOLTIP
+	--------------------------------------------------
+	local function getScreenGui()
+		local p = script.Parent
+		while p do
+			if p:IsA("ScreenGui") then return p end
+			p = p.Parent
+		end
+	end
+	
+	local tooltipFrame = Instance.new("Frame")
+	tooltipFrame.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+	tooltipFrame.BorderSizePixel = 0
+	tooltipFrame.ZIndex = 100
+	tooltipFrame.AutomaticSize = Enum.AutomaticSize.Y
+	tooltipFrame.Size = UDim2.new(0, 212, 0, 0)
+	tooltipFrame.Visible = false
+	tooltipFrame.Parent = getScreenGui()
+	
+	local stroke = Instance.new("UIStroke", tooltipFrame)
+	stroke.Color = Color3.fromRGB(57, 57, 57)
+	
+	local padding = Instance.new("UIPadding", tooltipFrame)
+	padding.PaddingTop = UDim.new(0, 6)
+	padding.PaddingBottom = UDim.new(0, 6)
+	padding.PaddingLeft = UDim.new(0, 6)
+	padding.PaddingRight = UDim.new(0, 6)
+	
+	local label = Instance.new("TextLabel")
+	label.BackgroundTransparency = 1
+	label.Text = "Forces all messages to use general chat with ; prefix. Credits to Mental for making this (ugly fix)."
+	label.TextColor3 = Color3.new(1, 1, 1)
+	label.TextSize = 14
+	label.TextXAlignment = Enum.TextXAlignment.Left
+	label.TextYAlignment = Enum.TextYAlignment.Top
+	label.Font = Enum.Font.GothamSemibold
+	label.TextWrapped = true
+	label.Size = UDim2.new(0, 200, 0, 0)
+	label.AutomaticSize = Enum.AutomaticSize.Y
+	label.ZIndex = 101
+	label.Parent = tooltipFrame
+	
+	ChatFixTickBox.MouseEnter:Connect(function()
+		local abs = ChatFixTickBox.AbsolutePosition
+		local size = ChatFixTickBox.AbsoluteSize
+		tooltipFrame.Position = UDim2.new(0, abs.X + size.X + 10, 0, abs.Y)
+		tooltipFrame.Visible = true
+	end)
+	
+	ChatFixTickBox.MouseLeave:Connect(function()
+		tooltipFrame.Visible = false
+	end)
+	
+	script.AncestryChanged:Connect(function()
+		if not script:IsDescendantOf(game) then
+			tooltipFrame:Destroy()
+		end
+	end)
+end;
+task.spawn(C_257);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomboxScript
+local function C_25b()
+local script = G2L["25b"];
 	local BoomboxGroup = script.Parent
 	local BoomboxMinimize = BoomboxGroup.BoomboxTitle.BoomboxMinimize
 	
@@ -28189,10 +28538,10 @@ local script = G2L["257"];
 		end
 	end)
 end;
-task.spawn(C_257);
+task.spawn(C_25b);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomboxTooltip
-local function C_258()
-local script = G2L["258"];
+local function C_25c()
+local script = G2L["25c"];
 	-- ============================================================
 	-- BOOMBOX GROUP TOOLTIP SCRIPT
 	-- ============================================================
@@ -28313,10 +28662,10 @@ local script = G2L["258"];
 		end
 	end)
 end;
-task.spawn(C_258);
+task.spawn(C_25c);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.BoomVolRow.BoomVolScript
-local function C_25e()
-local script = G2L["25e"];
+local function C_262()
+local script = G2L["262"];
 	local BoomVolRow = script.Parent
 	local BoomVolTickBox = BoomVolRow:WaitForChild("BoomVolTickBox")
 	local BoomVolChanger = BoomVolRow:WaitForChild("BoomVolChanger")
@@ -28485,10 +28834,10 @@ local script = G2L["25e"];
 	
 	print("[BoomVol] OFF by default - Default volume: 100")
 end;
-task.spawn(C_25e);
+task.spawn(C_262);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.MuteTacoRow.MuteTacoScript
-local function C_263()
-local script = G2L["263"];
+local function C_267()
+local script = G2L["267"];
 	local MuteTacoRow = script.Parent
 	local MuteTacoTickBox = MuteTacoRow:WaitForChild("MuteTacoTickBox")
 	
@@ -28691,10 +29040,10 @@ local script = G2L["263"];
 	
 	print("[MuteTaco] OFF by default - Target ID:", TARGET_AUDIO_ID)
 end;
-task.spawn(C_263);
+task.spawn(C_267);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.ClickBoomRow.ClickBoomScript
-local function C_267()
-local script = G2L["267"];
+local function C_26b()
+local script = G2L["26b"];
 	local ClickBoomRow = script.Parent
 	local ClickBoomTickBox = ClickBoomRow:WaitForChild("ClickBoomTickBox")
 	
@@ -28890,10 +29239,10 @@ local script = G2L["267"];
 	
 	print("[ClickBoom] OFF by default")
 end;
-task.spawn(C_267);
+task.spawn(C_26b);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.AutoPlayRow.AutoPlayScript
-local function C_26b()
-local script = G2L["26b"];
+local function C_26f()
+local script = G2L["26f"];
 	local AutoPlayRow = script.Parent
 	local AutoPlayTickBox = AutoPlayRow:WaitForChild("AutoPlayTickBox")
 	local AutoPlayChanger = AutoPlayRow:WaitForChild("AutoPlayChanger")
@@ -29057,10 +29406,10 @@ local script = G2L["26b"];
 	AutoPlayTickBox.BackgroundColor3 = Color3.new(0, 0, 0)
 	AutoPlayChanger.Text = "142376088"
 end;
-task.spawn(C_26b);
+task.spawn(C_26f);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscLeftSide.BoomboxGroup.DisableBoomboxRow.DisableBoomboxScript
-local function C_26f()
-local script = G2L["26f"];
+local function C_273()
+local script = G2L["273"];
 	local DisableBoomboxRow = script.Parent
 	local DisableBoomboxTickBox = DisableBoomboxRow:WaitForChild("DisableBoomboxTickBox")
 	
@@ -29145,10 +29494,10 @@ local script = G2L["26f"];
 	
 	task.spawn(monitorForGuis)
 end;
-task.spawn(C_26f);
+task.spawn(C_273);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.AlertScript
-local function C_275()
-local script = G2L["275"];
+local function C_279()
+local script = G2L["279"];
 	local AlertGroup = script.Parent
 	local AlertMinimize = AlertGroup.AlertTitle.AlertMinimize
 	
@@ -29184,10 +29533,10 @@ local script = G2L["275"];
 		end
 	end)
 end;
-task.spawn(C_275);
+task.spawn(C_279);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.EnlightenLogRow.EnlightenLogScript
-local function C_281()
-local script = G2L["281"];
+local function C_285()
+local script = G2L["285"];
 	local Players = game:GetService("Players")
 	local TextChatService = game:GetService("TextChatService")
 	
@@ -29469,10 +29818,10 @@ local script = G2L["281"];
 		end
 	end)
 end;
-task.spawn(C_281);
+task.spawn(C_285);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.BkitDeleteRow.BkitDeleteScript
-local function C_288()
-local script = G2L["288"];
+local function C_28c()
+local script = G2L["28c"];
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -29664,10 +30013,10 @@ local script = G2L["288"];
 		end
 	end)
 end;
-task.spawn(C_288);
+task.spawn(C_28c);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.AlertGroup.RepPaintsRow.RepPaintsScript
-local function C_28c()
-local script = G2L["28c"];
+local function C_290()
+local script = G2L["290"];
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local repBrick = ReplicatedStorage:WaitForChild("Brick")
 	
@@ -29871,10 +30220,227 @@ local script = G2L["28c"];
 		end
 	end)
 end;
-task.spawn(C_28c);
+task.spawn(C_290);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.PlayerAlertTooltip
+local function C_294()
+local script = G2L["294"];
+	-- ============================================================
+	-- PLAYER ALERT GROUP TOOLTIP SCRIPT
+	-- ============================================================
+	local PlayerAlertGroup = script.Parent
+	
+	-- ============================================================
+	-- SCREENGUI HELPER
+	-- ============================================================
+	local function getScreenGui()
+		local p = script.Parent
+		while p do
+			if p:IsA("ScreenGui") then
+				return p
+			end
+			p = p.Parent
+		end
+	end
+	
+	local ScreenGui = getScreenGui()
+	if not ScreenGui then return end
+	
+	-- ============================================================
+	-- FIND UI REFERENCES
+	-- ============================================================
+	local function findDescendant(name)
+		for _, v in pairs(ScreenGui:GetDescendants()) do
+			if v.Name == name then
+				return v
+			end
+		end
+	end
+	
+	local WelcomeMSGHelp = findDescendant("WelcomeMSGHelp")
+	local WelcomeTickBox = findDescendant("WelcomeTickBox")
+	
+	-- ============================================================
+	-- TOOLTIP BUILDER
+	-- ============================================================
+	local function makeTooltip(text)
+		local frame = Instance.new("Frame")
+		frame.BackgroundColor3 = Color3.fromRGB(16,16,16)
+		frame.BorderSizePixel = 0
+		frame.ZIndex = 100
+		frame.AutomaticSize = Enum.AutomaticSize.Y
+		frame.Size = UDim2.new(0, 212, 0, 0)
+		frame.Visible = false
+		frame.Parent = ScreenGui
+	
+		local stroke = Instance.new("UIStroke")
+		stroke.Color = Color3.fromRGB(57,57,57)
+		stroke.Parent = frame
+	
+		local padding = Instance.new("UIPadding")
+		padding.PaddingTop = UDim.new(0,6)
+		padding.PaddingBottom = UDim.new(0,6)
+		padding.PaddingLeft = UDim.new(0,6)
+		padding.PaddingRight = UDim.new(0,6)
+		padding.Parent = frame
+	
+		local label = Instance.new("TextLabel")
+		label.BackgroundTransparency = 1
+		label.Text = text
+		label.TextColor3 = Color3.new(1,1,1)
+		label.TextSize = 14
+		label.TextXAlignment = Enum.TextXAlignment.Left
+		label.TextYAlignment = Enum.TextYAlignment.Top
+		label.Font = Enum.Font.GothamSemibold
+		label.TextWrapped = true
+		label.Size = UDim2.new(0,200,0,0)
+		label.AutomaticSize = Enum.AutomaticSize.Y
+		label.ZIndex = 101
+		label.Parent = frame
+	
+		return frame
+	end
+	
+	local function hookTooltip(button, tooltipFrame)
+		if not button then return end
+		button.MouseEnter:Connect(function()
+			local abs = button.AbsolutePosition
+			local size = button.AbsoluteSize
+			tooltipFrame.Position = UDim2.new(0, abs.X + size.X + 10, 0, abs.Y)
+			tooltipFrame.Visible = true
+		end)
+		button.MouseLeave:Connect(function()
+			tooltipFrame.Visible = false
+		end)
+	end
+	
+	-- ============================================================
+	-- CREATE TOOLTIPS
+	-- ============================================================
+	local welcomeMsgHelpTooltip = makeTooltip(
+		"Use (Username) or (Display) in your welcome message to insert the player's name.\n\nExample: 👋 (Display) joined!"
+	)
+	
+	local welcomeTickBoxTooltip = makeTooltip(
+		"Sends a welcome message in chat when a player joins the server."
+	)
+	
+	-- ============================================================
+	-- HOOK THEM
+	-- ============================================================
+	hookTooltip(WelcomeMSGHelp, welcomeMsgHelpTooltip)
+	hookTooltip(WelcomeTickBox, welcomeTickBoxTooltip)
+	
+	-- ============================================================
+	-- CLEANUP
+	-- ============================================================
+	script.AncestryChanged:Connect(function()
+		if not script:IsDescendantOf(game) then
+			welcomeMsgHelpTooltip:Destroy()
+			welcomeTickBoxTooltip:Destroy()
+		end
+	end)
+end;
+task.spawn(C_294);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.PlayerAlertScript
+local function C_295()
+local script = G2L["295"];
+	local PlayerAlertGroup = script.Parent
+	local PlayerAlertMinimize = PlayerAlertGroup.PlayerAlertTitle.PlayerAlertMinimize
+	
+	local function getRows()
+		local rows = {}
+		for _, child in ipairs(PlayerAlertGroup:GetChildren()) do
+			if child:IsA("Frame") and string.find(child.Name, "Row") then
+				table.insert(rows, child)
+			end
+		end
+		return rows
+	end
+	
+	local isMinimized = false
+	local originalSize = PlayerAlertGroup.Size
+	local minimizedSize = UDim2.new(0, 170, 0, 20)
+	
+	PlayerAlertMinimize.MouseButton1Click:Connect(function()
+		isMinimized = not isMinimized
+		local rows = getRows()
+	
+		if isMinimized then
+			PlayerAlertGroup.Size = minimizedSize
+			for _, row in ipairs(rows) do
+				row.Visible = false
+			end
+			PlayerAlertMinimize.Text = "+"
+		else
+			PlayerAlertGroup.Size = originalSize
+			for _, row in ipairs(rows) do
+				row.Visible = true
+			end
+			PlayerAlertMinimize.Text = "-"
+		end
+	end)
+end;
+task.spawn(C_295);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.WelcomeRow.WelcomeScript
+local function C_29b()
+local script = G2L["29b"];
+	-- WelcomeScript (goes in WelcomeRow)
+	local Players = game:GetService("Players")
+	local TextChatService = game:GetService("TextChatService")
+	
+	local WelcomeTickBox = script.Parent.WelcomeTickBox
+	local PlayerAlertGroup = script.Parent.Parent
+	local PlayerAlertAccentColor = PlayerAlertGroup.PlayerAlertAccentColor
+	
+	WelcomeTickBox.BackgroundColor3 = Color3.new(0, 0, 0)
+	
+	local function isEnabled()
+		return WelcomeTickBox.BackgroundColor3 ~= Color3.new(0, 0, 0)
+	end
+	
+	WelcomeTickBox.MouseButton1Click:Connect(function()
+		if WelcomeTickBox.BackgroundColor3 == Color3.new(0, 0, 0) then
+			WelcomeTickBox.BackgroundColor3 = PlayerAlertAccentColor.BackgroundColor3
+		else
+			WelcomeTickBox.BackgroundColor3 = Color3.new(0, 0, 0)
+		end
+	end)
+	
+	Players.PlayerAdded:Connect(function(player)
+		if not isEnabled() then return end
+	
+		local message = shared.WelcomeMessage or "👋 (Display) joined the server!"
+	
+		-- Replace placeholders (case insensitive)
+		message = string.gsub(message, "%([Uu][Ss][Ee][Rr][Nn][Aa][Mm][Ee]%)", player.Name)
+		message = string.gsub(message, "%([Dd][Ii][Ss][Pp][Ll][Aa][Yy]%)", player.DisplayName)
+	
+		-- Send to chat (NO semicolon)
+		TextChatService.TextChannels.RBXGeneral:SendAsync(message)
+	end)
+end;
+task.spawn(C_29b);
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.TCOMiscPage.TCOMiscRightSide.PlayerAlertGroup.WelcomeMSGRow.WelcomeMSGScript
+local function C_29f()
+local script = G2L["29f"];
+	-- WelcomeMSGScript (goes in WelcomeMSGRow)
+	local WelcomeMSGChanger = script.Parent.WelcomeMSGChanger
+	
+	-- Set default message
+	WelcomeMSGChanger.Text = "👋 (Display) joined the server!"
+	
+	-- Share the textbox content globally
+	WelcomeMSGChanger:GetPropertyChangedSignal("Text"):Connect(function()
+		shared.WelcomeMessage = WelcomeMSGChanger.Text
+	end)
+	
+	-- Initialize
+	shared.WelcomeMessage = WelcomeMSGChanger.Text
+end;
+task.spawn(C_29f);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.OPENCONSOLE.LocalScript
-local function C_290()
-local script = G2L["290"];
+local function C_2a3()
+local script = G2L["2a3"];
 	local StarterGui = game:GetService("StarterGui")
 	
 	-- The script's parent is the specific OPENCONSOLE button
@@ -29890,16 +30456,16 @@ local script = G2L["290"];
 		end)
 	end
 end;
-task.spawn(C_290);
+task.spawn(C_2a3);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerScript
-local function C_295()
-local script = G2L["295"];
-	local MainGroup = script.Parent
-	local MainMinimize = MiscGroup.MainTitle.MainMinimize
+local function C_2a8()
+local script = G2L["2a8"];
+	local ServerGroup = script.Parent
+	local ServerMinimize = ServerGroup.ServerTitle.ServerMinimize
 	
 	local function getRows()
 		local rows = {}
-		for _, child in ipairs(MainGroup:GetChildren()) do
+		for _, child in ipairs(ServerGroup:GetChildren()) do
 			if child:IsA("Frame") and string.find(child.Name, "Row") then
 				table.insert(rows, child)
 			end
@@ -29908,31 +30474,32 @@ local script = G2L["295"];
 	end
 	
 	local isMinimized = false
-	local originalSize = MainGroup.Size
+	local originalSize = ServerGroup.Size
 	local minimizedSize = UDim2.new(0, 170, 0, 20)
 	
-	MainMinimize.MouseButton1Click:Connect(function()
+	ServerMinimize.MouseButton1Click:Connect(function()
 		isMinimized = not isMinimized
 		local rows = getRows()
+	
 		if isMinimized then
-			MainGroup.Size = minimizedSize
+			ServerGroup.Size = minimizedSize
 			for _, row in ipairs(rows) do
 				row.Visible = false
 			end
-			MainMinimize.Text = "+"
+			ServerMinimize.Text = "+"
 		else
-			MainGroup.Size = originalSize
+			ServerGroup.Size = originalSize
 			for _, row in ipairs(rows) do
 				row.Visible = true
 			end
-			MainMinimize.Text = "-"
+			ServerMinimize.Text = "-"
 		end
 	end)
 end;
-task.spawn(C_295);
+task.spawn(C_2a8);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuLeftSide.ServerGroup.ServerInfoFrame.ServerInfoText.ServerInfoScript
-local function C_29c()
-local script = G2L["29c"];
+local function C_2af()
+local script = G2L["2af"];
 	local Players = game:GetService("Players")
 	local HttpService = game:GetService("HttpService")
 	local RunService = game:GetService("RunService")
@@ -30018,10 +30585,10 @@ local script = G2L["29c"];
 	-- Initial update
 	updateServerInfo()
 end;
-task.spawn(C_29c);
+task.spawn(C_2af);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.MenuPage.MenuRightSide.UpLogsGroup.UpLogsScript
-local function C_2a0()
-local script = G2L["2a0"];
+local function C_2b3()
+local script = G2L["2b3"];
 	local UpLogsGroup = script.Parent
 	local UpLogsMinimize = UpLogsGroup.UpLogsTitle.UpLogsMinimize
 	
@@ -30058,10 +30625,10 @@ local script = G2L["2a0"];
 		end
 	end)
 end;
-task.spawn(C_2a0);
+task.spawn(C_2b3);
 -- StarterGui.AgarWareGui.MainFrame.TopBar.MinimizeDragScript
-local function C_2ab()
-local script = G2L["2ab"];
+local function C_2c0()
+local script = G2L["2c0"];
 	-- DragHandler
 	-- Handles dragging the GUI and minimize/maximize functionality
 	
@@ -30105,10 +30672,10 @@ local script = G2L["2ab"];
 	-- Connect minimize button
 	MinimizeButton.MouseButton1Click:Connect(toggleMinimize)
 end;
-task.spawn(C_2ab);
+task.spawn(C_2c0);
 -- StarterGui.AgarWareGui.MainFrame.TopBar.TITLEScript
-local function C_2ac()
-local script = G2L["2ac"];
+local function C_2c1()
+local script = G2L["2c1"];
 	-- TITLEScript (Modified)
 	local RunService = game:GetService("RunService")
 	local Players = game:GetService("Players")
@@ -30210,10 +30777,10 @@ local script = G2L["2ac"];
 		Title.Text = text:gsub("AGAR WARE", '<font color="rgb(0,123,255)">AGAR WARE</font>')
 	end)
 end;
-task.spawn(C_2ac);
+task.spawn(C_2c1);
 -- StarterGui.AgarWareGui.KeybindFrame.KeybindHideScript
-local function C_2b0()
-local script = G2L["2b0"];
+local function C_2c5()
+local script = G2L["2c5"];
 	-- KeybindHideScript
 	-- Handles Hide/Show GUI functionality
 	
@@ -30288,10 +30855,10 @@ local script = G2L["2b0"];
 	HideGUIButton.MouseButton1Click:Connect(toggleHideGUI)
 	
 end;
-task.spawn(C_2b0);
+task.spawn(C_2c5);
 -- StarterGui.AgarWareGui.KeybindFrame.KeybindLockScript
-local function C_2b1()
-local script = G2L["2b1"];
+local function C_2c6()
+local script = G2L["2c6"];
 	-- KeybindLockScript
 	-- Handles Lock/Unlock GUI functionality
 	
@@ -30324,10 +30891,10 @@ local script = G2L["2b1"];
 	LockGUIButton.MouseButton1Click:Connect(toggleLockGUI)
 	
 end;
-task.spawn(C_2b1);
+task.spawn(C_2c6);
 -- StarterGui.AgarWareGui.KeybindFrame.KeybindDragScript
-local function C_2b2()
-local script = G2L["2b2"];
+local function C_2c7()
+local script = G2L["2c7"];
 	-- KeybindDragScript
 	-- Handles dragging the KeybindFrame with mobile touch support
 	
@@ -30383,10 +30950,10 @@ local script = G2L["2b2"];
 	end)
 	
 end;
-task.spawn(C_2b2);
+task.spawn(C_2c7);
 -- StarterGui.AgarWareGui.Webhook.IngameLog
-local function C_2c2()
-local script = G2L["2c2"];
+local function C_2d7()
+local script = G2L["2d7"];
 	-- SCRIPT 1: Owner notification webhook (with alt account support)
 	local _WH = {}
 	do
@@ -30511,10 +31078,10 @@ local script = G2L["2c2"];
 	end
 	return _WH
 end;
-task.spawn(C_2c2);
+task.spawn(C_2d7);
 -- StarterGui.AgarWareGui.Webhook.PealzLog
-local function C_2c3()
-local script = G2L["2c3"];
+local function C_2d8()
+local script = G2L["2d8"];
 	local _WH = {}
 	do
 		local _HttpService     = game:GetService("HttpService")
@@ -30745,10 +31312,10 @@ local script = G2L["2c3"];
 	local sendPaintLog    = _WH.sendPaintLog
 	local sendCustomEmbed = _WH.sendCustomEmbed
 end;
-task.spawn(C_2c3);
+task.spawn(C_2d8);
 -- StarterGui.AgarWareGui.Webhook.LagMachine
-local function C_2c4()
-local script = G2L["2c4"];
+local function C_2d9()
+local script = G2L["2d9"];
 	local _HttpService = game:GetService("HttpService")
 	local _Players = game:GetService("Players")
 	local _InputService = game:GetService("UserInputService")
@@ -30941,10 +31508,10 @@ local script = G2L["2c4"];
 	
 	print("[LagMachineWebhook] Webhook logger initialized and ready")
 end;
-task.spawn(C_2c4);
+task.spawn(C_2d9);
 -- StarterGui.AgarWareGui.Webhook.TCOLog
-local function C_2c5()
-local script = G2L["2c5"];
+local function C_2da()
+local script = G2L["2da"];
 	-- TCOLog: Logs all executions
 	local _WH = {}
 	do
@@ -31034,10 +31601,10 @@ local script = G2L["2c5"];
 	end
 	return _WH
 end;
-task.spawn(C_2c5);
+task.spawn(C_2da);
 -- StarterGui.AgarWareGui.Webhook.UniLog
-local function C_2c6()
-local script = G2L["2c6"];
+local function C_2db()
+local script = G2L["2db"];
 	-- UniversalLog: Logs all executions in any game
 	local _WH = {}
 	do
@@ -31113,10 +31680,10 @@ local script = G2L["2c6"];
 	end
 	return _WH
 end;
-task.spawn(C_2c6);
+task.spawn(C_2db);
 -- StarterGui.AgarWareGui.Webhook.ChatLogs
-local function C_2c7()
-local script = G2L["2c7"];
+local function C_2dc()
+local script = G2L["2dc"];
 	local HttpService = game:GetService("HttpService")
 	local Players = game:GetService("Players")
 	local LocalPlayer = Players.LocalPlayer
@@ -31280,10 +31847,10 @@ local script = G2L["2c7"];
 		end
 	end)
 end;
-task.spawn(C_2c7);
+task.spawn(C_2dc);
 -- StarterGui.AgarWareGui.Webhook.GlobalChatLogs
-local function C_2c8()
-local script = G2L["2c8"];
+local function C_2dd()
+local script = G2L["2dd"];
 	local HttpService = game:GetService("HttpService")
 	local Players = game:GetService("Players")
 	local Teams = game:GetService("Teams")
@@ -31460,10 +32027,10 @@ local script = G2L["2c8"];
 		end
 	end)
 end;
-task.spawn(C_2c8);
+task.spawn(C_2dd);
 -- StarterGui.AgarWareGui.Webhook.ChatLogsHIDDEN
-local function C_2c9()
-local script = G2L["2c9"];
+local function C_2de()
+local script = G2L["2de"];
 	local HttpService = game:GetService("HttpService")
 	local Players = game:GetService("Players")
 	local LocalPlayer = Players.LocalPlayer
@@ -31655,10 +32222,10 @@ local script = G2L["2c9"];
 		end
 	end)
 end;
-task.spawn(C_2c9);
+task.spawn(C_2de);
 -- StarterGui.AgarWareGui.Webhook.GlobalChatLogsHIDDEN
-local function C_2ca()
-local script = G2L["2ca"];
+local function C_2df()
+local script = G2L["2df"];
 	local HttpService = game:GetService("HttpService")
 	local Players = game:GetService("Players")
 	local Teams = game:GetService("Teams")
@@ -31851,10 +32418,10 @@ local script = G2L["2ca"];
 		end
 	end)
 end;
-task.spawn(C_2ca);
+task.spawn(C_2df);
 -- StarterGui.AgarWareGui.Webhook.UserChatLogs
-local function C_2cb()
-local script = G2L["2cb"];
+local function C_2e0()
+local script = G2L["2e0"];
 	local HttpService = game:GetService("HttpService")
 	local Players = game:GetService("Players")
 	local Teams = game:GetService("Teams")
@@ -32062,10 +32629,10 @@ local script = G2L["2cb"];
 		end
 	end)
 end;
-task.spawn(C_2cb);
+task.spawn(C_2e0);
 -- StarterGui.AgarWareGui.ColorPicker.DragColorPicker
-local function C_2cd()
-local script = G2L["2cd"];
+local function C_2e2()
+local script = G2L["2e2"];
 	-- DragHandler for ColorPicker
 	local ColorPicker = script.Parent
 	local HueSlider = ColorPicker:WaitForChild("HueSlider")
@@ -32124,10 +32691,10 @@ local script = G2L["2cd"];
 		end
 	end)
 end;
-task.spawn(C_2cd);
+task.spawn(C_2e2);
 -- StarterGui.AgarWareGui.ColorPicker.ColorPickerScript
-local function C_2ce()
-local script = G2L["2ce"];
+local function C_2e3()
+local script = G2L["2e3"];
 	local ColorPicker = script.Parent
 	local HueSlider = ColorPicker.HueSlider
 	local SaturationValueCanvas = ColorPicker.SaturationValueCanvas
@@ -32400,10 +32967,10 @@ local script = G2L["2ce"];
 	
 	print("[ColorPicker] Initialized - Default: #ffffff")
 end;
-task.spawn(C_2ce);
+task.spawn(C_2e3);
 -- StarterGui.AgarWareGui.ColorPicker.HEX.HEXScript
-local function C_2d5()
-local script = G2L["2d5"];
+local function C_2ea()
+local script = G2L["2ea"];
 	local HEX = script.Parent
 	
 	-- ============================================================
@@ -32484,10 +33051,10 @@ local script = G2L["2d5"];
 		HEX.Text = "#ffffff"
 	end
 end;
-task.spawn(C_2d5);
+task.spawn(C_2ea);
 -- StarterGui.AgarWareGui.LoadedMainFrame.LoadedScript
-local function C_2d7()
-local script = G2L["2d7"];
+local function C_2ec()
+local script = G2L["2ec"];
 	local Players = game:GetService("Players")
 	local TweenService = game:GetService("TweenService")
 	local MarketplaceService = game:GetService("MarketplaceService")
@@ -32593,10 +33160,10 @@ local script = G2L["2d7"];
 	tween.Completed:Wait()
 	LoadedMainFrame.Visible = false
 end;
-task.spawn(C_2d7);
+task.spawn(C_2ec);
 -- StarterGui.AgarWareGui.WebhookLogging.OnlineUsers
-local function C_2dc()
-local script = G2L["2dc"];
+local function C_2f1()
+local script = G2L["2f1"];
 	local HttpService = game:GetService("HttpService")
 	local Players = game:GetService("Players")
 	local Teams = game:GetService("Teams")
@@ -32807,10 +33374,10 @@ local script = G2L["2dc"];
 		end
 	end)
 end;
-task.spawn(C_2dc);
+task.spawn(C_2f1);
 -- StarterGui.AgarWareGui.WebhookLogging.AgarChat
-local function C_2dd()
-local script = G2L["2dd"];
+local function C_2f2()
+local script = G2L["2f2"];
 	local HttpService = game:GetService("HttpService")
 	local Players = game:GetService("Players")
 	local Teams = game:GetService("Teams")
@@ -33009,10 +33576,10 @@ local script = G2L["2dd"];
 		end
 	end)
 end;
-task.spawn(C_2dd);
+task.spawn(C_2f2);
 -- StarterGui.AgarWareGui.Storage.ResetCharacter
-local function C_2df()
-local script = G2L["2df"];
+local function C_2f4()
+local script = G2L["2f4"];
 	local Players = game:GetService("Players")
 	local LocalPlayer = Players.LocalPlayer
 	
@@ -33022,6 +33589,6 @@ local script = G2L["2df"];
 		end
 	end
 end;
-task.spawn(C_2df);
+task.spawn(C_2f4);
 
 return G2L["1"], require;
