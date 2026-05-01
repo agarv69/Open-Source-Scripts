@@ -9129,7 +9129,7 @@ G2L["31c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]]
 G2L["31c"]["Size"] = UDim2.new(0, 80, 0, 15);
 G2L["31c"]["LayoutOrder"] = 30;
 G2L["31c"]["BorderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["31c"]["Text"] = [[v2.8.10]];
+G2L["31c"]["Text"] = [[v2.9.0]];
 G2L["31c"]["Name"] = [[VersionNumber]];
 G2L["31c"]["Position"] = UDim2.new(0, 0, 1.25, 0);
 
@@ -31684,30 +31684,32 @@ local script = G2L["314"];
 			text = string.format("AGAR WARE | auto loaded scripts: %.2fs", loadingDuration)
 		else
 			showLoadedMessage = false
+	
+			-- Get ping
+			local pingInSeconds = LocalPlayer:GetNetworkPing()
+			local ping = math.round(pingInSeconds * 1000)
+	
 			text = string.format(
-				"AGAR WARE | fps: %.1f | players: %d",
+				"AGAR WARE | fps: %.1f | ping: %dms | players: %d",
 				smoothedFPS,
+				ping,
 				#Players:GetPlayers()
 			)
 	
 			if isTCO() then
-				local myTime = getMyTime()
-				if myTime then
-					text = text .. " | time: " .. math.floor(myTime)
-					local chosenTeam = game:GetService("Teams"):FindFirstChild("Chosen")
-					local backpack = LocalPlayer:FindFirstChild("Backpack")
-					local char = workspace:FindFirstChild(LocalPlayer.Name)
-					local hasArken = (backpack and backpack:FindFirstChild("The Arkenstone"))
-						or (char and char:FindFirstChild("The Arkenstone"))
-					local isAdmin = chosenTeam and LocalPlayer.Team == chosenTeam
+				local chosenTeam = game:GetService("Teams"):FindFirstChild("Chosen")
+				local backpack = LocalPlayer:FindFirstChild("Backpack")
+				local char = workspace:FindFirstChild(LocalPlayer.Name)
+				local hasArken = (backpack and backpack:FindFirstChild("The Arkenstone"))
+					or (char and char:FindFirstChild("The Arkenstone"))
+				local isAdmin = chosenTeam and LocalPlayer.Team == chosenTeam
 	
-					if isAdmin then
-						text = text .. " | Admin"
-					elseif hasArken then
-						text = text .. " | Enlightened"
-					else
-						text = text .. " | Neutral"
-					end
+				if isAdmin then
+					text = text .. " | Admin"
+				elseif hasArken then
+					text = text .. " | Enlightened"
+				else
+					text = text .. " | Neutral"
 				end
 			end
 		end
