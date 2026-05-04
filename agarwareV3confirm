@@ -1,0 +1,9 @@
+local CoreGui = game:GetService("CoreGui")
+local guiName = "FAFDS8dF*&*&dAGUYASD89"
+
+if CoreGui:FindFirstChild(guiName) then
+	warn("There's already an existing Gui!")
+else
+	print("Loading Gui...")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/agarv69/Open-Source-Scripts/refs/heads/main/AGARWAREV3.lua"))()
+end
