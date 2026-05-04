@@ -10,7 +10,7 @@ else
 	print("Loading Gui...")
 	
 	local success, result = pcall(function()
-		return game:HttpGet("https://raw.githubusercontent.com/agarv69/Open-Source-Scripts/refs/heads/main/AGARWAREV3.lua")
+		return game:HttpGet("https://raw.githubusercontent.com/agarv69/Open-Source-Scripts/refs/heads/main/AGARWARE.lua")
 	end)
 	
 	if success then
