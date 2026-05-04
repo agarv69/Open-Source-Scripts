@@ -1,21 +1,12 @@
--- GUI Loader Script with Duplicate Check
-
 local CoreGui = game:GetService("CoreGui")
 local guiName = "FAFDS8dF*&*&dAGUYASD89"
 
--- Check if GUI already exists
 if CoreGui:FindFirstChild(guiName) then
-	warn("There's already an existing Gui!")
+    warn("There's already an existing Gui!")
 else
-	print("Loading Gui...")
-	
-	local success, result = pcall(function()
-		return game:HttpGet("https://raw.githubusercontent.com/agarv69/Open-Source-Scripts/refs/heads/main/AGARWARE.lua")
-	end)
-	
-	if success then
-		loadstring(result)()
-	else
-		warn("Failed to load GUI:", result)
-	end
+    print("Loading Gui...")
+    
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/agarv69/Open-Source-Scripts/refs/heads/main/AGARWAREV3.lua"))()
+    end)
 end
