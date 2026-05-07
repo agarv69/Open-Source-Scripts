@@ -1388,23 +1388,23 @@ G2L["75"]["LayoutOrder"] = 4;
 G2L["75"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareGui.MainFrame.ContentArea.MainPage.MainRightSide.CharacterGroup.TpPlayerRow1.TpPlayerDropdown
-G2L["76"] = Instance.new("TextButton", G2L["75"]);
-G2L["76"]["TextTransparency"] = 1;
-G2L["76"]["TextSize"] = 14;
-G2L["76"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["76"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
-G2L["76"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["76"]["Size"] = UDim2.new(0, 161, 0, 16);
-G2L["76"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
-G2L["76"]["Text"] = [[Dropdown]];
-G2L["76"]["Name"] = [[TpPlayerDropdown]];
-G2L["76"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
-
-
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.MainPage.MainRightSide.CharacterGroup.TpPlayerRow1.TpPlayerScript
-G2L["77"] = Instance.new("LocalScript", G2L["75"]);
-G2L["77"]["Name"] = [[TpPlayerScript]];
+G2L["76"] = Instance.new("LocalScript", G2L["75"]);
+G2L["76"]["Name"] = [[TpPlayerScript]];
+
+
+-- StarterGui.AgarWareGui.MainFrame.ContentArea.MainPage.MainRightSide.CharacterGroup.TpPlayerRow1.TpPlayerDropdown
+G2L["77"] = Instance.new("TextButton", G2L["75"]);
+G2L["77"]["TextTransparency"] = 1;
+G2L["77"]["TextSize"] = 14;
+G2L["77"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["77"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["77"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["77"]["Size"] = UDim2.new(0, 161, 0, 16);
+G2L["77"]["BorderColor3"] = Color3.fromRGB(58, 58, 58);
+G2L["77"]["Text"] = [[Dropdown]];
+G2L["77"]["Name"] = [[TpPlayerDropdown]];
+G2L["77"]["Position"] = UDim2.new(0.02367, 0, 0.16, 0);
 
 
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.MainPage.MainRightSide.CharacterGroup.ResetRow
@@ -3499,7 +3499,6 @@ G2L["12d"]["Name"] = [[DetectionTCOPG]];
 G2L["12e"] = Instance.new("ScrollingFrame", G2L["17"]);
 G2L["12e"]["Active"] = true;
 G2L["12e"]["BorderSizePixel"] = 0;
-G2L["12e"]["CanvasPosition"] = Vector2.new(0, 299.00003);
 G2L["12e"]["Name"] = [[TCOTrollPage]];
 G2L["12e"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
 G2L["12e"]["Size"] = UDim2.new(0, 349, 0, 233);
@@ -8447,7 +8446,6 @@ G2L["2e8"]["BackgroundTransparency"] = 1;
 G2L["2e9"] = Instance.new("ScrollingFrame", G2L["2e8"]);
 G2L["2e9"]["Active"] = true;
 G2L["2e9"]["CanvasSize"] = UDim2.new(0, 0, 12, 0);
-G2L["2e9"]["CanvasPosition"] = Vector2.new(0, 100);
 G2L["2e9"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
 G2L["2e9"]["Size"] = UDim2.new(0, 152, 0, 103);
 G2L["2e9"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
@@ -10182,7 +10180,6 @@ local script = G2L["6"];
 	end
 	Players.PlayerAdded:Connect(watchInvisPlayer)
 	
-	-- Check players who join later
 	Players.PlayerAdded:Connect(addTag)
 end;
 task.spawn(C_6);
@@ -14177,8 +14174,8 @@ local script = G2L["62"];
 end;
 task.spawn(C_62);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.MainPage.MainRightSide.CharacterGroup.TpPlayerRow1.TpPlayerScript
-local function C_77()
-local script = G2L["77"];
+local function C_76()
+local script = G2L["76"];
 	local Players = game:GetService("Players")
 	local UserInputService = game:GetService("UserInputService")
 	local RunService = game:GetService("RunService")
@@ -14608,7 +14605,7 @@ local script = G2L["77"];
 	
 	TpPlayerRow1:SetAttribute("SelectedPlayer", "")
 end;
-task.spawn(C_77);
+task.spawn(C_76);
 -- StarterGui.AgarWareGui.MainFrame.ContentArea.MainPage.MainRightSide.CharacterGroup.ResetRow.ResetScript
 local function C_79()
 local script = G2L["79"];
@@ -36252,6 +36249,10 @@ local script = G2L["358"];
 		1535622508, -- Buildermann
 		3590692150, -- DeLight
 		1704747, -- snips
+		3234700453, -- Box_boy56433
+		10385488328, -- Ihateroblox_oq
+		5695584804, -- strongestegg83973
+		
 		-- Add more user IDs here
 	}
 	
