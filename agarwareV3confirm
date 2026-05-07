@@ -1,7 +1,7 @@
 -- made by agarvvoid, ryansocooolsmith, monkeyarmpit6, agarv_bbc, agarware (same person)
 
 local CoreGui = game:GetService("CoreGui")
-local guiName = "FAFDS8dF*&*&dAGUYASD89"
+local guiName = "T5784YHRGE89ES98T"
 
 if CoreGui:FindFirstChild(guiName) then
     warn("There's already an existing Gui!")
