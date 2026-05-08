@@ -2766,20 +2766,20 @@ local script = G2L["b9"];
 		end
 	
 		sliderFrame.InputBegan:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 				dragging = true
 				updateFromMouse(input)
 			end
 		end)
 	
 		sliderFrame.InputEnded:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 				dragging = false
 			end
 		end)
 	
 		UserInputService.InputChanged:Connect(function(input)
-			if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+			if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
 				updateFromMouse(input)
 			end
 		end)
