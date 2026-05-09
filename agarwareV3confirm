@@ -1,17 +1,14 @@
 local CoreGui = game:GetService("CoreGui")
 local HttpService = game:GetService("HttpService")
 local guiName = "T5784YHRGE89ES98T"
-
 -- Check if GUI already exists
 if CoreGui:FindFirstChild(guiName) then
     warn("There's already an existing Gui!")
     return
 end
-
 -- GUI doesn't exist, check key system
 local CONFIG_FILE = "keydata.json"
 local CORRECT_KEY = "YourKeyHere" -- ONLY THING YOU CHANGE
-
 local function loadKeyData()
 	local success, data = pcall(function()
 		return readfile(CONFIG_FILE)
@@ -21,7 +18,6 @@ local function loadKeyData()
 	end
 	return nil
 end
-
 local function saveKeyData()
 	local data = {
 		timestamp = os.time(),
@@ -29,7 +25,6 @@ local function saveKeyData()
 	}
 	writefile(CONFIG_FILE, HttpService:JSONEncode(data))
 end
-
 local function isKeyValid()
 	local data = loadKeyData()
 	if not data then return false end
@@ -45,7 +40,6 @@ local function isKeyValid()
 	
 	return timePassed < threeDays
 end
-
 -- Check key validity
 if isKeyValid() then
 	-- Key valid, load GUI
@@ -56,8 +50,10 @@ if isKeyValid() then
 else
 	-- Key invalid/expired, show key system
 	print("Key required or expired!")
-	-- PUT YOUR KEY SYSTEM GUI CODE HERE
-	-- After successful key entry, call:
+	pcall(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/agarv69/Open-Source-Scripts/refs/heads/main/agarwarev3key"))()
+	end)
+	-- After successful key entry in the key GUI, that script should call:
 	-- saveKeyData()
-	-- then load the GUI
+	-- then load the main GUI
 end
