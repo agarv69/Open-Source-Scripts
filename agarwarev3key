@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 41 | Scripts: 2 | Modules: 0 | Tags: 0
+-- Instances: 48 | Scripts: 3 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.AgarWareV3Key
@@ -36,6 +36,7 @@ G2L["3"]["Name"] = [[KeyFrame]];
 
 -- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe
 G2L["4"] = Instance.new("Frame", G2L["3"]);
+G2L["4"]["ZIndex"] = 99;
 G2L["4"]["BorderSizePixel"] = 0;
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4"]["Size"] = UDim2.new(1, 0, 1, 0);
@@ -248,7 +249,7 @@ G2L["1b"]["Name"] = [[outlineStroke]];
 
 -- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.enterkey.button.text
 G2L["1c"] = Instance.new("TextLabel", G2L["18"]);
-G2L["1c"]["ZIndex"] = 2;
+G2L["1c"]["ZIndex"] = 99;
 G2L["1c"]["BorderSizePixel"] = 0;
 G2L["1c"]["TextSize"] = 14;
 G2L["1c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
@@ -267,115 +268,168 @@ G2L["1d"] = Instance.new("UIStroke", G2L["1c"]);
 G2L["1d"]["Name"] = [[text]];
 
 
--- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.discord
-G2L["1e"] = Instance.new("Frame", G2L["4"]);
+-- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.enterkey.button.buttonFade
+G2L["1e"] = Instance.new("CanvasGroup", G2L["18"]);
 G2L["1e"]["BorderSizePixel"] = 0;
 G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e"]["Size"] = UDim2.new(1, 0, 0, 40);
+G2L["1e"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["Name"] = [[discord]];
-G2L["1e"]["LayoutOrder"] = 3;
-G2L["1e"]["BackgroundTransparency"] = 1;
+G2L["1e"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.enterkey.button.buttonFade.UIGradient
+G2L["1f"] = Instance.new("UIGradient", G2L["1e"]);
+G2L["1f"]["Rotation"] = 90;
+G2L["1f"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.discord
+G2L["20"] = Instance.new("Frame", G2L["4"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["Size"] = UDim2.new(1, 0, 0, 40);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Name"] = [[discord]];
+G2L["20"]["LayoutOrder"] = 3;
+G2L["20"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.discord.UIListLayout
-G2L["1f"] = Instance.new("UIListLayout", G2L["1e"]);
-G2L["1f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["1f"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["21"] = Instance.new("UIListLayout", G2L["20"]);
+G2L["21"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["21"]["FillDirection"] = Enum.FillDirection.Horizontal;
 
 
 -- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.discord.button
-G2L["20"] = Instance.new("TextButton", G2L["1e"]);
-G2L["20"]["BorderSizePixel"] = 0;
-G2L["20"]["TextTransparency"] = 1;
-G2L["20"]["TextSize"] = 14;
-G2L["20"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["20"]["BackgroundTransparency"] = 1;
-G2L["20"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20"]["Name"] = [[button]];
+G2L["22"] = Instance.new("TextButton", G2L["20"]);
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextTransparency"] = 1;
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["BackgroundTransparency"] = 1;
+G2L["22"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Name"] = [[button]];
 
 
 -- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.discord.button.UIPadding
-G2L["21"] = Instance.new("UIPadding", G2L["20"]);
-G2L["21"]["PaddingTop"] = UDim.new(0, 3);
-G2L["21"]["PaddingRight"] = UDim.new(0, 10);
-G2L["21"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["21"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["23"] = Instance.new("UIPadding", G2L["22"]);
+G2L["23"]["PaddingTop"] = UDim.new(0, 3);
+G2L["23"]["PaddingRight"] = UDim.new(0, 10);
+G2L["23"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["23"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.discord.button.buttonFrame
-G2L["22"] = Instance.new("Frame", G2L["20"]);
-G2L["22"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["22"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["22"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["22"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["22"]["Name"] = [[buttonFrame]];
+G2L["24"] = Instance.new("Frame", G2L["22"]);
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["24"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["24"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["24"]["Name"] = [[buttonFrame]];
 
 
 -- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.discord.button.buttonFrame.outlineStroke
-G2L["23"] = Instance.new("UIStroke", G2L["22"]);
-G2L["23"]["ZIndex"] = 10;
-G2L["23"]["Thickness"] = 2;
-G2L["23"]["Name"] = [[outlineStroke]];
+G2L["25"] = Instance.new("UIStroke", G2L["24"]);
+G2L["25"]["ZIndex"] = 10;
+G2L["25"]["Thickness"] = 2;
+G2L["25"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.discord.button.text
-G2L["24"] = Instance.new("TextLabel", G2L["20"]);
-G2L["24"]["ZIndex"] = 2;
-G2L["24"]["BorderSizePixel"] = 0;
-G2L["24"]["TextSize"] = 14;
-G2L["24"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["24"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["24"]["BackgroundTransparency"] = 1;
-G2L["24"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["Text"] = [[Join Discord]];
-G2L["24"]["Name"] = [[text]];
+G2L["26"] = Instance.new("TextLabel", G2L["22"]);
+G2L["26"]["ZIndex"] = 99;
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["TextSize"] = 14;
+G2L["26"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["26"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["26"]["BackgroundTransparency"] = 1;
+G2L["26"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Text"] = [[Join Discord]];
+G2L["26"]["Name"] = [[text]];
 
 
 -- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.discord.button.text.text
-G2L["25"] = Instance.new("UIStroke", G2L["24"]);
-G2L["25"]["Name"] = [[text]];
+G2L["27"] = Instance.new("UIStroke", G2L["26"]);
+G2L["27"]["Name"] = [[text]];
+
+
+-- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.discord.button.buttonFade
+G2L["28"] = Instance.new("CanvasGroup", G2L["22"]);
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.discord.button.buttonFade.UIGradient
+G2L["29"] = Instance.new("UIGradient", G2L["28"]);
+G2L["29"]["Rotation"] = 90;
+G2L["29"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.discord.copylink
-G2L["26"] = Instance.new("LocalScript", G2L["1e"]);
-G2L["26"]["Name"] = [[copylink]];
+G2L["2a"] = Instance.new("LocalScript", G2L["20"]);
+G2L["2a"]["Name"] = [[copylink]];
+
+
+-- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.buttonFade
+G2L["2b"] = Instance.new("CanvasGroup", G2L["3"]);
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.buttonFade.UIGradient
+G2L["2c"] = Instance.new("UIGradient", G2L["2b"]);
+G2L["2c"]["Rotation"] = 90;
+G2L["2c"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.AgarWareV3Key.CanvasGroup.center
-G2L["27"] = Instance.new("LocalScript", G2L["2"]);
-G2L["27"]["Name"] = [[center]];
+G2L["2d"] = Instance.new("LocalScript", G2L["2"]);
+G2L["2d"]["Name"] = [[center]];
 
 
 -- StarterGui.AgarWareV3Key.AgarWare
-G2L["28"] = Instance.new("Frame", G2L["1"]);
-G2L["28"]["Visible"] = false;
-G2L["28"]["BorderSizePixel"] = 0;
-G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["28"]["Size"] = UDim2.new(0, 100, 0, 100);
-G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28"]["Name"] = [[AgarWare]];
-G2L["28"]["BackgroundTransparency"] = 1;
+G2L["2e"] = Instance.new("Frame", G2L["1"]);
+G2L["2e"]["Visible"] = false;
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Name"] = [[AgarWare]];
+G2L["2e"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.AgarWareV3Key.AgarWare.testing
-G2L["29"] = Instance.new("Frame", G2L["28"]);
-G2L["29"]["BorderSizePixel"] = 0;
-G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29"]["Size"] = UDim2.new(0, 100, 0, 100);
-G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29"]["Name"] = [[testing]];
+G2L["2f"] = Instance.new("Frame", G2L["2e"]);
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["Name"] = [[testing]];
+
+
+-- StarterGui.AgarWareV3Key.key
+G2L["30"] = Instance.new("LocalScript", G2L["1"]);
+G2L["30"]["Name"] = [[key]];
 
 
 -- StarterGui.AgarWareV3Key.CanvasGroup.KeyFrame.innerframe.discord.copylink
-local function C_26()
-local script = G2L["26"];
+local function C_2a()
+local script = G2L["2a"];
 	local button = script.Parent:FindFirstChild("button")
 	if button then
 		local buttonText = button:FindFirstChild("text")
@@ -398,8 +452,8 @@ local script = G2L["26"];
 							setclipboard(child.Name)
 	
 							if buttonText then
-								buttonText.Text = "Copied to clipboard"
-								task.wait(3)
+								buttonText.Text = "Copied to clipboard!"
+								task.wait(2)
 								buttonText.Text = originalText
 							end
 							return
@@ -410,15 +464,71 @@ local script = G2L["26"];
 		end)
 	end
 end;
-task.spawn(C_26);
+task.spawn(C_2a);
 -- StarterGui.AgarWareV3Key.CanvasGroup.center
-local function C_27()
-local script = G2L["27"];
+local function C_2d()
+local script = G2L["2d"];
 	local frame = script.Parent
 	
 	frame.AnchorPoint = Vector2.new(0.5, 0.5)
 	frame.Position = UDim2.new(0.5, 0, 0.5, 0)
 end;
-task.spawn(C_27);
+task.spawn(C_2d);
+-- StarterGui.AgarWareV3Key.key
+local function C_30()
+local script = G2L["30"];
+	local CORRECT_KEY = "AGARVISTHEGOAT" -- Change key here
+	
+	local function getScreenGui()
+		local p = script.Parent
+		while p do
+			if p:IsA("ScreenGui") then return p end
+			p = p.Parent
+		end
+	end
+	
+	local screenGui = getScreenGui()
+	if not screenGui then return end
+	
+	local canvasGroup = screenGui:FindFirstChild("CanvasGroup")
+	if not canvasGroup then return end
+	
+	local keyFrame = canvasGroup:FindFirstChild("KeyFrame")
+	if not keyFrame then return end
+	
+	local innerframe = keyFrame:FindFirstChild("innerframe")
+	if not innerframe then return end
+	
+	local enterkey = innerframe:FindFirstChild("enterkey")
+	local textboxFrame = innerframe:FindFirstChild("textbox")
+	
+	if not enterkey or not textboxFrame then return end
+	
+	local button = enterkey:FindFirstChild("button")
+	local buttonText = button and button:FindFirstChild("text")
+	
+	local textboxFrameInner = textboxFrame:FindFirstChild("textboxFrame")
+	local textbox = textboxFrameInner and textboxFrameInner:FindFirstChild("textbox")
+	
+	if not button or not buttonText or not textbox then return end
+	
+	button.MouseButton1Click:Connect(function()
+		local enteredKey = textbox.Text
+	
+		if enteredKey == CORRECT_KEY then
+			-- Correct key, load GUI and destroy key system
+			pcall(function()
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/agarv69/Open-Source-Scripts/refs/heads/main/AGARWAREV3.lua"))()
+			end)
+			canvasGroup:Destroy()
+		else
+			-- Wrong key
+			buttonText.Text = "Key invalid!"
+			task.wait(2)
+			buttonText.Text = "Enter Key" -- Change back to original text
+		end
+	end)
+end;
+task.spawn(C_30);
 
 return G2L["1"], require;
