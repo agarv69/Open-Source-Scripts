@@ -1,14 +1,63 @@
--- made by agarvvoid, ryansocooolsmith, monkeyarmpit6, agarv_bbc, agarware (same person)
-
 local CoreGui = game:GetService("CoreGui")
+local HttpService = game:GetService("HttpService")
 local guiName = "T5784YHRGE89ES98T"
 
+-- Check if GUI already exists
 if CoreGui:FindFirstChild(guiName) then
     warn("There's already an existing Gui!")
+    return
+end
+
+-- GUI doesn't exist, check key system
+local CONFIG_FILE = "keydata.json"
+local CORRECT_KEY = "YourKeyHere" -- ONLY THING YOU CHANGE
+
+local function loadKeyData()
+	local success, data = pcall(function()
+		return readfile(CONFIG_FILE)
+	end)
+	if success and data then
+		return HttpService:JSONDecode(data)
+	end
+	return nil
+end
+
+local function saveKeyData()
+	local data = {
+		timestamp = os.time(),
+		key = CORRECT_KEY
+	}
+	writefile(CONFIG_FILE, HttpService:JSONEncode(data))
+end
+
+local function isKeyValid()
+	local data = loadKeyData()
+	if not data then return false end
+	
+	-- Check if saved key matches current key
+	if data.key ~= CORRECT_KEY then
+		return false
+	end
+	
+	local currentTime = os.time()
+	local timePassed = currentTime - data.timestamp
+	local threeDays = 3 * 24 * 60 * 60
+	
+	return timePassed < threeDays
+end
+
+-- Check key validity
+if isKeyValid() then
+	-- Key valid, load GUI
+	print("Loading Gui...")
+	pcall(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/agarv69/Open-Source-Scripts/refs/heads/main/AGARWAREV3.lua"))()
+	end)
 else
-    print("Loading Gui...")
-    
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/agarv69/Open-Source-Scripts/refs/heads/main/AGARWAREV3.lua"))()
-    end)
+	-- Key invalid/expired, show key system
+	print("Key required or expired!")
+	-- PUT YOUR KEY SYSTEM GUI CODE HERE
+	-- After successful key entry, call:
+	-- saveKeyData()
+	-- then load the GUI
 end
