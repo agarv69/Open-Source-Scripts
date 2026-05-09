@@ -19,6 +19,7 @@ G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 -- StarterGui.AgarWareV3Key.CanvasGroup
 G2L["2"] = Instance.new("CanvasGroup", G2L["1"]);
+G2L["2"]["Visible"] = false;
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2"]["Size"] = UDim2.new(0, 350, 0, 157);
@@ -413,13 +414,13 @@ G2L["2e"]["Name"] = [[AgarWare]];
 G2L["2e"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareV3Key.AgarWare.testing
+-- StarterGui.AgarWareV3Key.AgarWare.https://discord.gg/TjKzeMBUYH
 G2L["2f"] = Instance.new("Frame", G2L["2e"]);
 G2L["2f"]["BorderSizePixel"] = 0;
 G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2f"]["Size"] = UDim2.new(0, 100, 0, 100);
 G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f"]["Name"] = [[testing]];
+G2L["2f"]["Name"] = [[https://discord.gg/TjKzeMBUYH]];
 
 
 -- StarterGui.AgarWareV3Key.key
@@ -470,6 +471,7 @@ local function C_2d()
 local script = G2L["2d"];
 	local frame = script.Parent
 	
+	frame.Visible = true
 	frame.AnchorPoint = Vector2.new(0.5, 0.5)
 	frame.Position = UDim2.new(0.5, 0, 0.5, 0)
 end;
