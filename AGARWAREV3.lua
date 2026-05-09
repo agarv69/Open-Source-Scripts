@@ -7,18 +7,19 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 466 | Scripts: 17 | Modules: 0 | Tags: 0
+-- Instances: 467 | Scripts: 17 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.T5784YHRGE89ES98T
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["DisplayOrder"] = 1999999999;
 G2L["1"]["Name"] = [[T5784YHRGE89ES98T]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame
 G2L["2"] = Instance.new("Frame", G2L["1"]);
-G2L["2"]["ZIndex"] = 99;
+G2L["2"]["ZIndex"] = 1000000000;
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
 G2L["2"]["Size"] = UDim2.new(0, 450, 0, 300);
@@ -3296,7 +3297,7 @@ G2L["15d"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.T5784YHRGE89ES98T.Tooltip
 G2L["15e"] = Instance.new("Frame", G2L["1"]);
-G2L["15e"]["ZIndex"] = 1000;
+G2L["15e"]["ZIndex"] = 1000000009;
 G2L["15e"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
 G2L["15e"]["Size"] = UDim2.new(0, 100, 0, 20);
 G2L["15e"]["Position"] = UDim2.new(0.68056, 0, 0.81319, 0);
@@ -3414,7 +3415,7 @@ G2L["170"]["Name"] = [[guicolor]];
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker
 G2L["171"] = Instance.new("Frame", G2L["1"]);
-G2L["171"]["ZIndex"] = 100;
+G2L["171"]["ZIndex"] = 1000000011;
 G2L["171"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
 G2L["171"]["Size"] = UDim2.new(0, 200, 0, 270);
 G2L["171"]["Position"] = UDim2.new(0.54615, 0, 0.6233, 0);
@@ -3429,6 +3430,7 @@ G2L["172"]["Name"] = [[colorpickerScript]];
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout
 G2L["173"] = Instance.new("Frame", G2L["171"]);
+G2L["173"]["ZIndex"] = 99;
 G2L["173"]["BorderSizePixel"] = 0;
 G2L["173"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["173"]["Size"] = UDim2.new(1, 0, 1, 0);
@@ -3969,7 +3971,6 @@ G2L["1ae"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.colorpickerFade
 G2L["1af"] = Instance.new("CanvasGroup", G2L["171"]);
-G2L["1af"]["Visible"] = false;
 G2L["1af"]["BorderSizePixel"] = 0;
 G2L["1af"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1af"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
@@ -3991,7 +3992,7 @@ G2L["1b1"] = Instance.new("UIScale", G2L["1"]);
 
 -- StarterGui.T5784YHRGE89ES98T.Dropdown
 G2L["1b2"] = Instance.new("Frame", G2L["1"]);
-G2L["1b2"]["ZIndex"] = 100;
+G2L["1b2"]["ZIndex"] = 1000000010;
 G2L["1b2"]["BorderSizePixel"] = 0;
 G2L["1b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1b2"]["Size"] = UDim2.new(0, 162, 0, 100);
@@ -4256,7 +4257,7 @@ G2L["1ce"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000
 -- StarterGui.T5784YHRGE89ES98T.CanvasGroup
 G2L["1cf"] = Instance.new("CanvasGroup", G2L["1"]);
 G2L["1cf"]["Visible"] = false;
-G2L["1cf"]["ZIndex"] = 999999999;
+G2L["1cf"]["ZIndex"] = 1999999999;
 G2L["1cf"]["BorderSizePixel"] = 0;
 G2L["1cf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1cf"]["Size"] = UDim2.new(0, 450, 0, 80);
@@ -4281,9 +4282,9 @@ G2L["1d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1d0"]["Text"] = [[AGAR WARE]];
 
 
--- StarterGui.T5784YHRGE89ES98T.CanvasGroup.TextLabel.LocalScript
+-- StarterGui.T5784YHRGE89ES98T.CanvasGroup.TextLabel.intro
 G2L["1d1"] = Instance.new("LocalScript", G2L["1d0"]);
-
+G2L["1d1"]["Name"] = [[intro]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.CanvasGroup.TextLabel.UIStroke
@@ -4291,6 +4292,11 @@ G2L["1d2"] = Instance.new("UIStroke", G2L["1d0"]);
 G2L["1d2"]["Thickness"] = 1.9;
 G2L["1d2"]["Color"] = Color3.fromRGB(0, 54, 110);
 G2L["1d2"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+
+
+-- StarterGui.T5784YHRGE89ES98T.CanvasGroup.UIScale
+G2L["1d3"] = Instance.new("UIScale", G2L["1cf"]);
+G2L["1d3"]["Scale"] = 1.1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.topbar.topbarScript
@@ -7647,7 +7653,7 @@ local script = G2L["172"];
 	ColorPicker.Visible = false
 end;
 task.spawn(C_172);
--- StarterGui.T5784YHRGE89ES98T.CanvasGroup.TextLabel.LocalScript
+-- StarterGui.T5784YHRGE89ES98T.CanvasGroup.TextLabel.intro
 local function C_1d1()
 local script = G2L["1d1"];
 	local canvasGroup = script.Parent.Parent
@@ -7693,7 +7699,7 @@ local script = G2L["1d1"];
 	
 	-- Center the canvas group
 	canvasGroup.AnchorPoint = Vector2.new(0.5, 0.5)
-	canvasGroup.Position = UDim2.new(0.5, 0, 0.5, 0)
+	canvasGroup.Position = UDim2.new(0.5, 0, 0.5, -15)
 	
 	-- Set initial color
 	textLabel.TextColor3 = brightBlue
