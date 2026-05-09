@@ -479,6 +479,17 @@ local function C_30()
 local script = G2L["30"];
 	local CORRECT_KEY = "AGARVISTHEGOAT" -- Change key here
 	
+	local HttpService = game:GetService("HttpService")
+	local CONFIG_FILE = "keydata.json"
+	
+	local function saveKeyData()
+		local data = {
+			timestamp = os.time(),
+			key = CORRECT_KEY
+		}
+		writefile(CONFIG_FILE, HttpService:JSONEncode(data))
+	end
+	
 	local function getScreenGui()
 		local p = script.Parent
 		while p do
@@ -516,16 +527,21 @@ local script = G2L["30"];
 		local enteredKey = textbox.Text
 	
 		if enteredKey == CORRECT_KEY then
-			-- Correct key, load GUI and destroy key system
+			-- Correct key, SAVE TO JSON
+			saveKeyData()
+	
+			-- Load main GUI
 			pcall(function()
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/agarv69/Open-Source-Scripts/refs/heads/main/AGARWAREV3.lua"))()
 			end)
+	
+			-- Destroy key GUI
 			canvasGroup:Destroy()
 		else
 			-- Wrong key
 			buttonText.Text = "Key invalid!"
 			task.wait(2)
-			buttonText.Text = "Enter Key" -- Change back to original text
+			buttonText.Text = "Enter Key"
 		end
 	end)
 end;
