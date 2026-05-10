@@ -37538,13 +37538,13 @@ local script = G2L["36b"];
 	
 	_G.UserLists = {
 		Blacklisted = {
-			1751294438, -- Serverholder_Avenaxl
 			1535622508, -- Buildermann
 			3590692150, -- DeLight
 			1704747, -- snips
 			3234700453, -- Box_boy56433
 			10385488328, -- Ihateroblox_oq
 			5695584804, -- strongestegg83973
+			10923596100, -- serverbot_tco
 		},
 	
 		Whitelisted = {
