@@ -37258,39 +37258,41 @@ local script = G2L["36a"];
 	local TweenService = game:GetService("TweenService")
 	local RunService = game:GetService("RunService")
 	
-	-- ==========================================
-	-- OWNER TAG
-	-- ==========================================
 	local ownerBrightBlue = Color3.fromRGB(0, 123, 255)
 	local ownerDarkBlue = Color3.fromRGB(0, 83, 166)
 	local ownerStrokeColor = Color3.fromRGB(0, 53, 109)
 	
-	local function addOwnerTag(player)
+	local function addTag(player)
 		repeat task.wait() until _G.IsOwner
 		if not _G.IsOwner(player.UserId) then return end
-		local function applyToChar(character)
-			if not character then return end
-			local hrp = character:WaitForChild("HumanoidRootPart", 10)
-			if not hrp then return end
-			local existing = hrp:FindFirstChild("OwnerTag")
+	
+		local function applyToChar(char)
+			if not char then return end
+	
+			local existing = char:FindFirstChild("AgarWareTag")
 			if existing then existing:Destroy() end
+	
+			local hrp = char:WaitForChild("HumanoidRootPart", 10)
+			if not hrp then return end
+	
 			local billboard = Instance.new("BillboardGui")
-			billboard.Name = "OwnerTag"
+			billboard.Name = "AgarWareTag"
 			billboard.Size = UDim2.new(0, 200, 0, 50)
 			billboard.StudsOffset = Vector3.new(0, 4, 0)
-			billboard.AlwaysOnTop = false
+			billboard.AlwaysOnTop = true
 			billboard.ResetOnSpawn = false
 			billboard.Parent = hrp
+	
 			local label = Instance.new("TextLabel", billboard)
 			label.Size = UDim2.new(1, 0, 1, 0)
 			label.BackgroundTransparency = 1
-			label.Text = "OWNER"
+			label.Text = "AGAR WARE OWNER"
 			label.TextColor3 = ownerBrightBlue
-			label.Font = Enum.Font.Arcade
+			label.Font = Enum.Font.Code
 			label.TextScaled = true
-			local stroke = Instance.new("UIStroke", label)
-			stroke.Thickness = 1.6
-			stroke.Color = ownerStrokeColor
+			label.TextStrokeColor3 = ownerStrokeColor
+			label.TextStrokeTransparency = 0
+	
 			local cam = workspace.CurrentCamera
 			local scaleConn
 			scaleConn = RunService.RenderStepped:Connect(function()
@@ -37301,8 +37303,8 @@ local script = G2L["36a"];
 				local dist = (cam.CFrame.Position - hrp.Position).Magnitude
 				local scale = ((34 / dist) * 0.7) + 0.2
 				billboard.Size = UDim2.new(0, 200 * scale, 0, 50 * scale)
-				stroke.Thickness = 1.6 * scale
 			end)
+	
 			local pulseRunning = true
 			task.spawn(function()
 				while pulseRunning and billboard.Parent do
@@ -37323,6 +37325,7 @@ local script = G2L["36a"];
 					toBright.Completed:Wait()
 				end
 			end)
+	
 			billboard.Destroying:Connect(function()
 				pulseRunning = false
 				if scaleConn then
@@ -37330,6 +37333,7 @@ local script = G2L["36a"];
 				end
 			end)
 		end
+	
 		if player.Character then
 			applyToChar(player.Character)
 		end
@@ -37337,9 +37341,9 @@ local script = G2L["36a"];
 	end
 	
 	for _, player in ipairs(Players:GetPlayers()) do
-		addOwnerTag(player)
+		addTag(player)
 	end
-	Players.PlayerAdded:Connect(addOwnerTag)
+	Players.PlayerAdded:Connect(addTag)
 	
 	
 	
@@ -37361,6 +37365,11 @@ local script = G2L["36a"];
 	local function addWhitelistedTag(player)
 		repeat task.wait() until _G.IsWhitelisted
 		if not _G.IsWhitelisted(player.UserId) then return end
+	
+		-- Don't show tag to the whitelisted player themselves
+		local LocalPlayer = Players.LocalPlayer
+		if player == LocalPlayer then return end
+	
 		local function applyToChar(character)
 			if not character then return end
 			local hrp = character:WaitForChild("HumanoidRootPart", 10)
@@ -37371,7 +37380,7 @@ local script = G2L["36a"];
 			billboard.Name = "WhitelistedTag"
 			billboard.Size = UDim2.new(0, 200, 0, 50)
 			billboard.StudsOffset = Vector3.new(0, 4, 0)
-			billboard.AlwaysOnTop = false
+			billboard.AlwaysOnTop = true
 			billboard.ResetOnSpawn = false
 			billboard.Parent = hrp
 			local label = Instance.new("TextLabel", billboard)
@@ -37381,9 +37390,8 @@ local script = G2L["36a"];
 			label.TextColor3 = whiteBrightBlue
 			label.Font = Enum.Font.Arcade
 			label.TextScaled = true
-			local stroke = Instance.new("UIStroke", label)
-			stroke.Thickness = 1
-			stroke.Color = whiteStrokeColor
+			label.TextStrokeColor3 = whiteStrokeColor
+			label.TextStrokeTransparency = 0
 			local cam = workspace.CurrentCamera
 			local scaleConn
 			scaleConn = RunService.RenderStepped:Connect(function()
@@ -37394,7 +37402,6 @@ local script = G2L["36a"];
 				local dist = (cam.CFrame.Position - hrp.Position).Magnitude
 				local scale = ((26 / dist) * 0.5) + 0.2
 				billboard.Size = UDim2.new(0, 200 * scale, 0, 50 * scale)
-				stroke.Thickness = 1.6 * scale
 			end)
 			local pulseRunning = true
 			task.spawn(function()
@@ -37473,9 +37480,8 @@ local script = G2L["36a"];
 			label.TextColor3 = blackBrightRed
 			label.Font = Enum.Font.Arcade
 			label.TextScaled = true
-			local stroke = Instance.new("UIStroke", label)
-			stroke.Thickness = 1
-			stroke.Color = blackStrokeColor
+			label.TextStrokeColor3 = blackStrokeColor
+			label.TextStrokeTransparency = 0
 			local cam = workspace.CurrentCamera
 			local scaleConn
 			scaleConn = game:GetService("RunService").RenderStepped:Connect(function()
@@ -37486,7 +37492,6 @@ local script = G2L["36a"];
 				local dist = (cam.CFrame.Position - torso.Position).Magnitude
 				local scale = ((26 / dist) * 0.5)
 				billboard.Size = UDim2.new(0, 200 * scale, 0, 50 * scale)
-				stroke.Thickness = 1.6 * scale
 			end)
 			local pulseRunning = true
 			task.spawn(function()
