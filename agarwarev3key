@@ -488,13 +488,13 @@ G2L["37"]["Name"] = [[AgarWare]];
 G2L["37"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.AgarWareV3Key.AgarWare.https://discord.gg/TjKzeMBUYH
+-- StarterGui.AgarWareV3Key.AgarWare.https://discord.gg/7fDasxV2Ht
 G2L["38"] = Instance.new("Frame", G2L["37"]);
 G2L["38"]["BorderSizePixel"] = 0;
 G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["38"]["Size"] = UDim2.new(0, 100, 0, 100);
 G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["38"]["Name"] = [[https://discord.gg/TjKzeMBUYH]];
+G2L["38"]["Name"] = [[https://discord.gg/7fDasxV2Ht]];
 
 
 -- StarterGui.AgarWareV3Key.key
