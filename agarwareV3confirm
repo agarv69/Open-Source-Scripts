@@ -8,7 +8,7 @@ if CoreGui:FindFirstChild(guiName) then
 end
 -- GUI doesn't exist, check key system
 local CONFIG_FILE = "keydata.json"
-local CORRECT_KEY = "AGARVISTHEGOAT"
+local CORRECT_KEY = "AGARWAREPREALPHA"
 local function loadKeyData()
 	local success, data = pcall(function()
 		return readfile(CONFIG_FILE)
