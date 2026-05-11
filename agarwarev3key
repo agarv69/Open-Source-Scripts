@@ -500,7 +500,7 @@ G2L["38"]["Name"] = [[https://discord.gg/TjKzeMBUYH]];
 -- StarterGui.AgarWareV3Key.key
 local function C_2()
 local script = G2L["2"];
-	local CORRECT_KEY = "AGARVISTHEGOAT" -- Change key here
+	local CORRECT_KEY = "AGARWAREPREALPHA" -- Change key here
 	
 	local HttpService = game:GetService("HttpService")
 	local CONFIG_FILE = "keydata.json"
