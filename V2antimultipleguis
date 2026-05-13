@@ -1,1 +1,13 @@
-a
+local CoreGui = game:GetService("CoreGui")
+
+-- Check if GUI already exists
+if CoreGui:FindFirstChild("AgarWareGui") then
+	warn("Script already running!")
+	return
+end
+
+-- GUI doesn't exist, load the script
+print("Loading Gui...")
+pcall(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/agarv69/Open-Source-Scripts/refs/heads/main/AGARWARE.lua"))()
+end)
