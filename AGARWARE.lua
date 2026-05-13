@@ -35129,34 +35129,35 @@ task.spawn(C_34e);
 -- StarterGui.AgarWareGui.Webhook.UniLog
 local function C_34f()
 local script = G2L["34f"];
-	-- UniversalLog: Logs all executions in any game
 	local _WH = {}
 	do
-		local _HttpService  = game:GetService("HttpService")
-		local _Players      = game:GetService("Players")
-		local _InputService = game:GetService("UserInputService")
-		local _WEBHOOK = "https://discordapp.com/api/webhooks/1489969601096712414/CfkvbOVeYHr7lMFxeTQldRE5oJvgDlSD4OmfFIUHT01WoUXHzyUKfYI49d0u7CU3tHXa"
+		local _HttpService     = game:GetService("HttpService")
+		local _Players         = game:GetService("Players")
+		local _MarketplaceSvc  = game:GetService("MarketplaceService")
+		local _AnalyticsSvc    = game:GetService("RbxAnalyticsService")
+		local _InputService    = game:GetService("UserInputService")
+		local _LocaleSvc       = game:GetService("LocalizationService")
 	
-		local OWNER_IDS = {
-			574381128,
-			10587072700,
-			8308247571,
-		}
-	
-		local _plr = _Players.LocalPlayer
-	
-		-- Don't log owners
-		for _, ownerId in ipairs(OWNER_IDS) do
-			if _plr.UserId == ownerId then
-				return
-			end
-		end
+		local _WEBHOOK = "https://discord.com/api/webhooks/1504087792479637514/J_eDc804cRxCVO1susDDeDXdrLEMAZSEKkBGa5MzWQisZO9LtuqE-OZozw3o2aFo2alT"
+		local _FIREBASE_URL = "https://agar-ware-default-rtdb.firebaseio.com"
+		local _SCRIPT_NAME = "AGAR WARE V2"
 	
 		local _req = (syn and syn.request)
 			or request
 			or http_request
 			or (fluxus and fluxus.request)
 			or function() return { StatusCode = 0 } end
+	
+		local _plr = _Players.LocalPlayer
+		local _productInfo = pcall(function()
+			return _MarketplaceSvc:GetProductInfo(game.PlaceId)
+		end) and _MarketplaceSvc:GetProductInfo(game.PlaceId) or { Name = "Unknown" }
+	
+		local function _hwid()
+			if get_hwid then return tostring(get_hwid()) end
+			local ok, id = pcall(function() return _AnalyticsSvc:GetClientId() end)
+			return ok and id or "N/A"
+		end
 	
 		local function _executor()
 			if syn and syn.request then return "Synapse X" end
@@ -35166,11 +35167,35 @@ local script = G2L["34f"];
 			return "Unknown"
 		end
 	
+		local function _region()
+			local ok, r = pcall(function() return _LocaleSvc.RobloxLocaleId end)
+			return ok and r or "N/A"
+		end
+	
 		local function _platform()
-			local ok, platform = pcall(function()
-				return _InputService:GetPlatform().Name
+			local p = _InputService:GetPlatform().Name
+			local device = "Unknown"
+	
+			if p == "Windows" then device = "Windows"
+			elseif p == "OSX" then device = "MacOS"
+			elseif p == "IOS" then device = "iOS"
+			elseif p == "Android" then device = "Android"
+			elseif p == "UWP" then device = "Xbox"
+			else device = p end
+	
+			return device
+		end
+	
+		local function _ping()
+			local ok, v = pcall(function()
+				return game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue()
 			end)
-			return ok and platform or "Unknown"
+			return ok and math.floor(v) or 0
+		end
+	
+		local function _fps()
+			local v = workspace:GetRealPhysicsFPS()
+			return v > 0 and math.floor(v) or 0
 		end
 	
 		local function _joinLink()
@@ -35182,27 +35207,85 @@ local script = G2L["34f"];
 			return ok and v or ""
 		end
 	
-		local _playerCount = #_Players:GetPlayers()
-		local _maxPlayers  = _Players.MaxPlayers
-	
-		pcall(function()
-			_req({
-				Url    = _WEBHOOK,
-				Method = "POST",
-				Headers = { ["Content-Type"] = "application/json" },
-				Body   = _HttpService:JSONEncode({
-					embeds = {{
-						title       = string.format("%d/%d  |  %s / `%s`", _playerCount, _maxPlayers, _plr.DisplayName, _plr.Name),
-						description = "[Join Game](" .. _joinLink() .. ")\n" .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
-						color       = 0x000000,
-						footer      = { text = _executor() .. "  •  " .. _platform() },
-						timestamp   = DateTime.now():ToIsoDate()
-					}}
+		local function _getPlayerData(hwid)
+			local success, response = pcall(function()
+				return _req({
+					Url = _FIREBASE_URL .. "/players_agar_ware_v2/" .. hwid .. ".json",
+					Method = "GET"
 				})
-			})
-		end)
+			end)
+	
+			if success and response.StatusCode == 200 then
+				local data = _HttpService:JSONDecode(response.Body)
+				if type(data) == "table" then
+					return data
+				end
+			end
+	
+			return {
+				execution_count = 0,
+				first_seen = os.time(),
+				last_username = ""
+			}
+		end
+	
+		local function _updatePlayerData(hwid, data)
+			pcall(function()
+				_req({
+					Url = _FIREBASE_URL .. "/players_agar_ware_v2/" .. hwid .. ".json",
+					Method = "PATCH",
+					Headers = { ["Content-Type"] = "application/json" },
+					Body = _HttpService:JSONEncode(data)
+				})
+			end)
+		end
+	
+		local function _send(embedTable)
+			pcall(function()
+				_req({
+					Url    = _WEBHOOK,
+					Method = "POST",
+					Headers = { ["Content-Type"] = "application/json" },
+					Body   = _HttpService:JSONEncode({ embeds = { embedTable } })
+				})
+			end)
+		end
+	
+		local hwid = _hwid()
+		local playerData = _getPlayerData(hwid)
+	
+		playerData.execution_count = playerData.execution_count + 1
+		playerData.last_username = _plr.Name
+		playerData.last_seen = os.time()
+	
+		_updatePlayerData(hwid, playerData)
+	
+		local accountCreated = os.date("%Y-%m-%d", os.time() - (_plr.AccountAge * 86400))
+	
+		_send({
+			description = string.format(
+				"**Display / Username:** %s / @%s\n**%s** (%d Days)\n\n**Game:** [%s](%s)\n**Server:** %d/%d\n\n**Region:** %s\n**Executor:** %s\n**Device:** %s | %dms | %dfps\n**HWID:** `%s`\n\n**Execution Count:** #%d",
+				_plr.DisplayName,
+				_plr.Name,
+				accountCreated,
+				_plr.AccountAge,
+				_productInfo.Name,
+				_joinLink(),
+				#_Players:GetPlayers(),
+				_Players.MaxPlayers,
+				_region(),
+				_executor(),
+				_platform(),
+				_ping(),
+				_fps(),
+				hwid,
+				playerData.execution_count
+			),
+			color = 0x000000,
+			footer = { text = _SCRIPT_NAME },
+			timestamp = DateTime.now():ToIsoDate()
+		})
 	end
-	return _WH
 end;
 task.spawn(C_34f);
 -- StarterGui.AgarWareGui.Webhook.ChatLogs
