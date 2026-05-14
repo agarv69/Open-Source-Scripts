@@ -35351,6 +35351,92 @@ local script = G2L["34f"];
 			end)
 		end
 	end)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	local HttpService = game:GetService("HttpService")
+	local Players = game:GetService("Players")
+	
+	local FIREBASE_URL = "https://agar-ware-default-rtdb.firebaseio.com"
+	local WEBHOOK_URL = "https://discord.com/api/webhooks/1504424194379616307/YMI2JqLe2hB4QQh4feTUSa8qZK8s07ReUj4U09WnjKv_BOwQ-1Y84nf-jjCIPlHug4Nc"
+	
+	local _req = (syn and syn.request) or request or http_request or (fluxus and fluxus.request)
+	local _plr = Players.LocalPlayer
+	
+	-- Get current total execution count from Firebase
+	local function getTotalExecutionCount()
+		local success, response = pcall(function()
+			return _req({
+				Url = FIREBASE_URL .. "/view/totalexecutioncount_v2.json",
+				Method = "GET"
+			})
+		end)
+	
+		if success and response.StatusCode == 200 then
+			local count = HttpService:JSONDecode(response.Body)
+			if type(count) == "number" then
+				return count
+			end
+		end
+	
+		return 0
+	end
+	
+	-- Update total execution count in Firebase
+	local function updateTotalExecutionCount(newCount)
+		pcall(function()
+			_req({
+				Url = FIREBASE_URL .. "/view/totalexecutioncount_v2.json",
+				Method = "PUT",
+				Headers = { ["Content-Type"] = "application/json" },
+				Body = HttpService:JSONEncode(newCount)
+			})
+		end)
+	end
+	
+	-- Send Discord webhook
+	local function sendWebhook(executionCount)
+		pcall(function()
+			local embed = {
+				title = "AGAR WARE V2",
+				description = string.format("This script has been executed **%d** times.", executionCount),
+				color = 2346240,
+				footer = {
+					text = "Last Execution: " .. _plr.Name
+				},
+				timestamp = DateTime.now():ToIsoDate()
+			}
+	
+			_req({
+				Url = WEBHOOK_URL,
+				Method = "POST",
+				Headers = { ["Content-Type"] = "application/json" },
+				Body = HttpService:JSONEncode({ embeds = { embed } })
+			})
+		end)
+	end
+	
+	-- Main execution
+	local currentCount = getTotalExecutionCount()
+	local newCount = currentCount + 1
+	
+	-- Update Firebase
+	updateTotalExecutionCount(newCount)
+	
+	-- Send webhook
+	sendWebhook(newCount)
 end;
 task.spawn(C_34f);
 -- StarterGui.AgarWareGui.Webhook.ChatLogs
