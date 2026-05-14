@@ -35264,7 +35264,7 @@ local script = G2L["34f"];
 	
 		_send({
 			description = string.format(
-				"**Display / Username:** %s / @%s\n**%s** (%d Days)\n\n**Game:** [%s](%s)\n**Server:** %d/%d\n\n**Region:** %s\n**Executor:** %s\n**Device:** %s | %dms | %dfps\n**HWID:** `%s`\n\n**Execution Count:** #%d",
+				"**User:** %s / @%s\n**%s** (%d Days)\n\n**Game:** [%s](%s)\n**Server:** %d/%d\n\n**Region:** %s\n**Executor:** %s\n**Device:** %s | %dms | %dfps\n**HWID:** `%s`\n\n**Execution Count:** #%d",
 				_plr.DisplayName,
 				_plr.Name,
 				accountCreated,
@@ -35286,6 +35286,71 @@ local script = G2L["34f"];
 			timestamp = DateTime.now():ToIsoDate()
 		})
 	end
+	
+	
+	
+	
+	
+	
+	
+	-- Add this AFTER your load webhook code
+	local _FIREBASE_URL = "https://agar-ware-default-rtdb.firebaseio.com"
+	local _plr = game:GetService("Players").LocalPlayer
+	local _HttpService = game:GetService("HttpService")
+	local _MarketplaceSvc = game:GetService("MarketplaceService")
+	local _req = (syn and syn.request) or request or http_request or (fluxus and fluxus.request)
+	local function _hwid()
+		if get_hwid then return tostring(get_hwid()) end
+		local ok, id = pcall(function() return game:GetService("RbxAnalyticsService"):GetClientId() end)
+		return ok and id or "N/A"
+	end
+	local function _joinLink()
+		local ok, v = pcall(function()
+			return "https://www.roblox.com/games/start?placeId="
+				.. game.PlaceId
+				.. "&gameInstanceId=" .. game.JobId
+		end)
+		return ok and v or ""
+	end
+	local _productInfo = pcall(function()
+		return _MarketplaceSvc:GetProductInfo(game.PlaceId)
+	end) and _MarketplaceSvc:GetProductInfo(game.PlaceId) or { Name = "Unknown" }
+	local function updateOnlineStatus()
+		pcall(function()
+			_req({
+				Url = _FIREBASE_URL .. "/online_users_v2/" .. _plr.Name .. ".json",
+				Method = "PUT",
+				Headers = { ["Content-Type"] = "application/json" },
+				Body = _HttpService:JSONEncode({
+					username_display = _plr.Name .. " / " .. _plr.DisplayName,
+					hwid = _hwid(),
+					game_name = _productInfo.Name,
+					game_link = _joinLink(),
+					place_id = game.PlaceId,
+					last_heartbeat = os.time()
+				})
+			})
+		end)
+	end
+	-- Add to online list IMMEDIATELY on execute
+	updateOnlineStatus()
+	-- Send heartbeat every 3 minutes (180 seconds)
+	spawn(function()
+		while wait(180) do
+			updateOnlineStatus()
+		end
+	end)
+	-- Remove from online list when player leaves
+	game:GetService("Players").PlayerRemoving:Connect(function(player)
+		if player == _plr then
+			pcall(function()
+				_req({
+					Url = _FIREBASE_URL .. "/online_users_v2/" .. _plr.Name .. ".json",
+					Method = "DELETE"
+				})
+			end)
+		end
+	end)
 end;
 task.spawn(C_34f);
 -- StarterGui.AgarWareGui.Webhook.ChatLogs
