@@ -1,14 +1,39 @@
 local CoreGui = game:GetService("CoreGui")
 local HttpService = game:GetService("HttpService")
 local guiName = "T5784YHRGE89ES98T"
+
 -- Check if GUI already exists
 if CoreGui:FindFirstChild(guiName) then
     warn("There's already an existing Gui!")
     return
 end
--- GUI doesn't exist, check key system
+
+-- Firebase config
+local FIREBASE_URL = "https://agar-ware-default-rtdb.firebaseio.com"
 local CONFIG_FILE = "keydata.json"
-local CORRECT_KEY = "AGARWAREPREALPHA"
+
+local _req = (syn and syn.request) or request or http_request or (fluxus and fluxus.request)
+
+-- Fetch the correct key from Firebase
+local function getCorrectKeyFromFirebase()
+	local success, response = pcall(function()
+		return _req({
+			Url = FIREBASE_URL .. "/view/key.json",
+			Method = "GET"
+		})
+	end)
+	
+	if success and response.StatusCode == 200 then
+		local key = HttpService:JSONDecode(response.Body)
+		if type(key) == "string" then
+			return key
+		end
+	end
+	
+	warn("Failed to fetch key from Firebase!")
+	return nil
+end
+
 local function loadKeyData()
 	local success, data = pcall(function()
 		return readfile(CONFIG_FILE)
@@ -18,18 +43,27 @@ local function loadKeyData()
 	end
 	return nil
 end
-local function saveKeyData()
+
+local function saveKeyData(key)
 	local data = {
 		timestamp = os.time(),
-		key = CORRECT_KEY
+		key = key
 	}
 	writefile(CONFIG_FILE, HttpService:JSONEncode(data))
 end
+
 local function isKeyValid()
+	-- Get the current correct key from Firebase
+	local CORRECT_KEY = getCorrectKeyFromFirebase()
+	if not CORRECT_KEY then
+		warn("Could not retrieve key from database!")
+		return false
+	end
+	
 	local data = loadKeyData()
 	if not data then return false end
 	
-	-- Check if saved key matches current key
+	-- Check if saved key matches current key from Firebase
 	if data.key ~= CORRECT_KEY then
 		return false
 	end
@@ -40,6 +74,7 @@ local function isKeyValid()
 	
 	return timePassed < threeDays
 end
+
 -- Check key validity
 if isKeyValid() then
 	-- Key valid, load GUI
@@ -54,6 +89,7 @@ else
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/agarv69/Open-Source-Scripts/refs/heads/main/agarwarev3key"))()
 	end)
 	-- After successful key entry in the key GUI, that script should call:
-	-- saveKeyData()
+	-- getCorrectKeyFromFirebase() to get current key
+	-- then saveKeyData(key)
 	-- then load the main GUI
 end
