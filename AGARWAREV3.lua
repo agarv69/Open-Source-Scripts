@@ -7108,9 +7108,9 @@ G2L["313"] = Instance.new("LocalScript", G2L["312"]);
 G2L["313"]["Name"] = [[global log]];
 
 
--- StarterGui.T5784YHRGE89ES98T.LocalScript
+-- StarterGui.T5784YHRGE89ES98T.startupScript
 G2L["314"] = Instance.new("LocalScript", G2L["1"]);
-
+G2L["314"]["Name"] = [[startupScript]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.mainScript
@@ -7319,7 +7319,7 @@ local script = G2L["9"];
 			maxPlayers
 		)
 	
-		TitleText.Text = "AGAR WARE | v3.0.0-alpha.2 | " .. statsText
+		TitleText.Text = "AGAR WARE | v3.0.0-alpha.3 | " .. statsText
 		TitleText.RichText = true
 	end)
 end;
@@ -7468,15 +7468,19 @@ local script = G2L["3c"];
 		frame = "discord",
 		groupbox = script,
 		tooltip = "Join my discord server, press here to copy the link.",
-	
 		callback = function()
 			local success = pcall(function()
 				setclipboard("https://discord.gg/7fDasxV2Ht")
 			end)
 	
+			if success then
+				_G.Notify("Discord link copied to clipboard!", 3)
+			else
+				_G.Notify("Failed to copy link!", 3)
+			end
+	
 			return success
 		end,
-	
 		afterMessage = "Copied to clipboard!",
 		errorMessage = "Failed to copy!",
 		afterMessageWait = 2,
@@ -8926,12 +8930,10 @@ local script = G2L["235"];
 	
 	local Players = game:GetService("Players")
 	local LocalPlayer = Players.LocalPlayer
-	
 	local pickupLoop = nil
 	local unequipLoop = nil
 	local autoPickedTools = {}
 	local DEATH_TAG = "DeathItem"
-	
 	_G.CreateToggle({
 		frame = "autograb",
 		groupbox = script,
@@ -8939,7 +8941,6 @@ local script = G2L["235"];
 		callback = function(isEnabled)
 			if isEnabled then
 				autoPickedTools = {}
-	
 				-- Pickup loop
 				pickupLoop = task.spawn(function()
 					while true do
@@ -8948,11 +8949,15 @@ local script = G2L["235"];
 						if hum and hum.Health > 0 then
 							local currentTool = char:FindFirstChildOfClass("Tool")
 							for _, obj in ipairs(workspace:GetChildren()) do
-								if obj:IsA("Tool") and obj:FindFirstChild("Handle") and not obj:HasTag(DEATH_TAG) then
+								if obj:IsA("Tool") and obj:FindFirstChild("Handle") and not obj:HasTag(DEATH_TAG) and not autoPickedTools[obj] then
 									autoPickedTools[obj] = tick() + 0.5
+									local toolName = obj.Name
 									pcall(function()
 										hum:EquipTool(obj)
 									end)
+	
+									-- Notify when tool is grabbed
+									_G.Notify("Auto grabbed tool: " .. toolName, 2)
 								end
 							end
 							if currentTool and currentTool.Parent == LocalPlayer.Backpack and not autoPickedTools[currentTool] then
@@ -8963,7 +8968,6 @@ local script = G2L["235"];
 						task.wait()
 					end
 				end)
-	
 				-- Unequip loop
 				unequipLoop = task.spawn(function()
 					while true do
@@ -9013,59 +9017,47 @@ local script = G2L["235"];
 		canClickDuringAfter = true,
 		callback = function()
 			local token = _G.SetButtonText("disabledeletesound", "Processing...", 999)
-	
 			local success, err = pcall(function()
 				local Players = game:GetService("Players")
 				local LocalPlayer = Players.LocalPlayer
 				local workspace = game:GetService("Workspace")
-	
 				local isog = workspace:FindFirstChild("Cubes") ~= nil
-	
 				if isog then
 					error("OG not supported!")
 				end
-	
 				local character = LocalPlayer.Character
 				if not character then error("No character") end
 	
-				if character:FindFirstChild("Delete") then
-					error("Unequip Delete tool!")
-				end
-	
-				local deleteTool = LocalPlayer.Backpack:FindFirstChild("Delete")
-				if not deleteTool then error("Delete tool needed!") end
-	
+				-- Refresh the delete tool first
 				if shared.RefreshTool then
 					shared.RefreshTool("Delete")
 					task.wait(0.1)
 				end
 	
-				deleteTool = LocalPlayer.Backpack:FindFirstChild("Delete")
-				if not deleteTool then error("Delete tool not found") end
+				local deleteTool = LocalPlayer.Backpack:FindFirstChild("Delete") or character:FindFirstChild("Delete")
+				if not deleteTool then error("Delete tool needed!") end
 	
 				local event = deleteTool:WaitForChild("Script"):WaitForChild("Event")
 				local hrp = character:FindFirstChild("HumanoidRootPart")
 				if not hrp then error("No HumanoidRootPart") end
-	
 				local brick = hrp:FindFirstChild("Brick")
 				if not brick then error("Brick not found in HumanoidRootPart") end
-	
 				for i = 1, 2 do
 					event:FireServer(brick, hrp.Position)
 					task.wait(0.01)
 				end
 			end)
-	
 			if success then
 				_G.SetButtonText("disabledeletesound", "Disabled sounds!", 1)
+				_G.Notify("Building sounds disabled!", 3)
 				return true
 			else
 				_G.SetButtonText("disabledeletesound", err or "Failed!", 1)
+				_G.Notify("Failed to disable sounds!", 3)
 				return false
 			end
 		end,
 	})
-	
 	-- ====================================================================================================
 	-- DISABLE BKIT
 	-- ====================================================================================================
@@ -9082,54 +9074,43 @@ local script = G2L["235"];
 		canClickDuringAfter = true,
 		callback = function()
 			local token = _G.SetButtonText("disablebkit", "Processing...", 999)
-	
 			local success, err = pcall(function()
 				local Players = game:GetService("Players")
 				local LocalPlayer = Players.LocalPlayer
 				local rs = game:GetService("ReplicatedStorage")
-	
 				local character = LocalPlayer.Character
 				if not character then error("No character") end
 	
-				if character:FindFirstChild("Delete") then
-					error("Unequip Delete tool!")
-				end
-	
-				local deleteTool = LocalPlayer.Backpack:FindFirstChild("Delete")
-				if not deleteTool then error("Delete tool needed!") end
-	
+				-- Refresh the delete tool first
 				if shared.RefreshTool then
 					shared.RefreshTool("Delete")
 					task.wait(0.1)
 				end
 	
-				deleteTool = LocalPlayer.Backpack:FindFirstChild("Delete")
-				if not deleteTool then error("Delete tool not found after refresh") end
+				local deleteTool = LocalPlayer.Backpack:FindFirstChild("Delete") or character:FindFirstChild("Delete")
+				if not deleteTool then error("Delete tool needed!") end
 	
 				local event = deleteTool:WaitForChild("Script"):WaitForChild("Event")
 				local brick = rs:FindFirstChild("Brick")
 				if not brick then error("No Brick in ReplicatedStorage") end
-	
 				local startTime = tick()
 				local maxTime = 5
-	
 				while tick() - startTime < maxTime and not token.cancelled do
 					if not rs:FindFirstChild("Brick") then
 						return true
 					end
-	
 					event:FireServer(brick, character.HumanoidRootPart.Position)
 					task.wait(0.01)
 				end
-	
 				error("Timeout - Brick not deleted")
 			end)
-	
 			if success then
 				_G.SetButtonText("disablebkit", "Disabled B-Kit!", 1)
+				_G.Notify("B-Kit disabled successfully!", 3)
 				return true
 			else
 				_G.SetButtonText("disablebkit", err or "Failed!", 1)
+				_G.Notify("Failed to disable B-Kit!", 3)
 				return false
 			end
 		end,
@@ -9148,37 +9129,28 @@ local script = G2L["235"];
 		canClickDuringAfter = true,
 		callback = function()
 			local token = _G.SetButtonText("fixbrick", "Processing...", 999)
-	
 			local success, err = pcall(function()
 				local Players = game:GetService("Players")
 				local LocalPlayer = Players.LocalPlayer
 				local rs = game:GetService("ReplicatedStorage")
-	
 				local brick = rs:FindFirstChild("Brick")
 				if not brick or brick:HasTag("FAKE") then
 					error("Brick not found!")
 				end
-	
 				local character = LocalPlayer.Character
 				if not character then error("No character") end
-	
 				local paintTool = LocalPlayer.Backpack:FindFirstChild("Paint") or character:FindFirstChild("Paint")
 				if not paintTool then error("Paint tool needed!") end
-	
 				if shared.RefreshTool then
 					shared.RefreshTool("Paint")
 					task.wait(0.1)
 				end
-	
 				paintTool = LocalPlayer.Backpack:FindFirstChild("Paint") or character:FindFirstChild("Paint")
 				if not paintTool then error("Paint tool not found") end
-	
 				local event = paintTool:WaitForChild("Script"):WaitForChild("Event")
 				local hrp = character:FindFirstChild("HumanoidRootPart")
 				if not hrp then error("No HumanoidRootPart") end
-	
 				local pos = hrp.Position
-	
 				event:FireServer(brick, Enum.NormalId.Top, pos, "both 🤝", Color3.fromRGB(192, 192, 192), "plastic", "")
 				task.wait(0.1)
 				event:FireServer(brick, Enum.NormalId.Bottom, pos, "both 🤝", Color3.fromRGB(192, 192, 192), "spray", "")
@@ -9192,23 +9164,22 @@ local script = G2L["235"];
 				event:FireServer(brick, Enum.NormalId.Front, pos, "both 🤝", Color3.fromRGB(192, 192, 192), "spray", "")
 				task.wait(0.1)
 				event:FireServer(brick, Enum.NormalId.Top, pos, "both 🤝", Color3.fromRGB(192, 192, 192), "spray", "")
-	
 				if not brick.Anchored then
 					task.wait(0.1)
 					event:FireServer(brick, Enum.NormalId.Top, pos, "material", Color3.fromRGB(173, 172, 175), "anchor", "")
 				end
-	
 				if not brick.CanCollide then
 					task.wait(0.1)
 					event:FireServer(brick, Enum.NormalId.Top, pos, "material", Color3.fromRGB(173, 172, 175), "collide", "")
 				end
 			end)
-	
 			if success then
 				_G.SetButtonText("fixbrick", "Fixed brick!", 1)
+				_G.Notify("Brick fixed successfully!", 3)
 				return true
 			else
 				_G.SetButtonText("fixbrick", err or "Failed!", 1)
+				_G.Notify("Failed to fix brick!", 3)
 				return false
 			end
 		end,
@@ -9493,52 +9464,46 @@ local script = G2L["235"];
 		canClickDuringAfter = true,
 		callback = function()
 			local token = _G.SetButtonText("disablebkitog", "Processing...", 999)
-	
 			local success, err = pcall(function()
 				local Players = game:GetService("Players")
 				local LocalPlayer = Players.LocalPlayer
 				local rs = game:GetService("ReplicatedStorage")
-	
 				local character = LocalPlayer.Character
 				if not character then error("No character") end
 	
-				local deleteTool = LocalPlayer.Backpack:FindFirstChild("Delete")
-				if not deleteTool then error("Delete tool needed!") end
-	
+				-- Refresh the delete tool first
 				if shared.RefreshTool then
 					shared.RefreshTool("Delete")
 					task.wait(0.1)
 				end
 	
+				local deleteTool = LocalPlayer.Backpack:FindFirstChild("Delete") or character:FindFirstChild("Delete")
+				if not deleteTool then error("Delete tool needed!") end
+	
 				local hrp = character:FindFirstChild("HumanoidRootPart")
 				if not hrp then error("No HumanoidRootPart") end
-	
 				local cube = rs:FindFirstChild("Cube")
 				if not cube then error("No Cube in ReplicatedStorage") end
-	
 				local events = LocalPlayer.Backpack:FindFirstChild("Events")
 				if not events then error("No Events in Backpack") end
-	
 				local startTime = tick()
 				local maxTime = 5
-	
 				while tick() - startTime < maxTime and not token.cancelled do
 					if not rs:FindFirstChild("Cube") then
 						return true
 					end
-	
 					events:FireServer(hrp.Position, Enum.NormalId.Top, cube, Color3.new(), "Smooth")
 					task.wait(0.01)
 				end
-	
 				error("Timeout - Cube not deleted")
 			end)
-	
 			if success then
 				_G.SetButtonText("disablebkitog", "Disabled B-Kit!", 1)
+				_G.Notify("B-Kit disabled successfully!", 3)
 				return true
 			else
 				_G.SetButtonText("disablebkitog", err or "Failed!", 1)
+				_G.Notify("Failed to disable B-Kit!", 3)
 				return false
 			end
 		end,
@@ -11698,7 +11663,7 @@ local script = G2L["2a7"];
 		repositionNotifications()
 	
 		-- Animate in
-		TweenService:Create(uiScale, TweenInfo.new(0.3, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+		TweenService:Create(uiScale, TweenInfo.new(0.6, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
 			Scale = 1
 		}):Play()
 	
@@ -13203,7 +13168,7 @@ local script = G2L["313"];
 	sendWebhook(newCount)
 end;
 task.spawn(C_313);
--- StarterGui.T5784YHRGE89ES98T.LocalScript
+-- StarterGui.T5784YHRGE89ES98T.startupScript
 local function C_314()
 local script = G2L["314"];
 	
