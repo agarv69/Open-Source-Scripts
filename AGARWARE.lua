@@ -37855,6 +37855,7 @@ local script = G2L["36b"];
 			909205143, -- pop
 			7999975433, -- koi
 			10842814389, -- MONKEYARMPIT6
+			10946974452, -- korea
 		},
 	
 		Owners = {
