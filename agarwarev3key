@@ -1,3 +1,5 @@
+local CORRECT_KEY = "2077"
+
 --[=[
  d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
 88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
@@ -502,28 +504,6 @@ local function C_2()
 local script = G2L["2"];
 	local HttpService = game:GetService("HttpService")
 	local CONFIG_FILE = "keydata.json"
-	local FIREBASE_URL = "https://agar-ware-default-rtdb.firebaseio.com"
-	
-	local _req = (syn and syn.request) or request or http_request or (fluxus and fluxus.request)
-	
-	-- Fetch the correct key from Firebase
-	local function getCorrectKeyFromFirebase()
-		local success, response = pcall(function()
-			return _req({
-				Url = FIREBASE_URL .. "/view/key.json",
-				Method = "GET"
-			})
-		end)
-	
-		if success and response.StatusCode == 200 then
-			local key = HttpService:JSONDecode(response.Body)
-			if type(key) == "string" then
-				return key
-			end
-		end
-	
-		return nil
-	end
 	
 	local function saveKeyData(key)
 		local data = {
@@ -561,27 +541,17 @@ local script = G2L["2"];
 	local buttonText = button and button:FindFirstChild("text")
 	local textboxFrameInner = textboxFrame:FindFirstChild("textboxFrame")
 	local textbox = textboxFrameInner and textboxFrameInner:FindFirstChild("textbox")
-	
 	if not button or not buttonText or not textbox then return end
 	
 	button.MouseButton1Click:Connect(function()
 		local enteredKey = textbox.Text
 	
-		-- Fetch the correct key from Firebase
 		buttonText.Text = "Checking..."
-		local CORRECT_KEY = getCorrectKeyFromFirebase()
-	
-		if not CORRECT_KEY then
-			buttonText.Text = "Server error!"
-			task.wait(2)
-			buttonText.Text = "Enter Key"
-			return
-		end
+		task.wait(0.5)
 	
 		if enteredKey == CORRECT_KEY then
 			-- Correct key, SAVE TO JSON
 			saveKeyData(CORRECT_KEY)
-	
 			buttonText.Text = "Valid! Loading..."
 	
 			-- Load main GUI
