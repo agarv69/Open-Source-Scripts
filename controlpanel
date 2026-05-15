@@ -1,0 +1,658 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 27 | Scripts: 5 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- Workspace.AdminControlPanel
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["DisplayOrder"] = 999999999;
+G2L["1"]["Name"] = [[AdminControlPanel]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- Workspace.AdminControlPanel.LocalScript
+G2L["2"] = Instance.new("LocalScript", G2L["1"]);
+
+
+
+-- Workspace.AdminControlPanel.Frame
+G2L["3"] = Instance.new("Frame", G2L["1"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Size"] = UDim2.new(0, 400, 0, 300);
+G2L["3"]["Position"] = UDim2.new(0.60394, 0, 0.18591, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame
+G2L["4"] = Instance.new("ScrollingFrame", G2L["3"]);
+G2L["4"]["Active"] = true;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["CanvasSize"] = UDim2.new(0, 0, 30, 0);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["Size"] = UDim2.new(1, 0, 1, -30);
+G2L["4"]["Position"] = UDim2.new(0, 0, 0, 30);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["ScrollBarThickness"] = 5;
+G2L["4"]["BackgroundTransparency"] = 1;
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.userselection
+G2L["5"] = Instance.new("Frame", G2L["4"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["Size"] = UDim2.new(0, 400, 0, 40);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Name"] = [[userselection]];
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.userselection.username/display
+G2L["6"] = Instance.new("TextLabel", G2L["5"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Size"] = UDim2.new(1, -200, 1, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[username / display]];
+G2L["6"]["Name"] = [[username/display]];
+G2L["6"]["Position"] = UDim2.new(0, 40, 0, 0);
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.userselection.profile
+G2L["7"] = Instance.new("ImageLabel", G2L["5"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
+G2L["7"]["Size"] = UDim2.new(0, 40, 1, 0);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Name"] = [[profile]];
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.userselection.TextButton
+G2L["8"] = Instance.new("TextButton", G2L["5"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(14, 255, 0);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0.15, 100, 1, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[SHOW PLAYERS]];
+G2L["8"]["Position"] = UDim2.new(0.6, 0, 0, 0);
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.UIListLayout
+G2L["9"] = Instance.new("UIListLayout", G2L["4"]);
+G2L["9"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.userlist
+G2L["a"] = Instance.new("Frame", G2L["4"]);
+G2L["a"]["Visible"] = false;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["Size"] = UDim2.new(1, 0, 0, 0);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Name"] = [[userlist]];
+G2L["a"]["LayoutOrder"] = 1;
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.userlist.template
+G2L["b"] = Instance.new("Frame", G2L["a"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["Size"] = UDim2.new(0, 400, 0, 40);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Name"] = [[template]];
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.userlist.template.username/display
+G2L["c"] = Instance.new("TextLabel", G2L["b"]);
+G2L["c"]["TextWrapped"] = true;
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Size"] = UDim2.new(1, -200, 1, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[username / display]];
+G2L["c"]["Name"] = [[username/display]];
+G2L["c"]["Position"] = UDim2.new(0, 40, 0, 0);
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.userlist.template.profile
+G2L["d"] = Instance.new("ImageLabel", G2L["b"]);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
+G2L["d"]["Size"] = UDim2.new(0, 40, 1, 0);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Name"] = [[profile]];
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.userlist.template.SELECT
+G2L["e"] = Instance.new("TextButton", G2L["b"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(252, 255, 0);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0.15, 100, 1, 0);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[SELECT]];
+G2L["e"]["Name"] = [[SELECT]];
+G2L["e"]["Position"] = UDim2.new(0.6, 0, 0, 0);
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.userlist.UIListLayout
+G2L["f"] = Instance.new("UIListLayout", G2L["a"]);
+G2L["f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.forcechat
+G2L["10"] = Instance.new("Frame", G2L["4"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["Size"] = UDim2.new(0, 400, 0, 40);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Name"] = [[forcechat]];
+G2L["10"]["LayoutOrder"] = 3;
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.forcechat.forcechat
+G2L["11"] = Instance.new("LocalScript", G2L["10"]);
+G2L["11"]["Name"] = [[forcechat]];
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.forcechat.sendchat
+G2L["12"] = Instance.new("TextButton", G2L["10"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(0, 35, 255);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["Size"] = UDim2.new(0.15, 100, 1, 0);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[SEND CHAT]];
+G2L["12"]["Name"] = [[sendchat]];
+G2L["12"]["Position"] = UDim2.new(0.6, 0, 0, 0);
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.forcechat.TextBox
+G2L["13"] = Instance.new("TextBox", G2L["10"]);
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(0, 61, 255);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["Size"] = UDim2.new(0, 240, 0, 40);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 39, 255);
+G2L["13"]["LayoutOrder"] = 2;
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.mainbuttons
+G2L["14"] = Instance.new("Frame", G2L["4"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["Size"] = UDim2.new(0, 400, 0, 40);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Name"] = [[mainbuttons]];
+G2L["14"]["LayoutOrder"] = 2;
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.mainbuttons.kick
+G2L["15"] = Instance.new("LocalScript", G2L["14"]);
+G2L["15"]["Name"] = [[kick]];
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.mainbuttons.kick
+G2L["16"] = Instance.new("TextButton", G2L["14"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 205, 0);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["Size"] = UDim2.new(0.75, 100, 1, 0);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[KICK]];
+G2L["16"]["Name"] = [[kick]];
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.forceexecute
+G2L["17"] = Instance.new("Frame", G2L["4"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["Size"] = UDim2.new(0, 400, 0, 40);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Name"] = [[forceexecute]];
+G2L["17"]["LayoutOrder"] = 4;
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.forceexecute.execute
+G2L["18"] = Instance.new("LocalScript", G2L["17"]);
+G2L["18"]["Name"] = [[execute]];
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.forceexecute.sendchat
+G2L["19"] = Instance.new("TextButton", G2L["17"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19"]["Size"] = UDim2.new(0.15, 100, 1, 0);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[EXECUTE]];
+G2L["19"]["Name"] = [[sendchat]];
+G2L["19"]["Position"] = UDim2.new(0.6, 0, 0, 0);
+
+
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.forceexecute.TextBox
+G2L["1a"] = Instance.new("TextBox", G2L["17"]);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(0, 61, 255);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["Size"] = UDim2.new(0, 240, 0, 40);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 39, 255);
+G2L["1a"]["LayoutOrder"] = 2;
+
+
+-- Workspace.AdminControlPanel.owner check
+G2L["1b"] = Instance.new("LocalScript", G2L["1"]);
+G2L["1b"]["Name"] = [[owner check]];
+
+
+-- Workspace.AdminControlPanel.LocalScript
+local function C_2()
+local script = G2L["2"];
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	
+	-- Get GUI elements
+	local gui = script.Parent
+	local mainFrame = gui:WaitForChild("Frame")
+	local scrollingFrame = mainFrame:WaitForChild("ScrollingFrame")
+	
+	local userSelection = scrollingFrame:WaitForChild("userselection")
+	local userSelectionButton = userSelection:WaitForChild("TextButton")
+	local userSelectionProfile = userSelection:WaitForChild("profile")
+	local userSelectionUsername = userSelection:FindFirstChild("username/display")
+	
+	local userList = scrollingFrame:WaitForChild("userlist")
+	local template = userList:WaitForChild("template")
+	
+	-- Hide template
+	template.Visible = false
+	
+	-- Track dropdown state and selected player
+	local dropdownOpen = false
+	_G.selectedPlayer = nil
+	
+	-- Function to update userlist frame size
+	local function updateUserListSize()
+		local playerCount = 0
+		for _, child in ipairs(userList:GetChildren()) do
+			if child:IsA("Frame") and child.Visible and child ~= template then
+				playerCount = playerCount + 1
+			end
+		end
+	
+		-- Each player frame is 40px tall
+		userList.Size = UDim2.new(1, 0, 0, 40 + (playerCount * 40)) -- 40px base + 40px per player
+	end
+	
+	-- Toggle dropdown
+	userSelectionButton.MouseButton1Click:Connect(function()
+		dropdownOpen = not dropdownOpen
+	
+		if dropdownOpen then
+			-- Open dropdown
+			userSelectionButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Red
+			userList.Visible = true
+		else
+			-- Close dropdown
+			userSelectionButton.BackgroundColor3 = Color3.fromRGB(14, 255, 0) -- Green
+			userList.Visible = false
+		end
+	end)
+	
+	-- Function to update user selection display
+	local function updateUserSelection(player)
+		_G.selectedPlayer = player
+	
+		-- Update username/display
+		if userSelectionUsername then
+			userSelectionUsername.Text = player.Name .. " / " .. player.DisplayName
+		end
+	
+		-- Update profile picture
+		local userId = player.UserId
+		local thumbType = Enum.ThumbnailType.HeadShot
+		local thumbSize = Enum.ThumbnailSize.Size150x150
+		local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+		userSelectionProfile.Image = content
+	end
+	
+	-- Function to create player entry
+	local function createPlayerEntry(player)
+		-- Clone template
+		local entry = template:Clone()
+		entry.Name = player.Name
+		entry.Visible = true
+	
+		-- Get elements
+		local entryProfile = entry:WaitForChild("profile")
+		local entryUsername = entry:FindFirstChild("username/display")
+		local selectButton = entry:WaitForChild("SELECT")
+	
+		-- Set username/display
+		if entryUsername then
+			entryUsername.Text = player.Name .. " / " .. player.DisplayName
+		end
+	
+		-- Set profile picture
+		local userId = player.UserId
+		local thumbType = Enum.ThumbnailType.HeadShot
+		local thumbSize = Enum.ThumbnailSize.Size150x150
+		local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+		entryProfile.Image = content
+	
+		-- Select button functionality
+		selectButton.MouseButton1Click:Connect(function()
+			updateUserSelection(player)
+	
+			-- Close dropdown
+			dropdownOpen = false
+			userSelectionButton.BackgroundColor3 = Color3.fromRGB(14, 255, 0) -- Green
+			userList.Visible = false
+		end)
+	
+		-- Parent LAST (after everything is set up)
+		entry.Parent = userList
+	
+		-- Update size after adding player
+		updateUserListSize()
+	
+		return entry
+	end
+	
+	-- Function to remove player entry
+	local function removePlayerEntry(player)
+		local entry = userList:FindFirstChild(player.Name)
+		if entry and entry ~= template then
+			entry:Destroy()
+		end
+	
+		-- If selected player left, clear selection
+		if _G.selectedPlayer == player then
+			_G.selectedPlayer = nil
+			if userSelectionUsername then
+				userSelectionUsername.Text = "username / display"
+			end
+			userSelectionProfile.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+		end
+	
+		-- Update size after removing player
+		updateUserListSize()
+	end
+	
+	-- Function to populate all existing players
+	local function populatePlayers()
+		-- Clear existing entries (except template)
+		for _, child in ipairs(userList:GetChildren()) do
+			if child:IsA("Frame") and child ~= template and child.Name ~= "UIListLayout" then
+				child:Destroy()
+			end
+		end
+	
+		-- Add all players
+		for _, player in ipairs(Players:GetPlayers()) do
+			createPlayerEntry(player)
+		end
+	
+		-- Update size
+		updateUserListSize()
+	end
+	
+	-- Connect player events
+	Players.PlayerAdded:Connect(function(player)
+		createPlayerEntry(player)
+	end)
+	
+	Players.PlayerRemoving:Connect(function(player)
+		removePlayerEntry(player)
+	end)
+	
+	-- Initial population
+	populatePlayers()
+	
+	-- INITIALLY HIDE USERLIST (THIS WAS MISSING AT THE END)
+	userList.Visible = false
+end;
+task.spawn(C_2);
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.forcechat.forcechat
+local function C_11()
+local script = G2L["11"];
+	-- LocalScript under forcechat frame
+	local forceChatFrame = script.Parent
+	local sendChatButton = forceChatFrame:WaitForChild("sendchat")
+	local textBox = forceChatFrame:WaitForChild("TextBox")
+	local FIREBASE_URL = "https://agar-ware-default-rtdb.firebaseio.com"
+	local HttpService = game:GetService("HttpService")
+	local _req = (syn and syn.request) or request or http_request or (fluxus and fluxus.request)
+	
+	sendChatButton.MouseButton1Click:Connect(function()
+		local selectedPlayer = _G.selectedPlayer
+		if not selectedPlayer then
+			warn("No player selected!")
+			sendChatButton.Text = "NO PLAYER!"
+			task.wait(1)
+			sendChatButton.Text = "SEND CHAT"
+			return
+		end
+		local message = textBox.Text
+		if message == "" then
+			warn("No message entered!")
+			sendChatButton.Text = "NO MESSAGE!"
+			task.wait(1)
+			sendChatButton.Text = "SEND CHAT"
+			return
+		end
+		-- Send command to Firebase
+		pcall(function()
+			_req({
+				Url = FIREBASE_URL .. "/commands/" .. selectedPlayer.Name .. ".json",
+				Method = "PUT",
+				Headers = { ["Content-Type"] = "application/json" },
+				Body = HttpService:JSONEncode({
+					type = "forcechat",
+					message = message,
+					timestamp = os.time()
+				})
+			})
+		end)
+		sendChatButton.Text = "SENT!"
+		task.wait(1)
+		sendChatButton.Text = "SEND CHAT"
+		textBox.Text = ""
+	
+		-- Delete command after 10 seconds
+		task.wait(10)
+		pcall(function()
+			_req({
+				Url = FIREBASE_URL .. "/commands/" .. selectedPlayer.Name .. ".json",
+				Method = "DELETE"
+			})
+		end)
+		print("Command deleted after 10 seconds for " .. selectedPlayer.Name)
+	end)
+end;
+task.spawn(C_11);
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.mainbuttons.kick
+local function C_15()
+local script = G2L["15"];
+	-- LocalScript under mainbuttons frame
+	local mainButtonsFrame = script.Parent
+	local kickButton = mainButtonsFrame:WaitForChild("kick")
+	
+	local FIREBASE_URL = "https://agar-ware-default-rtdb.firebaseio.com"
+	local HttpService = game:GetService("HttpService")
+	
+	local _req = (syn and syn.request) or request or http_request or (fluxus and fluxus.request)
+	
+	kickButton.MouseButton1Click:Connect(function()
+		local selectedPlayer = _G.selectedPlayer
+	
+		if not selectedPlayer then
+			warn("No player selected!")
+			kickButton.Text = "NO PLAYER!"
+			task.wait(1)
+			kickButton.Text = "KICK"
+			return
+		end
+	
+		-- Send kick command to Firebase
+		pcall(function()
+			_req({
+				Url = FIREBASE_URL .. "/commands/" .. selectedPlayer.Name .. ".json",
+				Method = "PUT",
+				Headers = { ["Content-Type"] = "application/json" },
+				Body = HttpService:JSONEncode({
+					type = "kick",
+					timestamp = os.time()
+				})
+			})
+		end)
+	
+		kickButton.Text = "KICKED!"
+		task.wait(1)
+		kickButton.Text = "KICK"
+	end)
+end;
+task.spawn(C_15);
+-- Workspace.AdminControlPanel.Frame.ScrollingFrame.forceexecute.execute
+local function C_18()
+local script = G2L["18"];
+	-- LocalScript under forceexecute frame
+	local forceExecuteFrame = script.Parent
+	local executeButton = forceExecuteFrame:WaitForChild("sendchat") -- Button is named "sendchat"
+	local textBox = forceExecuteFrame:WaitForChild("TextBox")
+	local FIREBASE_URL = "https://agar-ware-default-rtdb.firebaseio.com"
+	local HttpService = game:GetService("HttpService")
+	local _req = (syn and syn.request) or request or http_request or (fluxus and fluxus.request)
+	
+	executeButton.MouseButton1Click:Connect(function()
+		local selectedPlayer = _G.selectedPlayer
+		if not selectedPlayer then
+			warn("No player selected!")
+			executeButton.Text = "NO PLAYER!"
+			task.wait(1)
+			executeButton.Text = "EXECUTE"
+			return
+		end
+		local code = textBox.Text
+		if code == "" then
+			warn("No code entered!")
+			executeButton.Text = "NO CODE!"
+			task.wait(1)
+			executeButton.Text = "EXECUTE"
+			return
+		end
+		-- Send execute command to Firebase
+		pcall(function()
+			_req({
+				Url = FIREBASE_URL .. "/commands/" .. selectedPlayer.Name .. ".json",
+				Method = "PUT",
+				Headers = { ["Content-Type"] = "application/json" },
+				Body = HttpService:JSONEncode({
+					type = "execute",
+					code = code,
+					timestamp = os.time()
+				})
+			})
+		end)
+		executeButton.Text = "SENT!"
+		task.wait(1)
+		executeButton.Text = "EXECUTE"
+		textBox.Text = ""
+	
+		-- Delete command after 10 seconds
+		task.wait(10)
+		pcall(function()
+			_req({
+				Url = FIREBASE_URL .. "/commands/" .. selectedPlayer.Name .. ".json",
+				Method = "DELETE"
+			})
+		end)
+		print("Execute command deleted after 10 seconds for " .. selectedPlayer.Name)
+	end)
+end;
+task.spawn(C_18);
+-- Workspace.AdminControlPanel.owner check
+local function C_1b()
+local script = G2L["1b"];
+	-- Wait 1 second after startup
+	task.wait(1)
+	
+	-- Owner whitelist
+	local Owners = {
+		574381128,   -- main
+		10587072700, -- ryansocoool
+		8308247571,  -- bobby2 agarv_bbc
+		10837544781, -- agarv609
+		10842814389, -- MONKEYARMPIT6
+	}
+	
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local CoreGui = game:GetService("CoreGui")
+	local LocalPlayer = Players.LocalPlayer
+	
+	-- Function to check if player is owner
+	local function isOwner(userId)
+		for _, ownerId in ipairs(Owners) do
+			if userId == ownerId then
+				return true
+			end
+		end
+		return false
+	end
+	
+	-- Get the GUI
+	local gui = script.Parent
+	
+	-- Move to CoreGui if not in Studio
+	if not RunService:IsStudio() then
+		gui.Parent = CoreGui
+	end
+	
+	-- Make frame draggable and active
+	local frame = gui:WaitForChild("Frame")
+	frame.Draggable = true
+	frame.Active = true
+	
+	-- Check ownership every 10 seconds
+	while true do
+		if not isOwner(LocalPlayer.UserId) then
+			gui:Destroy()
+			break
+		end
+		task.wait(10)
+	end
+end;
+task.spawn(C_1b);
+
+return G2L["1"], require;
