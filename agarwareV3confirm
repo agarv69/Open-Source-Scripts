@@ -1,3 +1,8 @@
+-- MANUALLY EDIT THE KEY HERE
+local CORRECT_KEY = "2077"
+
+
+
 local CoreGui = game:GetService("CoreGui")
 local HttpService = game:GetService("HttpService")
 local guiName = "T5784YHRGE89ES98T"
@@ -8,31 +13,7 @@ if CoreGui:FindFirstChild(guiName) then
     return
 end
 
--- Firebase config
-local FIREBASE_URL = "https://agar-ware-default-rtdb.firebaseio.com"
 local CONFIG_FILE = "keydata.json"
-
-local _req = (syn and syn.request) or request or http_request or (fluxus and fluxus.request)
-
--- Fetch the correct key from Firebase
-local function getCorrectKeyFromFirebase()
-	local success, response = pcall(function()
-		return _req({
-			Url = FIREBASE_URL .. "/view/key.json",
-			Method = "GET"
-		})
-	end)
-	
-	if success and response.StatusCode == 200 then
-		local key = HttpService:JSONDecode(response.Body)
-		if type(key) == "string" then
-			return key
-		end
-	end
-	
-	warn("Failed to fetch key from Firebase!")
-	return nil
-end
 
 local function loadKeyData()
 	local success, data = pcall(function()
@@ -53,17 +34,10 @@ local function saveKeyData(key)
 end
 
 local function isKeyValid()
-	-- Get the current correct key from Firebase
-	local CORRECT_KEY = getCorrectKeyFromFirebase()
-	if not CORRECT_KEY then
-		warn("Could not retrieve key from database!")
-		return false
-	end
-	
 	local data = loadKeyData()
 	if not data then return false end
 	
-	-- Check if saved key matches current key from Firebase
+	-- Check if saved key matches current key
 	if data.key ~= CORRECT_KEY then
 		return false
 	end
@@ -88,8 +62,4 @@ else
 	pcall(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/agarv69/Open-Source-Scripts/refs/heads/main/agarwarev3key"))()
 	end)
-	-- After successful key entry in the key GUI, that script should call:
-	-- getCorrectKeyFromFirebase() to get current key
-	-- then saveKeyData(key)
-	-- then load the main GUI
 end
