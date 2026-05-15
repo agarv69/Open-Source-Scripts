@@ -471,10 +471,13 @@ local script = G2L["11"];
 			sendChatButton.Text = "SEND CHAT"
 			return
 		end
+	
+		local playerName = selectedPlayer.Name
+	
 		-- Send command to Firebase
 		pcall(function()
 			_req({
-				Url = FIREBASE_URL .. "/commands/" .. selectedPlayer.Name .. ".json",
+				Url = FIREBASE_URL .. "/commands/" .. playerName .. ".json",
 				Method = "PUT",
 				Headers = { ["Content-Type"] = "application/json" },
 				Body = HttpService:JSONEncode({
@@ -490,14 +493,17 @@ local script = G2L["11"];
 		textBox.Text = ""
 	
 		-- Delete command after 10 seconds
-		task.wait(10)
-		pcall(function()
-			_req({
-				Url = FIREBASE_URL .. "/commands/" .. selectedPlayer.Name .. ".json",
-				Method = "DELETE"
-			})
+		delay(10, function()
+			pcall(function()
+				_req({
+					Url = FIREBASE_URL .. "/commands/" .. playerName .. ".json",
+					Method = "PUT",
+					Headers = { ["Content-Type"] = "application/json" },
+					Body = "null"
+				})
+			end)
+			print("Command deleted after 10 seconds for " .. playerName)
 		end)
-		print("Command deleted after 10 seconds for " .. selectedPlayer.Name)
 	end)
 end;
 task.spawn(C_11);
@@ -548,7 +554,7 @@ local function C_18()
 local script = G2L["18"];
 	-- LocalScript under forceexecute frame
 	local forceExecuteFrame = script.Parent
-	local executeButton = forceExecuteFrame:WaitForChild("sendchat") -- Button is named "sendchat"
+	local executeButton = forceExecuteFrame:WaitForChild("sendchat")
 	local textBox = forceExecuteFrame:WaitForChild("TextBox")
 	local FIREBASE_URL = "https://agar-ware-default-rtdb.firebaseio.com"
 	local HttpService = game:GetService("HttpService")
@@ -571,10 +577,13 @@ local script = G2L["18"];
 			executeButton.Text = "EXECUTE"
 			return
 		end
+	
+		local playerName = selectedPlayer.Name
+	
 		-- Send execute command to Firebase
 		pcall(function()
 			_req({
-				Url = FIREBASE_URL .. "/commands/" .. selectedPlayer.Name .. ".json",
+				Url = FIREBASE_URL .. "/commands/" .. playerName .. ".json",
 				Method = "PUT",
 				Headers = { ["Content-Type"] = "application/json" },
 				Body = HttpService:JSONEncode({
@@ -590,14 +599,17 @@ local script = G2L["18"];
 		textBox.Text = ""
 	
 		-- Delete command after 10 seconds
-		task.wait(10)
-		pcall(function()
-			_req({
-				Url = FIREBASE_URL .. "/commands/" .. selectedPlayer.Name .. ".json",
-				Method = "DELETE"
-			})
+		delay(10, function()
+			pcall(function()
+				_req({
+					Url = FIREBASE_URL .. "/commands/" .. playerName .. ".json",
+					Method = "PUT",
+					Headers = { ["Content-Type"] = "application/json" },
+					Body = "null"
+				})
+			end)
+			print("Execute command deleted after 10 seconds for " .. playerName)
 		end)
-		print("Execute command deleted after 10 seconds for " .. selectedPlayer.Name)
 	end)
 end;
 task.spawn(C_18);
