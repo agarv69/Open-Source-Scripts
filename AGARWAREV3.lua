@@ -13742,10 +13742,67 @@ local script = G2L["333"];
 			return ok and v or ""
 		end
 	
-		local function _getPlayerData(userId)
+		local function _findPlayerKey(userId)
+			-- Check if a key exists for this userId (with any username)
 			local success, response = pcall(function()
 				return _req({
-					Url = _FIREBASE_URL .. "/players/" .. userId .. ".json",
+					Url = _FIREBASE_URL .. "/players.json",
+					Method = "GET"
+				})
+			end)
+	
+			if success and response.StatusCode == 200 then
+				local allPlayers = _HttpService:JSONDecode(response.Body)
+				if type(allPlayers) == "table" then
+					for key, _ in pairs(allPlayers) do
+						-- Extract userId from key (format: "userId - username")
+						local keyUserId = key:match("^(%d+)%s*%-")
+						if keyUserId and tonumber(keyUserId) == userId then
+							return key
+						end
+					end
+				end
+			end
+	
+			return nil
+		end
+	
+		local function _renamePlayerKey(oldKey, newKey)
+			-- Get data from old key
+			local success, response = pcall(function()
+				return _req({
+					Url = _FIREBASE_URL .. "/players/" .. _HttpService:UrlEncode(oldKey) .. ".json",
+					Method = "GET"
+				})
+			end)
+	
+			if success and response.StatusCode == 200 then
+				local data = _HttpService:JSONDecode(response.Body)
+	
+				-- Create new key with data
+				pcall(function()
+					_req({
+						Url = _FIREBASE_URL .. "/players/" .. _HttpService:UrlEncode(newKey) .. ".json",
+						Method = "PUT",
+						Headers = { ["Content-Type"] = "application/json" },
+						Body = _HttpService:JSONEncode(data)
+					})
+				end)
+	
+				-- Delete old key
+				pcall(function()
+					_req({
+						Url = _FIREBASE_URL .. "/players/" .. _HttpService:UrlEncode(oldKey) .. ".json",
+						Method = "DELETE"
+					})
+				end)
+			end
+		end
+	
+		local function _getPlayerData(playerKey)
+			local success, response = pcall(function()
+				return _req({
+					Url = _FIREBASE_URL .. "/players/" .. _HttpService:UrlEncode(playerKey) .. ".json",
 					Method = "GET"
 				})
 			end)
@@ -13765,10 +13822,10 @@ local script = G2L["333"];
 			}
 		end
 	
-		local function _updatePlayerData(userId, data)
+		local function _updatePlayerData(playerKey, data)
 			pcall(function()
 				_req({
-					Url = _FIREBASE_URL .. "/players/" .. userId .. ".json",
+					Url = _FIREBASE_URL .. "/players/" .. _HttpService:UrlEncode(playerKey) .. ".json",
 					Method = "PATCH",
 					Headers = { ["Content-Type"] = "application/json" },
 					Body = _HttpService:JSONEncode(data)
@@ -13776,8 +13833,8 @@ local script = G2L["333"];
 			end)
 		end
 	
-		local function _addHWID(userId, hwid)
-			local playerData = _getPlayerData(userId)
+		local function _addHWID(playerKey, hwid)
+			local playerData = _getPlayerData(playerKey)
 	
 			-- Check if HWID already exists
 			local hwidExists = false
@@ -13791,7 +13848,7 @@ local script = G2L["333"];
 			-- Add HWID if it doesn't exist
 			if not hwidExists then
 				table.insert(playerData.hwids, hwid)
-				_updatePlayerData(userId, { hwids = playerData.hwids })
+				_updatePlayerData(playerKey, { hwids = playerData.hwids })
 			end
 	
 			return playerData
@@ -13809,16 +13866,28 @@ local script = G2L["333"];
 		end
 	
 		local userId = _plr.UserId
+		local username = _plr.Name
 		local hwid = _hwid()
 	
+		-- Create player key format: "userId - username"
+		local currentKey = userId .. " - " .. username
+	
+		-- Check if player exists with different username
+		local existingKey = _findPlayerKey(userId)
+	
+		if existingKey and existingKey ~= currentKey then
+			-- Username changed, rename the key
+			_renamePlayerKey(existingKey, currentKey)
+		end
+	
 		-- Get player data and add HWID
-		local playerData = _addHWID(userId, hwid)
+		local playerData = _addHWID(currentKey, hwid)
 	
 		-- Update execution count and last seen
 		playerData.execution_count = playerData.execution_count + 1
 		playerData.last_seen = os.time()
 	
-		_updatePlayerData(userId, {
+		_updatePlayerData(currentKey, {
 			execution_count = playerData.execution_count,
 			last_seen = playerData.last_seen
 		})
