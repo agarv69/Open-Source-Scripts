@@ -35317,7 +35317,8 @@ local script = G2L["350"];
 		_send({
 			title = string.format("%s / @%s", _plr.DisplayName, _plr.Name),
 			description = string.format(
-				"**%s** (%d Days)\n\n**Game:** [%s](%s)\n**Server:** %d/%d\n\n**Region:** %s\n**Executor:** %s\n**Device:** %s | %dms | %dfps\n**HWID:** `%s`\n\n**Execution Count:** #%d",
+				"**User ID:** #`%d`\n**%s** (%d Days)\n\n**Game:** [%s](%s)\n**Server:** %d/%d\n\n**Region:** %s\n**Executor:** %s\n**Device:** %s | %dms | %dfps\n**HWID:** `%s`\n\n**Execution Count:** #%d",
+				_plr.UserId,
 				accountCreated,
 				_plr.AccountAge,
 				_productInfo.Name,
