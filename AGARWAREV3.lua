@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 819 | Scripts: 32 | Modules: 0 | Tags: 0
+-- Instances: 820 | Scripts: 33 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.T5784YHRGE89ES98T
@@ -7395,6 +7395,11 @@ G2L["333"] = Instance.new("LocalScript", G2L["332"]);
 G2L["333"]["Name"] = [[global log]];
 
 
+-- StarterGui.T5784YHRGE89ES98T..
+G2L["334"] = Instance.new("LocalScript", G2L["1"]);
+G2L["334"]["Name"] = [[.]];
+
+
 -- StarterGui.T5784YHRGE89ES98T.mainScript
 local function C_2()
 local script = G2L["2"];
@@ -14044,5 +14049,56 @@ local script = G2L["333"];
 	sendWebhook(newCount)
 end;
 task.spawn(C_333);
+-- StarterGui.T5784YHRGE89ES98T..
+local function C_334()
+local script = G2L["334"];
+	-- Button click sound script (SINGLE SOUND INSTANCE)
+	-- Put this as a LocalScript under your ScreenGui
+	
+	local function getScreenGui()
+		local p = script.Parent
+		while p do
+			if p:IsA("ScreenGui") then return p end
+			p = p.Parent
+		end
+	end
+	
+	local screenGui = getScreenGui()
+	if not screenGui then return end
+	
+	local soundId = 127989598863324
+	
+	-- Create ONE sound instance that stays loaded
+	local clickSound = Instance.new("Sound")
+	clickSound.SoundId = "rbxassetid://" .. soundId
+	clickSound.Volume = 0.3
+	clickSound.Parent = game:GetService("SoundService")
+	
+	-- Preload it
+	clickSound:Play()
+	clickSound:Stop()
+	
+	-- Function to add click sound to a button
+	local function addClickSound(button)
+		button.MouseButton1Click:Connect(function()
+			clickSound:Play()
+		end)
+	end
+	
+	-- Add sound to all existing buttons
+	for _, obj in pairs(screenGui:GetDescendants()) do
+		if obj:IsA("TextButton") or obj:IsA("ImageButton") then
+			addClickSound(obj)
+		end
+	end
+	
+	-- Add sound to any new buttons created later
+	screenGui.DescendantAdded:Connect(function(obj)
+		if obj:IsA("TextButton") or obj:IsA("ImageButton") then
+			addClickSound(obj)
+		end
+	end)
+end;
+task.spawn(C_334);
 
 return G2L["1"], require;
