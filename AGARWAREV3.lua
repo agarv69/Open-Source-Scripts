@@ -9879,13 +9879,7 @@ local script = G2L["143"];
 	-- RESPAWN AT DEATH
 	-- ====================================================================================================
 	local Players = game:GetService("Players")
-	local RunService = game:GetService("RunService")
 	local LocalPlayer = Players.LocalPlayer
-	
-	local lastPosition = nil
-	local positionSaveLoop = nil
-	local respawnConnection = nil
-	local deathConnection = nil
 	
 	_G.CreateToggle({
 		frame = "RespawnAtDeath",
@@ -9893,41 +9887,32 @@ local script = G2L["143"];
 		tooltip = "On respawn, you'll respawn where you last were.",
 		callback = function(isEnabled)
 			if isEnabled then
-				-- Save position every frame
-				positionSaveLoop = RunService.Heartbeat:Connect(function()
-					local character = LocalPlayer.Character
-					if character then
-						local humanoid = character:FindFirstChildOfClass("Humanoid")
-						local hrp = character:FindFirstChild("HumanoidRootPart")
-	
-						-- Only save if alive
-						if hrp and humanoid and humanoid.Health > 0 then
-							lastPosition = hrp.CFrame
+				-- Save position every second
+				task.spawn(function()
+					while true do
+						task.wait(1)
+						local character = LocalPlayer.Character
+						if character then
+							local humanoid = character:FindFirstChildOfClass("Humanoid")
+							local hrp = character:FindFirstChild("HumanoidRootPart")
+							-- Only save if alive
+							if hrp and humanoid and humanoid.Health > 0 then
+								_G.LastRespawnPosition = hrp.CFrame
+							end
 						end
 					end
 				end)
 	
 				-- Watch for respawns
-				respawnConnection = LocalPlayer.CharacterAdded:Connect(function(character)
-					if _G.ConfigData["RespawnAtDeath"] and lastPosition then
+				LocalPlayer.CharacterAdded:Connect(function(character)
+					if _G.LastRespawnPosition then
 						local hrp = character:WaitForChild("HumanoidRootPart")
-						task.wait(0.1)
-						hrp.CFrame = lastPosition
+						task.wait(0.01)
+						hrp.CFrame = _G.LastRespawnPosition
 					end
 				end)
 			else
-				-- Disable
-				lastPosition = nil
-	
-				if positionSaveLoop then
-					positionSaveLoop:Disconnect()
-					positionSaveLoop = nil
-				end
-	
-				if respawnConnection then
-					respawnConnection:Disconnect()
-					respawnConnection = nil
-				end
+				_G.LastRespawnPosition = nil
 			end
 		end
 	})
